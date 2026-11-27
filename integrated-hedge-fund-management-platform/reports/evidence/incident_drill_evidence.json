@@ -1,0 +1,97 @@
+{
+  "all_scenarios_passed": true,
+  "scenario_count": 7,
+  "scenarios": {
+    "unbalanced_ledger": {
+      "passed": true,
+      "error_code": "LEDGER_UNBALANCED",
+      "imbalances": {
+        "USD": {
+          "total_debit": "5000.00",
+          "total_credit": "4500.00",
+          "difference": "500.00"
+        }
+      },
+      "audit_verified": true
+    },
+    "missing_marks": {
+      "passed": true,
+      "initial_status": "BLOCKED",
+      "blocking_exceptions": 2,
+      "recovered_status": "CLOSED",
+      "snapshot_id": "SNAP_FUND_SAAT_MS_20261125_v1"
+    },
+    "unauthorized_approval": {
+      "passed": true,
+      "denied_attempts": [
+        "usr_pm_01:AUTHORIZATION_ERROR",
+        "usr_sys_01:AUTHORIZATION_ERROR",
+        "usr_audit_01:AUTHORIZATION_ERROR",
+        "self_ctrl:ROLE_SEPARATION_VIOLATION"
+      ],
+      "audit_verified": true
+    },
+    "late_fills": {
+      "passed": true,
+      "status": "BLOCKED",
+      "late_fill_ids": [
+        "FILL_20261125_LATE_001"
+      ],
+      "blocking_exception_ids": [
+        "EXC_20261125_000a55"
+      ]
+    },
+    "reconciliation_mismatch": {
+      "passed": true,
+      "status": "BLOCKED",
+      "break_count": 4,
+      "break_types": [
+        "CASH_BALANCE",
+        "FILL_MISMATCH",
+        "MISSING_INTERNAL_FILL",
+        "POSITION_QUANTITY"
+      ],
+      "total_break_impact_usd": "106100.00"
+    },
+    "report_revision": {
+      "passed": true,
+      "v1_status": "SUPERSEDED",
+      "v2_report_id": "RPT_FUND_SAAT_MS_20261125_NAV_SUMMARY_v2",
+      "changed_fields": [
+        "daily_pnl_usd",
+        "daily_return_pct",
+        "ledger_nav_usd",
+        "nav_per_share",
+        "nav_usd",
+        "net_market_value_usd",
+        "notes",
+        "snapshot_content_hash",
+        "snapshot_id",
+        "total_long_mv_usd"
+      ],
+      "nav_before": "10116932.04",
+      "nav_after": "10121932.04"
+    },
+    "service_outage": {
+      "passed": true,
+      "degraded_status": "DEGRADED_OUTAGE",
+      "recovered_status": "CLOSED",
+      "snapshot_id": "SNAP_FUND_SAAT_MS_20261125_v1"
+    }
+  },
+  "baseline_benchmark": {
+    "sample_size": 25,
+    "environment": {
+      "python": "3.12.15",
+      "os": "macOS-26.5.1-arm64-arm-64bit",
+      "storage": "sqlite_in_memory"
+    },
+    "mean_ms": 1.95,
+    "median_ms": 1.86,
+    "stdev_ms": 0.3,
+    "p95_ms": 2.66,
+    "min_ms": 1.69,
+    "max_ms": 2.7,
+    "note": "Baseline synthetic prototype measurement (7 fills, 7 positions, 2 accounts). Not a production SLA claim."
+  }
+}

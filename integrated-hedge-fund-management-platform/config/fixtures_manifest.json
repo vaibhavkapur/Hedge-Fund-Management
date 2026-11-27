@@ -1,0 +1,55 @@
+{
+  "manifest_version": "1.0.0",
+  "generated_at_utc": "2026-11-27T00:00:00Z",
+  "license": "SYNTHETIC_INTERNAL_TEST_DATA",
+  "entitlements": {
+    "permitted_environments": ["local-prototype", "ci", "sandbox"],
+    "contains_pii": false,
+    "contains_production_broker_data": false,
+    "contains_vendor_market_data": false
+  },
+  "fixtures": [
+    {
+      "id": "master_data",
+      "path": "data/fixtures/master_data.json",
+      "description": "Synthetic fund, account, strategy, instrument, counterparty, and RBAC user master records.",
+      "seed": 20261127
+    },
+    {
+      "id": "day1_clean_close",
+      "path": "data/fixtures/day1_clean_close.json",
+      "description": "Clean T+0 daily close fixture with multi-currency equity and ETF trades, marks, FX rates, and matching prime broker extracts.",
+      "seed": 20261127
+    },
+    {
+      "id": "day2_reconciliation_breaks",
+      "path": "data/fixtures/day2_reconciliation_breaks.json",
+      "description": "T+1 fixture containing intentional prime broker quantity, cash, and missing-fill breaks for reconciliation workflow validation.",
+      "seed": 20261128
+    },
+    {
+      "id": "scenario_unbalanced_ledger",
+      "path": "data/fixtures/scenario_unbalanced_ledger.json",
+      "description": "Fault fixture containing an unbalanced manual journal entry where debits do not equal credits.",
+      "seed": 20261127
+    },
+    {
+      "id": "scenario_missing_marks",
+      "path": "data/fixtures/scenario_missing_marks.json",
+      "description": "Fault fixture omitting EOD market mark for an open position (NVDA) and supplying a stale mark for SAP.",
+      "seed": 20261127
+    },
+    {
+      "id": "scenario_late_fills",
+      "path": "data/fixtures/scenario_late_fills.json",
+      "description": "Fault fixture delivering fills with trade/execution timestamps arriving after the 21:00 UTC EOD cutoff.",
+      "seed": 20261127
+    },
+    {
+      "id": "scenario_service_outage",
+      "path": "data/fixtures/scenario_service_outage.json",
+      "description": "Fault configuration simulating prime broker and market data provider outages during close.",
+      "seed": 20261127
+    }
+  ]
+}

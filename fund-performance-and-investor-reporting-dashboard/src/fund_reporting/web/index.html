@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fund Performance &amp; Investor Reporting Dashboard</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div id="disclosure-banner" class="disclosure-banner simulated">
+    Loading fund environment and methodology disclosure...
+  </div>
+
+  <header class="topbar">
+    <div>
+      <h1>Fund Performance &amp; Investor Reporting</h1>
+      <p class="subtitle" id="fund-meta">Reconciled NAV snapshots, deterministic analytics &amp; versioned reporting</p>
+    </div>
+    <div class="controls">
+      <label>
+        <span>Demo Role (RBAC)</span>
+        <select id="role-select">
+          <option value="demo-analyst-token">ANALYST (analyst_maya)</option>
+          <option value="demo-reviewer-token">REVIEWER (reviewer_alex)</option>
+          <option value="demo-approver-token">APPROVER (approver_cto)</option>
+          <option value="demo-investor-token">VIEWER_INVESTOR (investor_lp_01)</option>
+          <option value="demo-admin-token">ADMIN (admin_ops)</option>
+        </select>
+      </label>
+      <label>
+        <span>Fund</span>
+        <select id="fund-select"></select>
+      </label>
+      <label>
+        <span>Currency</span>
+        <select id="currency-select">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+        </select>
+      </label>
+      <label>
+        <span>Basis</span>
+        <select id="basis-select">
+          <option value="net">NET of Fees</option>
+          <option value="gross">GROSS of Fees</option>
+        </select>
+      </label>
+      <button id="refresh-btn" class="btn primary">Refresh</button>
+    </div>
+  </header>
+
+  <div id="alert-box" class="alert hidden"></div>
+
+  <main class="container">
+    <section id="analytics-section">
+      <div class="kpi-grid" id="kpi-grid"></div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header">
+            <h2>Cumulative Wealth Index (Fund vs. Benchmark)</h2>
+            <span class="badge" id="methodology-badge">—</span>
+          </div>
+          <div id="wealth-chart" class="chart-box"></div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h2>Underwater Drawdown</h2>
+            <span class="badge" id="dd-badge">—</span>
+          </div>
+          <div id="drawdown-chart" class="chart-box"></div>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header">
+            <h2>Strategy Attribution (Carino-Linked Gross Contribution)</h2>
+            <span class="badge" id="tca-badge">—</span>
+          </div>
+          <div id="attribution-chart" class="chart-box"></div>
+          <table class="data-table" id="attribution-table"></table>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h2>Cash &amp; Exposure Drill-Down</h2>
+            <span class="badge" id="exposure-badge">—</span>
+          </div>
+          <div id="exposure-chart" class="chart-box"></div>
+          <table class="data-table" id="exposure-table"></table>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header">
+            <h2>Ledger Reconciliation &amp; Foundation Diagnostics</h2>
+            <span class="badge" id="recon-badge">—</span>
+          </div>
+          <div id="diagnostics-box" class="diag-box"></div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h2>Disclosures &amp; Metric Quality Flags</h2>
+            <span class="badge" id="flag-count-badge">0 flags</span>
+          </div>
+          <div id="disclosures-box" class="diag-box"></div>
+          <ul id="flags-list" class="flags-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Versioned Reports, Approval Workflow &amp; Exports</h2>
+        <div class="inline-actions">
+          <input id="series-input" type="text" value="RPT-2026Q1-ALPHA" placeholder="Report Series ID" />
+          <select id="audience-select">
+            <option value="INVESTOR">INVESTOR</option>
+            <option value="INTERNAL">INTERNAL</option>
+          </select>
+          <button id="create-report-btn" class="btn primary">Create Draft Report</button>
+        </div>
+      </div>
+      <table class="data-table" id="reports-table"></table>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Governance Audit Log (RBAC &amp; Workflow Trail)</h2>
+        <button id="refresh-audit-btn" class="btn">Reload Audit Log</button>
+      </div>
+      <table class="data-table" id="audit-table"></table>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

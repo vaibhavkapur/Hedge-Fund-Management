@@ -1,0 +1,211 @@
+{
+  "fixture_id": "day2_reconciliation_breaks",
+  "business_date": "2026-11-26",
+  "fund_id": "FUND_SAAT_MS",
+  "fx_rates": [
+    {
+      "base_currency": "USD",
+      "quote_currency": "USD",
+      "rate_to_usd": "1.000000",
+      "source": "SYNTHETIC_WM_FIX",
+      "as_of_utc": "2026-11-26T20:00:00Z",
+      "available_at_utc": "2026-11-26T20:05:00Z"
+    },
+    {
+      "base_currency": "EUR",
+      "quote_currency": "USD",
+      "rate_to_usd": "1.085000",
+      "source": "SYNTHETIC_WM_FIX",
+      "as_of_utc": "2026-11-26T20:00:00Z",
+      "available_at_utc": "2026-11-26T20:05:00Z"
+    }
+  ],
+  "fills": [
+    {
+      "fill_id": "FILL_20261126_001",
+      "order_id": "ORD_101",
+      "fund_id": "FUND_SAAT_MS",
+      "account_id": "ACCT_PB_ALPHA_EQ",
+      "strategy_id": "STRAT_EQ_LS",
+      "instrument_id": "INST_AAPL",
+      "side": "BUY",
+      "quantity": "1000",
+      "price": "199.00",
+      "currency": "USD",
+      "commission": "10.00",
+      "executed_at_utc": "2026-11-26T15:00:00Z",
+      "received_at_utc": "2026-11-26T15:00:02Z",
+      "broker_ref": "PB_ALPHA_F101"
+    }
+  ],
+  "marks": [
+    {
+      "instrument_id": "INST_AAPL",
+      "price": "200.00",
+      "currency": "USD",
+      "source": "SYNTHETIC_EXCHANGE_CLOSE",
+      "as_of_utc": "2026-11-26T21:00:00Z",
+      "available_at_utc": "2026-11-26T21:02:00Z"
+    },
+    {
+      "instrument_id": "INST_MSFT",
+      "price": "427.00",
+      "currency": "USD",
+      "source": "SYNTHETIC_EXCHANGE_CLOSE",
+      "as_of_utc": "2026-11-26T21:00:00Z",
+      "available_at_utc": "2026-11-26T21:02:00Z"
+    },
+    {
+      "instrument_id": "INST_NVDA",
+      "price": "140.00",
+      "currency": "USD",
+      "source": "SYNTHETIC_EXCHANGE_CLOSE",
+      "as_of_utc": "2026-11-26T21:00:00Z",
+      "available_at_utc": "2026-11-26T21:02:00Z"
+    },
+    {
+      "instrument_id": "INST_JPM",
+      "price": "209.00",
+      "currency": "USD",
+      "source": "SYNTHETIC_EXCHANGE_CLOSE",
+      "as_of_utc": "2026-11-26T21:00:00Z",
+      "available_at_utc": "2026-11-26T21:02:00Z"
+    },
+    {
+      "instrument_id": "INST_SAP",
+      "price": "205.50",
+      "currency": "EUR",
+      "source": "SYNTHETIC_XETRA_CLOSE",
+      "as_of_utc": "2026-11-26T16:35:00Z",
+      "available_at_utc": "2026-11-26T16:40:00Z"
+    },
+    {
+      "instrument_id": "INST_TLT",
+      "price": "93.50",
+      "currency": "USD",
+      "source": "SYNTHETIC_EXCHANGE_CLOSE",
+      "as_of_utc": "2026-11-26T21:00:00Z",
+      "available_at_utc": "2026-11-26T21:02:00Z"
+    },
+    {
+      "instrument_id": "INST_SPY",
+      "price": "594.00",
+      "currency": "USD",
+      "source": "SYNTHETIC_EXCHANGE_CLOSE",
+      "as_of_utc": "2026-11-26T21:00:00Z",
+      "available_at_utc": "2026-11-26T21:02:00Z"
+    }
+  ],
+  "external_positions": [
+    {
+      "account_id": "ACCT_PB_ALPHA_EQ",
+      "instrument_id": "INST_AAPL",
+      "quantity": "10800",
+      "market_price": "200.00",
+      "currency": "USD",
+      "source": "CP_PB_ALPHA_EOD",
+      "as_of_utc": "2026-11-26T21:05:00Z"
+    },
+    {
+      "account_id": "ACCT_PB_ALPHA_EQ",
+      "instrument_id": "INST_MSFT",
+      "quantity": "4000",
+      "market_price": "427.00",
+      "currency": "USD",
+      "source": "CP_PB_ALPHA_EOD",
+      "as_of_utc": "2026-11-26T21:05:00Z"
+    },
+    {
+      "account_id": "ACCT_PB_ALPHA_EQ",
+      "instrument_id": "INST_NVDA",
+      "quantity": "8000",
+      "market_price": "140.00",
+      "currency": "USD",
+      "source": "CP_PB_ALPHA_EOD",
+      "as_of_utc": "2026-11-26T21:05:00Z"
+    },
+    {
+      "account_id": "ACCT_PB_ALPHA_EQ",
+      "instrument_id": "INST_JPM",
+      "quantity": "-5000",
+      "market_price": "209.00",
+      "currency": "USD",
+      "source": "CP_PB_ALPHA_EOD",
+      "as_of_utc": "2026-11-26T21:05:00Z"
+    },
+    {
+      "account_id": "ACCT_PB_ALPHA_EQ",
+      "instrument_id": "INST_SAP",
+      "quantity": "2000",
+      "market_price": "205.50",
+      "currency": "EUR",
+      "source": "CP_PB_ALPHA_EOD",
+      "as_of_utc": "2026-11-26T21:05:00Z"
+    },
+    {
+      "account_id": "ACCT_PB_BETA_MAC",
+      "instrument_id": "INST_TLT",
+      "quantity": "20000",
+      "market_price": "93.50",
+      "currency": "USD",
+      "source": "CP_PB_BETA_EOD",
+      "as_of_utc": "2026-11-26T21:05:00Z"
+    },
+    {
+      "account_id": "ACCT_PB_BETA_MAC",
+      "instrument_id": "INST_SPY",
+      "quantity": "-2000",
+      "market_price": "594.00",
+      "currency": "USD",
+      "source": "CP_PB_BETA_EOD",
+      "as_of_utc": "2026-11-26T21:05:00Z"
+    }
+  ],
+  "external_cash": [
+    {
+      "account_id": "ACCT_PB_ALPHA_EQ",
+      "currency": "USD",
+      "balance": "2145820.00",
+      "source": "CP_PB_ALPHA_EOD",
+      "as_of_utc": "2026-11-26T21:05:00Z"
+    },
+    {
+      "account_id": "ACCT_PB_ALPHA_EQ",
+      "currency": "EUR",
+      "balance": "99975.00",
+      "source": "CP_PB_ALPHA_EOD",
+      "as_of_utc": "2026-11-26T21:05:00Z"
+    },
+    {
+      "account_id": "ACCT_PB_BETA_MAC",
+      "currency": "USD",
+      "balance": "2799900.00",
+      "source": "CP_PB_BETA_EOD",
+      "as_of_utc": "2026-11-26T21:05:00Z"
+    }
+  ],
+  "external_fills": [
+    {
+      "broker_ref": "PB_ALPHA_F101",
+      "account_id": "ACCT_PB_ALPHA_EQ",
+      "instrument_id": "INST_AAPL",
+      "side": "BUY",
+      "quantity": "800",
+      "price": "199.00",
+      "currency": "USD",
+      "commission": "10.00",
+      "executed_at_utc": "2026-11-26T15:00:00Z"
+    },
+    {
+      "broker_ref": "PB_ALPHA_UNBOOKED_999",
+      "account_id": "ACCT_PB_ALPHA_EQ",
+      "instrument_id": "INST_MSFT",
+      "side": "BUY",
+      "quantity": "50",
+      "price": "426.00",
+      "currency": "USD",
+      "commission": "5.00",
+      "executed_at_utc": "2026-11-26T18:45:00Z"
+    }
+  ]
+}

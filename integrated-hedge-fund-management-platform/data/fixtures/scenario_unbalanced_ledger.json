@@ -1,0 +1,29 @@
+{
+  "fixture_id": "scenario_unbalanced_ledger",
+  "description": "Manual adjustment entry where USD debits (5000.00) do not equal USD credits (4500.00).",
+  "fund_id": "FUND_SAAT_MS",
+  "business_date": "2026-11-25",
+  "entry": {
+    "entry_id": "JE_UNBALANCED_001",
+    "fund_id": "FUND_SAAT_MS",
+    "business_date": "2026-11-25",
+    "description": "Faulty manual dividend accrual missing balancing credit",
+    "source_ref": "FAULT_INJECTION_LEDGER_001",
+    "lines": [
+      {
+        "account_id": "ACCT_PB_ALPHA_EQ",
+        "ledger_account": "CASH",
+        "currency": "USD",
+        "debit": "5000.00",
+        "credit": "0.00"
+      },
+      {
+        "account_id": "ACCT_PB_ALPHA_EQ",
+        "ledger_account": "DIVIDEND_INCOME",
+        "currency": "USD",
+        "debit": "0.00",
+        "credit": "4500.00"
+      }
+    ]
+  }
+}

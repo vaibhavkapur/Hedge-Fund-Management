@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0.0",
+  "as_of_utc": "2026-11-24T00:00:00Z",
+  "funds": [
+    {
+      "fund_id": "FUND_SAAT_MS",
+      "name": "SAAT Multi-Strategy Master Fund LP",
+      "base_currency": "USD",
+      "inception_date": "2025-01-02",
+      "initial_nav_usd": "10000000.00",
+      "shares_outstanding": "100000.0000",
+      "administrator_name": "Apex Synthetic Fund Services",
+      "status": "ACTIVE"
+    }
+  ],
+  "counterparties": [
+    {
+      "counterparty_id": "CP_PB_ALPHA",
+      "name": "Alpha Prime Brokerage LLC",
+      "lei": "549300ALPHA000000001",
+      "credit_rating": "A+"
+    },
+    {
+      "counterparty_id": "CP_PB_BETA",
+      "name": "Beta Institutional Custody Bank",
+      "lei": "549300BETA0000000002",
+      "credit_rating": "AA-"
+    }
+  ],
+  "accounts": [
+    {
+      "account_id": "ACCT_PB_ALPHA_EQ",
+      "fund_id": "FUND_SAAT_MS",
+      "counterparty_id": "CP_PB_ALPHA",
+      "name": "Alpha PB Equity Margin Account",
+      "account_type": "PRIME_BROKER",
+      "base_currency": "USD",
+      "initial_cash": {
+        "USD": "6000000.00",
+        "EUR": "500000.00"
+      },
+      "status": "ACTIVE"
+    },
+    {
+      "account_id": "ACCT_PB_BETA_MAC",
+      "fund_id": "FUND_SAAT_MS",
+      "counterparty_id": "CP_PB_BETA",
+      "name": "Beta Custody Macro Account",
+      "account_type": "CUSTODIAN",
+      "base_currency": "USD",
+      "initial_cash": {
+        "USD": "3460000.00"
+      },
+      "status": "ACTIVE"
+    }
+  ],
+  "strategies": [
+    {
+      "strategy_id": "STRAT_EQ_LS",
+      "fund_id": "FUND_SAAT_MS",
+      "name": "Systematic Equity Long/Short",
+      "asset_focus": "EQUITY",
+      "pm_user_id": "usr_pm_01",
+      "capital_allocation_usd": "6500000.00",
+      "status": "ACTIVE"
+    },
+    {
+      "strategy_id": "STRAT_MACRO_ETF",
+      "fund_id": "FUND_SAAT_MS",
+      "name": "Global Macro & Rates ETF",
+      "asset_focus": "ETF",
+      "pm_user_id": "usr_pm_02",
+      "capital_allocation_usd": "3500000.00",
+      "status": "ACTIVE"
+    }
+  ],
+  "instruments": [
+    {
+      "instrument_id": "INST_AAPL",
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "asset_class": "EQUITY",
+      "sector": "Technology",
+      "currency": "USD",
+      "multiplier": "1",
+      "beta": "1.15",
+      "annualized_vol": "0.24"
+    },
+    {
+      "instrument_id": "INST_MSFT",
+      "symbol": "MSFT",
+      "name": "Microsoft Corp.",
+      "asset_class": "EQUITY",
+      "sector": "Technology",
+      "currency": "USD",
+      "multiplier": "1",
+      "beta": "1.08",
+      "annualized_vol": "0.22"
+    },
+    {
+      "instrument_id": "INST_NVDA",
+      "symbol": "NVDA",
+      "name": "NVIDIA Corp.",
+      "asset_class": "EQUITY",
+      "sector": "Semiconductors",
+      "currency": "USD",
+      "multiplier": "1",
+      "beta": "1.65",
+      "annualized_vol": "0.42"
+    },
+    {
+      "instrument_id": "INST_JPM",
+      "symbol": "JPM",
+      "name": "JPMorgan Chase & Co.",
+      "asset_class": "EQUITY",
+      "sector": "Financials",
+      "currency": "USD",
+      "multiplier": "1",
+      "beta": "1.05",
+      "annualized_vol": "0.21"
+    },
+    {
+      "instrument_id": "INST_SAP",
+      "symbol": "SAP",
+      "name": "SAP SE",
+      "asset_class": "EQUITY",
+      "sector": "Technology",
+      "currency": "EUR",
+      "multiplier": "1",
+      "beta": "0.95",
+      "annualized_vol": "0.23"
+    },
+    {
+      "instrument_id": "INST_TLT",
+      "symbol": "TLT",
+      "name": "iShares 20+ Year Treasury Bond ETF",
+      "asset_class": "FIXED_INCOME_ETF",
+      "sector": "Rates",
+      "currency": "USD",
+      "multiplier": "1",
+      "beta": "-0.25",
+      "annualized_vol": "0.16"
+    },
+    {
+      "instrument_id": "INST_SPY",
+      "symbol": "SPY",
+      "name": "SPDR S&P 500 ETF Trust",
+      "asset_class": "EQUITY_ETF",
+      "sector": "Index",
+      "currency": "USD",
+      "multiplier": "1",
+      "beta": "1.00",
+      "annualized_vol": "0.15"
+    }
+  ],
+  "users": [
+    {
+      "user_id": "usr_ops_01",
+      "name": "Maya Lin",
+      "role": "OPERATIONS_ANALYST"
+    },
+    {
+      "user_id": "usr_acct_01",
+      "name": "David Chen",
+      "role": "FUND_ACCOUNTANT"
+    },
+    {
+      "user_id": "usr_ctrl_01",
+      "name": "Elena Vance",
+      "role": "CONTROLLER"
+    },
+    {
+      "user_id": "usr_risk_01",
+      "name": "Raj Patel",
+      "role": "RISK_MANAGER"
+    },
+    {
+      "user_id": "usr_pm_01",
+      "name": "Marcus Vance",
+      "role": "PORTFOLIO_MANAGER"
+    },
+    {
+      "user_id": "usr_pm_02",
+      "name": "Sofia Morales",
+      "role": "PORTFOLIO_MANAGER"
+    },
+    {
+      "user_id": "usr_comp_01",
+      "name": "Hannah Brooks",
+      "role": "COMPLIANCE_OFFICER"
+    },
+    {
+      "user_id": "usr_audit_01",
+      "name": "Owen Mercer",
+      "role": "AUDITOR"
+    },
+    {
+      "user_id": "usr_sys_01",
+      "name": "Platform Service Admin",
+      "role": "SYSTEM_ADMIN"
+    }
+  ]
+}

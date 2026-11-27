@@ -1,0 +1,4527 @@
+{
+  "approved_by": "approver_cto",
+  "as_of_utc": "2026-05-07T21:00:00Z",
+  "audience": "INVESTOR",
+  "content_sha256": "2507b9e83f2c78db2250f80a1f5c7e1c057303e95d8bc0d2de629ffd6f101d18",
+  "created_by": "analyst_maya",
+  "data_status": "SYNTHETIC",
+  "environment": "SIMULATED",
+  "methodology_version": "SAAT-PERF-METH-1.0.0",
+  "payload": {
+    "as_of_utc": "2026-05-07T21:00:00Z",
+    "attribution": {
+      "currency": "USD",
+      "fund_cumulative_gross_return": -0.09933405489674674,
+      "linking_methodology": "CARINO_LOGARITHMIC",
+      "residual_unattributed_return": -6.938893903907228e-17,
+      "strategies": [
+        {
+          "asset_class": "FX",
+          "average_weight": 0.14000000000000012,
+          "currency": "USD",
+          "latest_cash_allocation": 534580.46,
+          "latest_gross_exposure": 1718294.33,
+          "latest_long_exposure": 954607.96,
+          "latest_net_exposure": 190921.59,
+          "latest_short_exposure": 763686.37,
+          "latest_weight": 0.14,
+          "linked_gross_contribution": 0.001971053397136222,
+          "strategy_id": "STRAT-FX-RELVAL",
+          "strategy_name": "G10 FX Relative Value",
+          "tca_return_drag": 0.0007438351186614333,
+          "total_gross_pnl": 43919.0,
+          "total_transaction_costs": 20099.44
+        },
+        {
+          "asset_class": "Options",
+          "average_weight": 0.17999999999999983,
+          "currency": "USD",
+          "latest_cash_allocation": 687317.73,
+          "latest_gross_exposure": 2749270.93,
+          "latest_long_exposure": 1571011.96,
+          "latest_net_exposure": 392752.99,
+          "latest_short_exposure": 1178258.97,
+          "latest_weight": 0.18,
+          "linked_gross_contribution": -0.012730124469666235,
+          "strategy_id": "STRAT-VOL-CARRY",
+          "strategy_name": "Cross-Asset Volatility Carry",
+          "tca_return_drag": 0.0010204752883654744,
+          "total_gross_pnl": -376910.54,
+          "total_transaction_costs": 27599.68
+        },
+        {
+          "asset_class": "Equities",
+          "average_weight": 0.3799999999999999,
+          "currency": "USD",
+          "latest_cash_allocation": 1451004.1,
+          "latest_gross_exposure": 13473609.54,
+          "latest_long_exposure": 7462306.82,
+          "latest_net_exposure": 1451004.1,
+          "latest_short_exposure": 6011302.72,
+          "latest_weight": 0.38,
+          "linked_gross_contribution": -0.03121576745178126,
+          "strategy_id": "STRAT-EQ-STATARB",
+          "strategy_name": "Equity StatArb",
+          "tca_return_drag": 0.002077245758501556,
+          "total_gross_pnl": -934615.74,
+          "total_transaction_costs": 55998.95
+        },
+        {
+          "asset_class": "Futures",
+          "average_weight": 0.3000000000000005,
+          "currency": "USD",
+          "latest_cash_allocation": 1145529.56,
+          "latest_gross_exposure": 6955000.87,
+          "latest_long_exposure": 4500294.68,
+          "latest_net_exposure": 2045588.49,
+          "latest_short_exposure": 2454706.19,
+          "latest_weight": 0.3,
+          "linked_gross_contribution": -0.05735921637243539,
+          "strategy_id": "STRAT-FUT-TREND",
+          "strategy_name": "Systematic Macro Trend",
+          "tca_return_drag": 0.0016526911387249915,
+          "total_gross_pnl": -1665348.86,
+          "total_transaction_costs": 44653.05
+        }
+      ],
+      "total_linked_gross_contribution": -0.09933405489674667,
+      "total_transaction_costs": 148351.12
+    },
+    "audience": "INVESTOR",
+    "availability_utc": "2026-05-12T10:00:00Z",
+    "benchmark": {
+      "active_cumulative_return": -0.05941747442765377,
+      "aligned_observations": 90,
+      "alpha_annualized": -0.29857162739641147,
+      "available": true,
+      "benchmark_cumulative_return": -0.04740508353320316,
+      "benchmark_id": "BM-SYNTH-6040-USD",
+      "beta": 0.32298625437876055,
+      "correlation": 0.4941443473635062,
+      "down_capture_ratio": 0.5410185656604958,
+      "fund_cumulative_return": -0.10682255796085693,
+      "information_ratio": -1.7676682040469518,
+      "reporting_currency": "USD",
+      "series": [
+        {
+          "cumulative_return": 0.00832063999999999,
+          "daily_return": 0.00832064,
+          "valuation_date": "2026-01-02",
+          "wealth_index": 1.00832064
+        },
+        {
+          "cumulative_return": 0.005023663420947289,
+          "daily_return": -0.00326977,
+          "valuation_date": "2026-01-05",
+          "wealth_index": 1.0050236634209473
+        },
+        {
+          "cumulative_return": -0.008144116416247349,
+          "daily_return": -0.01310196,
+          "valuation_date": "2026-01-06",
+          "wealth_index": 0.9918558835837527
+        },
+        {
+          "cumulative_return": -0.008984357209466443,
+          "daily_return": -0.00084714,
+          "valuation_date": "2026-01-07",
+          "wealth_index": 0.9910156427905336
+        },
+        {
+          "cumulative_return": -0.00756789855122586,
+          "daily_return": 0.0014293,
+          "valuation_date": "2026-01-08",
+          "wealth_index": 0.9924321014487741
+        },
+        {
+          "cumulative_return": -0.014859515535632362,
+          "daily_return": -0.00734722,
+          "valuation_date": "2026-01-09",
+          "wealth_index": 0.9851404844643676
+        },
+        {
+          "cumulative_return": -0.009649117364705195,
+          "daily_return": 0.00528899,
+          "valuation_date": "2026-01-12",
+          "wealth_index": 0.9903508826352948
+        },
+        {
+          "cumulative_return": -0.011123432916666731,
+          "daily_return": -0.00148868,
+          "valuation_date": "2026-01-13",
+          "wealth_index": 0.9888765670833333
+        },
+        {
+          "cumulative_return": -0.007724664155601357,
+          "daily_return": 0.003437,
+          "valuation_date": "2026-01-14",
+          "wealth_index": 0.9922753358443986
+        },
+        {
+          "cumulative_return": -0.008929603941423947,
+          "daily_return": -0.00121432,
+          "valuation_date": "2026-01-15",
+          "wealth_index": 0.991070396058576
+        },
+        {
+          "cumulative_return": -0.006319312821580825,
+          "daily_return": 0.00263381,
+          "valuation_date": "2026-01-16",
+          "wealth_index": 0.9936806871784192
+        },
+        {
+          "cumulative_return": -0.0088042995472698,
+          "daily_return": -0.00250079,
+          "valuation_date": "2026-01-19",
+          "wealth_index": 0.9911957004527302
+        },
+        {
+          "cumulative_return": -0.016426168269600083,
+          "daily_return": -0.00768957,
+          "valuation_date": "2026-01-20",
+          "wealth_index": 0.9835738317303999
+        },
+        {
+          "cumulative_return": -0.01759200816808848,
+          "daily_return": -0.00118531,
+          "valuation_date": "2026-01-21",
+          "wealth_index": 0.9824079918319115
+        },
+        {
+          "cumulative_return": -0.005577079835344945,
+          "daily_return": 0.01223008,
+          "valuation_date": "2026-01-22",
+          "wealth_index": 0.994422920164655
+        },
+        {
+          "cumulative_return": -0.004659118093511716,
+          "daily_return": 0.00092311,
+          "valuation_date": "2026-01-23",
+          "wealth_index": 0.9953408819064883
+        },
+        {
+          "cumulative_return": -0.002530482083466401,
+          "daily_return": 0.0021386,
+          "valuation_date": "2026-01-26",
+          "wealth_index": 0.9974695179165336
+        },
+        {
+          "cumulative_return": -0.007815584298842326,
+          "daily_return": -0.00529851,
+          "valuation_date": "2026-01-27",
+          "wealth_index": 0.9921844157011577
+        },
+        {
+          "cumulative_return": -0.008937040422065112,
+          "daily_return": -0.00113029,
+          "valuation_date": "2026-01-28",
+          "wealth_index": 0.9910629595779349
+        },
+        {
+          "cumulative_return": -0.010353021625562064,
+          "daily_return": -0.00142875,
+          "valuation_date": "2026-01-29",
+          "wealth_index": 0.9896469783744379
+        },
+        {
+          "cumulative_return": 0.009454445959569346,
+          "daily_return": 0.02001468,
+          "valuation_date": "2026-01-30",
+          "wealth_index": 1.0094544459595693
+        },
+        {
+          "cumulative_return": 0.011896296075256663,
+          "daily_return": 0.00241898,
+          "valuation_date": "2026-02-02",
+          "wealth_index": 1.0118962960752567
+        },
+        {
+          "cumulative_return": 0.011834094809936913,
+          "daily_return": -6.147e-05,
+          "valuation_date": "2026-02-03",
+          "wealth_index": 1.011834094809937
+        },
+        {
+          "cumulative_return": 0.0020147609551948165,
+          "daily_return": -0.00970449,
+          "valuation_date": "2026-02-04",
+          "wealth_index": 1.0020147609551948
+        },
+        {
+          "cumulative_return": -0.0030457743129428394,
+          "daily_return": -0.00505036,
+          "valuation_date": "2026-02-05",
+          "wealth_index": 0.9969542256870572
+        },
+        {
+          "cumulative_return": -0.008951810902251056,
+          "daily_return": -0.00592408,
+          "valuation_date": "2026-02-06",
+          "wealth_index": 0.9910481890977489
+        },
+        {
+          "cumulative_return": -0.024350866321680265,
+          "daily_return": -0.01553815,
+          "valuation_date": "2026-02-09",
+          "wealth_index": 0.9756491336783197
+        },
+        {
+          "cumulative_return": -0.03985642871761097,
+          "daily_return": -0.01589256,
+          "valuation_date": "2026-02-10",
+          "wealth_index": 0.960143571282389
+        },
+        {
+          "cumulative_return": -0.023226943693150037,
+          "daily_return": 0.01731979,
+          "valuation_date": "2026-02-11",
+          "wealth_index": 0.97677305630685
+        },
+        {
+          "cumulative_return": -0.02048237745634751,
+          "daily_return": 0.00280983,
+          "valuation_date": "2026-02-12",
+          "wealth_index": 0.9795176225436525
+        },
+        {
+          "cumulative_return": -0.020800309286272745,
+          "daily_return": -0.00032458,
+          "valuation_date": "2026-02-13",
+          "wealth_index": 0.9791996907137273
+        },
+        {
+          "cumulative_return": -0.03241481224176024,
+          "daily_return": -0.01186122,
+          "valuation_date": "2026-02-16",
+          "wealth_index": 0.9675851877582398
+        },
+        {
+          "cumulative_return": -0.04656854193391713,
+          "daily_return": -0.01462789,
+          "valuation_date": "2026-02-17",
+          "wealth_index": 0.9534314580660829
+        },
+        {
+          "cumulative_return": -0.05463775653022618,
+          "daily_return": -0.00846334,
+          "valuation_date": "2026-02-18",
+          "wealth_index": 0.9453622434697738
+        },
+        {
+          "cumulative_return": -0.06070749262891362,
+          "daily_return": -0.00642054,
+          "valuation_date": "2026-02-19",
+          "wealth_index": 0.9392925073710864
+        },
+        {
+          "cumulative_return": -0.05296213357775692,
+          "daily_return": 0.00824595,
+          "valuation_date": "2026-02-20",
+          "wealth_index": 0.9470378664222431
+        },
+        {
+          "cumulative_return": -0.047984294203511024,
+          "daily_return": 0.00525622,
+          "valuation_date": "2026-02-23",
+          "wealth_index": 0.952015705796489
+        },
+        {
+          "cumulative_return": -0.04525500797734838,
+          "daily_return": 0.00286685,
+          "valuation_date": "2026-02-24",
+          "wealth_index": 0.9547449920226516
+        },
+        {
+          "cumulative_return": -0.03639285491749589,
+          "daily_return": 0.00928222,
+          "valuation_date": "2026-02-25",
+          "wealth_index": 0.9636071450825041
+        },
+        {
+          "cumulative_return": -0.03031302381595502,
+          "daily_return": 0.00630945,
+          "valuation_date": "2026-02-26",
+          "wealth_index": 0.969686976184045
+        },
+        {
+          "cumulative_return": -0.033836332959571,
+          "daily_return": -0.00363345,
+          "valuation_date": "2026-02-27",
+          "wealth_index": 0.966163667040429
+        },
+        {
+          "cumulative_return": -0.03435976178782674,
+          "daily_return": -0.00054176,
+          "valuation_date": "2026-03-02",
+          "wealth_index": 0.9656402382121733
+        },
+        {
+          "cumulative_return": -0.0374555754223278,
+          "daily_return": -0.00320597,
+          "valuation_date": "2026-03-03",
+          "wealth_index": 0.9625444245776722
+        },
+        {
+          "cumulative_return": -0.03940779839881203,
+          "daily_return": -0.00202819,
+          "valuation_date": "2026-03-04",
+          "wealth_index": 0.960592201601188
+        },
+        {
+          "cumulative_return": -0.046712266376773726,
+          "daily_return": -0.00760413,
+          "valuation_date": "2026-03-05",
+          "wealth_index": 0.9532877336232263
+        },
+        {
+          "cumulative_return": -0.039102685174635665,
+          "daily_return": 0.00798246,
+          "valuation_date": "2026-03-06",
+          "wealth_index": 0.9608973148253643
+        },
+        {
+          "cumulative_return": -0.03223285552099642,
+          "daily_return": 0.00714939,
+          "valuation_date": "2026-03-09",
+          "wealth_index": 0.9677671444790036
+        },
+        {
+          "cumulative_return": -0.024155619313717125,
+          "daily_return": 0.00834626,
+          "valuation_date": "2026-03-10",
+          "wealth_index": 0.9758443806862829
+        },
+        {
+          "cumulative_return": -0.03256892995091054,
+          "daily_return": -0.00862157,
+          "valuation_date": "2026-03-11",
+          "wealth_index": 0.9674310700490895
+        },
+        {
+          "cumulative_return": -0.032723293252447494,
+          "daily_return": -0.00015956,
+          "valuation_date": "2026-03-12",
+          "wealth_index": 0.9672767067475525
+        },
+        {
+          "cumulative_return": -0.03610441865365066,
+          "daily_return": -0.00349551,
+          "valuation_date": "2026-03-13",
+          "wealth_index": 0.9638955813463493
+        },
+        {
+          "cumulative_return": -0.046959762495994095,
+          "daily_return": -0.01126195,
+          "valuation_date": "2026-03-16",
+          "wealth_index": 0.9530402375040059
+        },
+        {
+          "cumulative_return": -0.056589252464527395,
+          "daily_return": -0.01010397,
+          "valuation_date": "2026-03-17",
+          "wealth_index": 0.9434107475354726
+        },
+        {
+          "cumulative_return": -0.05270758894379268,
+          "daily_return": 0.0041145,
+          "valuation_date": "2026-03-18",
+          "wealth_index": 0.9472924110562073
+        },
+        {
+          "cumulative_return": -0.05301853767772191,
+          "daily_return": -0.00032825,
+          "valuation_date": "2026-03-19",
+          "wealth_index": 0.9469814623222781
+        },
+        {
+          "cumulative_return": -0.053370454928750144,
+          "daily_return": -0.00037162,
+          "valuation_date": "2026-03-20",
+          "wealth_index": 0.9466295450712499
+        },
+        {
+          "cumulative_return": -0.05326362778458882,
+          "daily_return": 0.00011285,
+          "valuation_date": "2026-03-23",
+          "wealth_index": 0.9467363722154112
+        },
+        {
+          "cumulative_return": -0.05822183764370048,
+          "daily_return": -0.00523716,
+          "valuation_date": "2026-03-24",
+          "wealth_index": 0.9417781623562995
+        },
+        {
+          "cumulative_return": -0.06467315932256545,
+          "daily_return": -0.00685015,
+          "valuation_date": "2026-03-25",
+          "wealth_index": 0.9353268406774345
+        },
+        {
+          "cumulative_return": -0.07155022474479356,
+          "daily_return": -0.00735258,
+          "valuation_date": "2026-03-26",
+          "wealth_index": 0.9284497752552064
+        },
+        {
+          "cumulative_return": -0.07176510516077861,
+          "daily_return": -0.00023144,
+          "valuation_date": "2026-03-27",
+          "wealth_index": 0.9282348948392214
+        },
+        {
+          "cumulative_return": -0.05453570100726712,
+          "daily_return": 0.01856147,
+          "valuation_date": "2026-03-30",
+          "wealth_index": 0.9454642989927329
+        },
+        {
+          "cumulative_return": -0.06291812129963581,
+          "daily_return": -0.00886593,
+          "valuation_date": "2026-03-31",
+          "wealth_index": 0.9370818787003642
+        },
+        {
+          "cumulative_return": -0.05441182614146467,
+          "daily_return": 0.00907743,
+          "valuation_date": "2026-04-01",
+          "wealth_index": 0.9455881738585353
+        },
+        {
+          "cumulative_return": -0.05046397660384183,
+          "daily_return": 0.00417502,
+          "valuation_date": "2026-04-02",
+          "wealth_index": 0.9495360233961582
+        },
+        {
+          "cumulative_return": -0.04155782246311801,
+          "daily_return": 0.00937948,
+          "valuation_date": "2026-04-03",
+          "wealth_index": 0.958442177536882
+        },
+        {
+          "cumulative_return": -0.03707932886898491,
+          "daily_return": 0.00467268,
+          "valuation_date": "2026-04-06",
+          "wealth_index": 0.9629206711310151
+        },
+        {
+          "cumulative_return": -0.03739103591943671,
+          "daily_return": -0.00032371,
+          "valuation_date": "2026-04-07",
+          "wealth_index": 0.9626089640805633
+        },
+        {
+          "cumulative_return": -0.04659866019137726,
+          "daily_return": -0.00956528,
+          "valuation_date": "2026-04-08",
+          "wealth_index": 0.9534013398086227
+        },
+        {
+          "cumulative_return": -0.04784895070840223,
+          "daily_return": -0.0013114,
+          "valuation_date": "2026-04-09",
+          "wealth_index": 0.9521510492915978
+        },
+        {
+          "cumulative_return": -0.04014944789887909,
+          "daily_return": 0.00808643,
+          "valuation_date": "2026-04-10",
+          "wealth_index": 0.9598505521011209
+        },
+        {
+          "cumulative_return": -0.03778209169418789,
+          "daily_return": 0.00246638,
+          "valuation_date": "2026-04-13",
+          "wealth_index": 0.9622179083058121
+        },
+        {
+          "cumulative_return": -0.04433671046338794,
+          "daily_return": -0.00681199,
+          "valuation_date": "2026-04-14",
+          "wealth_index": 0.9556632895366121
+        },
+        {
+          "cumulative_return": -0.04154484528596858,
+          "daily_return": 0.00292139,
+          "valuation_date": "2026-04-15",
+          "wealth_index": 0.9584551547140314
+        },
+        {
+          "cumulative_return": -0.039350366363735456,
+          "daily_return": 0.0022896,
+          "valuation_date": "2026-04-16",
+          "wealth_index": 0.9606496336362645
+        },
+        {
+          "cumulative_return": -0.03496428029896059,
+          "daily_return": 0.00456575,
+          "valuation_date": "2026-04-17",
+          "wealth_index": 0.9650357197010394
+        },
+        {
+          "cumulative_return": -0.04196666633432611,
+          "daily_return": -0.00725609,
+          "valuation_date": "2026-04-20",
+          "wealth_index": 0.9580333336656739
+        },
+        {
+          "cumulative_return": -0.05225885675922981,
+          "daily_return": -0.01074304,
+          "valuation_date": "2026-04-21",
+          "wealth_index": 0.9477411432407702
+        },
+        {
+          "cumulative_return": -0.056214462923596775,
+          "daily_return": -0.00417372,
+          "valuation_date": "2026-04-22",
+          "wealth_index": 0.9437855370764032
+        },
+        {
+          "cumulative_return": -0.04942249143031574,
+          "daily_return": 0.00719652,
+          "valuation_date": "2026-04-23",
+          "wealth_index": 0.9505775085696843
+        },
+        {
+          "cumulative_return": -0.04132911292417696,
+          "daily_return": 0.00851417,
+          "valuation_date": "2026-04-24",
+          "wealth_index": 0.958670887075823
+        },
+        {
+          "cumulative_return": -0.03599200994835727,
+          "daily_return": 0.00556719,
+          "valuation_date": "2026-04-27",
+          "wealth_index": 0.9640079900516427
+        },
+        {
+          "cumulative_return": -0.04576385046095399,
+          "daily_return": -0.01013668,
+          "valuation_date": "2026-04-28",
+          "wealth_index": 0.954236149539046
+        },
+        {
+          "cumulative_return": -0.04670968933237707,
+          "daily_return": -0.0009912,
+          "valuation_date": "2026-04-29",
+          "wealth_index": 0.9532903106676229
+        },
+        {
+          "cumulative_return": -0.04852316208906937,
+          "daily_return": -0.00190233,
+          "valuation_date": "2026-04-30",
+          "wealth_index": 0.9514768379109306
+        },
+        {
+          "cumulative_return": -0.05212745149875975,
+          "daily_return": -0.0037881,
+          "valuation_date": "2026-05-01",
+          "wealth_index": 0.9478725485012403
+        },
+        {
+          "cumulative_return": -0.06148435640383876,
+          "daily_return": -0.00987148,
+          "valuation_date": "2026-05-04",
+          "wealth_index": 0.9385156435961612
+        },
+        {
+          "cumulative_return": -0.05448791936911457,
+          "daily_return": 0.00745479,
+          "valuation_date": "2026-05-05",
+          "wealth_index": 0.9455120806308854
+        },
+        {
+          "cumulative_return": -0.051656243059316265,
+          "daily_return": 0.00299486,
+          "valuation_date": "2026-05-06",
+          "wealth_index": 0.9483437569406837
+        },
+        {
+          "cumulative_return": -0.04740508353320316,
+          "daily_return": 0.00448272,
+          "valuation_date": "2026-05-07",
+          "wealth_index": 0.9525949164667968
+        }
+      ],
+      "tracking_error_annualized": 0.1041471861961779,
+      "up_capture_ratio": 0.12265565118875477
+    },
+    "daily_series": [
+      {
+        "closing_nav": 25119396.67,
+        "cumulative_gross_return": 0.005997675199999941,
+        "cumulative_net_return": 0.004775866799999973,
+        "currency": "USD",
+        "effective_capital": 25000000.0,
+        "gross_pnl": 149941.88,
+        "gross_return": 0.0059976752,
+        "gross_wealth_index": 1.0059976752,
+        "net_cash_flow": 0.0,
+        "net_pnl": 119396.67,
+        "net_return": 0.0047758668,
+        "net_wealth_index": 1.0047758668,
+        "opening_nav": 25000000.0,
+        "total_fees": 30545.21,
+        "valuation_date": "2026-01-02"
+      },
+      {
+        "closing_nav": 25226958.83,
+        "cumulative_gross_return": 0.011410331401287888,
+        "cumulative_net_return": 0.009078353199999833,
+        "currency": "USD",
+        "effective_capital": 25119396.67,
+        "gross_pnl": 135152.06,
+        "gross_return": 0.005380386391262796,
+        "gross_wealth_index": 1.0114103314012879,
+        "net_cash_flow": 0.0,
+        "net_pnl": 107562.16,
+        "net_return": 0.004282035966590753,
+        "net_wealth_index": 1.0090783531999998,
+        "opening_nav": 25119396.67,
+        "total_fees": 27589.9,
+        "valuation_date": "2026-01-05"
+      },
+      {
+        "closing_nav": 25220933.18,
+        "cumulative_gross_return": 0.011237042654667517,
+        "cumulative_net_return": 0.008837327199999745,
+        "currency": "USD",
+        "effective_capital": 25226958.83,
+        "gross_pnl": -4322.23,
+        "gross_return": -0.0001713337715071698,
+        "gross_wealth_index": 1.0112370426546675,
+        "net_cash_flow": 0.0,
+        "net_pnl": -6025.65,
+        "net_return": -0.00023885756664549963,
+        "net_wealth_index": 1.0088373271999997,
+        "opening_nav": 25226958.83,
+        "total_fees": 1703.42,
+        "valuation_date": "2026-01-06"
+      },
+      {
+        "closing_nav": 25013203.28,
+        "cumulative_gross_return": 0.0029763644572493586,
+        "cumulative_net_return": 0.0005281311999996152,
+        "currency": "USD",
+        "effective_capital": 25220933.18,
+        "gross_pnl": -206026.88,
+        "gross_return": -0.008168884098363883,
+        "gross_wealth_index": 1.0029763644572494,
+        "net_cash_flow": 0.0,
+        "net_pnl": -207729.9,
+        "net_return": -0.008236408166083568,
+        "net_wealth_index": 1.0005281311999996,
+        "opening_nav": 25220933.18,
+        "total_fees": 1703.02,
+        "valuation_date": "2026-01-07"
+      },
+      {
+        "closing_nav": 25017028.61,
+        "cumulative_gross_return": 0.0031974769858664764,
+        "cumulative_net_return": 0.0006811443999996669,
+        "currency": "USD",
+        "effective_capital": 25013203.28,
+        "gross_pnl": 5514.32,
+        "gross_return": 0.0002204563701127047,
+        "gross_wealth_index": 1.0031974769858665,
+        "net_cash_flow": 0.0,
+        "net_pnl": 3825.33,
+        "net_return": 0.00015293243161137413,
+        "net_wealth_index": 1.0006811443999997,
+        "opening_nav": 25013203.28,
+        "total_fees": 1688.99,
+        "valuation_date": "2026-01-08"
+      },
+      {
+        "closing_nav": 25102031.74,
+        "cumulative_gross_return": 0.006673892120761193,
+        "cumulative_net_return": 0.0040812695999996595,
+        "currency": "USD",
+        "effective_capital": 25017028.61,
+        "gross_pnl": 86692.38,
+        "gross_return": 0.003465334806602358,
+        "gross_wealth_index": 1.0066738921207612,
+        "net_cash_flow": 0.0,
+        "net_pnl": 85003.13,
+        "net_return": 0.0033978108002011838,
+        "net_wealth_index": 1.0040812695999997,
+        "opening_nav": 25017028.61,
+        "total_fees": 1689.25,
+        "valuation_date": "2026-01-09"
+      },
+      {
+        "closing_nav": 25239651.89,
+        "cumulative_gross_return": 0.012347999010549282,
+        "cumulative_net_return": 0.009586075599999688,
+        "currency": "USD",
+        "effective_capital": 25102031.74,
+        "gross_pnl": 141487.34,
+        "gross_return": 0.005636489566481602,
+        "gross_wealth_index": 1.0123479990105493,
+        "net_cash_flow": 0.0,
+        "net_pnl": 137620.15,
+        "net_return": 0.005482430722159544,
+        "net_wealth_index": 1.0095860755999997,
+        "opening_nav": 25102031.74,
+        "total_fees": 3867.19,
+        "valuation_date": "2026-01-12"
+      },
+      {
+        "closing_nav": 25054432.72,
+        "cumulative_gross_return": 0.004987321752011109,
+        "cumulative_net_return": 0.0021773087999996665,
+        "currency": "USD",
+        "effective_capital": 25239651.89,
+        "gross_pnl": -183514.89,
+        "gross_return": -0.007270896238973445,
+        "gross_wealth_index": 1.004987321752011,
+        "net_cash_flow": 0.0,
+        "net_pnl": -185219.17,
+        "net_return": -0.007338420149660789,
+        "net_wealth_index": 1.0021773087999997,
+        "opening_nav": 25239651.89,
+        "total_fees": 1704.28,
+        "valuation_date": "2026-01-13"
+      },
+      {
+        "closing_nav": 24929386.97,
+        "cumulative_gross_return": 3.932802478456843e-05,
+        "cumulative_net_return": -0.0028245212000004294,
+        "currency": "USD",
+        "effective_capital": 25054432.72,
+        "gross_pnl": -123353.97,
+        "gross_return": -0.004923438953041281,
+        "gross_wealth_index": 1.0000393280247846,
+        "net_cash_flow": 0.0,
+        "net_pnl": -125045.75,
+        "net_return": -0.004990963132052107,
+        "net_wealth_index": 0.9971754787999996,
+        "opening_nav": 25054432.72,
+        "total_fees": 1691.78,
+        "valuation_date": "2026-01-14"
+      },
+      {
+        "closing_nav": 25001257.15,
+        "cumulative_gross_return": 0.0029899181376815687,
+        "cumulative_net_return": 5.02859999995664e-05,
+        "currency": "USD",
+        "effective_capital": 24929386.97,
+        "gross_pnl": 73553.51,
+        "gross_return": 0.0029504740765793486,
+        "gross_wealth_index": 1.0029899181376816,
+        "net_cash_flow": 0.0,
+        "net_pnl": 71870.18,
+        "net_return": 0.00288295015382803,
+        "net_wealth_index": 1.0000502859999996,
+        "opening_nav": 24929386.97,
+        "total_fees": 1683.33,
+        "valuation_date": "2026-01-15"
+      },
+      {
+        "closing_nav": 25030883.59,
+        "cumulative_gross_return": 0.004246184891064209,
+        "cumulative_net_return": 0.0012353435999994389,
+        "currency": "USD",
+        "effective_capital": 25001257.15,
+        "gross_pnl": 31314.62,
+        "gross_return": 0.0012525218156879763,
+        "gross_wealth_index": 1.0042461848910642,
+        "net_cash_flow": 0.0,
+        "net_pnl": 29626.44,
+        "net_return": 0.0011849980111900092,
+        "net_wealth_index": 1.0012353435999994,
+        "opening_nav": 25001257.15,
+        "total_fees": 1688.18,
+        "valuation_date": "2026-01-16"
+      },
+      {
+        "closing_nav": 25019165.25,
+        "cumulative_gross_return": 0.003843852253254232,
+        "cumulative_net_return": 0.0007666099999994458,
+        "currency": "USD",
+        "effective_capital": 25030883.59,
+        "gross_pnl": -10028.16,
+        "gross_return": -0.00040063148246218184,
+        "gross_wealth_index": 1.0038438522532542,
+        "net_cash_flow": 0.0,
+        "net_pnl": -11718.34,
+        "net_return": -0.00046815526738662764,
+        "net_wealth_index": 1.0007666099999994,
+        "opening_nav": 25030883.59,
+        "total_fees": 1690.18,
+        "valuation_date": "2026-01-19"
+      },
+      {
+        "closing_nav": 24871038.81,
+        "cumulative_gross_return": -0.0020316408303769906,
+        "cumulative_net_return": -0.005158447600000615,
+        "currency": "USD",
+        "effective_capital": 25019165.25,
+        "gross_pnl": -146437.05,
+        "gross_return": -0.005852995035475854,
+        "gross_wealth_index": 0.997968359169623,
+        "net_cash_flow": 0.0,
+        "net_pnl": -148126.44,
+        "net_return": -0.005920518871028281,
+        "net_wealth_index": 0.9948415523999994,
+        "opening_nav": 25019165.25,
+        "total_fees": 1689.39,
+        "valuation_date": "2026-01-20"
+      },
+      {
+        "closing_nav": 24762265.16,
+        "cumulative_gross_return": -0.006328875205875217,
+        "cumulative_net_return": -0.009509393600000582,
+        "currency": "USD",
+        "effective_capital": 24871038.81,
+        "gross_pnl": -107094.26,
+        "gross_return": -0.004305982585533989,
+        "gross_wealth_index": 0.9936711247941248,
+        "net_cash_flow": 0.0,
+        "net_pnl": -108773.65,
+        "net_return": -0.004373506504129813,
+        "net_wealth_index": 0.9904906063999994,
+        "opening_nav": 24871038.81,
+        "total_fees": 1679.39,
+        "valuation_date": "2026-01-21"
+      },
+      {
+        "closing_nav": 25072225.78,
+        "cumulative_gross_return": 0.006176457960696435,
+        "cumulative_net_return": 0.0028890311999993923,
+        "currency": "USD",
+        "effective_capital": 24762265.16,
+        "gross_pnl": 311632.66,
+        "gross_return": 0.012584981946780833,
+        "gross_wealth_index": 1.0061764579606964,
+        "net_cash_flow": 0.0,
+        "net_pnl": 309960.62,
+        "net_return": 0.012517458237249568,
+        "net_wealth_index": 1.0028890311999994,
+        "opening_nav": 24762265.16,
+        "total_fees": 1672.04,
+        "valuation_date": "2026-01-22"
+      },
+      {
+        "closing_nav": 29984759.7,
+        "cumulative_gross_return": 0.0033179007211618927,
+        "cumulative_net_return": -2.7905274067707708e-05,
+        "currency": "USD",
+        "effective_capital": 30072225.78,
+        "gross_pnl": -85435.49,
+        "gross_return": -0.002841009861558708,
+        "gross_wealth_index": 1.003317900721162,
+        "net_cash_flow": 5000000.0,
+        "net_pnl": -87466.08,
+        "net_return": -0.002908533629664708,
+        "net_wealth_index": 0.9999720947259323,
+        "opening_nav": 25072225.78,
+        "total_fees": 2030.59,
+        "valuation_date": "2026-01-23"
+      },
+      {
+        "closing_nav": 29918908.09,
+        "cumulative_gross_return": 0.001182192714007213,
+        "cumulative_net_return": -0.002224013332014718,
+        "currency": "USD",
+        "effective_capital": 29984759.7,
+        "gross_pnl": -63826.92,
+        "gross_return": -0.0021286453731360067,
+        "gross_wealth_index": 1.0011821927140072,
+        "net_cash_flow": 0.0,
+        "net_pnl": -65851.61,
+        "net_return": -0.0021961693426544287,
+        "net_wealth_index": 0.9977759866679853,
+        "opening_nav": 29984759.7,
+        "total_fees": 2024.69,
+        "valuation_date": "2026-01-26"
+      },
+      {
+        "closing_nav": 29935703.81,
+        "cumulative_gross_return": 0.0018118348130489181,
+        "cumulative_net_return": -0.00166388707191234,
+        "currency": "USD",
+        "effective_capital": 29918908.09,
+        "gross_pnl": 18815.96,
+        "gross_return": 0.0006288986196755284,
+        "gross_wealth_index": 1.001811834813049,
+        "net_cash_flow": 0.0,
+        "net_pnl": 16795.72,
+        "net_return": 0.0005613747650641618,
+        "net_wealth_index": 0.9983361129280877,
+        "opening_nav": 29918908.09,
+        "total_fees": 2020.24,
+        "valuation_date": "2026-01-27"
+      },
+      {
+        "closing_nav": 30124191.49,
+        "cumulative_gross_return": 0.008187306462502875,
+        "cumulative_net_return": 0.00462205358879042,
+        "currency": "USD",
+        "effective_capital": 29935703.81,
+        "gross_pnl": 190509.06,
+        "gross_return": 0.006363941239168748,
+        "gross_wealth_index": 1.0081873064625029,
+        "net_cash_flow": 0.0,
+        "net_pnl": 188487.68,
+        "net_return": 0.006296417187861,
+        "net_wealth_index": 1.0046220535887904,
+        "opening_nav": 29935703.81,
+        "total_fees": 2021.38,
+        "valuation_date": "2026-01-28"
+      },
+      {
+        "closing_nav": 29899599.71,
+        "cumulative_gross_return": 0.0007388135127011086,
+        "cumulative_net_return": -0.0028679351572200584,
+        "currency": "USD",
+        "effective_capital": 30124191.49,
+        "gross_pnl": -222557.68,
+        "gross_return": -0.007388005087999791,
+        "gross_wealth_index": 1.000738813512701,
+        "net_cash_flow": 0.0,
+        "net_pnl": -224591.78,
+        "net_return": -0.007455528891939068,
+        "net_wealth_index": 0.9971320648427799,
+        "opening_nav": 30124191.49,
+        "total_fees": 2034.1,
+        "valuation_date": "2026-01-29"
+      },
+      {
+        "closing_nav": 30025400.79,
+        "cumulative_gross_return": 0.00501694621008264,
+        "cumulative_net_return": 0.0013274484558221111,
+        "currency": "USD",
+        "effective_capital": 29899599.71,
+        "gross_pnl": 127820.02,
+        "gross_return": 0.004274974288610635,
+        "gross_wealth_index": 1.0050169462100826,
+        "net_cash_flow": 0.0,
+        "net_pnl": 125801.08,
+        "net_return": 0.004207450307701795,
+        "net_wealth_index": 1.0013274484558221,
+        "opening_nav": 29899599.71,
+        "total_fees": 2018.94,
+        "valuation_date": "2026-01-30"
+      },
+      {
+        "closing_nav": 30165029.86,
+        "cumulative_gross_return": 0.00975850433403691,
+        "cumulative_net_return": 0.005983986477453573,
+        "currency": "USD",
+        "effective_capital": 30025400.79,
+        "gross_pnl": 141656.5,
+        "gross_return": 0.004717888729970888,
+        "gross_wealth_index": 1.009758504334037,
+        "net_cash_flow": 0.0,
+        "net_pnl": 139629.07,
+        "net_return": 0.00465036490192343,
+        "net_wealth_index": 1.0059839864774536,
+        "opening_nav": 30025400.79,
+        "total_fees": 2027.43,
+        "valuation_date": "2026-02-02"
+      },
+      {
+        "closing_nav": 30039617.46,
+        "cumulative_gross_return": 0.005628573042074203,
+        "cumulative_net_return": 0.00180156508780982,
+        "currency": "USD",
+        "effective_capital": 30165029.86,
+        "gross_pnl": -123375.54,
+        "gross_return": -0.004090018825527527,
+        "gross_wealth_index": 1.0056285730420742,
+        "net_cash_flow": 0.0,
+        "net_pnl": -125412.4,
+        "net_return": -0.004157542710285916,
+        "net_wealth_index": 1.0018015650878098,
+        "opening_nav": 30165029.86,
+        "total_fees": 2036.86,
+        "valuation_date": "2026-02-03"
+      },
+      {
+        "closing_nav": 29888534.94,
+        "cumulative_gross_return": 0.0006387261421421098,
+        "cumulative_net_return": -0.0032369379888339544,
+        "currency": "USD",
+        "effective_capital": 30039617.46,
+        "gross_pnl": -149054.13,
+        "gross_return": -0.004961918379902033,
+        "gross_wealth_index": 1.000638726142142,
+        "net_cash_flow": 0.0,
+        "net_pnl": -151082.52,
+        "net_return": -0.005029442209148559,
+        "net_wealth_index": 0.996763062011166,
+        "opening_nav": 30039617.46,
+        "total_fees": 2028.39,
+        "valuation_date": "2026-02-04"
+      },
+      {
+        "closing_nav": 29800868.36,
+        "cumulative_gross_return": -0.0022286976388418145,
+        "cumulative_net_return": -0.006160561006565146,
+        "currency": "USD",
+        "effective_capital": 29888534.94,
+        "gross_pnl": -85648.39,
+        "gross_return": -0.0028655934515336937,
+        "gross_wealth_index": 0.9977713023611582,
+        "net_cash_flow": 0.0,
+        "net_pnl": -87666.58,
+        "net_return": -0.0029331173366639427,
+        "net_wealth_index": 0.9938394389934349,
+        "opening_nav": 29888534.94,
+        "total_fees": 2018.19,
+        "valuation_date": "2026-02-05"
+      },
+      {
+        "closing_nav": 29557854.63,
+        "cumulative_gross_return": -0.010297735685327103,
+        "cumulative_net_return": -0.014264909717929375,
+        "currency": "USD",
+        "effective_capital": 29800868.36,
+        "gross_pnl": -241001.46,
+        "gross_return": -0.008087061661715954,
+        "gross_wealth_index": 0.9897022643146729,
+        "net_cash_flow": 0.0,
+        "net_pnl": -243013.73,
+        "net_return": -0.00815458553302371,
+        "net_wealth_index": 0.9857350902820706,
+        "opening_nav": 29800868.36,
+        "total_fees": 2012.27,
+        "valuation_date": "2026-02-06"
+      },
+      {
+        "closing_nav": 29380001.86,
+        "cumulative_gross_return": -0.01618605147147123,
+        "cumulative_net_return": -0.02019618309644211,
+        "currency": "USD",
+        "effective_capital": 29557854.63,
+        "gross_pnl": -175856.91,
+        "gross_return": -0.005949583019517002,
+        "gross_wealth_index": 0.9838139485285288,
+        "net_cash_flow": 0.0,
+        "net_pnl": -177852.77,
+        "net_return": -0.006017106864700755,
+        "net_wealth_index": 0.9798038169035579,
+        "opening_nav": 29557854.63,
+        "total_fees": 1995.86,
+        "valuation_date": "2026-02-09"
+      },
+      {
+        "closing_nav": 29153722.96,
+        "cumulative_gross_return": -0.023696758918918093,
+        "cumulative_net_return": -0.027742436189318487,
+        "currency": "USD",
+        "effective_capital": 29380001.86,
+        "gross_pnl": -224295.05,
+        "gross_return": -0.007634276235542757,
+        "gross_wealth_index": 0.9763032410810819,
+        "net_cash_flow": 0.0,
+        "net_pnl": -226278.9,
+        "net_return": -0.007701800056999724,
+        "net_wealth_index": 0.9722575638106815,
+        "opening_nav": 29380001.86,
+        "total_fees": 1983.85,
+        "valuation_date": "2026-02-10"
+      },
+      {
+        "closing_nav": 29080193.38,
+        "cumulative_gross_return": -0.026093202285478623,
+        "cumulative_net_return": -0.030194599517374687,
+        "currency": "USD",
+        "effective_capital": 29153722.96,
+        "gross_pnl": -71561.01,
+        "gross_return": -0.0024546096599115104,
+        "gross_wealth_index": 0.9739067977145214,
+        "net_cash_flow": 0.0,
+        "net_pnl": -73529.58,
+        "net_return": -0.002522133454478021,
+        "net_wealth_index": 0.9698054004826253,
+        "opening_nav": 29153722.96,
+        "total_fees": 1968.57,
+        "valuation_date": "2026-02-11"
+      },
+      {
+        "closing_nav": 28948269.68,
+        "cumulative_gross_return": -0.030445615736370835,
+        "cumulative_net_return": -0.03459416849684516,
+        "currency": "USD",
+        "effective_capital": 29080193.38,
+        "gross_pnl": -129960.1,
+        "gross_return": -0.0044690246141685045,
+        "gross_wealth_index": 0.9695543842636292,
+        "net_cash_flow": 0.0,
+        "net_pnl": -131923.7,
+        "net_return": -0.004536548236667882,
+        "net_wealth_index": 0.9654058315031548,
+        "opening_nav": 29080193.38,
+        "total_fees": 1963.6,
+        "valuation_date": "2026-02-12"
+      },
+      {
+        "closing_nav": 28923018.48,
+        "cumulative_gross_return": -0.031225877353478926,
+        "cumulative_net_return": -0.03543627947625516,
+        "currency": "USD",
+        "effective_capital": 28948269.68,
+        "gross_pnl": -23296.5,
+        "gross_return": -0.0008047631260011117,
+        "gross_wealth_index": 0.9687741226465211,
+        "net_cash_flow": 0.0,
+        "net_pnl": -25251.2,
+        "net_return": -0.0008722870236850716,
+        "net_wealth_index": 0.9645637205237448,
+        "opening_nav": 28948269.68,
+        "total_fees": 1954.7,
+        "valuation_date": "2026-02-13"
+      },
+      {
+        "closing_nav": 28734140.4,
+        "cumulative_gross_return": -0.03748691785278202,
+        "cumulative_net_return": -0.04173523972122961,
+        "currency": "USD",
+        "effective_capital": 28923018.48,
+        "gross_pnl": -186925.09,
+        "gross_return": -0.006462848617590068,
+        "gross_wealth_index": 0.962513082147218,
+        "net_cash_flow": 0.0,
+        "net_pnl": -188878.08,
+        "net_return": -0.006530372344456629,
+        "net_wealth_index": 0.9582647602787704,
+        "opening_nav": 28923018.48,
+        "total_fees": 1952.99,
+        "valuation_date": "2026-02-16"
+      },
+      {
+        "closing_nav": 28441272.88,
+        "cumulative_gross_return": -0.047232165459127895,
+        "cumulative_net_return": -0.0515021796727807,
+        "currency": "USD",
+        "effective_capital": 28734140.4,
+        "gross_pnl": -290927.28,
+        "gross_return": -0.010124794963415716,
+        "gross_wealth_index": 0.9527678345408721,
+        "net_cash_flow": 0.0,
+        "net_pnl": -292867.52,
+        "net_return": -0.010192318820854652,
+        "net_wealth_index": 0.9484978203272193,
+        "opening_nav": 28734140.4,
+        "total_fees": 1940.24,
+        "valuation_date": "2026-02-17"
+      },
+      {
+        "closing_nav": 28334664.62,
+        "cumulative_gross_return": -0.050739152257140985,
+        "cumulative_net_return": -0.055057495310920856,
+        "currency": "USD",
+        "effective_capital": 28441272.88,
+        "gross_pnl": -104687.8,
+        "gross_return": -0.003680840883658791,
+        "gross_wealth_index": 0.949260847742859,
+        "net_cash_flow": 0.0,
+        "net_pnl": -106608.26,
+        "net_return": -0.0037483645844475304,
+        "net_wealth_index": 0.9449425046890791,
+        "opening_nav": 28441272.88,
+        "total_fees": 1920.46,
+        "valuation_date": "2026-02-18"
+      },
+      {
+        "closing_nav": 28074389.95,
+        "cumulative_gross_return": -0.05939471126506091,
+        "cumulative_net_return": -0.06373748506464905,
+        "currency": "USD",
+        "effective_capital": 28334664.62,
+        "gross_pnl": -258361.4,
+        "gross_return": -0.009118209213517064,
+        "gross_wealth_index": 0.9406052887349391,
+        "net_cash_flow": 0.0,
+        "net_pnl": -260274.67,
+        "net_return": -0.009185733217265093,
+        "net_wealth_index": 0.936262514935351,
+        "opening_nav": 28334664.62,
+        "total_fees": 1913.27,
+        "valuation_date": "2026-02-19"
+      },
+      {
+        "closing_nav": 27894996.4,
+        "cumulative_gross_return": -0.06534160543275169,
+        "cumulative_net_return": -0.06972014244688651,
+        "currency": "USD",
+        "effective_capital": 28074389.95,
+        "gross_pnl": -177497.86,
+        "gross_return": -0.0063224120031146035,
+        "gross_wealth_index": 0.9346583945672483,
+        "net_cash_flow": 0.0,
+        "net_pnl": -179393.55,
+        "net_return": -0.006389935821205618,
+        "net_wealth_index": 0.9302798575531135,
+        "opening_nav": 28074389.95,
+        "total_fees": 1895.69,
+        "valuation_date": "2026-02-20"
+      },
+      {
+        "closing_nav": 27912111.76,
+        "cumulative_gross_return": -0.06470502106097953,
+        "cumulative_net_return": -0.06914935640216169,
+        "currency": "USD",
+        "effective_capital": 27894996.4,
+        "gross_pnl": 18998.94,
+        "gross_return": 0.0006810877380145495,
+        "gross_wealth_index": 0.9352949789390205,
+        "net_cash_flow": 0.0,
+        "net_pnl": 17115.36,
+        "net_return": 0.000613563800280684,
+        "net_wealth_index": 0.9308506435978383,
+        "opening_nav": 27894996.4,
+        "total_fees": 1883.58,
+        "valuation_date": "2026-02-23"
+      },
+      {
+        "closing_nav": 27991872.88,
+        "cumulative_gross_return": -0.061969184963526325,
+        "cumulative_net_return": -0.06648937529702426,
+        "currency": "USD",
+        "effective_capital": 27912111.76,
+        "gross_pnl": 81645.86,
+        "gross_return": 0.0029251050834858076,
+        "gross_wealth_index": 0.9380308150364737,
+        "net_cash_flow": 0.0,
+        "net_pnl": 79761.12,
+        "net_return": 0.002857580991571667,
+        "net_wealth_index": 0.9335106247029757,
+        "opening_nav": 27912111.76,
+        "total_fees": 1884.74,
+        "valuation_date": "2026-02-24"
+      },
+      {
+        "closing_nav": 28285066.51,
+        "cumulative_gross_return": -0.052080684743379235,
+        "cumulative_net_return": -0.05671155979058884,
+        "currency": "USD",
+        "effective_capital": 27991872.88,
+        "gross_pnl": 295083.74,
+        "gross_return": 0.010541764792409989,
+        "gross_wealth_index": 0.9479193152566208,
+        "net_cash_flow": 0.0,
+        "net_pnl": 293193.63,
+        "net_return": 0.010474241264845299,
+        "net_wealth_index": 0.9432884402094112,
+        "opening_nav": 27991872.88,
+        "total_fees": 1890.11,
+        "valuation_date": "2026-02-25"
+      },
+      {
+        "closing_nav": 28288962.96,
+        "cumulative_gross_return": -0.05188609581450454,
+        "cumulative_net_return": -0.05658161573542608,
+        "currency": "USD",
+        "effective_capital": 28285066.51,
+        "gross_pnl": 5806.36,
+        "gross_return": 0.00020528005468706248,
+        "gross_wealth_index": 0.9481139041854955,
+        "net_cash_flow": 0.0,
+        "net_pnl": 3896.45,
+        "net_return": 0.00013775643761072422,
+        "net_wealth_index": 0.9434183842645739,
+        "opening_nav": 28285066.51,
+        "total_fees": 1909.91,
+        "valuation_date": "2026-02-26"
+      },
+      {
+        "closing_nav": 28282912.92,
+        "cumulative_gross_return": -0.052024844584932506,
+        "cumulative_net_return": -0.05678338060639743,
+        "currency": "USD",
+        "effective_capital": 28288962.96,
+        "gross_pnl": -4139.86,
+        "gross_return": -0.00014634187919343932,
+        "gross_wealth_index": 0.9479751554150675,
+        "net_cash_flow": 0.0,
+        "net_pnl": -6050.04,
+        "net_return": -0.00021386574009639832,
+        "net_wealth_index": 0.9432166193936026,
+        "opening_nav": 28288962.96,
+        "total_fees": 1910.18,
+        "valuation_date": "2026-02-27"
+      },
+      {
+        "closing_nav": 28366489.73,
+        "cumulative_gross_return": -0.04915954021580249,
+        "cumulative_net_return": -0.053996148739196115,
+        "currency": "USD",
+        "effective_capital": 28282912.92,
+        "gross_pnl": 85486.58,
+        "gross_return": 0.003022552176354825,
+        "gross_wealth_index": 0.9508404597841975,
+        "net_cash_flow": 0.0,
+        "net_pnl": 83576.81,
+        "net_return": 0.0029550283677074658,
+        "net_wealth_index": 0.9460038512608039,
+        "opening_nav": 28282912.92,
+        "total_fees": 1909.77,
+        "valuation_date": "2026-03-02"
+      },
+      {
+        "closing_nav": 25791819.63,
+        "cumulative_gross_return": -0.051840175083263995,
+        "cumulative_net_return": -0.056727025750780036,
+        "currency": "USD",
+        "effective_capital": 25866489.73,
+        "gross_pnl": -72923.5,
+        "gross_return": -0.0028192267586824196,
+        "gross_wealth_index": 0.948159824916736,
+        "net_cash_flow": -2500000.0,
+        "net_pnl": -74670.1,
+        "net_return": -0.0028867504164431517,
+        "net_wealth_index": 0.94327297424922,
+        "opening_nav": 28366489.73,
+        "total_fees": 1746.6,
+        "valuation_date": "2026-03-03"
+      },
+      {
+        "closing_nav": 25804531.6,
+        "cumulative_gross_return": -0.051308833880090776,
+        "cumulative_net_return": -0.05626211641431289,
+        "currency": "USD",
+        "effective_capital": 25791819.63,
+        "gross_pnl": 14453.53,
+        "gross_return": 0.000560392023802316,
+        "gross_wealth_index": 0.9486911661199092,
+        "net_cash_flow": 0.0,
+        "net_pnl": 12711.97,
+        "net_return": 0.000492868288564408,
+        "net_wealth_index": 0.9437378835856871,
+        "opening_nav": 25791819.63,
+        "total_fees": 1741.56,
+        "valuation_date": "2026-03-04"
+      },
+      {
+        "closing_nav": 25630692.99,
+        "cumulative_gross_return": -0.057635867352610504,
+        "cumulative_net_return": -0.0626198401052509,
+        "currency": "USD",
+        "effective_capital": 25804531.6,
+        "gross_pnl": -172096.19,
+        "gross_return": -0.006669223556067183,
+        "gross_wealth_index": 0.9423641326473895,
+        "net_cash_flow": 0.0,
+        "net_pnl": -173838.61,
+        "net_return": -0.006736747354871576,
+        "net_wealth_index": 0.9373801598947491,
+        "opening_nav": 25804531.6,
+        "total_fees": 1742.42,
+        "valuation_date": "2026-03-05"
+      },
+      {
+        "closing_nav": 25696841.99,
+        "cumulative_gross_return": -0.05514013361586845,
+        "cumulative_net_return": -0.060200601568818346,
+        "currency": "USD",
+        "effective_capital": 25630692.99,
+        "gross_pnl": 67879.69,
+        "gross_return": 0.0026483751347060247,
+        "gross_wealth_index": 0.9448598663841316,
+        "net_cash_flow": 0.0,
+        "net_pnl": 66149.0,
+        "net_return": 0.0025808510142823105,
+        "net_wealth_index": 0.9397993984311817,
+        "opening_nav": 25630692.99,
+        "total_fees": 1730.69,
+        "valuation_date": "2026-03-06"
+      },
+      {
+        "closing_nav": 25572365.76,
+        "cumulative_gross_return": -0.0596532613357017,
+        "cumulative_net_return": -0.06475301645771814,
+        "currency": "USD",
+        "effective_capital": 25696841.99,
+        "gross_pnl": -122741.09,
+        "gross_return": -0.004776504834631627,
+        "gross_wealth_index": 0.9403467386642983,
+        "net_cash_flow": 0.0,
+        "net_pnl": -124476.23,
+        "net_return": -0.004844028306997423,
+        "net_wealth_index": 0.9352469835422819,
+        "opening_nav": 25696841.99,
+        "total_fees": 1735.14,
+        "valuation_date": "2026-03-09"
+      },
+      {
+        "closing_nav": 25456875.68,
+        "cumulative_gross_return": -0.0638365655615426,
+        "cumulative_net_return": -0.06897678480057545,
+        "currency": "USD",
+        "effective_capital": 25572365.76,
+        "gross_pnl": -113763.34,
+        "gross_return": -0.004448682654850311,
+        "gross_wealth_index": 0.9361634344384574,
+        "net_cash_flow": 0.0,
+        "net_pnl": -115490.08,
+        "net_return": -0.0045162063253705,
+        "net_wealth_index": 0.9310232151994245,
+        "opening_nav": 25572365.76,
+        "total_fees": 1726.74,
+        "valuation_date": "2026-03-10"
+      },
+      {
+        "closing_nav": 25464611.53,
+        "cumulative_gross_return": -0.06348887018245553,
+        "cumulative_net_return": -0.0686938649313098,
+        "currency": "USD",
+        "effective_capital": 25456875.68,
+        "gross_pnl": 9454.8,
+        "gross_return": 0.00037140457135626,
+        "gross_wealth_index": 0.9365111298175445,
+        "net_cash_flow": 0.0,
+        "net_pnl": 7735.85,
+        "net_return": 0.0003038805742402086,
+        "net_wealth_index": 0.9313061350686902,
+        "opening_nav": 25456875.68,
+        "total_fees": 1718.95,
+        "valuation_date": "2026-03-11"
+      },
+      {
+        "closing_nav": 25430025.67,
+        "cumulative_gross_return": -0.0646975962608275,
+        "cumulative_net_return": -0.0699587585098621,
+        "currency": "USD",
+        "effective_capital": 25464611.53,
+        "gross_pnl": -32866.39,
+        "gross_return": -0.0012906692081785705,
+        "gross_wealth_index": 0.9353024037391725,
+        "net_cash_flow": 0.0,
+        "net_pnl": -34585.86,
+        "net_return": -0.0013581931127931877,
+        "net_wealth_index": 0.9300412414901379,
+        "opening_nav": 25464611.53,
+        "total_fees": 1719.47,
+        "valuation_date": "2026-03-12"
+      },
+      {
+        "closing_nav": 25358565.88,
+        "cumulative_gross_return": -0.06726269306362453,
+        "cumulative_net_return": -0.07257222625349191,
+        "currency": "USD",
+        "effective_capital": 25430025.67,
+        "gross_pnl": -69742.66,
+        "gross_return": -0.0027425320330004997,
+        "gross_wealth_index": 0.9327373069363755,
+        "net_cash_flow": 0.0,
+        "net_pnl": -71459.79,
+        "net_return": -0.0028100557556377803,
+        "net_wealth_index": 0.9274277737465081,
+        "opening_nav": 25430025.67,
+        "total_fees": 1717.13,
+        "valuation_date": "2026-03-13"
+      },
+      {
+        "closing_nav": 25368194.77,
+        "cumulative_gross_return": -0.06684554169964418,
+        "cumulative_net_return": -0.0722200730576602,
+        "currency": "USD",
+        "effective_capital": 25358565.88,
+        "gross_pnl": 11341.2,
+        "gross_return": 0.0004472334931584073,
+        "gross_wealth_index": 0.9331544583003558,
+        "net_cash_flow": 0.0,
+        "net_pnl": 9628.89,
+        "net_return": 0.00037970956423818086,
+        "net_wealth_index": 0.9277799269423398,
+        "opening_nav": 25358565.88,
+        "total_fees": 1712.31,
+        "valuation_date": "2026-03-16"
+      },
+      {
+        "closing_nav": 25128892.97,
+        "cumulative_gross_return": -0.07558511056918771,
+        "cumulative_net_return": -0.0809719534549097,
+        "currency": "USD",
+        "effective_capital": 25368194.77,
+        "gross_pnl": -237588.84,
+        "gross_return": -0.009365618726680881,
+        "gross_wealth_index": 0.9244148894308123,
+        "net_cash_flow": 0.0,
+        "net_pnl": -239301.8,
+        "net_return": -0.009433142648486532,
+        "net_wealth_index": 0.9190280465450903,
+        "opening_nav": 25368194.77,
+        "total_fees": 1712.96,
+        "valuation_date": "2026-03-17"
+      },
+      {
+        "closing_nav": 25214857.9,
+        "cumulative_gross_return": -0.07236030442504093,
+        "cumulative_net_return": -0.07782799555021402,
+        "currency": "USD",
+        "effective_capital": 25128892.97,
+        "gross_pnl": 87661.73,
+        "gross_return": 0.0034884835597276216,
+        "gross_wealth_index": 0.9276396955749591,
+        "net_cash_flow": 0.0,
+        "net_pnl": 85964.93,
+        "net_return": 0.0034209596937926708,
+        "net_wealth_index": 0.922172004449786,
+        "opening_nav": 25128892.97,
+        "total_fees": 1696.8,
+        "valuation_date": "2026-03-18"
+      },
+      {
+        "closing_nav": 25116910.1,
+        "cumulative_gross_return": -0.07590110835828656,
+        "cumulative_net_return": -0.08141019773496028,
+        "currency": "USD",
+        "effective_capital": 25214857.9,
+        "gross_pnl": -96245.2,
+        "gross_return": -0.003817003466039759,
+        "gross_wealth_index": 0.9240988916417134,
+        "net_cash_flow": 0.0,
+        "net_pnl": -97947.8,
+        "net_return": -0.0038845271461950223,
+        "net_wealth_index": 0.9185898022650397,
+        "opening_nav": 25214857.9,
+        "total_fees": 1702.6,
+        "valuation_date": "2026-03-19"
+      },
+      {
+        "closing_nav": 25284269.25,
+        "cumulative_gross_return": -0.0696812482370236,
+        "cumulative_net_return": -0.07528944450959651,
+        "currency": "USD",
+        "effective_capital": 25116910.1,
+        "gross_pnl": 169055.14,
+        "gross_return": 0.00673072998736417,
+        "gross_wealth_index": 0.9303187517629764,
+        "net_cash_flow": 0.0,
+        "net_pnl": 167359.15,
+        "net_return": 0.006663206156078888,
+        "net_wealth_index": 0.9247105554904035,
+        "opening_nav": 25116910.1,
+        "total_fees": 1695.99,
+        "valuation_date": "2026-03-20"
+      },
+      {
+        "closing_nav": 25345770.4,
+        "cumulative_gross_return": -0.06735553352404322,
+        "cumulative_net_return": -0.07304018976477922,
+        "currency": "USD",
+        "effective_capital": 25284269.25,
+        "gross_pnl": 63208.44,
+        "gross_return": 0.0024999116792746544,
+        "gross_wealth_index": 0.9326444664759568,
+        "net_cash_flow": 0.0,
+        "net_pnl": 61501.15,
+        "net_return": 0.002432387876900971,
+        "net_wealth_index": 0.9269598102352208,
+        "opening_nav": 25284269.25,
+        "total_fees": 1707.29,
+        "valuation_date": "2026-03-23"
+      },
+      {
+        "closing_nav": 25343019.68,
+        "cumulative_gross_return": -0.06739377538449487,
+        "cumulative_net_return": -0.0731407906480418,
+        "currency": "USD",
+        "effective_capital": 25345770.4,
+        "gross_pnl": -1039.27,
+        "gross_return": -4.1003685569565487e-05,
+        "gross_wealth_index": 0.9326062246155051,
+        "net_cash_flow": 0.0,
+        "net_pnl": -2750.72,
+        "net_return": -0.00010852777234974086,
+        "net_wealth_index": 0.9268592093519582,
+        "opening_nav": 25345770.4,
+        "total_fees": 1711.45,
+        "valuation_date": "2026-03-24"
+      },
+      {
+        "closing_nav": 25273440.6,
+        "cumulative_gross_return": -0.06989126627186126,
+        "cumulative_net_return": -0.0756854760048199,
+        "currency": "USD",
+        "effective_capital": 25343019.68,
+        "gross_pnl": -67867.83,
+        "gross_return": -0.0026779693523877658,
+        "gross_wealth_index": 0.9301087337281387,
+        "net_cash_flow": 0.0,
+        "net_pnl": -69579.08,
+        "net_return": -0.0027454928764826655,
+        "net_wealth_index": 0.9243145239951801,
+        "opening_nav": 25343019.68,
+        "total_fees": 1711.25,
+        "valuation_date": "2026-03-25"
+      },
+      {
+        "closing_nav": 25088105.98,
+        "cumulative_gross_return": -0.07664911396924023,
+        "cumulative_net_return": -0.08246363825729641,
+        "currency": "USD",
+        "effective_capital": 25273440.6,
+        "gross_pnl": -183628.06,
+        "gross_return": -0.007265653414834226,
+        "gross_wealth_index": 0.9233508860307598,
+        "net_cash_flow": 0.0,
+        "net_pnl": -185334.62,
+        "net_return": -0.007333177264357112,
+        "net_wealth_index": 0.9175363617427036,
+        "opening_nav": 25273440.6,
+        "total_fees": 1706.56,
+        "valuation_date": "2026-03-26"
+      },
+      {
+        "closing_nav": 25048879.09,
+        "cumulative_gross_return": -0.07803048529836276,
+        "cumulative_net_return": -0.08389826620257745,
+        "currency": "USD",
+        "effective_capital": 25088105.98,
+        "gross_pnl": -37532.85,
+        "gross_return": -0.0014960415915781298,
+        "gross_wealth_index": 0.9219695147016372,
+        "net_cash_flow": 0.0,
+        "net_pnl": -39226.89,
+        "net_return": -0.001563565222152334,
+        "net_wealth_index": 0.9161017337974225,
+        "opening_nav": 25088105.98,
+        "total_fees": 1694.04,
+        "valuation_date": "2026-03-27"
+      },
+      {
+        "closing_nav": 25236461.02,
+        "cumulative_gross_return": -0.07106393680094791,
+        "cumulative_net_return": -0.07703791406128468,
+        "currency": "USD",
+        "effective_capital": 25048879.09,
+        "gross_pnl": 189273.32,
+        "gross_return": 0.007556159272434733,
+        "gross_wealth_index": 0.9289360631990521,
+        "net_cash_flow": 0.0,
+        "net_pnl": 187581.93,
+        "net_return": 0.007488635692081182,
+        "net_wealth_index": 0.9229620859387153,
+        "opening_nav": 25048879.09,
+        "total_fees": 1691.39,
+        "valuation_date": "2026-03-30"
+      },
+      {
+        "closing_nav": 25000633.24,
+        "cumulative_gross_return": -0.07968186332344873,
+        "cumulative_net_return": -0.08566274063972612,
+        "currency": "USD",
+        "effective_capital": 25236461.02,
+        "gross_pnl": -234123.72,
+        "gross_return": -0.009277200944080709,
+        "gross_wealth_index": 0.9203181366765513,
+        "net_cash_flow": 0.0,
+        "net_pnl": -235827.78,
+        "net_return": -0.00934472467487044,
+        "net_wealth_index": 0.9143372593602739,
+        "opening_nav": 25236461.02,
+        "total_fees": 1704.06,
+        "valuation_date": "2026-03-31"
+      },
+      {
+        "closing_nav": 24942130.35,
+        "cumulative_gross_return": -0.0817733161420151,
+        "cumulative_net_return": -0.08780234132878673,
+        "currency": "USD",
+        "effective_capital": 25000633.24,
+        "gross_pnl": -56814.75,
+        "gross_return": -0.002272532437662367,
+        "gross_wealth_index": 0.9182266838579849,
+        "net_cash_flow": 0.0,
+        "net_pnl": -58502.89,
+        "net_return": -0.002340056327309252,
+        "net_wealth_index": 0.9121976586712133,
+        "opening_nav": 25000633.24,
+        "total_fees": 1688.14,
+        "valuation_date": "2026-04-01"
+      },
+      {
+        "closing_nav": 24951437.24,
+        "cumulative_gross_return": -0.08136868739544068,
+        "cumulative_net_return": -0.08746196449856491,
+        "currency": "USD",
+        "effective_capital": 24942130.35,
+        "gross_pnl": 10991.08,
+        "gross_return": 0.0004406632411012157,
+        "gross_wealth_index": 0.9186313126045593,
+        "net_cash_flow": 0.0,
+        "net_pnl": 9306.89,
+        "net_return": 0.0003731393377149919,
+        "net_wealth_index": 0.9125380355014351,
+        "opening_nav": 24942130.35,
+        "total_fees": 1684.19,
+        "valuation_date": "2026-04-02"
+      },
+      {
+        "closing_nav": 25182774.59,
+        "cumulative_gross_return": -0.07278956425124028,
+        "cumulative_net_return": -0.07900136445871297,
+        "currency": "USD",
+        "effective_capital": 24951437.24,
+        "gross_pnl": 233022.16,
+        "gross_return": 0.009339027558157608,
+        "gross_wealth_index": 0.9272104357487597,
+        "net_cash_flow": 0.0,
+        "net_pnl": 231337.35,
+        "net_return": 0.009271503992929909,
+        "net_wealth_index": 0.920998635541287,
+        "opening_nav": 24951437.24,
+        "total_fees": 1684.81,
+        "valuation_date": "2026-04-03"
+      },
+      {
+        "closing_nav": 25084404.19,
+        "cumulative_gross_return": -0.07634887836443227,
+        "cumulative_net_return": -0.08259902220900817,
+        "currency": "USD",
+        "effective_capital": 25182774.59,
+        "gross_pnl": -96669.97,
+        "gross_return": -0.00383873387956176,
+        "gross_wealth_index": 0.9236511216355677,
+        "net_cash_flow": 0.0,
+        "net_pnl": -98370.4,
+        "net_return": -0.003906257416093561,
+        "net_wealth_index": 0.9174009777909918,
+        "opening_nav": 25182774.59,
+        "total_fees": 1700.43,
+        "valuation_date": "2026-04-06"
+      },
+      {
+        "closing_nav": 25059788.01,
+        "cumulative_gross_return": -0.07719292001824996,
+        "cumulative_net_return": -0.0834992990276412,
+        "currency": "USD",
+        "effective_capital": 25084404.19,
+        "gross_pnl": -22922.38,
+        "gross_return": -0.0009138100242037281,
+        "gross_wealth_index": 0.92280707998175,
+        "net_cash_flow": 0.0,
+        "net_pnl": -24616.18,
+        "net_return": -0.0009813340517696386,
+        "net_wealth_index": 0.9165007009723588,
+        "opening_nav": 25084404.19,
+        "total_fees": 1693.8,
+        "valuation_date": "2026-04-07"
+      },
+      {
+        "closing_nav": 27851304.53,
+        "cumulative_gross_return": -0.08398704047036387,
+        "cumulative_net_return": -0.09030887490515882,
+        "currency": "USD",
+        "effective_capital": 28059788.01,
+        "gross_pnl": -206588.77,
+        "gross_return": -0.007362449421441654,
+        "gross_wealth_index": 0.9160129595296361,
+        "net_cash_flow": 3000000.0,
+        "net_pnl": -208483.48,
+        "net_return": -0.00742997345260414,
+        "net_wealth_index": 0.9096911250948412,
+        "opening_nav": 25059788.01,
+        "total_fees": 1894.71,
+        "valuation_date": "2026-04-08"
+      },
+      {
+        "closing_nav": 27940798.26,
+        "cumulative_gross_return": -0.08098179172739861,
+        "cumulative_net_return": -0.08738579272619162,
+        "currency": "USD",
+        "effective_capital": 27851304.53,
+        "gross_pnl": 91374.36,
+        "gross_return": 0.0032807928225256455,
+        "gross_wealth_index": 0.9190182082726014,
+        "net_cash_flow": 0.0,
+        "net_pnl": 89493.73,
+        "net_return": 0.003213268875919328,
+        "net_wealth_index": 0.9126142072738084,
+        "opening_nav": 27851304.53,
+        "total_fees": 1880.63,
+        "valuation_date": "2026-04-09"
+      },
+      {
+        "closing_nav": 27910408.07,
+        "cumulative_gross_return": -0.08191931876710967,
+        "cumulative_net_return": -0.08837841000568625,
+        "currency": "USD",
+        "effective_capital": 27940798.26,
+        "gross_pnl": -28503.52,
+        "gross_return": -0.0010201397875165788,
+        "gross_wealth_index": 0.9180806812328903,
+        "net_cash_flow": 0.0,
+        "net_pnl": -30390.19,
+        "net_return": -0.0010876636278322278,
+        "net_wealth_index": 0.9116215899943138,
+        "opening_nav": 27940798.26,
+        "total_fees": 1886.67,
+        "valuation_date": "2026-04-10"
+      },
+      {
+        "closing_nav": 28097758.98,
+        "cumulative_gross_return": -0.07569463460343373,
+        "cumulative_net_return": -0.08225907509547181,
+        "currency": "USD",
+        "effective_capital": 27910408.07,
+        "gross_pnl": 189235.52,
+        "gross_return": 0.006780105813049834,
+        "gross_wealth_index": 0.9243053653965663,
+        "net_cash_flow": 0.0,
+        "net_pnl": 187350.91,
+        "net_return": 0.0067125822571321506,
+        "net_wealth_index": 0.9177409249045282,
+        "opening_nav": 27910408.07,
+        "total_fees": 1884.61,
+        "valuation_date": "2026-04-13"
+      },
+      {
+        "closing_nav": 28090319.46,
+        "cumulative_gross_return": -0.07587695275254358,
+        "cumulative_net_return": -0.08250206785409375,
+        "currency": "USD",
+        "effective_capital": 28097758.98,
+        "gross_pnl": -5542.25,
+        "gross_return": -0.00019724882699524102,
+        "gross_wealth_index": 0.9241230472474564,
+        "net_cash_flow": 0.0,
+        "net_pnl": -7439.52,
+        "net_return": -0.00026477271747171917,
+        "net_wealth_index": 0.9174979321459062,
+        "opening_nav": 28097758.98,
+        "total_fees": 1897.27,
+        "valuation_date": "2026-04-14"
+      },
+      {
+        "closing_nav": 28078536.48,
+        "cumulative_gross_return": -0.07620219233428516,
+        "cumulative_net_return": -0.0828869285460454,
+        "currency": "USD",
+        "effective_capital": 28090319.46,
+        "gross_pnl": -9886.22,
+        "gross_return": -0.0003519440216433907,
+        "gross_wealth_index": 0.9237978076657148,
+        "net_cash_flow": 0.0,
+        "net_pnl": -11782.98,
+        "net_return": -0.0004194676396179369,
+        "net_wealth_index": 0.9171130714539546,
+        "opening_nav": 28090319.46,
+        "total_fees": 1896.76,
+        "valuation_date": "2026-04-15"
+      },
+      {
+        "closing_nav": 27983829.37,
+        "cumulative_gross_return": -0.0792557249754905,
+        "cumulative_net_return": -0.08598029235446525,
+        "currency": "USD",
+        "effective_capital": 28078536.48,
+        "gross_pnl": -92811.14,
+        "gross_return": -0.003305412305449333,
+        "gross_wealth_index": 0.9207442750245095,
+        "net_cash_flow": 0.0,
+        "net_pnl": -94707.11,
+        "net_return": -0.0033729361239129654,
+        "net_wealth_index": 0.9140197076455348,
+        "opening_nav": 28078536.48,
+        "total_fees": 1895.97,
+        "valuation_date": "2026-04-16"
+      },
+      {
+        "closing_nav": 28101584.27,
+        "cumulative_gross_return": -0.07531909574100337,
+        "cumulative_net_return": -0.08213413185052754,
+        "currency": "USD",
+        "effective_capital": 27983829.37,
+        "gross_pnl": 119644.47,
+        "gross_return": 0.004275485975063319,
+        "gross_wealth_index": 0.9246809042589966,
+        "net_cash_flow": 0.0,
+        "net_pnl": 117754.9,
+        "net_return": 0.004207962335785211,
+        "net_wealth_index": 0.9178658681494725,
+        "opening_nav": 27983829.37,
+        "total_fees": 1889.57,
+        "valuation_date": "2026-04-17"
+      },
+      {
+        "closing_nav": 28120604.96,
+        "cumulative_gross_return": -0.0746307833258586,
+        "cumulative_net_return": -0.08151287000379637,
+        "currency": "USD",
+        "effective_capital": 28101584.27,
+        "gross_pnl": 20918.21,
+        "gross_return": 0.0007443783168599269,
+        "gross_wealth_index": 0.9253692166741414,
+        "net_cash_flow": 0.0,
+        "net_pnl": 19020.69,
+        "net_return": 0.0006768547216857677,
+        "net_wealth_index": 0.9184871299962036,
+        "opening_nav": 28101584.27,
+        "total_fees": 1897.52,
+        "valuation_date": "2026-04-20"
+      },
+      {
+        "closing_nav": 28021497.91,
+        "cumulative_gross_return": -0.07782963032900903,
+        "cumulative_net_return": -0.0847499465192687,
+        "currency": "USD",
+        "effective_capital": 28120604.96,
+        "gross_pnl": -97208.24,
+        "gross_return": -0.003456833170490938,
+        "gross_wealth_index": 0.922170369670991,
+        "net_cash_flow": 0.0,
+        "net_pnl": -99107.05,
+        "net_return": -0.0035243569667499784,
+        "net_wealth_index": 0.9152500534807313,
+        "opening_nav": 28120604.96,
+        "total_fees": 1898.81,
+        "valuation_date": "2026-04-21"
+      },
+      {
+        "closing_nav": 27901470.68,
+        "cumulative_gross_return": -0.08171738459574096,
+        "cumulative_net_return": -0.08867032682975318,
+        "currency": "USD",
+        "effective_capital": 28021497.91,
+        "gross_pnl": -118135.11,
+        "gross_return": -0.004215874196997915,
+        "gross_wealth_index": 0.918282615404259,
+        "net_cash_flow": 0.0,
+        "net_pnl": -120027.23,
+        "net_return": -0.00428339806763742,
+        "net_wealth_index": 0.9113296731702468,
+        "opening_nav": 28021497.91,
+        "total_fees": 1892.12,
+        "valuation_date": "2026-04-22"
+      },
+      {
+        "closing_nav": 27875968.39,
+        "cumulative_gross_return": -0.08249470046480367,
+        "cumulative_net_return": -0.08950329344564745,
+        "currency": "USD",
+        "effective_capital": 27901470.68,
+        "gross_pnl": -23618.28,
+        "gross_return": -0.0008464887127591368,
+        "gross_wealth_index": 0.9175052995351963,
+        "net_cash_flow": 0.0,
+        "net_pnl": -25502.29,
+        "net_return": -0.0009140123935574567,
+        "net_wealth_index": 0.9104967065543526,
+        "opening_nav": 27901470.68,
+        "total_fees": 1884.01,
+        "valuation_date": "2026-04-23"
+      },
+      {
+        "closing_nav": 27734050.68,
+        "cumulative_gross_return": -0.08710380455672562,
+        "cumulative_net_return": -0.0941386699014154,
+        "currency": "USD",
+        "effective_capital": 27875968.39,
+        "gross_pnl": -140035.42,
+        "gross_return": -0.005023517678052584,
+        "gross_wealth_index": 0.9128961954432744,
+        "net_cash_flow": 0.0,
+        "net_pnl": -141917.71,
+        "net_return": -0.005091041430901839,
+        "net_wealth_index": 0.9058613300985846,
+        "opening_nav": 27875968.39,
+        "total_fees": 1882.29,
+        "valuation_date": "2026-04-24"
+      },
+      {
+        "closing_nav": 27757716.83,
+        "cumulative_gross_return": -0.08626316543051349,
+        "cumulative_net_return": -0.0933656760692243,
+        "currency": "USD",
+        "effective_capital": 27734050.68,
+        "gross_pnl": 25538.86,
+        "gross_return": 0.0009208485372249273,
+        "gross_wealth_index": 0.9137368345694865,
+        "net_cash_flow": 0.0,
+        "net_pnl": 23666.15,
+        "net_return": 0.000853324682826317,
+        "net_wealth_index": 0.9066343239307757,
+        "opening_nav": 27734050.68,
+        "total_fees": 1872.71,
+        "valuation_date": "2026-04-27"
+      },
+      {
+        "closing_nav": 27469713.26,
+        "cumulative_gross_return": -0.09568205409168551,
+        "cumulative_net_return": -0.10277257086449043,
+        "currency": "USD",
+        "effective_capital": 27757716.83,
+        "gross_pnl": -286129.26,
+        "gross_return": -0.010308097807625052,
+        "gross_wealth_index": 0.9043179459083145,
+        "net_cash_flow": 0.0,
+        "net_pnl": -288003.57,
+        "net_return": -0.010375621733006922,
+        "net_wealth_index": 0.8972274291355096,
+        "opening_nav": 27757716.83,
+        "total_fees": 1874.31,
+        "valuation_date": "2026-04-28"
+      },
+      {
+        "closing_nav": 27589213.65,
+        "cumulative_gross_return": -0.09168697305947848,
+        "cumulative_net_return": -0.0988693984256096,
+        "currency": "USD",
+        "effective_capital": 27469713.26,
+        "gross_pnl": 121355.25,
+        "gross_return": 0.004417783645987719,
+        "gross_wealth_index": 0.9083130269405215,
+        "net_cash_flow": 0.0,
+        "net_pnl": 119500.39,
+        "net_return": 0.004350259825027384,
+        "net_wealth_index": 0.9011306015743904,
+        "opening_nav": 27469713.26,
+        "total_fees": 1854.86,
+        "valuation_date": "2026-04-29"
+      },
+      {
+        "closing_nav": 27553108.03,
+        "cumulative_gross_return": -0.09281433688358254,
+        "cumulative_net_return": -0.10004869550466267,
+        "currency": "USD",
+        "effective_capital": 27589213.65,
+        "gross_pnl": -34242.69,
+        "gross_return": -0.0012411622322552134,
+        "gross_wealth_index": 0.9071856631164175,
+        "net_cash_flow": 0.0,
+        "net_pnl": -36105.62,
+        "net_return": -0.0013086860850055437,
+        "net_wealth_index": 0.8999513044953373,
+        "opening_nav": 27589213.65,
+        "total_fees": 1862.93,
+        "valuation_date": "2026-04-30"
+      },
+      {
+        "closing_nav": 27380247.26,
+        "cumulative_gross_return": -0.09844451850360114,
+        "cumulative_net_return": -0.10569474731443262,
+        "currency": "USD",
+        "effective_capital": 27553108.03,
+        "gross_pnl": -171000.28,
+        "gross_return": -0.006206206567107195,
+        "gross_wealth_index": 0.9015554814963989,
+        "net_cash_flow": 0.0,
+        "net_pnl": -172860.77,
+        "net_return": -0.006273730346928124,
+        "net_wealth_index": 0.8943052526855674,
+        "opening_nav": 27553108.03,
+        "total_fees": 1860.49,
+        "valuation_date": "2026-05-01"
+      },
+      {
+        "closing_nav": 27379795.62,
+        "cumulative_gross_return": -0.09839851324748805,
+        "cumulative_net_return": -0.10570949897173099,
+        "currency": "USD",
+        "effective_capital": 27380247.26,
+        "gross_pnl": 1397.18,
+        "gross_return": 5.102875758325055e-05,
+        "gross_wealth_index": 0.901601486752512,
+        "net_cash_flow": 0.0,
+        "net_pnl": -451.64,
+        "net_return": -1.649510304677942e-05,
+        "net_wealth_index": 0.894290501028269,
+        "opening_nav": 27380247.26,
+        "total_fees": 1848.82,
+        "valuation_date": "2026-05-04"
+      },
+      {
+        "closing_nav": 27285949.77,
+        "cumulative_gross_return": -0.10142792541783574,
+        "cumulative_net_return": -0.10877473194062204,
+        "currency": "USD",
+        "effective_capital": 27379795.62,
+        "gross_pnl": -91997.06,
+        "gross_return": -0.00336003457720478,
+        "gross_wealth_index": 0.8985720745821643,
+        "net_cash_flow": 0.0,
+        "net_pnl": -93845.85,
+        "net_return": -0.003427558455967758,
+        "net_wealth_index": 0.891225268059378,
+        "opening_nav": 27379795.62,
+        "total_fees": 1848.79,
+        "valuation_date": "2026-05-05"
+      },
+      {
+        "closing_nav": 27274513.23,
+        "cumulative_gross_return": -0.10174387488735015,
+        "cumulative_net_return": -0.10914827706230879,
+        "currency": "USD",
+        "effective_capital": 27285949.77,
+        "gross_pnl": -9594.09,
+        "gross_return": -0.00035161282934517403,
+        "gross_wealth_index": 0.8982561251126499,
+        "net_cash_flow": 0.0,
+        "net_pnl": -11436.54,
+        "net_return": -0.00041913659214362766,
+        "net_wealth_index": 0.8908517229376912,
+        "opening_nav": 27285949.77,
+        "total_fees": 1842.45,
+        "valuation_date": "2026-05-06"
+      },
+      {
+        "closing_nav": 27345717.96,
+        "cumulative_gross_return": -0.09933405489674674,
+        "cumulative_net_return": -0.10682255796085693,
+        "currency": "USD",
+        "effective_capital": 27274513.23,
+        "gross_pnl": 73171.41,
+        "gross_return": 0.002682776018144174,
+        "gross_wealth_index": 0.9006659451032533,
+        "net_cash_flow": 0.0,
+        "net_pnl": 71204.73,
+        "net_return": 0.002610669140070296,
+        "net_wealth_index": 0.8931774420391431,
+        "opening_nav": 27274513.23,
+        "total_fees": 1966.68,
+        "valuation_date": "2026-05-07"
+      }
+    ],
+    "disclosure": {
+      "audit_disclosure": "Data status: SYNTHETIC. Ledger reconciliation: ALL SNAPSHOTS RECONCILED.",
+      "banner": "SIMULATED / SYNTHETIC DATA \u2014 NOT LIVE OR AUDITED TRACK RECORD. Results are generated for methodological demonstration and internal verification only.",
+      "currency_disclosure": "Reported in fund base currency USD; no FX translation applied.",
+      "data_status": "SYNTHETIC",
+      "environment": "SIMULATED",
+      "fee_disclosure": "Net metrics reflect accrued fees: 150.0 bps/yr management fee, 20.0% performance fee (with high-water mark, hurdle 4.00%/yr). Gross metrics exclude management/performance fees.",
+      "is_simulated_or_paper": true,
+      "methodology_version": "SAAT-PERF-METH-1.0.0"
+    },
+    "exposure": {
+      "as_of_date": "2026-05-07",
+      "by_asset_class": [
+        {
+          "asset_class": "Equities",
+          "cash_allocation": 1451004.1,
+          "gross_exposure": 13473609.54,
+          "gross_pct_nav": 0.49271368774111346,
+          "long_exposure": 7462306.82,
+          "net_exposure": 1451004.1,
+          "net_pct_nav": 0.053061473906900504,
+          "short_exposure": 6011302.72,
+          "weight": 0.38
+        },
+        {
+          "asset_class": "FX",
+          "cash_allocation": 534580.46,
+          "gross_exposure": 1718294.33,
+          "gross_pct_nav": 0.06283595598087563,
+          "long_exposure": 954607.96,
+          "net_exposure": 190921.59,
+          "net_pct_nav": 0.006981772805499964,
+          "short_exposure": 763686.37,
+          "weight": 0.14
+        },
+        {
+          "asset_class": "Futures",
+          "cash_allocation": 1145529.56,
+          "gross_exposure": 6955000.87,
+          "gross_pct_nav": 0.25433601268664585,
+          "long_exposure": 4500294.68,
+          "net_exposure": 2045588.49,
+          "net_pct_nav": 0.07480470957069725,
+          "short_exposure": 2454706.19,
+          "weight": 0.3
+        },
+        {
+          "asset_class": "Options",
+          "cash_allocation": 687317.73,
+          "gross_exposure": 2749270.93,
+          "gross_pct_nav": 0.10053752964253858,
+          "long_exposure": 1571011.96,
+          "net_exposure": 392752.99,
+          "net_pct_nav": 0.01436250423464837,
+          "short_exposure": 1178258.97,
+          "weight": 0.18
+        }
+      ],
+      "currency": "USD",
+      "latest": {
+        "cash_balance": 3828418.01,
+        "cash_pct_nav": 0.1400006397930391,
+        "closing_nav": 27345717.96,
+        "gross_exposure": 24896175.67,
+        "gross_exposure_pct_nav": 0.9104231860511737,
+        "net_exposure": 4080267.17,
+        "net_exposure_pct_nav": 0.14921046051774609,
+        "valuation_date": "2026-05-07"
+      },
+      "time_series": [
+        {
+          "cash_balance": 3516715.53,
+          "cash_pct_nav": 0.13999999984872247,
+          "closing_nav": 25119396.67,
+          "gross_exposure": 22820000.0,
+          "gross_exposure_pct_nav": 0.9084613097914823,
+          "net_exposure": 3740000.0,
+          "net_exposure_pct_nav": 0.14888892631990114,
+          "valuation_date": "2026-01-02"
+        },
+        {
+          "cash_balance": 3531774.24,
+          "cash_pct_nav": 0.14000000015063252,
+          "closing_nav": 25226958.83,
+          "gross_exposure": 22928985.29,
+          "gross_exposure_pct_nav": 0.9089080235360261,
+          "net_exposure": 3757861.73,
+          "net_exposure_pct_nav": 0.14896213829512958,
+          "valuation_date": "2026-01-05"
+        },
+        {
+          "cash_balance": 3530930.65,
+          "cash_pct_nav": 0.1400000001903181,
+          "closing_nav": 25220933.18,
+          "gross_exposure": 23027168.03,
+          "gross_exposure_pct_nav": 0.9130180816727417,
+          "net_exposure": 3773953.05,
+          "net_exposure_pct_nav": 0.14963574198724394,
+          "valuation_date": "2026-01-06"
+        },
+        {
+          "cash_balance": 3501848.46,
+          "cash_pct_nav": 0.1400000000319831,
+          "closing_nav": 25013203.28,
+          "gross_exposure": 23021667.8,
+          "gross_exposure_pct_nav": 0.920380630273277,
+          "net_exposure": 3773051.6,
+          "net_exposure_pct_nav": 0.15084239942258207,
+          "valuation_date": "2026-01-07"
+        },
+        {
+          "cash_balance": 3502384.01,
+          "cash_pct_nav": 0.14000000018387476,
+          "closing_nav": 25017028.61,
+          "gross_exposure": 22832051.95,
+          "gross_exposure_pct_nav": 0.9126604244627755,
+          "net_exposure": 3741975.21,
+          "net_exposure_pct_nav": 0.14957712477908863,
+          "valuation_date": "2026-01-08"
+        },
+        {
+          "cash_balance": 3514284.44,
+          "cash_pct_nav": 0.13999999985658532,
+          "closing_nav": 25102031.74,
+          "gross_exposure": 22835543.72,
+          "gross_exposure_pct_nav": 0.9097089811902214,
+          "net_exposure": 3742547.48,
+          "net_exposure_pct_nav": 0.14909340880309158,
+          "valuation_date": "2026-01-09"
+        },
+        {
+          "cash_balance": 3533551.26,
+          "cash_pct_nav": 0.13999999981774708,
+          "closing_nav": 25239651.89,
+          "gross_exposure": 22913134.58,
+          "gross_exposure_pct_nav": 0.9078229240189413,
+          "net_exposure": 3755263.94,
+          "net_exposure_pct_nav": 0.14878430005161217,
+          "valuation_date": "2026-01-12"
+        },
+        {
+          "cash_balance": 3507620.58,
+          "cash_pct_nav": 0.13999999996806953,
+          "closing_nav": 25054432.72,
+          "gross_exposure": 23038754.25,
+          "gross_exposure_pct_nav": 0.9195480299822969,
+          "net_exposure": 3775851.93,
+          "net_exposure_pct_nav": 0.1507059438223034,
+          "valuation_date": "2026-01-13"
+        },
+        {
+          "cash_balance": 3490114.18,
+          "cash_pct_nav": 0.14000000016847589,
+          "closing_nav": 24929386.97,
+          "gross_exposure": 22869686.18,
+          "gross_exposure_pct_nav": 0.9173786025112194,
+          "net_exposure": 3748143.14,
+          "net_exposure_pct_nav": 0.15035039347379509,
+          "valuation_date": "2026-01-14"
+        },
+        {
+          "cash_balance": 3500176.0,
+          "cash_pct_nav": 0.139999999960002,
+          "closing_nav": 25001257.15,
+          "gross_exposure": 22755544.43,
+          "gross_exposure_pct_nav": 0.9101760080892572,
+          "net_exposure": 3729436.27,
+          "net_exposure_pct_nav": 0.14916994963991242,
+          "valuation_date": "2026-01-15"
+        },
+        {
+          "cash_balance": 3504323.7,
+          "cash_pct_nav": 0.13999999989612832,
+          "closing_nav": 25030883.59,
+          "gross_exposure": 22821147.53,
+          "gross_exposure_pct_nav": 0.9117196142095918,
+          "net_exposure": 3740188.07,
+          "net_exposure_pct_nav": 0.14942293413462357,
+          "valuation_date": "2026-01-16"
+        },
+        {
+          "cash_balance": 3502683.14,
+          "cash_pct_nav": 0.1400000001998468,
+          "closing_nav": 25019165.25,
+          "gross_exposure": 22848190.53,
+          "gross_exposure_pct_nav": 0.9132275318418148,
+          "net_exposure": 3744620.19,
+          "net_exposure_pct_nav": 0.14967006902838215,
+          "valuation_date": "2026-01-19"
+        },
+        {
+          "cash_balance": 3481945.43,
+          "cash_pct_nav": 0.13999999986329484,
+          "closing_nav": 24871038.81,
+          "gross_exposure": 22837494.04,
+          "gross_exposure_pct_nav": 0.9182364361402402,
+          "net_exposure": 3742867.12,
+          "net_exposure_pct_nav": 0.15049098465863398,
+          "valuation_date": "2026-01-20"
+        },
+        {
+          "cash_balance": 3466717.12,
+          "cash_pct_nav": 0.13999999990307835,
+          "closing_nav": 24762265.16,
+          "gross_exposure": 22702284.23,
+          "gross_exposure_pct_nav": 0.9168096732391182,
+          "net_exposure": 3720707.41,
+          "net_exposure_pct_nav": 0.1502571507880582,
+          "valuation_date": "2026-01-21"
+        },
+        {
+          "cash_balance": 3510111.61,
+          "cash_pct_nav": 0.1400000000319078,
+          "closing_nav": 25072225.78,
+          "gross_exposure": 22602995.62,
+          "gross_exposure_pct_nav": 0.9015153189163726,
+          "net_exposure": 3704434.88,
+          "net_exposure_pct_nav": 0.1477505392821969,
+          "valuation_date": "2026-01-22"
+        },
+        {
+          "cash_balance": 4197866.36,
+          "cash_pct_nav": 0.14000000006670058,
+          "closing_nav": 29984759.7,
+          "gross_exposure": 27449927.67,
+          "gross_exposure_pct_nav": 0.9154626531824432,
+          "net_exposure": 4498804.97,
+          "net_exposure_pct_nav": 0.15003638565094118,
+          "valuation_date": "2026-01-23"
+        },
+        {
+          "cash_balance": 4188647.13,
+          "cash_pct_nav": 0.13999999991309842,
+          "closing_nav": 29918908.09,
+          "gross_exposure": 27370088.65,
+          "gross_exposure_pct_nav": 0.914809075507274,
+          "net_exposure": 4485720.05,
+          "net_exposure_pct_nav": 0.14992927002905204,
+          "valuation_date": "2026-01-26"
+        },
+        {
+          "cash_balance": 4190998.53,
+          "cash_pct_nav": 0.13999999988642325,
+          "closing_nav": 29935703.81,
+          "gross_exposure": 27309979.3,
+          "gross_exposure_pct_nav": 0.9122878644622721,
+          "net_exposure": 4475868.64,
+          "net_exposure_pct_nav": 0.14951606511101434,
+          "valuation_date": "2026-01-27"
+        },
+        {
+          "cash_balance": 4217386.81,
+          "cash_pct_nav": 0.14000000004647428,
+          "closing_nav": 30124191.49,
+          "gross_exposure": 27325310.43,
+          "gross_exposure_pct_nav": 0.9070885915418141,
+          "net_exposure": 4478381.29,
+          "net_exposure_pct_nav": 0.14866394975236563,
+          "valuation_date": "2026-01-28"
+        },
+        {
+          "cash_balance": 4185943.96,
+          "cash_pct_nav": 0.14000000002006716,
+          "closing_nav": 29899599.71,
+          "gross_exposure": 27497361.98,
+          "gross_exposure_pct_nav": 0.9196565253950016,
+          "net_exposure": 4506579.06,
+          "net_exposure_pct_nav": 0.15072372552508662,
+          "valuation_date": "2026-01-29"
+        },
+        {
+          "cash_balance": 4203556.11,
+          "cash_pct_nav": 0.13999999998001694,
+          "closing_nav": 30025400.79,
+          "gross_exposure": 27292354.61,
+          "gross_exposure_pct_nav": 0.9089755304478652,
+          "net_exposure": 4472980.11,
+          "net_exposure_pct_nav": 0.148973202432313,
+          "valuation_date": "2026-01-30"
+        },
+        {
+          "cash_balance": 4223104.18,
+          "cash_pct_nav": 0.1399999999867396,
+          "closing_nav": 30165029.86,
+          "gross_exposure": 27407185.84,
+          "gross_exposure_pct_nav": 0.908574795622629,
+          "net_exposure": 4491799.98,
+          "net_exposure_pct_nav": 0.14890752639221821,
+          "valuation_date": "2026-02-02"
+        },
+        {
+          "cash_balance": 4205546.44,
+          "cash_pct_nav": 0.13999999985352676,
+          "closing_nav": 30039617.46,
+          "gross_exposure": 27534639.27,
+          "gross_exposure_pct_nav": 0.9166108492115265,
+          "net_exposure": 4512688.47,
+          "net_exposure_pct_nav": 0.1502245651433139,
+          "valuation_date": "2026-02-03"
+        },
+        {
+          "cash_balance": 4184394.89,
+          "cash_pct_nav": 0.13999999994646778,
+          "closing_nav": 29888534.94,
+          "gross_exposure": 27420162.82,
+          "gross_exposure_pct_nav": 0.9174140811868111,
+          "net_exposure": 4493926.78,
+          "net_exposure_pct_nav": 0.15035620812533543,
+          "valuation_date": "2026-02-04"
+        },
+        {
+          "cash_balance": 4172121.57,
+          "cash_pct_nav": 0.13999999998657756,
+          "closing_nav": 29800868.36,
+          "gross_exposure": 27282254.69,
+          "gross_exposure_pct_nav": 0.9154852254781747,
+          "net_exposure": 4471324.83,
+          "net_exposure_pct_nav": 0.15004008527488424,
+          "valuation_date": "2026-02-05"
+        },
+        {
+          "cash_balance": 4138099.65,
+          "cash_pct_nav": 0.14000000006089752,
+          "closing_nav": 29557854.63,
+          "gross_exposure": 27202232.63,
+          "gross_exposure_pct_nav": 0.9203047031157281,
+          "net_exposure": 4458209.91,
+          "net_exposure_pct_nav": 0.15082995588844603,
+          "valuation_date": "2026-02-06"
+        },
+        {
+          "cash_balance": 4113200.26,
+          "cash_pct_nav": 0.1399999999863853,
+          "closing_nav": 29380001.86,
+          "gross_exposure": 26980409.71,
+          "gross_exposure_pct_nav": 0.9183256637819696,
+          "net_exposure": 4421855.05,
+          "net_exposure_pct_nav": 0.15050560823892337,
+          "valuation_date": "2026-02-09"
+        },
+        {
+          "cash_balance": 4081521.21,
+          "cash_pct_nav": 0.13999999984907588,
+          "closing_nav": 29153722.96,
+          "gross_exposure": 26818065.71,
+          "gross_exposure_pct_nav": 0.9198847689811483,
+          "net_exposure": 4395248.29,
+          "net_exposure_pct_nav": 0.15076113249859874,
+          "valuation_date": "2026-02-10"
+        },
+        {
+          "cash_balance": 4071227.07,
+          "cash_pct_nav": 0.13999999988995945,
+          "closing_nav": 29080193.38,
+          "gross_exposure": 26611518.31,
+          "gross_exposure_pct_nav": 0.9151080242919623,
+          "net_exposure": 4361396.95,
+          "net_exposure_pct_nav": 0.14997826503449477,
+          "valuation_date": "2026-02-11"
+        },
+        {
+          "cash_balance": 4052757.76,
+          "cash_pct_nav": 0.14000000016581302,
+          "closing_nav": 28948269.68,
+          "gross_exposure": 26544400.51,
+          "gross_exposure_pct_nav": 0.9169598322603439,
+          "net_exposure": 4350396.95,
+          "net_exposure_pct_nav": 0.1502817611584445,
+          "valuation_date": "2026-02-12"
+        },
+        {
+          "cash_balance": 4049222.59,
+          "cash_pct_nav": 0.14000000009680869,
+          "closing_nav": 28923018.48,
+          "gross_exposure": 26423980.56,
+          "gross_exposure_pct_nav": 0.913596918602114,
+          "net_exposure": 4330661.14,
+          "net_exposure_pct_nav": 0.14973060792374115,
+          "valuation_date": "2026-02-13"
+        },
+        {
+          "cash_balance": 4022779.66,
+          "cash_pct_nav": 0.14000000013920724,
+          "closing_nav": 28734140.4,
+          "gross_exposure": 26400931.27,
+          "gross_exposure_pct_nav": 0.9188001068582515,
+          "net_exposure": 4326883.57,
+          "net_exposure_pct_nav": 0.15058336563289015,
+          "valuation_date": "2026-02-16"
+        },
+        {
+          "cash_balance": 3981778.2,
+          "cash_pct_nav": 0.13999999988748746,
+          "closing_nav": 28441272.88,
+          "gross_exposure": 26228523.36,
+          "gross_exposure_pct_nav": 0.9221993498907001,
+          "net_exposure": 4298627.4,
+          "net_exposure_pct_nav": 0.15114047174108056,
+          "valuation_date": "2026-02-17"
+        },
+        {
+          "cash_balance": 3966853.05,
+          "cash_pct_nav": 0.14000000011293587,
+          "closing_nav": 28334664.62,
+          "gross_exposure": 25961193.89,
+          "gross_exposure_pct_nav": 0.9162343806841925,
+          "net_exposure": 4254814.43,
+          "net_exposure_pct_nav": 0.15016286541809787,
+          "valuation_date": "2026-02-18"
+        },
+        {
+          "cash_balance": 3930414.59,
+          "cash_pct_nav": 0.13999999989314105,
+          "closing_nav": 28074389.95,
+          "gross_exposure": 25863881.86,
+          "gross_exposure_pct_nav": 0.9212624711013534,
+          "net_exposure": 4238865.82,
+          "net_exposure_pct_nav": 0.15098692536327046,
+          "valuation_date": "2026-02-19"
+        },
+        {
+          "cash_balance": 3905299.5,
+          "cash_pct_nav": 0.1400000001433949,
+          "closing_nav": 27894996.4,
+          "gross_exposure": 25626303.15,
+          "gross_exposure_pct_nav": 0.9186702440298576,
+          "net_exposure": 4199928.73,
+          "net_exposure_pct_nav": 0.15056208180761768,
+          "valuation_date": "2026-02-20"
+        },
+        {
+          "cash_balance": 3907695.65,
+          "cash_pct_nav": 0.14000000012897626,
+          "closing_nav": 27912111.76,
+          "gross_exposure": 25462552.72,
+          "gross_exposure_pct_nav": 0.9122402826033968,
+          "net_exposure": 4173091.46,
+          "net_exposure_pct_nav": 0.14950826708785003,
+          "valuation_date": "2026-02-23"
+        },
+        {
+          "cash_balance": 3918862.2,
+          "cash_pct_nav": 0.13999999988568113,
+          "closing_nav": 27991872.88,
+          "gross_exposure": 25478175.62,
+          "gross_exposure_pct_nav": 0.9101990327415349,
+          "net_exposure": 4175651.92,
+          "net_exposure_pct_nav": 0.14917372402700052,
+          "valuation_date": "2026-02-24"
+        },
+        {
+          "cash_balance": 3959909.31,
+          "cash_pct_nav": 0.1399999999505039,
+          "closing_nav": 28285066.51,
+          "gross_exposure": 25550981.57,
+          "gross_exposure_pct_nav": 0.9033382177470439,
+          "net_exposure": 4187584.19,
+          "net_exposure_pct_nav": 0.1480492962079303,
+          "valuation_date": "2026-02-25"
+        },
+        {
+          "cash_balance": 3960454.81,
+          "cash_pct_nav": 0.13999999984446232,
+          "closing_nav": 28288962.96,
+          "gross_exposure": 25818608.71,
+          "gross_exposure_pct_nav": 0.9126742732318244,
+          "net_exposure": 4231445.95,
+          "net_exposure_pct_nav": 0.14957939447915344,
+          "valuation_date": "2026-02-26"
+        },
+        {
+          "cash_balance": 3959607.81,
+          "cash_pct_nav": 0.14000000004242844,
+          "closing_nav": 28282912.92,
+          "gross_exposure": 25822165.4,
+          "gross_exposure_pct_nav": 0.9129952587641739,
+          "net_exposure": 4232028.86,
+          "net_exposure_pct_nav": 0.14963200120053263,
+          "valuation_date": "2026-02-27"
+        },
+        {
+          "cash_balance": 3971308.56,
+          "cash_pct_nav": 0.1399999999224437,
+          "closing_nav": 28366489.73,
+          "gross_exposure": 25816642.9,
+          "gross_exposure_pct_nav": 0.9101105968954869,
+          "net_exposure": 4231123.76,
+          "net_exposure_pct_nav": 0.1491592297909608,
+          "valuation_date": "2026-03-02"
+        },
+        {
+          "cash_balance": 3610854.75,
+          "cash_pct_nav": 0.14000000006978958,
+          "closing_nav": 25791819.63,
+          "gross_exposure": 23610931.84,
+          "gross_exposure_pct_nav": 0.9154426550244916,
+          "net_exposure": 3869626.86,
+          "net_exposure_pct_nav": 0.15003310799750658,
+          "valuation_date": "2026-03-03"
+        },
+        {
+          "cash_balance": 3612634.42,
+          "cash_pct_nav": 0.13999999984498845,
+          "closing_nav": 25804531.6,
+          "gross_exposure": 23542772.97,
+          "gross_exposure_pct_nav": 0.912350331908369,
+          "net_exposure": 3858456.21,
+          "net_exposure_pct_nav": 0.14952630296920405,
+          "valuation_date": "2026-03-04"
+        },
+        {
+          "cash_balance": 3588297.02,
+          "cash_pct_nav": 0.14000000005462201,
+          "closing_nav": 25630692.99,
+          "gross_exposure": 23554376.44,
+          "gross_exposure_pct_nav": 0.9189910100827127,
+          "net_exposure": 3860357.94,
+          "net_exposure_pct_nav": 0.15061465335744714,
+          "valuation_date": "2026-03-05"
+        },
+        {
+          "cash_balance": 3597557.88,
+          "cash_pct_nav": 0.1400000000544814,
+          "closing_nav": 25696841.99,
+          "gross_exposure": 23395696.55,
+          "gross_exposure_pct_nav": 0.9104502630753034,
+          "net_exposure": 3834351.67,
+          "net_exposure_pct_nav": 0.14921489852691427,
+          "valuation_date": "2026-03-06"
+        },
+        {
+          "cash_balance": 3580131.21,
+          "cash_pct_nav": 0.14000000014077696,
+          "closing_nav": 25572365.76,
+          "gross_exposure": 23456077.37,
+          "gross_exposure_pct_nav": 0.9172431518514305,
+          "net_exposure": 3844247.57,
+          "net_exposure_pct_nav": 0.15032819435162026,
+          "valuation_date": "2026-03-09"
+        },
+        {
+          "cash_balance": 3563962.6,
+          "cash_pct_nav": 0.14000000018855419,
+          "closing_nav": 25456875.68,
+          "gross_exposure": 23342455.46,
+          "gross_exposure_pct_nav": 0.9169410949490091,
+          "net_exposure": 3825625.92,
+          "net_exposure_pct_nav": 0.15027868965890318,
+          "valuation_date": "2026-03-10"
+        },
+        {
+          "cash_balance": 3565045.61,
+          "cash_pct_nav": 0.13999999983506523,
+          "closing_nav": 25464611.53,
+          "gross_exposure": 23237036.13,
+          "gross_exposure_pct_nav": 0.9125227024423411,
+          "net_exposure": 3808348.61,
+          "net_exposure_pct_nav": 0.14955455360131306,
+          "valuation_date": "2026-03-11"
+        },
+        {
+          "cash_balance": 3560203.59,
+          "cash_pct_nav": 0.13999999985057032,
+          "closing_nav": 25430025.67,
+          "gross_exposure": 23244097.39,
+          "gross_exposure_pct_nav": 0.9140414442216329,
+          "net_exposure": 3809505.87,
+          "net_exposure_pct_nav": 0.1498034614449526,
+          "valuation_date": "2026-03-12"
+        },
+        {
+          "cash_balance": 3550199.22,
+          "cash_pct_nav": 0.1399999998738099,
+          "closing_nav": 25358565.88,
+          "gross_exposure": 23212527.44,
+          "gross_exposure_pct_nav": 0.9153722473835734,
+          "net_exposure": 3804331.84,
+          "net_exposure_pct_nav": 0.15002156896421462,
+          "valuation_date": "2026-03-13"
+        },
+        {
+          "cash_balance": 3551547.27,
+          "cash_pct_nav": 0.14000000008672278,
+          "closing_nav": 25368194.77,
+          "gross_exposure": 23147298.93,
+          "gross_exposure_pct_nav": 0.9124535324592196,
+          "net_exposure": 3793641.45,
+          "net_exposure_pct_nav": 0.14954321678759327,
+          "valuation_date": "2026-03-16"
+        },
+        {
+          "cash_balance": 3518045.02,
+          "cash_pct_nav": 0.1400000001671383,
+          "closing_nav": 25128892.97,
+          "gross_exposure": 23156088.19,
+          "gross_exposure_pct_nav": 0.9214925710274933,
+          "net_exposure": 3795081.95,
+          "net_exposure_pct_nav": 0.1510246374375003,
+          "valuation_date": "2026-03-17"
+        },
+        {
+          "cash_balance": 3530080.11,
+          "cash_pct_nav": 0.14000000015863662,
+          "closing_nav": 25214857.9,
+          "gross_exposure": 22937653.51,
+          "gross_exposure_pct_nav": 0.909687994315447,
+          "net_exposure": 3759282.39,
+          "net_exposure_pct_nav": 0.14908996929147875,
+          "valuation_date": "2026-03-18"
+        },
+        {
+          "cash_balance": 3516367.41,
+          "cash_pct_nav": 0.13999999984074474,
+          "closing_nav": 25116910.1,
+          "gross_exposure": 23016122.29,
+          "gross_exposure_pct_nav": 0.9163596237898705,
+          "net_exposure": 3772142.75,
+          "net_exposure_pct_nav": 0.15018339178591875,
+          "valuation_date": "2026-03-19"
+        },
+        {
+          "cash_balance": 3539797.7,
+          "cash_pct_nav": 0.1400000001977514,
+          "closing_nav": 25284269.25,
+          "gross_exposure": 22926715.54,
+          "gross_exposure_pct_nav": 0.9067580839814067,
+          "net_exposure": 3757489.74,
+          "net_exposure_pct_nav": 0.14860978194969982,
+          "valuation_date": "2026-03-20"
+        },
+        {
+          "cash_balance": 3548407.86,
+          "cash_pct_nav": 0.14000000015781727,
+          "closing_nav": 25345770.4,
+          "gross_exposure": 23079480.97,
+          "gross_exposure_pct_nav": 0.910585103777315,
+          "net_exposure": 3782526.69,
+          "net_exposure_pct_nav": 0.14923699813835606,
+          "valuation_date": "2026-03-23"
+        },
+        {
+          "cash_balance": 3548022.76,
+          "cash_pct_nav": 0.14000000018940126,
+          "closing_nav": 25343019.68,
+          "gross_exposure": 23135619.23,
+          "gross_exposure_pct_nav": 0.9128990752533718,
+          "net_exposure": 3791727.25,
+          "net_exposure_pct_nav": 0.14961623744436126,
+          "valuation_date": "2026-03-24"
+        },
+        {
+          "cash_balance": 3538281.68,
+          "cash_pct_nav": 0.1399999998417311,
+          "closing_nav": 25273440.6,
+          "gross_exposure": 23133108.36,
+          "gross_exposure_pct_nav": 0.91531298512637,
+          "net_exposure": 3791315.74,
+          "net_exposure_pct_nav": 0.1500118563200295,
+          "valuation_date": "2026-03-25"
+        },
+        {
+          "cash_balance": 3512334.84,
+          "cash_pct_nav": 0.14000000011160665,
+          "closing_nav": 25088105.98,
+          "gross_exposure": 23069596.58,
+          "gross_exposure_pct_nav": 0.9195431731032571,
+          "net_exposure": 3780906.72,
+          "net_exposure_pct_nav": 0.15070514781044464,
+          "valuation_date": "2026-03-26"
+        },
+        {
+          "cash_balance": 3506843.07,
+          "cash_pct_nav": 0.13999999989620293,
+          "closing_nav": 25048879.09,
+          "gross_exposure": 22900423.15,
+          "gross_exposure_pct_nav": 0.9142294578419796,
+          "net_exposure": 3753180.65,
+          "net_exposure_pct_nav": 0.14983427547855196,
+          "valuation_date": "2026-03-27"
+        },
+        {
+          "cash_balance": 3533104.54,
+          "cash_pct_nav": 0.13999999988904943,
+          "closing_nav": 25236461.02,
+          "gross_exposure": 22864616.84,
+          "gross_exposure_pct_nav": 0.9060151826311817,
+          "net_exposure": 3747312.32,
+          "net_exposure_pct_nav": 0.14848802758161056,
+          "valuation_date": "2026-03-30"
+        },
+        {
+          "cash_balance": 3500088.65,
+          "cash_pct_nav": 0.13999999985600364,
+          "closing_nav": 25000633.24,
+          "gross_exposure": 23035841.63,
+          "gross_exposure_pct_nav": 0.9214103262450004,
+          "net_exposure": 3775374.57,
+          "net_exposure_pct_nav": 0.1510111577477787,
+          "valuation_date": "2026-03-31"
+        },
+        {
+          "cash_balance": 3491898.25,
+          "cash_pct_nav": 0.1400000000400928,
+          "closing_nav": 24942130.35,
+          "gross_exposure": 22820578.01,
+          "gross_exposure_pct_nav": 0.9149410130478289,
+          "net_exposure": 3740094.71,
+          "net_exposure_pct_nav": 0.14995089262694034,
+          "valuation_date": "2026-04-01"
+        },
+        {
+          "cash_balance": 3493201.21,
+          "cash_pct_nav": 0.13999999985571973,
+          "closing_nav": 24951437.24,
+          "gross_exposure": 22767176.58,
+          "gross_exposure_pct_nav": 0.9124595253175083,
+          "net_exposure": 3731342.7,
+          "net_exposure_pct_nav": 0.14954419916213213,
+          "valuation_date": "2026-04-02"
+        },
+        {
+          "cash_balance": 3525588.44,
+          "cash_pct_nav": 0.13999999989675482,
+          "closing_nav": 25182774.59,
+          "gross_exposure": 22775671.91,
+          "gross_exposure_pct_nav": 0.9044147152492144,
+          "net_exposure": 3732735.01,
+          "net_exposure_pct_nav": 0.14822572455865357,
+          "valuation_date": "2026-04-03"
+        },
+        {
+          "cash_balance": 3511816.59,
+          "cash_pct_nav": 0.14000000013554237,
+          "closing_nav": 25084404.19,
+          "gross_exposure": 22986836.65,
+          "gross_exposure_pct_nav": 0.9163796148350932,
+          "net_exposure": 3767343.09,
+          "net_exposure_pct_nav": 0.15018666823674715,
+          "valuation_date": "2026-04-06"
+        },
+        {
+          "cash_balance": 3508370.32,
+          "cash_pct_nav": 0.1399999999441336,
+          "closing_nav": 25059788.01,
+          "gross_exposure": 22897044.15,
+          "gross_exposure_pct_nav": 0.9136966418416241,
+          "net_exposure": 3752626.87,
+          "net_exposure_pct_nav": 0.1497469519096702,
+          "valuation_date": "2026-04-07"
+        },
+        {
+          "cash_balance": 3899182.63,
+          "cash_pct_nav": 0.13999999984919914,
+          "closing_nav": 27851304.53,
+          "gross_exposure": 25612974.49,
+          "gross_exposure_pct_nav": 0.919632847445656,
+          "net_exposure": 4197744.29,
+          "net_exposure_pct_nav": 0.15071984457598403,
+          "valuation_date": "2026-04-08"
+        },
+        {
+          "cash_balance": 3911711.76,
+          "cash_pct_nav": 0.14000000012884384,
+          "closing_nav": 27940798.26,
+          "gross_exposure": 25422670.79,
+          "gross_exposure_pct_nav": 0.9098763232686538,
+          "net_exposure": 4166555.15,
+          "net_exposure_pct_nav": 0.14912083438807233,
+          "valuation_date": "2026-04-09"
+        },
+        {
+          "cash_balance": 3907457.13,
+          "cash_pct_nav": 0.14000000000716578,
+          "closing_nav": 27910408.07,
+          "gross_exposure": 25504360.64,
+          "gross_exposure_pct_nav": 0.9137938999685862,
+          "net_exposure": 4179943.42,
+          "net_exposure_pct_nav": 0.14976289166093873,
+          "valuation_date": "2026-04-10"
+        },
+        {
+          "cash_balance": 3933686.26,
+          "cash_pct_nav": 0.14000000009965208,
+          "closing_nav": 28097758.98,
+          "gross_exposure": 25476620.49,
+          "gross_exposure_pct_nav": 0.9067136104389774,
+          "net_exposure": 4175397.03,
+          "net_exposure_pct_nav": 0.14860249292379688,
+          "valuation_date": "2026-04-13"
+        },
+        {
+          "cash_balance": 3932644.72,
+          "cash_pct_nav": 0.13999999984336242,
+          "closing_nav": 28090319.46,
+          "gross_exposure": 25647634.4,
+          "gross_exposure_pct_nav": 0.9130417486537192,
+          "net_exposure": 4203424.74,
+          "net_exposure_pct_nav": 0.14963962036763537,
+          "valuation_date": "2026-04-14"
+        },
+        {
+          "cash_balance": 3930995.11,
+          "cash_pct_nav": 0.1400000000997203,
+          "closing_nav": 28078536.48,
+          "gross_exposure": 25640843.59,
+          "gross_exposure_pct_nav": 0.9131830502727113,
+          "net_exposure": 4202311.79,
+          "net_exposure_pct_nav": 0.1496627786492097,
+          "valuation_date": "2026-04-15"
+        },
+        {
+          "cash_balance": 3917736.11,
+          "cash_pct_nav": 0.13999999993567713,
+          "closing_nav": 27983829.37,
+          "gross_exposure": 25630088.1,
+          "gross_exposure_pct_nav": 0.9158892359269699,
+          "net_exposure": 4200549.06,
+          "net_exposure_pct_nav": 0.15010629905080783,
+          "valuation_date": "2026-04-16"
+        },
+        {
+          "cash_balance": 3934221.8,
+          "cash_pct_nav": 0.1400000000782874,
+          "closing_nav": 28101584.27,
+          "gross_exposure": 25543639.45,
+          "gross_exposure_pct_nav": 0.9089750671911139,
+          "net_exposure": 4186380.89,
+          "net_exposure_pct_nav": 0.14897312727201625,
+          "valuation_date": "2026-04-17"
+        },
+        {
+          "cash_balance": 3936884.69,
+          "cash_pct_nav": 0.1399999998435311,
+          "closing_nav": 28120604.96,
+          "gross_exposure": 25651126.11,
+          "gross_exposure_pct_nav": 0.9121825844958635,
+          "net_exposure": 4203997.01,
+          "net_exposure_pct_nav": 0.14949881113795213,
+          "valuation_date": "2026-04-20"
+        },
+        {
+          "cash_balance": 3923009.71,
+          "cash_pct_nav": 0.1400000000927859,
+          "closing_nav": 28021497.91,
+          "gross_exposure": 25668488.21,
+          "gross_exposure_pct_nav": 0.9160284112020906,
+          "net_exposure": 4206842.51,
+          "net_exposure_pct_nav": 0.15012910885462366,
+          "valuation_date": "2026-04-21"
+        },
+        {
+          "cash_balance": 3906205.9,
+          "cash_pct_nav": 0.14000000017203393,
+          "closing_nav": 27901470.68,
+          "gross_exposure": 25578023.3,
+          "gross_exposure_pct_nav": 0.9167267056762902,
+          "net_exposure": 4192016.1,
+          "net_exposure_pct_nav": 0.15024355339823972,
+          "valuation_date": "2026-04-22"
+        },
+        {
+          "cash_balance": 3902635.57,
+          "cash_pct_nav": 0.1399999998349833,
+          "closing_nav": 27875968.39,
+          "gross_exposure": 25468462.43,
+          "gross_exposure_pct_nav": 0.9136350735401304,
+          "net_exposure": 4174060.01,
+          "net_exposure_pct_nav": 0.14973686121330831,
+          "valuation_date": "2026-04-23"
+        },
+        {
+          "cash_balance": 3882767.1,
+          "cash_pct_nav": 0.14000000017307246,
+          "closing_nav": 27734050.68,
+          "gross_exposure": 25445183.93,
+          "gross_exposure_pct_nav": 0.917470881682257,
+          "net_exposure": 4170244.87,
+          "net_exposure_pct_nav": 0.15036551703597018,
+          "valuation_date": "2026-04-24"
+        },
+        {
+          "cash_balance": 3886080.36,
+          "cash_pct_nav": 0.14000000013689887,
+          "closing_nav": 27757716.83,
+          "gross_exposure": 25315641.46,
+          "gross_exposure_pct_nav": 0.9120217493046601,
+          "net_exposure": 4149013.98,
+          "net_exposure_pct_nav": 0.14947245140550705,
+          "valuation_date": "2026-04-27"
+        },
+        {
+          "cash_balance": 3845759.86,
+          "cash_pct_nav": 0.1400000001310534,
+          "closing_nav": 27469713.26,
+          "gross_exposure": 25337243.92,
+          "gross_exposure_pct_nav": 0.9223701638303887,
+          "net_exposure": 4152554.44,
+          "net_exposure_pct_nav": 0.15116846691103755,
+          "valuation_date": "2026-04-28"
+        },
+        {
+          "cash_balance": 3862489.91,
+          "cash_pct_nav": 0.13999999996375395,
+          "closing_nav": 27589213.65,
+          "gross_exposure": 25074354.25,
+          "gross_exposure_pct_nav": 0.9088462820323986,
+          "net_exposure": 4109469.11,
+          "net_exposure_pct_nav": 0.14895202023998244,
+          "valuation_date": "2026-04-29"
+        },
+        {
+          "cash_balance": 3857435.12,
+          "cash_pct_nav": 0.1399999998475671,
+          "closing_nav": 27553108.03,
+          "gross_exposure": 25183434.22,
+          "gross_exposure_pct_nav": 0.913996134032506,
+          "net_exposure": 4127346.36,
+          "net_exposure_pct_nav": 0.1497960359138475,
+          "valuation_date": "2026-04-30"
+        },
+        {
+          "cash_balance": 3833234.62,
+          "cash_pct_nav": 0.14000000013148164,
+          "closing_nav": 27380247.26,
+          "gross_exposure": 25150477.0,
+          "gross_exposure_pct_nav": 0.9185628150532633,
+          "net_exposure": 4121944.96,
+          "net_exposure_pct_nav": 0.15054447539711516,
+          "valuation_date": "2026-05-01"
+        },
+        {
+          "cash_balance": 3833171.39,
+          "cash_pct_nav": 0.1400000001168745,
+          "closing_nav": 27379795.62,
+          "gross_exposure": 24992689.69,
+          "gross_exposure_pct_nav": 0.9128150566523476,
+          "net_exposure": 4096084.99,
+          "net_exposure_pct_nav": 0.14960246770461466,
+          "valuation_date": "2026-05-04"
+        },
+        {
+          "cash_balance": 3820032.97,
+          "cash_pct_nav": 0.14000000008062757,
+          "closing_nav": 27285949.77,
+          "gross_exposure": 24992277.45,
+          "gross_exposure_pct_nav": 0.9159394362544119,
+          "net_exposure": 4096017.43,
+          "net_exposure_pct_nav": 0.15011452650636467,
+          "valuation_date": "2026-05-05"
+        },
+        {
+          "cash_balance": 3818431.85,
+          "cash_pct_nav": 0.13999999991933862,
+          "closing_nav": 27274513.23,
+          "gross_exposure": 24906614.95,
+          "gross_exposure_pct_nav": 0.9131827483030758,
+          "net_exposure": 4081978.09,
+          "net_exposure_pct_nav": 0.14966272928787297,
+          "valuation_date": "2026-05-06"
+        },
+        {
+          "cash_balance": 3828418.01,
+          "cash_pct_nav": 0.1400006397930391,
+          "closing_nav": 27345717.96,
+          "gross_exposure": 24896175.67,
+          "gross_exposure_pct_nav": 0.9104231860511737,
+          "net_exposure": 4080267.17,
+          "net_exposure_pct_nav": 0.14921046051774609,
+          "valuation_date": "2026-05-07"
+        }
+      ]
+    },
+    "flags": [
+      {
+        "code": "SIMULATED_DATA",
+        "message": "Underlying fund series is SIMULATED / SYNTHETIC \u2014 not live performance.",
+        "metric": "fund.environment",
+        "severity": "WARNING"
+      },
+      {
+        "code": "UNAUDITED_DATA",
+        "message": "Data status is SYNTHETIC; not an audited investor statement.",
+        "metric": "fund.data_status",
+        "severity": "WARNING"
+      }
+    ],
+    "foundation_diagnostics": {
+      "portfolio_optimizer": {
+        "actual_weights": {
+          "STRAT-EQ-STATARB": 0.38,
+          "STRAT-FUT-TREND": 0.3,
+          "STRAT-FX-RELVAL": 0.14,
+          "STRAT-VOL-CARRY": 0.18
+        },
+        "as_of_date": "2026-05-07",
+        "environment": "SIMULATED",
+        "fund_id": "FUND-SAAT-SIM-01",
+        "max_abs_drift": 0.13,
+        "optimizer_name": "LocalTargetWeightAdapter (contract: 02-hybrid-quantum-portfolio-optimizer)",
+        "provenance": "LOCAL_CONTRACT_ADAPTER_SYNTHETIC",
+        "target_weights": {
+          "STRAT-EQ-STATARB": 0.25,
+          "STRAT-FUT-TREND": 0.25,
+          "STRAT-FX-RELVAL": 0.25,
+          "STRAT-VOL-CARRY": 0.25
+        },
+        "weight_drift": {
+          "STRAT-EQ-STATARB": 0.13,
+          "STRAT-FUT-TREND": 0.05,
+          "STRAT-FX-RELVAL": -0.11,
+          "STRAT-VOL-CARRY": -0.07
+        }
+      },
+      "risk_engine": {
+        "as_of_date": "2026-05-07",
+        "cvar_95": -0.009706308218896727,
+        "engine_name": "LocalDeterministicRiskAdapter (contract: 08-quantum-risk-engine)",
+        "environment": "SIMULATED",
+        "factor_exposures": {
+          "market_beta_proxy": 0.42,
+          "momentum_factor": 0.28,
+          "rates_duration": 0.12,
+          "volatility_carry": -0.15
+        },
+        "fund_id": "FUND-SAAT-SIM-01",
+        "parametric_var_95": -0.009222871033332157,
+        "provenance": "LOCAL_CONTRACT_ADAPTER_SYNTHETIC",
+        "stress_loss_2008": -0.021831986664217783,
+        "stress_loss_rate_shock": -0.010673415702506472
+      },
+      "transaction_cost_analysis": {
+        "cost_by_strategy": [
+          {
+            "cost_bps_of_nav": 20.743,
+            "strategy_id": "STRAT-EQ-STATARB",
+            "strategy_name": "Equity StatArb",
+            "transaction_costs": 55998.95
+          },
+          {
+            "cost_bps_of_nav": 16.54,
+            "strategy_id": "STRAT-FUT-TREND",
+            "strategy_name": "Systematic Macro Trend",
+            "transaction_costs": 44653.05
+          },
+          {
+            "cost_bps_of_nav": 7.445,
+            "strategy_id": "STRAT-FX-RELVAL",
+            "strategy_name": "G10 FX Relative Value",
+            "transaction_costs": 20099.44
+          },
+          {
+            "cost_bps_of_nav": 10.223,
+            "strategy_id": "STRAT-VOL-CARRY",
+            "strategy_name": "Cross-Asset Volatility Carry",
+            "transaction_costs": 27599.68
+          }
+        ],
+        "currency": "USD",
+        "environment": "SIMULATED",
+        "estimated_commission_bps": 17.584,
+        "estimated_slippage_bps": 37.367,
+        "fund_id": "FUND-SAAT-SIM-01",
+        "period_end": "2026-05-07",
+        "period_start": "2026-01-02",
+        "provenance": "LOCAL_CONTRACT_ADAPTER_SYNTHETIC",
+        "total_transaction_costs": 148351.12
+      }
+    },
+    "fund": {
+      "base_currency": "USD",
+      "benchmark_id": "BM-SYNTH-6040-USD",
+      "created_at_utc": "2026-01-02T00:00:00Z",
+      "data_status": "SYNTHETIC",
+      "environment": "SIMULATED",
+      "fee_schedule": {
+        "accrual_basis_days": 252,
+        "high_water_mark_enabled": true,
+        "hurdle_rate_annual": 0.04,
+        "management_fee_annual_bps": 150.0,
+        "performance_fee_pct": 20.0
+      },
+      "fund_id": "FUND-SAAT-SIM-01",
+      "inception_date": "2026-01-02",
+      "name": "SAAT Multi-Strategy Research Fund (Synthetic)"
+    },
+    "methodology_version": "SAAT-PERF-METH-1.0.0",
+    "metrics": {
+      "fee_drag_cumulative": 0.007488503064110197,
+      "gross": {
+        "annualized_return": -0.25393188857472027,
+        "annualized_volatility": 0.07754414074108831,
+        "best_day_return": 0.012584981946780833,
+        "calmar_ratio": -2.253161688917801,
+        "cumulative_return": -0.09933405489674674,
+        "current_drawdown": -0.11031982481957991,
+        "cvar_95_daily": -0.009638784331063886,
+        "daily_volatility": 0.004884821715026465,
+        "downside_deviation_annualized": 0.06503216070389106,
+        "drawdown_series": [
+          {
+            "drawdown": 0.0,
+            "running_peak": 1.0059976752,
+            "valuation_date": "2026-01-02",
+            "wealth_index": 1.0059976752
+          },
+          {
+            "drawdown": 0.0,
+            "running_peak": 1.0114103314012879,
+            "valuation_date": "2026-01-05",
+            "wealth_index": 1.0114103314012879
+          },
+          {
+            "drawdown": -0.00017133377150724272,
+            "running_peak": 1.0114103314012879,
+            "valuation_date": "2026-01-06",
+            "wealth_index": 1.0112370426546675
+          },
+          {
+            "drawdown": -0.008338818264149506,
+            "running_peak": 1.0114103314012879,
+            "valuation_date": "2026-01-07",
+            "wealth_index": 1.0029763644572494
+          },
+          {
+            "drawdown": -0.008120200239642328,
+            "running_peak": 1.0114103314012879,
+            "valuation_date": "2026-01-08",
+            "wealth_index": 1.0031974769858665
+          },
+          {
+            "drawdown": -0.004683004645567035,
+            "running_peak": 1.0114103314012879,
+            "valuation_date": "2026-01-09",
+            "wealth_index": 1.0066738921207612
+          },
+          {
+            "drawdown": 0.0,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-01-12",
+            "wealth_index": 1.0123479990105493
+          },
+          {
+            "drawdown": -0.007270896238973479,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-01-13",
+            "wealth_index": 1.004987321752011
+          },
+          {
+            "drawdown": -0.012158537378248346,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-01-14",
+            "wealth_index": 1.0000393280247846
+          },
+          {
+            "drawdown": -0.009243936751012649,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-01-15",
+            "wealth_index": 1.0029899181376816
+          },
+          {
+            "drawdown": -0.008002993167768091,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-01-16",
+            "wealth_index": 1.0042461848910642
+          },
+          {
+            "drawdown": -0.00840041839921335,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-01-19",
+            "wealth_index": 1.0038438522532542
+          },
+          {
+            "drawdown": -0.014204245827502682,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-01-20",
+            "wealth_index": 0.997968359169623
+          },
+          {
+            "drawdown": -0.01844906517786271,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-01-21",
+            "wealth_index": 0.9936711247941248
+          },
+          {
+            "drawdown": -0.006096264383280037,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-01-22",
+            "wealth_index": 1.0061764579606964
+          },
+          {
+            "drawdown": -0.008919954697607202,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-01-23",
+            "wealth_index": 1.003317900721162
+          },
+          {
+            "drawdown": -0.011029612650447551,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-01-26",
+            "wealth_index": 1.0011821927140072
+          },
+          {
+            "drawdown": -0.010407650538943325,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-01-27",
+            "wealth_index": 1.001811834813049
+          },
+          {
+            "drawdown": -0.004109942976242342,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-01-28",
+            "wealth_index": 1.0081873064625029
+          },
+          {
+            "drawdown": -0.011467583784622315,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-01-29",
+            "wealth_index": 1.000738813512701
+          },
+          {
+            "drawdown": -0.007241633121843338,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-01-30",
+            "wealth_index": 1.0050169462100826
+          },
+          {
+            "drawdown": -0.0025579096111646438,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-02-02",
+            "wealth_index": 1.009758504334037
+          },
+          {
+            "drawdown": -0.006637466538228498,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-02-03",
+            "wealth_index": 1.0056285730420742
+          },
+          {
+            "drawdown": -0.011566450350918411,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-02-04",
+            "wealth_index": 1.000638726142142
+          },
+          {
+            "drawdown": -0.014398899058069015,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-02-05",
+            "wealth_index": 0.9977713023611582
+          },
+          {
+            "drawdown": -0.022369515935241502,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-02-06",
+            "wealth_index": 0.9897022643146729
+          },
+          {
+            "drawdown": -0.028186009662595435,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-02-09",
+            "wealth_index": 0.9838139485285288
+          },
+          {
+            "drawdown": -0.03560510611439627,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-02-10",
+            "wealth_index": 0.9763032410810819
+          },
+          {
+            "drawdown": -0.03797231913689725,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-02-11",
+            "wealth_index": 0.9739067977145214
+          },
+          {
+            "drawdown": -0.0422716445221859,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-02-12",
+            "wealth_index": 0.9695543842636292
+          },
+          {
+            "drawdown": -0.04304238898740009,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-02-13",
+            "wealth_index": 0.9687741226465211
+          },
+          {
+            "drawdown": -0.0492270611608252,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-02-16",
+            "wealth_index": 0.962513082147218
+          },
+          {
+            "drawdown": -0.058853442223335994,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-02-17",
+            "wealth_index": 0.9527678345408721
+          },
+          {
+            "drawdown": -0.06231765295071512,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-02-18",
+            "wealth_index": 0.949260847742859
+          },
+          {
+            "drawdown": -0.0708676367669322,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-02-19",
+            "wealth_index": 0.9406052887349391
+          },
+          {
+            "drawdown": -0.07674199437271911,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-02-20",
+            "wealth_index": 0.9346583945672483
+          },
+          {
+            "drawdown": -0.07611317466606249,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-02-23",
+            "wealth_index": 0.9352949789390205
+          },
+          {
+            "drawdown": -0.07341070861671273,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-02-24",
+            "wealth_index": 0.9380308150364737
+          },
+          {
+            "drawdown": -0.06364282224778428,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-02-25",
+            "wealth_index": 0.9479193152566208
+          },
+          {
+            "drawdown": -0.06345060679512882,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-02-26",
+            "wealth_index": 0.9481139041854955
+          },
+          {
+            "drawdown": -0.0635876631932879,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-02-27",
+            "wealth_index": 0.9479751554150675
+          },
+          {
+            "drawdown": -0.060757308046707426,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-03-02",
+            "wealth_index": 0.9508404597841975
+          },
+          {
+            "drawdown": -0.06340524617675902,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-03-03",
+            "wealth_index": 0.948159824916736
+          },
+          {
+            "drawdown": -0.06288038594718126,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-03-04",
+            "wealth_index": 0.9486911661199092
+          },
+          {
+            "drawdown": -0.06913024615207497,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-03-05",
+            "wealth_index": 0.9423641326473895
+          },
+          {
+            "drawdown": -0.06666495384233428,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-03-06",
+            "wealth_index": 0.9448598663841316
+          },
+          {
+            "drawdown": -0.07112303320263758,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-03-09",
+            "wealth_index": 0.9403467386642983
+          },
+          {
+            "drawdown": -0.07525531205331892,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-03-10",
+            "wealth_index": 0.9361634344384574
+          },
+          {
+            "drawdown": -0.07491185764887809,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-03-11",
+            "wealth_index": 0.9365111298175445
+          },
+          {
+            "drawdown": -0.07610584042906166,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-03-12",
+            "wealth_index": 0.9353024037391725
+          },
+          {
+            "drawdown": -0.07863964975678706,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-03-13",
+            "wealth_index": 0.9327373069363755
+          },
+          {
+            "drawdown": -0.07822758654889006,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-03-16",
+            "wealth_index": 0.9331544583003558
+          },
+          {
+            "drawdown": -0.08686055552604566,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-03-17",
+            "wealth_index": 0.9244148894308123
+          },
+          {
+            "drawdown": -0.08367508358625941,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-03-18",
+            "wealth_index": 0.9276396955749591
+          },
+          {
+            "drawdown": -0.08717269896822921,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-03-19",
+            "wealth_index": 0.9240988916417134
+          },
+          {
+            "drawdown": -0.08102870487988989,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-03-20",
+            "wealth_index": 0.9303187517629764
+          },
+          {
+            "drawdown": -0.07873135780630114,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-03-23",
+            "wealth_index": 0.9326444664759568
+          },
+          {
+            "drawdown": -0.07876913321603074,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-03-24",
+            "wealth_index": 0.9326062246155051
+          },
+          {
+            "drawdown": -0.08123616124375188,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-03-25",
+            "wealth_index": 0.9301087337281387
+          },
+          {
+            "drawdown": -0.0879115808662374,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-03-26",
+            "wealth_index": 0.9233508860307598
+          },
+          {
+            "drawdown": -0.08927610307645828,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-03-27",
+            "wealth_index": 0.9219695147016372
+          },
+          {
+            "drawdown": -0.08239452825809157,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-03-30",
+            "wealth_index": 0.9289360631990521
+          },
+          {
+            "drawdown": -0.0909073386068292,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-03-31",
+            "wealth_index": 0.9203181366765513
+          },
+          {
+            "drawdown": -0.09297328116868597,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-04-01",
+            "wealth_index": 0.9182266838579849
+          },
+          {
+            "drawdown": -0.09257358783500036,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-04-02",
+            "wealth_index": 0.9186313126045593
+          },
+          {
+            "drawdown": -0.08409910756479144,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-04-03",
+            "wealth_index": 0.9272104357487597
+          },
+          {
+            "drawdown": -0.08761500735090333,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-04-06",
+            "wealth_index": 0.9236511216355677
+          },
+          {
+            "drawdown": -0.08844875390311924,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-04-07",
+            "wealth_index": 0.92280707998175
+          },
+          {
+            "drawdown": -0.09516000384755963,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-04-08",
+            "wealth_index": 0.9160129595296361
+          },
+          {
+            "drawdown": -0.09219141128264863,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-04-09",
+            "wealth_index": 0.9190182082726014
+          },
+          {
+            "drawdown": -0.09311750294344845,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-04-10",
+            "wealth_index": 0.9180806812328903
+          },
+          {
+            "drawdown": -0.08696874365340213,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-04-13",
+            "wealth_index": 0.9243053653965663
+          },
+          {
+            "drawdown": -0.08714883799772644,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-04-14",
+            "wealth_index": 0.9241230472474564
+          },
+          {
+            "drawdown": -0.08747011050684328,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-04-15",
+            "wealth_index": 0.9237978076657148
+          },
+          {
+            "drawdown": -0.09048639803266423,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-04-16",
+            "wealth_index": 0.9207442750245095
+          },
+          {
+            "drawdown": -0.08659778538332363,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-04-17",
+            "wealth_index": 0.9246809042589966
+          },
+          {
+            "drawdown": -0.08591786858019113,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-04-20",
+            "wealth_index": 0.9253692166741414
+          },
+          {
+            "drawdown": -0.08907769801263632,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-04-21",
+            "wealth_index": 0.922170369670991
+          },
+          {
+            "drawdown": -0.09291803184105474,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-04-22",
+            "wealth_index": 0.918282615404259
+          },
+          {
+            "drawdown": -0.09368586648864863,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-04-23",
+            "wealth_index": 0.9175052995351963
+          },
+          {
+            "drawdown": -0.09823875156021178,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-04-24",
+            "wealth_index": 0.9128961954432744
+          },
+          {
+            "drawdown": -0.09740836603365988,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-04-27",
+            "wealth_index": 0.9137368345694865
+          },
+          {
+            "drawdown": -0.10671236887692914,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-04-28",
+            "wealth_index": 0.9043179459083145
+          },
+          {
+            "drawdown": -0.10276601738899038,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-04-29",
+            "wealth_index": 0.9083130269405215
+          },
+          {
+            "drawdown": -0.10387963032170322,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-04-30",
+            "wealth_index": 0.9071856631164175
+          },
+          {
+            "drawdown": -0.1094411384449192,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-05-01",
+            "wealth_index": 0.9015554814963989
+          },
+          {
+            "drawdown": -0.10939569433265928,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-05-04",
+            "wealth_index": 0.901601486752512
+          },
+          {
+            "drawdown": -0.11238815559430904,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-05-05",
+            "wealth_index": 0.8985720745821643
+          },
+          {
+            "drawdown": -0.11270025130628081,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-05-06",
+            "wealth_index": 0.8982561251126499
+          },
+          {
+            "drawdown": -0.11031982481957991,
+            "running_peak": 1.0123479990105493,
+            "valuation_date": "2026-05-07",
+            "wealth_index": 0.9006659451032533
+          }
+        ],
+        "max_drawdown": -0.11270025130628081,
+        "max_drawdown_peak_date": "2026-01-12",
+        "max_drawdown_recovery_date": null,
+        "max_drawdown_trough_date": "2026-05-06",
+        "mean_daily_return": -0.0011499794935760923,
+        "modified_dietz_return": -0.1026705766627771,
+        "observation_count": 90,
+        "sharpe_ratio": -4.2529948649805185,
+        "sortino_ratio": -5.071257494931159,
+        "ulcer_index": 0.0697641461210215,
+        "var_95_daily": -0.009118209213517064,
+        "win_rate": 0.3888888888888889,
+        "worst_day_return": -0.010308097807625052
+      },
+      "net": {
+        "annualized_return": -0.27117092592102776,
+        "annualized_volatility": 0.07701600978666515,
+        "best_day_return": 0.012517458237249568,
+        "calmar_ratio": -2.3057386912788176,
+        "cumulative_return": -0.10682255796085693,
+        "current_drawdown": -0.11530332714986646,
+        "cvar_95_daily": -0.009706308218896727,
+        "daily_volatility": 0.004851552592048396,
+        "downside_deviation_annualized": 0.06573286512263904,
+        "drawdown_series": [
+          {
+            "drawdown": 0.0,
+            "running_peak": 1.0047758668,
+            "valuation_date": "2026-01-02",
+            "wealth_index": 1.0047758668
+          },
+          {
+            "drawdown": 0.0,
+            "running_peak": 1.0090783531999998,
+            "valuation_date": "2026-01-05",
+            "wealth_index": 1.0090783531999998
+          },
+          {
+            "drawdown": -0.00023885756664554503,
+            "running_peak": 1.0090783531999998,
+            "valuation_date": "2026-01-06",
+            "wealth_index": 1.0088373271999997
+          },
+          {
+            "drawdown": -0.008473298404316876,
+            "running_peak": 1.0090783531999998,
+            "valuation_date": "2026-01-07",
+            "wealth_index": 1.0005281311999996
+          },
+          {
+            "drawdown": -0.00832166181483418,
+            "running_peak": 1.0090783531999998,
+            "valuation_date": "2026-01-08",
+            "wealth_index": 1.0006811443999997
+          },
+          {
+            "drawdown": -0.004952126447023031,
+            "running_peak": 1.0090783531999998,
+            "valuation_date": "2026-01-09",
+            "wealth_index": 1.0040812695999997
+          },
+          {
+            "drawdown": 0.0,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-01-12",
+            "wealth_index": 1.0095860755999997
+          },
+          {
+            "drawdown": -0.007338420149660796,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-01-13",
+            "wealth_index": 1.0021773087999997
+          },
+          {
+            "drawdown": -0.012292757497298523,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-01-14",
+            "wealth_index": 0.9971754787999996
+          },
+          {
+            "drawdown": -0.009445246750588332,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-01-15",
+            "wealth_index": 1.0000502859999996
+          },
+          {
+            "drawdown": -0.008271441338013052,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-01-16",
+            "wealth_index": 1.0012353435999994
+          },
+          {
+            "drawdown": -0.008735724286568436,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-01-19",
+            "wealth_index": 1.0007666099999994
+          },
+          {
+            "drawdown": -0.014604523137106029,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-01-20",
+            "wealth_index": 0.9948415523999994
+          },
+          {
+            "drawdown": -0.01891415666430596,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-01-21",
+            "wealth_index": 0.9904906063999994
+          },
+          {
+            "drawdown": -0.006633455593194726,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-01-22",
+            "wealth_index": 1.0028890311999994
+          },
+          {
+            "drawdown": -0.009522695594185726,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-01-23",
+            "wealth_index": 0.9999720947259323
+          },
+          {
+            "drawdown": -0.011697951484716751,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-01-26",
+            "wealth_index": 0.9977759866679853
+          },
+          {
+            "drawdown": -0.011143143654419152,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-01-27",
+            "wealth_index": 0.9983361129280877
+          },
+          {
+            "drawdown": -0.004916888347790582,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-01-28",
+            "wealth_index": 1.0046220535887904
+          },
+          {
+            "drawdown": -0.012335759236594357,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-01-29",
+            "wealth_index": 0.9971320648427799
+          },
+          {
+            "drawdown": -0.00818021102288824,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-01-30",
+            "wealth_index": 1.0013274484558221
+          },
+          {
+            "drawdown": -0.00356788708719602,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-02-02",
+            "wealth_index": 1.0059839864774536
+          },
+          {
+            "drawdown": -0.007710596154531513,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-02-03",
+            "wealth_index": 1.0018015650878098
+          },
+          {
+            "drawdown": -0.01270125836592273,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-02-04",
+            "wealth_index": 0.996763062011166
+          },
+          {
+            "drawdown": -0.015597121421476179,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-02-05",
+            "wealth_index": 0.9938394389934349
+          },
+          {
+            "drawdown": -0.023624518893799462,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-02-06",
+            "wealth_index": 0.9857350902820706
+          },
+          {
+            "drawdown": -0.02949947450368917,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-02-09",
+            "wealth_index": 0.9798038169035579
+          },
+          {
+            "drawdown": -0.03697407550627496,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-02-10",
+            "wealth_index": 0.9722575638106815
+          },
+          {
+            "drawdown": -0.03940295540797012,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-02-11",
+            "wealth_index": 0.9698054004826253
+          },
+          {
+            "drawdown": -0.04376075023676251,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-02-12",
+            "wealth_index": 0.9654058315031548
+          },
+          {
+            "drawdown": -0.044594865325869315,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-02-13",
+            "wealth_index": 0.9645637205237448
+          },
+          {
+            "drawdown": -0.05083401659509701,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-02-16",
+            "wealth_index": 0.9582647602787704
+          },
+          {
+            "drawdown": -0.06050821891186986,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-02-17",
+            "wealth_index": 0.9484978203272193
+          },
+          {
+            "drawdown": -0.06402977663148013,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-02-18",
+            "wealth_index": 0.9449425046890791
+          },
+          {
+            "drawdown": -0.07262734940264737,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-02-19",
+            "wealth_index": 0.936262514935351
+          },
+          {
+            "drawdown": -0.0785532011223058,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-02-20",
+            "wealth_index": 0.9302798575531135
+          },
+          {
+            "drawdown": -0.07798783472262993,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-02-23",
+            "wealth_index": 0.9308506435978383
+          },
+          {
+            "drawdown": -0.07535311028513547,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-02-24",
+            "wealth_index": 0.9335106247029757
+          },
+          {
+            "drawdown": -0.0656681356774732,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-02-25",
+            "wealth_index": 0.9432884402094112
+          },
+          {
+            "drawdown": -0.06553942544829783,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-02-26",
+            "wealth_index": 0.9434183842645739
+          },
+          {
+            "drawdown": -0.0657392745506653,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-02-27",
+            "wealth_index": 0.9432166193936026
+          },
+          {
+            "drawdown": -0.06297850760412749,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-03-02",
+            "wealth_index": 0.9460038512608039
+          },
+          {
+            "drawdown": -0.06568345478751747,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-03-03",
+            "wealth_index": 0.94327297424922
+          },
+          {
+            "drawdown": -0.06522295979090131,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-03-04",
+            "wealth_index": 0.9437378835856871
+          },
+          {
+            "drawdown": -0.07152031654392466,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-03-05",
+            "wealth_index": 0.9373801598947491
+          },
+          {
+            "drawdown": -0.06912404881113643,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-03-06",
+            "wealth_index": 0.9397993984311817
+          },
+          {
+            "drawdown": -0.07363323826899837,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-03-09",
+            "wealth_index": 0.9352469835422819
+          },
+          {
+            "drawdown": -0.07781690169794098,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-03-10",
+            "wealth_index": 0.9310232151994245
+          },
+          {
+            "drawdown": -0.07753666816847438,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-03-11",
+            "wealth_index": 0.9313061350686902
+          },
+          {
+            "drawdown": -0.07878955151257216,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-03-12",
+            "wealth_index": 0.9300412414901379
+          },
+          {
+            "drawdown": -0.08137820423549791,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-03-13",
+            "wealth_index": 0.9274277737465081
+          },
+          {
+            "drawdown": -0.08102939475372839,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-03-16",
+            "wealth_index": 0.9277799269423398
+          },
+          {
+            "drawdown": -0.08969817556278248,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-03-17",
+            "wealth_index": 0.9190280465450903
+          },
+          {
+            "drawdown": -0.0865840697121969,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-03-18",
+            "wealth_index": 0.922172004449786
+          },
+          {
+            "drawdown": -0.09013225868916686,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-03-19",
+            "wealth_index": 0.9185898022650397
+          },
+          {
+            "drawdown": -0.08406962235404691,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-03-20",
+            "wealth_index": 0.9247105554904035
+          },
+          {
+            "drawdown": -0.08184172440737547,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-03-23",
+            "wealth_index": 0.9269598102352208
+          },
+          {
+            "drawdown": -0.08194137007969005,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-03-24",
+            "wealth_index": 0.9268592093519582
+          },
+          {
+            "drawdown": -0.08446189350832967,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-03-25",
+            "wealth_index": 0.9243145239951801
+          },
+          {
+            "drawdown": -0.09117569673550685,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-03-26",
+            "wealth_index": 0.9175363617427036
+          },
+          {
+            "drawdown": -0.09259670280913801,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-03-27",
+            "wealth_index": 0.9161017337974225
+          },
+          {
+            "drawdown": -0.0858014900906825,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-03-30",
+            "wealth_index": 0.9229620859387153
+          },
+          {
+            "drawdown": -0.09434442346396188,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-03-31",
+            "wealth_index": 0.9143372593602739
+          },
+          {
+            "drawdown": -0.0964637085261979,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-04-01",
+            "wealth_index": 0.9121976586712133
+          },
+          {
+            "drawdown": -0.09612656359279592,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-04-02",
+            "wealth_index": 0.9125380355014351
+          },
+          {
+            "drawdown": -0.0877462974180433,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-04-03",
+            "wealth_index": 0.920998635541287
+          },
+          {
+            "drawdown": -0.09130979520911287,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-04-06",
+            "wealth_index": 0.9174009777909918
+          },
+          {
+            "drawdown": -0.09220152384958358,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-04-07",
+            "wealth_index": 0.9165007009723588
+          },
+          {
+            "drawdown": -0.09894644242769557,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-04-08",
+            "wealth_index": 0.9096911250948412
+          },
+          {
+            "drawdown": -0.09605111507561226,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-04-09",
+            "wealth_index": 0.9126142072738084
+          },
+          {
+            "drawdown": -0.09703430739916397,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-04-10",
+            "wealth_index": 0.9116215899943138
+          },
+          {
+            "drawdown": -0.09097307591221249,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-04-13",
+            "wealth_index": 0.9177409249045282
+          },
+          {
+            "drawdown": -0.09121376144115811,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-04-14",
+            "wealth_index": 0.9174979321459062
+          },
+          {
+            "drawdown": -0.09159496785956378,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-04-15",
+            "wealth_index": 0.9171130714539546
+          },
+          {
+            "drawdown": -0.09465896000761465,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-04-16",
+            "wealth_index": 0.9140197076455348
+          },
+          {
+            "drawdown": -0.09084931901028614,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-04-17",
+            "wealth_index": 0.9178658681494725
+          },
+          {
+            "drawdown": -0.09023395607913443,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-04-20",
+            "wealth_index": 0.9184871299962036
+          },
+          {
+            "drawdown": -0.09344029637413953,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-04-21",
+            "wealth_index": 0.9152500534807313
+          },
+          {
+            "drawdown": -0.09732345245684859,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-04-22",
+            "wealth_index": 0.9113296731702468
+          },
+          {
+            "drawdown": -0.09814851000867664,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-04-23",
+            "wealth_index": 0.9104967065543526
+          },
+          {
+            "drawdown": -0.10273987330874312,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-04-24",
+            "wealth_index": 0.9058613300985846
+          },
+          {
+            "drawdown": -0.10197421909572146,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-04-27",
+            "wealth_index": 0.9066343239307757
+          },
+          {
+            "drawdown": -0.1112917949048724,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-04-28",
+            "wealth_index": 0.8972274291355096
+          },
+          {
+            "drawdown": -0.10742568330407476,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-04-29",
+            "wealth_index": 0.9011306015743904
+          },
+          {
+            "drawdown": -0.10859378289216803,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-04-30",
+            "wealth_index": 0.8999513044953373
+          },
+          {
+            "drawdown": -0.1141862251278779,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-05-01",
+            "wealth_index": 0.8943052526855674
+          },
+          {
+            "drawdown": -0.11420083671737469,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-05-04",
+            "wealth_index": 0.894290501028269
+          },
+          {
+            "drawdown": -0.11723696512977322,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-05-05",
+            "wealth_index": 0.891225268059378
+          },
+          {
+            "drawdown": -0.11760696341987908,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-05-06",
+            "wealth_index": 0.8908517229376912
+          },
+          {
+            "drawdown": -0.11530332714986646,
+            "running_peak": 1.0095860755999997,
+            "valuation_date": "2026-05-07",
+            "wealth_index": 0.8931774420391431
+          }
+        ],
+        "max_drawdown": -0.11760696341987908,
+        "max_drawdown_peak_date": "2026-01-12",
+        "max_drawdown_recovery_date": null,
+        "max_drawdown_trough_date": "2026-05-06",
+        "mean_daily_return": -0.0012427947523013542,
+        "modified_dietz_return": -0.11041827444574093,
+        "observation_count": 90,
+        "sharpe_ratio": -4.585855311879491,
+        "sortino_ratio": -5.373024238651375,
+        "ulcer_index": 0.07257822404395217,
+        "var_95_daily": -0.009185733217265093,
+        "win_rate": 0.37777777777777777,
+        "worst_day_return": -0.010375621733006922
+      }
+    },
+    "period_end": "2026-05-07",
+    "period_start": "2026-01-02",
+    "reconciliation_summary": {
+      "all_snapshots_reconciled": true,
+      "closing_nav": 27345717.96,
+      "fx_rates_applied": {
+        "2026-01-02": 1.0,
+        "2026-01-05": 1.0,
+        "2026-01-06": 1.0,
+        "2026-01-07": 1.0,
+        "2026-01-08": 1.0,
+        "2026-01-09": 1.0,
+        "2026-01-12": 1.0,
+        "2026-01-13": 1.0,
+        "2026-01-14": 1.0,
+        "2026-01-15": 1.0,
+        "2026-01-16": 1.0,
+        "2026-01-19": 1.0,
+        "2026-01-20": 1.0,
+        "2026-01-21": 1.0,
+        "2026-01-22": 1.0,
+        "2026-01-23": 1.0,
+        "2026-01-26": 1.0,
+        "2026-01-27": 1.0,
+        "2026-01-28": 1.0,
+        "2026-01-29": 1.0,
+        "2026-01-30": 1.0,
+        "2026-02-02": 1.0,
+        "2026-02-03": 1.0,
+        "2026-02-04": 1.0,
+        "2026-02-05": 1.0,
+        "2026-02-06": 1.0,
+        "2026-02-09": 1.0,
+        "2026-02-10": 1.0,
+        "2026-02-11": 1.0,
+        "2026-02-12": 1.0,
+        "2026-02-13": 1.0,
+        "2026-02-16": 1.0,
+        "2026-02-17": 1.0,
+        "2026-02-18": 1.0,
+        "2026-02-19": 1.0,
+        "2026-02-20": 1.0,
+        "2026-02-23": 1.0,
+        "2026-02-24": 1.0,
+        "2026-02-25": 1.0,
+        "2026-02-26": 1.0,
+        "2026-02-27": 1.0,
+        "2026-03-02": 1.0,
+        "2026-03-03": 1.0,
+        "2026-03-04": 1.0,
+        "2026-03-05": 1.0,
+        "2026-03-06": 1.0,
+        "2026-03-09": 1.0,
+        "2026-03-10": 1.0,
+        "2026-03-11": 1.0,
+        "2026-03-12": 1.0,
+        "2026-03-13": 1.0,
+        "2026-03-16": 1.0,
+        "2026-03-17": 1.0,
+        "2026-03-18": 1.0,
+        "2026-03-19": 1.0,
+        "2026-03-20": 1.0,
+        "2026-03-23": 1.0,
+        "2026-03-24": 1.0,
+        "2026-03-25": 1.0,
+        "2026-03-26": 1.0,
+        "2026-03-27": 1.0,
+        "2026-03-30": 1.0,
+        "2026-03-31": 1.0,
+        "2026-04-01": 1.0,
+        "2026-04-02": 1.0,
+        "2026-04-03": 1.0,
+        "2026-04-06": 1.0,
+        "2026-04-07": 1.0,
+        "2026-04-08": 1.0,
+        "2026-04-09": 1.0,
+        "2026-04-10": 1.0,
+        "2026-04-13": 1.0,
+        "2026-04-14": 1.0,
+        "2026-04-15": 1.0,
+        "2026-04-16": 1.0,
+        "2026-04-17": 1.0,
+        "2026-04-20": 1.0,
+        "2026-04-21": 1.0,
+        "2026-04-22": 1.0,
+        "2026-04-23": 1.0,
+        "2026-04-24": 1.0,
+        "2026-04-27": 1.0,
+        "2026-04-28": 1.0,
+        "2026-04-29": 1.0,
+        "2026-04-30": 1.0,
+        "2026-05-01": 1.0,
+        "2026-05-04": 1.0,
+        "2026-05-05": 1.0,
+        "2026-05-06": 1.0,
+        "2026-05-07": 1.0
+      },
+      "latest_ledger_hash": "e0bb749caf7956b070d290deb379eba7e4a2bd8c58f1397173452cdeaf642612",
+      "nav_bridge_residual": 0.0,
+      "net_cash_flows": 5500000.0,
+      "opening_nav": 25000000.0,
+      "snapshot_count": 90,
+      "total_fees": 221325.9,
+      "total_gross_pnl": -2932956.14,
+      "total_net_pnl": -3154282.04,
+      "total_redemptions": 2500000.0,
+      "total_subscriptions": 8000000.0
+    },
+    "reporting_currency": "USD",
+    "review_notes": "Verified restatement",
+    "revision_metadata": {
+      "revision_number": 2,
+      "revision_reason": "Post-close management fee accrual restatement (+$125.00)",
+      "supersedes_version_id": "RPT-2026Q1-ALPHA-v1-ec119501"
+    }
+  },
+  "published_at_utc": "2026-11-27T09:53:59Z",
+  "report_series_id": "RPT-2026Q1-ALPHA",
+  "reviewed_by": "reviewer_alex",
+  "revision_number": 2,
+  "revision_reason": "Post-close management fee accrual restatement (+$125.00)",
+  "status": "PUBLISHED",
+  "supersedes_version_id": "RPT-2026Q1-ALPHA-v1-ec119501",
+  "version_id": "RPT-2026Q1-ALPHA-v2-9e7f9f9b"
+}

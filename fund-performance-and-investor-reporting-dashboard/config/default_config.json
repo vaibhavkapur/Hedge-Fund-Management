@@ -1,0 +1,38 @@
+{
+  "config_version": "1.0.0",
+  "methodology_version": "SAAT-PERF-METH-1.0.0",
+  "trading_days_per_year": 252,
+  "risk_free_rate_annual": 0.04,
+  "base_reporting_currency": "USD",
+  "operational_controls": {
+    "order_execution_enabled": false,
+    "allow_mixed_environments": false,
+    "require_reconciled_ledger_for_publish": true,
+    "require_dual_control_approval": true,
+    "allow_forward_fill_missing_nav": false
+  },
+  "minimum_history_observations": {
+    "annualized_return": 20,
+    "annualized_volatility": 20,
+    "sharpe_ratio": 60,
+    "sortino_ratio": 60,
+    "calmar_ratio": 60,
+    "beta_and_alpha": 30,
+    "var_cvar": 30
+  },
+  "reconciliation_tolerance_abs": 0.01,
+  "reconciliation_tolerance_rel": 1e-6,
+  "fee_schedule_defaults": {
+    "management_fee_annual_bps": 150.0,
+    "performance_fee_pct": 20.0,
+    "hurdle_rate_annual": 0.0,
+    "high_water_mark_enabled": true,
+    "accrual_basis_days": 252
+  },
+  "disclosure_templates": {
+    "SIMULATED": "SIMULATED / SYNTHETIC DATA — NOT LIVE OR AUDITED TRACK RECORD. Results are generated for methodological demonstration and internal verification only.",
+    "PAPER": "PAPER / SANDBOX TRADING DATA — NOT LIVE CAPITAL. Paper execution does not guarantee real-market liquidity, fills, or slippage.",
+    "LIVE_UNAUDITED": "LIVE UNAUDITED — INTERNAL RECONCILIATION ONLY. Not independently audited by a third-party fund administrator.",
+    "LIVE_AUDITED": "LIVE AUDITED — Reconciled against independent administrator statement."
+  }
+}

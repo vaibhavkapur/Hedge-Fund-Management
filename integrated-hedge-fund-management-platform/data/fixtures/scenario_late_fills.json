@@ -1,0 +1,23 @@
+{
+  "fixture_id": "scenario_late_fills",
+  "description": "Includes a fill arriving at 21:35:00Z after the 21:00:00Z EOD close cutoff.",
+  "business_date": "2026-11-25",
+  "late_fills": [
+    {
+      "fill_id": "FILL_20261125_LATE_001",
+      "order_id": "ORD_LATE_001",
+      "fund_id": "FUND_SAAT_MS",
+      "account_id": "ACCT_PB_ALPHA_EQ",
+      "strategy_id": "STRAT_EQ_LS",
+      "instrument_id": "INST_AAPL",
+      "side": "BUY",
+      "quantity": "500",
+      "price": "198.80",
+      "currency": "USD",
+      "commission": "12.50",
+      "executed_at_utc": "2026-11-25T20:58:00Z",
+      "received_at_utc": "2026-11-25T21:35:00Z",
+      "broker_ref": "PB_ALPHA_LATE_901"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "config_version": "1.0.0",
+  "environment": "local-prototype",
+  "base_currency": "USD",
+  "execution_controls": {
+    "order_execution_enabled": false,
+    "live_capital_permitted": false,
+    "policy_reference": "POL-EXEC-001-DISABLED-BY-DEFAULT"
+  },
+  "close_controls": {
+    "cutoff_utc_hour": 21,
+    "cutoff_utc_minute": 0,
+    "max_mark_age_hours": 24,
+    "require_zero_unresolved_critical_breaks": true,
+    "require_zero_missing_marks": true,
+    "require_dual_control_close_signoff": true,
+    "allow_late_fill_auto_post_after_freeze": false
+  },
+  "reconciliation_tolerances": {
+    "quantity_tolerance": "0.0001",
+    "price_tolerance_bps": "5.0",
+    "cash_tolerance_usd": "10.00",
+    "material_break_usd": "1000.00"
+  },
+  "risk_limits": {
+    "max_gross_leverage": "3.00",
+    "max_net_leverage": "1.50",
+    "max_single_name_concentration_pct": "25.0",
+    "max_sector_concentration_pct": "55.0",
+    "max_counterparty_exposure_pct": "75.0",
+    "max_daily_var_95_pct_nav": "3.50"
+  },
+  "fee_schedule": {
+    "annual_management_fee_bps": "150",
+    "day_count_basis": 365
+  },
+  "sla_hours": {
+    "CRITICAL": 4,
+    "HIGH": 12,
+    "MEDIUM": 24,
+    "LOW": 72
+  },
+  "storage": {
+    "backend": "sqlite",
+    "sqlite_path": "data/runtime/hf_platform.db"
+  }
+}

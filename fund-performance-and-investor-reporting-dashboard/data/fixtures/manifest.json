@@ -1,0 +1,25 @@
+{
+  "manifest_version": "1.0.0",
+  "entitlement_status": "SYNTHETIC_PERMITTED_LOCAL",
+  "contains_live_or_client_data": false,
+  "fixtures": [
+    {
+      "file": "fund_alpha_synthetic.json",
+      "fund_id": "FUND-SAAT-SIM-01",
+      "environment": "SIMULATED",
+      "data_status": "SYNTHETIC",
+      "seed": 20260101,
+      "observations": 90,
+      "description": "90 trading days of reconciled synthetic multi-strategy NAV snapshots, external subscriptions/redemptions, benchmark series, strategy attribution, and USD/EUR/GBP FX rates."
+    },
+    {
+      "file": "hand_calculated_case.json",
+      "fund_id": "FUND-HAND-CALC-01",
+      "environment": "SIMULATED",
+      "data_status": "SYNTHETIC",
+      "seed": null,
+      "observations": 4,
+      "description": "Exact 4-day hand-calculated verification case covering START_OF_DAY subscription/redemption TWR invariance, gross vs net fee drag, drawdown peak/trough/recovery, and USD->EUR FX translation."
+    }
+  ]
+}

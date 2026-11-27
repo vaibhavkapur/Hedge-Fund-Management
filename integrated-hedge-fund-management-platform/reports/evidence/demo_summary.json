@@ -1,0 +1,37 @@
+{
+  "master_counts": {
+    "funds": 1,
+    "accounts": 2,
+    "strategies": 2,
+    "instruments": 7,
+    "users": 9
+  },
+  "controls": {
+    "order_execution_blocked": true,
+    "self_signoff_blocked": true,
+    "audit_chain_verified": true,
+    "audit_entries": 33
+  },
+  "day1_close": {
+    "close_run_id": "CLOSE_FUND_SAAT_MS_20261125_A1",
+    "status": "CLOSED",
+    "snapshot_id": "SNAP_FUND_SAAT_MS_20261125_v1",
+    "nav_usd": "10116932.04",
+    "ledger_nav_usd": "10116932.04",
+    "nav_diff_usd": "0.00",
+    "trial_balance_balanced": true,
+    "gross_leverage": "0.9210",
+    "daily_var_95_usd": "90347.45",
+    "published_nav_report": "RPT_FUND_SAAT_MS_20261125_NAV_SUMMARY_v1",
+    "admin_delivery_id": "DELIV_RPT_FUND_SAAT_MS_20261125_ADMINISTRATOR_EXTRACT_v1_v1"
+  },
+  "day2_close_with_breaks": {
+    "initial_attempt_status": "BLOCKED",
+    "blocking_exceptions_detected": 4,
+    "final_close_run_id": "CLOSE_FUND_SAAT_MS_20261126_A2",
+    "final_status": "CLOSED",
+    "snapshot_id": "SNAP_FUND_SAAT_MS_20261126_v2",
+    "nav_usd": "10159301.16",
+    "nav_diff_usd": "0.00"
+  }
+}

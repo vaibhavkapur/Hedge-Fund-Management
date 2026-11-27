@@ -1,0 +1,16 @@
+{
+  "fixture_id": "scenario_missing_marks",
+  "description": "Omits EOD mark for INST_NVDA and provides a stale (48h old) mark for INST_SAP.",
+  "base_fixture": "day1_clean_close.json",
+  "omitted_instruments": ["INST_NVDA"],
+  "stale_marks": [
+    {
+      "instrument_id": "INST_SAP",
+      "price": "199.00",
+      "currency": "EUR",
+      "source": "SYNTHETIC_STALE_FEED",
+      "as_of_utc": "2026-11-23T16:35:00Z",
+      "available_at_utc": "2026-11-23T16:40:00Z"
+    }
+  ]
+}

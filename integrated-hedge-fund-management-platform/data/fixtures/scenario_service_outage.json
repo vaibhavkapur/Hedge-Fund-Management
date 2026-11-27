@@ -1,0 +1,16 @@
+{
+  "fixture_id": "scenario_service_outage",
+  "description": "Simulates prime broker feed timeout and market data outage during close, followed by service restoration.",
+  "outage_modes": {
+    "broker_feed_down": {
+      "adapter": "broker_feed",
+      "error_code": "PB_FEED_TIMEOUT",
+      "message": "Prime broker EOD position extract endpoint timed out after 30s"
+    },
+    "market_data_down": {
+      "adapter": "market_data",
+      "error_code": "MD_VENDOR_UNAVAILABLE",
+      "message": "Market data close vendor returned HTTP 503 Service Unavailable"
+    }
+  }
+}

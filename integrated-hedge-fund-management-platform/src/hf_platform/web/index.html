@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Integrated Hedge Fund Control Plane</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #1e293b;
+      --border: #334155;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --ok: #22c55e;
+      --warn: #f59e0b;
+      --danger: #ef4444;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.45;
+    }
+    header {
+      background: #020617;
+      border-bottom: 1px solid var(--border);
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    header h1 { margin: 0; font-size: 18px; letter-spacing: 0.3px; }
+    .badges { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+    .badge {
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--panel);
+    }
+    .badge.ok { border-color: var(--ok); color: var(--ok); }
+    .badge.warn { border-color: var(--warn); color: var(--warn); }
+    .badge.danger { border-color: var(--danger); color: var(--danger); }
+    main { max-width: 1360px; margin: 0 auto; padding: 20px 24px; }
+    .toolbar {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+    select, button, input {
+      background: var(--panel);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 7px 11px;
+      font-size: 13px;
+    }
+    button { cursor: pointer; }
+    button.primary { background: #0284c7; border-color: #0284c7; color: #fff; }
+    button:hover { opacity: 0.92; }
+    .tabs { display: flex; gap: 6px; margin-bottom: 18px; border-bottom: 1px solid var(--border); padding-bottom: 8px; flex-wrap: wrap; }
+    .tab { background: transparent; border: 1px solid transparent; padding: 7px 14px; border-radius: 6px; color: var(--muted); }
+    .tab.active { background: var(--panel); border-color: var(--border); color: var(--text); }
+    .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin-bottom: 18px; }
+    .kpi {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .kpi .label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.4px; }
+    .kpi .value { font-size: 20px; font-weight: 600; margin-top: 4px; }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+      overflow-x: auto;
+    }
+    .card h2 { margin: 0 0 12px 0; font-size: 15px; color: var(--accent); }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+    th { color: var(--muted); font-weight: 600; font-size: 12px; text-transform: uppercase; }
+    .num { text-align: right; font-variant-numeric: tabular-nums; }
+    .pill { padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 600; }
+    .pill.PASSED, .pill.CLOSED, .pill.PUBLISHED, .pill.RESOLVED, .pill.SUCCESS { background: rgba(34,197,94,0.18); color: #4ade80; }
+    .pill.BLOCKED, .pill.FAILED, .pill.DENIED, .pill.CRITICAL, .pill.DEGRADED_OUTAGE { background: rgba(239,68,68,0.2); color: #f87171; }
+    .pill.PENDING, .pill.PENDING_SIGNOFF, .pill.PENDING_APPROVAL, .pill.OPEN, .pill.HIGH, .pill.SUPERSEDED { background: rgba(245,158,11,0.2); color: #fbbf24; }
+    .hidden { display: none; }
+    #toast { margin-bottom: 12px; font-size: 13px; color: var(--accent); min-height: 20px; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: #cbd5e1; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SAAT Integrated Hedge Fund Control Plane</h1>
+    <div class="badges" id="header-badges"></div>
+  </header>
+  <main>
+    <div class="toolbar">
+      <label>Fund: <select id="fund-select"></select></label>
+      <label>Acting Principal: <select id="actor-select"></select></label>
+      <button class="primary" onclick="refreshAll()">Refresh Control Plane</button>
+    </div>
+    <div id="toast"></div>
+    <div class="kpis" id="kpi-grid"></div>
+    <div class="tabs">
+      <button class="tab active" onclick="showTab('portfolio', this)">Portfolio &amp; Risk</button>
+      <button class="tab" onclick="showTab('close', this)">Daily Close &amp; Recon</button>
+      <button class="tab" onclick="showTab('exceptions', this)">Exceptions &amp; Approvals</button>
+      <button class="tab" onclick="showTab('reports', this)">Frozen Reports</button>
+      <button class="tab" onclick="showTab('audit', this)">Audit Trail</button>
+    </div>
+
+    <section id="tab-portfolio">
+      <div class="card">
+        <h2>Consolidated Holdings (Latest Snapshot)</h2>
+        <table id="positions-table"><thead><tr><th>Account</th><th>Strategy</th><th>Symbol</th><th>Sector</th><th>CCY</th><th class="num">Qty</th><th class="num">Avg Cost</th><th class="num">Mark</th><th class="num">MV (USD)</th><th class="num">Unrealized P&amp;L</th><th class="num">% NAV</th></tr></thead><tbody></tbody></table>
+      </div>
+      <div class="card">
+        <h2>Strategy P&amp;L Attribution</h2>
+        <table id="attribution-table"><thead><tr><th>Strategy</th><th class="num">Allocation</th><th class="num">Gross Exp</th><th class="num">Net Exp</th><th class="num">Unrealized</th><th class="num">Commissions</th><th class="num">Net P&amp;L</th><th class="num">Return %</th></tr></thead><tbody></tbody></table>
+      </div>
+    </section>
+
+    <section id="tab-close" class="hidden">
+      <div class="card">
+        <h2>Daily Close Runs</h2>
+        <table id="close-table"><thead><tr><th>Close Run ID</th><th>Date</th><th>Attempt</th><th>Status</th><th>Snapshot</th><th>Preparer</th><th>Approver</th><th>Action</th></tr></thead><tbody></tbody></table>
+      </div>
+      <div class="card">
+        <h2>Latest Close Checklist Steps</h2>
+        <table id="steps-table"><thead><tr><th>#</th><th>Step</th><th>Status</th><th>Summary</th></tr></thead><tbody></tbody></table>
+      </div>
+    </section>
+
+    <section id="tab-exceptions" class="hidden">
+      <div class="card">
+        <h2>Exception Queue &amp; Four-Eyes Approvals</h2>
+        <table id="exceptions-table"><thead><tr><th>ID</th><th>Date</th><th>Category</th><th>Severity</th><th>Status</th><th>Title</th><th>Maker</th><th>Checker</th><th>Actions</th></tr></thead><tbody></tbody></table>
+      </div>
+    </section>
+
+    <section id="tab-reports" class="hidden">
+      <div class="card">
+        <h2>Versioned Reports (Anchored to Frozen Snapshots)</h2>
+        <table id="reports-table"><thead><tr><th>Report ID</th><th>Date</th><th>Type</th><th>Ver</th><th>Status</th><th>Snapshot</th><th>Hash</th><th>Supersedes</th></tr></thead><tbody></tbody></table>
+      </div>
+    </section>
+
+    <section id="tab-audit" class="hidden">
+      <div class="card">
+        <h2>Hash-Chained Immutable Audit Log</h2>
+        <table id="audit-table"><thead><tr><th>Seq</th><th>UTC Timestamp</th><th>Actor</th><th>Role</th><th>Action</th><th>Entity</th><th>Outcome</th><th>Entry Hash</th></tr></thead><tbody></tbody></table>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    let STATE = { master: null, health: null, snapshots: [], closeRuns: [], exceptions: [], reports: [], audit: null };
+
+    function fmtUsd(v) {
+      const n = Number(v || 0);
+      return (n < 0 ? "-$" : "$") + Math.abs(n).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+    function setToast(msg) { document.getElementById("toast").textContent = msg; }
+    function showTab(name, btn) {
+      document.querySelectorAll("main section").forEach(s => s.classList.add("hidden"));
+      document.getElementById("tab-" + name).classList.remove("hidden");
+      document.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+    }
+
+    async function api(path, opts) {
+      const res = await fetch(path, opts);
+      const data = await res.json();
+      if (!res.ok) throw new Error((data.error_code || res.status) + ": " + (data.message || "Request failed"));
+      return data;
+    }
+
+    async function refreshAll() {
+      try {
+        STATE.health = await api("/api/health");
+        STATE.master = await api("/api/master");
+        populateSelectors();
+        const fundId = document.getElementById("fund-select").value;
+        if (fundId) {
+          STATE.snapshots = (await api(`/api/funds/${fundId}/snapshots`)).snapshots;
+          STATE.closeRuns = (await api(`/api/funds/${fundId}/close-runs`)).close_runs;
+          STATE.exceptions = (await api(`/api/exceptions?fund_id=${fundId}`)).exceptions;
+          STATE.reports = (await api(`/api/funds/${fundId}/reports`)).reports;
+        }
+        STATE.audit = await api("/api/audit?limit=40");
+        renderAll();
+        setToast("Control plane synced at " + new Date().toISOString());
+      } catch (e) {
+        setToast("Error: " + e.message);
+      }
+    }
+
+    function populateSelectors() {
+      const fundSel = document.getElementById("fund-select");
+      if (!fundSel.options.length && STATE.master.funds.length) {
+        STATE.master.funds.forEach(f => {
+          const opt = document.createElement("option");
+          opt.value = f.fund_id; opt.textContent = `${f.fund_id} — ${f.name}`;
+          fundSel.appendChild(opt);
+        });
+      }
+      const actorSel = document.getElementById("actor-select");
+      if (!actorSel.options.length && STATE.master.users.length) {
+        STATE.master.users.forEach(u => {
+          const opt = document.createElement("option");
+          opt.value = u.user_id; opt.textContent = `${u.name} (${u.role})`;
+          actorSel.appendChild(opt);
+        });
+      }
+    }
+
+    function renderAll() {
+      const h = STATE.health;
+      document.getElementById("header-badges").innerHTML = `
+        <span class="badge ${h.status === 'HEALTHY' ? 'ok' : 'danger'}">System: ${h.status}</span>
+        <span class="badge ${h.order_execution_enabled ? 'danger' : 'ok'}">Order Execution: ${h.order_execution_enabled ? 'ENABLED' : 'DISABLED'}</span>
+        <span class="badge ${h.audit_integrity.verified ? 'ok' : 'danger'}">Audit Chain: ${h.audit_integrity.verified ? 'VERIFIED (' + h.audit_integrity.entry_count + ')' : 'BROKEN'}</span>
+      `;
+
+      const snap = STATE.snapshots[STATE.snapshots.length - 1];
+      document.getElementById("kpi-grid").innerHTML = snap ? `
+        <div class="kpi"><div class="label">Fund NAV (${snap.business_date})</div><div class="value">${fmtUsd(snap.nav_usd)}</div></div>
+        <div class="kpi"><div class="label">Daily P&amp;L / Return</div><div class="value">${fmtUsd(snap.daily_pnl_usd)} (${Number(snap.daily_return_pct).toFixed(2)}%)</div></div>
+        <div class="kpi"><div class="label">Ledger NAV Diff</div><div class="value">${fmtUsd(snap.nav_reconciliation_diff_usd)}</div></div>
+        <div class="kpi"><div class="label">Gross / Net Leverage</div><div class="value">${Number(snap.risk_metrics.gross_leverage).toFixed(2)}x / ${Number(snap.risk_metrics.net_leverage).toFixed(2)}x</div></div>
+        <div class="kpi"><div class="label">Daily VaR 95%</div><div class="value">${fmtUsd(snap.risk_metrics.daily_var_95_usd)} (${Number(snap.risk_metrics.daily_var_95_pct_nav).toFixed(2)}%)</div></div>
+        <div class="kpi"><div class="label">Open Exceptions</div><div class="value">${h.metrics.open_exceptions}</div></div>
+      ` : `<div class="kpi"><div class="label">Status</div><div class="value">No snapshots yet</div></div>`;
+
+      const posBody = document.querySelector("#positions-table tbody");
+      posBody.innerHTML = snap ? snap.positions.map(p => `
+        <tr><td>${p.account_id}</td><td>${p.strategy_id}</td><td><strong>${p.symbol}</strong></td><td>${p.sector}</td><td>${p.currency}</td>
+        <td class="num">${Number(p.quantity).toLocaleString()}</td><td class="num">${Number(p.avg_cost_local).toFixed(2)}</td>
+        <td class="num">${Number(p.mark_price_local).toFixed(2)}</td><td class="num">${fmtUsd(p.market_value_usd)}</td>
+        <td class="num">${fmtUsd(p.unrealized_pnl_usd)}</td><td class="num">${Number(p.weight_pct_nav).toFixed(2)}%</td></tr>
+      `).join("") : "";
+
+      const attrBody = document.querySelector("#attribution-table tbody");
+      attrBody.innerHTML = snap ? snap.strategy_attribution.map(a => `
+        <tr><td>${a.strategy_name}</td><td class="num">${fmtUsd(a.capital_allocation_usd)}</td><td class="num">${fmtUsd(a.gross_exposure_usd)}</td>
+        <td class="num">${fmtUsd(a.net_exposure_usd)}</td><td class="num">${fmtUsd(a.unrealized_pnl_usd)}</td><td class="num">${fmtUsd(a.commissions_usd)}</td>
+        <td class="num">${fmtUsd(a.net_pnl_usd)}</td><td class="num">${Number(a.return_on_allocated_pct).toFixed(2)}%</td></tr>
+      `).join("") : "";
+
+      const closeBody = document.querySelector("#close-table tbody");
+      closeBody.innerHTML = STATE.closeRuns.map(r => `
+        <tr><td><code>${r.close_run_id}</code></td><td>${r.business_date}</td><td>${r.attempt}</td>
+        <td><span class="pill ${r.status}">${r.status}</span></td><td><code>${r.snapshot_id || "-"}</code></td>
+        <td>${r.signoff_preparer_id || "-"}</td><td>${r.signoff_approver_id || "-"}</td>
+        <td>${r.status === "PENDING_SIGNOFF" ? `<button onclick="signoff('${r.close_run_id}')">Sign Off</button>` : ""}</td></tr>
+      `).join("");
+
+      const latestRun = STATE.closeRuns[STATE.closeRuns.length - 1];
+      document.querySelector("#steps-table tbody").innerHTML = latestRun ? latestRun.steps.map(s => `
+        <tr><td>${s.order}</td><td>${s.step_name}</td><td><span class="pill ${s.status}">${s.status}</span></td><td>${s.message}</td></tr>
+      `).join("") : "";
+
+      document.querySelector("#exceptions-table tbody").innerHTML = STATE.exceptions.map(e => `
+        <tr><td><code>${e.exception_id}</code></td><td>${e.business_date}</td><td>${e.category}</td>
+        <td><span class="pill ${e.severity}">${e.severity}</span></td><td><span class="pill ${e.status}">${e.status}</span></td>
+        <td>${e.title}</td><td>${e.proposed_by || "-"}</td><td>${e.decided_by || "-"}</td>
+        <td>${e.status === "OPEN" ? `<button onclick="proposeExc('${e.exception_id}')">Propose</button>` : ""}
+            ${e.status === "PENDING_APPROVAL" ? `<button onclick="decideExc('${e.exception_id}', 'APPROVE')">Approve</button>` : ""}</td></tr>
+      `).join("");
+
+      document.querySelector("#reports-table tbody").innerHTML = STATE.reports.map(r => `
+        <tr><td><code>${r.report_id}</code></td><td>${r.business_date}</td><td>${r.report_type}</td><td>v${r.version}</td>
+        <td><span class="pill ${r.status}">${r.status}</span></td><td><code>${r.snapshot_id}</code></td>
+        <td><code>${r.content_hash.slice(0,12)}...</code></td><td><code>${r.supersedes_report_id || "-"}</code></td></tr>
+      `).join("");
+
+      document.querySelector("#audit-table tbody").innerHTML = STATE.audit.entries.slice().reverse().map(a => `
+        <tr><td>${a.sequence_number}</td><td><code>${a.timestamp_utc.slice(0,19)}Z</code></td><td>${a.actor_id}</td>
+        <td>${a.actor_role || "-"}</td><td>${a.action}</td><td><code>${a.entity_id}</code></td>
+        <td><span class="pill ${a.outcome}">${a.outcome}</span></td><td><code>${a.entry_hash.slice(0,12)}...</code></td></tr>
+      `).join("");
+    }
+
+    async function signoff(runId) {
+      try {
+        const actor = document.getElementById("actor-select").value;
+        await api(`/api/close-runs/${runId}/signoff`, { method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({ actor_id: actor }) });
+        await refreshAll();
+      } catch (e) { setToast("Sign-off rejected: " + e.message); }
+    }
+    async function proposeExc(excId) {
+      try {
+        const actor = document.getElementById("actor-select").value;
+        await api(`/api/exceptions/${excId}/propose`, { method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({ actor_id: actor, resolution_notes: "Investigated via control plane UI" }) });
+        await refreshAll();
+      } catch (e) { setToast("Propose rejected: " + e.message); }
+    }
+    async function decideExc(excId, action) {
+      try {
+        const actor = document.getElementById("actor-select").value;
+        await api(`/api/exceptions/${excId}/decide`, { method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({ actor_id: actor, action, decision_notes: "Reviewed in control plane UI" }) });
+        await refreshAll();
+      } catch (e) { setToast("Decision rejected: " + e.message); }
+    }
+    refreshAll();
+  </script>
+</body>
+</html>
