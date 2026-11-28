@@ -1,0 +1,113 @@
+{
+  "snapshot_id": "SNAP-SYNTH-2026Q1-0002",
+  "schema_contract_version": "1.0.0",
+  "captured_at_utc": "2026-04-03T12:00:00Z",
+  "provenance": {
+    "source_system": "synthetic_governed_fund_store",
+    "synthetic_data": true,
+    "seed": 20260331,
+    "restatement_note": "Corrected late corporate-action accrual (+1,500,000.00 USD on POS-001 and NAV)."
+  },
+  "fund": {
+    "fund_id": "SYNTH_ALPHA_01",
+    "fund_name": "Synthetic Alpha Macro Fund I (Illustrative)",
+    "fund_lei": "000000SYNTHFUND00181",
+    "manager_lei": "000000SYNTHMGR000140",
+    "base_currency": "USD",
+    "domicile_country": "US",
+    "liquidity_bucket_primary": "MONTHLY"
+  },
+  "reporting_period": {
+    "period_id": "2026-Q1",
+    "start_date": "2026-01-01",
+    "end_date": "2026-03-31",
+    "frequency": "QUARTERLY"
+  },
+  "nav": {
+    "nav_record_id": "NAV-SYNTH-2026-03-31-V2",
+    "as_of_date": "2026-03-31",
+    "currency": "USD",
+    "gross_asset_value": "126500000.00",
+    "total_liabilities": "25000000.00",
+    "net_asset_value": "101500000.00",
+    "cash_and_equivalents": "15000000.00"
+  },
+  "positions": [
+    {
+      "position_id": "POS-001",
+      "instrument_isin": "US0000000010",
+      "asset_class": "EQUITY",
+      "direction": "LONG",
+      "quantity": "500000",
+      "price_local": "123.00",
+      "local_currency": "USD",
+      "fx_rate_to_base": "1.000000",
+      "market_value_base": "61500000.00"
+    },
+    {
+      "position_id": "POS-002",
+      "instrument_isin": "DE0000000017",
+      "asset_class": "FIXED_INCOME",
+      "direction": "LONG",
+      "quantity": "400000",
+      "price_local": "100.00",
+      "local_currency": "EUR",
+      "fx_rate_to_base": "1.125000",
+      "market_value_base": "45000000.00"
+    },
+    {
+      "position_id": "POS-003",
+      "instrument_isin": "US0000000028",
+      "asset_class": "EQUITY",
+      "direction": "SHORT",
+      "quantity": "-200000",
+      "price_local": "100.00",
+      "local_currency": "USD",
+      "fx_rate_to_base": "1.000000",
+      "market_value_base": "-20000000.00"
+    },
+    {
+      "position_id": "POS-004",
+      "instrument_isin": "XS0000000017",
+      "asset_class": "DERIVATIVES",
+      "direction": "LONG",
+      "quantity": "1000",
+      "price_local": "5000.00",
+      "local_currency": "USD",
+      "fx_rate_to_base": "1.000000",
+      "market_value_base": "5000000.00"
+    }
+  ],
+  "exposures": [
+    {
+      "exposure_id": "EXP-001",
+      "asset_class": "EQUITY",
+      "counterparty_lei": "000000SYNTHCP0000190",
+      "currency": "USD",
+      "long_exposure_base": "61500000.00",
+      "short_exposure_base": "20000000.00",
+      "gross_exposure_base": "81500000.00",
+      "net_exposure_base": "41500000.00"
+    },
+    {
+      "exposure_id": "EXP-002",
+      "asset_class": "FIXED_INCOME",
+      "counterparty_lei": "000000SYNTHCP0000287",
+      "currency": "USD",
+      "long_exposure_base": "45000000.00",
+      "short_exposure_base": "0.00",
+      "gross_exposure_base": "45000000.00",
+      "net_exposure_base": "45000000.00"
+    },
+    {
+      "exposure_id": "EXP-003",
+      "asset_class": "DERIVATIVES",
+      "counterparty_lei": "000000SYNTHCP0000190",
+      "currency": "USD",
+      "long_exposure_base": "25000000.00",
+      "short_exposure_base": "0.00",
+      "gross_exposure_base": "25000000.00",
+      "net_exposure_base": "25000000.00"
+    }
+  ]
+}

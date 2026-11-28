@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0.0",
+  "scenario_name": "reference_oracle_clean",
+  "description": "Hand-calculated deterministic single-broker baseline with zero reconciliation breaks.",
+  "accrual_start_date": "2026-03-13",
+  "accrual_end_date": "2026-03-16",
+  "fx_rates": [
+    {"base_currency": "EUR", "quote_currency": "USD", "rate": "1.1000", "as_of_date": "2026-03-16"},
+    {"base_currency": "GBP", "quote_currency": "USD", "rate": "1.2500", "as_of_date": "2026-03-16"}
+  ],
+  "broker_runs": [
+    {
+      "statement": {
+        "schema_version": "1.0.0",
+        "statement_id": "STMT-PB-ALPHA-20260316-V1",
+        "version": 1,
+        "broker_id": "PB-ALPHA",
+        "account_id": "ACC-MAIN-01",
+        "business_date": "2026-03-16",
+        "received_at": "2026-03-16T21:15:00Z",
+        "base_currency": "USD",
+        "positions": [
+          {
+            "position_id": "POS-001",
+            "lot_id": "LOT-UST-001",
+            "security_id": "US912828YV68",
+            "asset_class": "UST",
+            "rating_tier": "AAA",
+            "maturity_bucket": "0_5Y",
+            "quantity": "10000",
+            "market_price": "100.00",
+            "currency": "USD",
+            "encumbrance_status": "PLEDGED"
+          },
+          {
+            "position_id": "POS-002",
+            "lot_id": "LOT-EQ-001",
+            "security_id": "EQ-MEGACAP-A",
+            "asset_class": "EQ_LC",
+            "rating_tier": "UNRATED",
+            "maturity_bucket": "PERPETUAL",
+            "quantity": "5000",
+            "market_price": "80.00",
+            "currency": "USD",
+            "encumbrance_status": "PLEDGED_MARGIN"
+          },
+          {
+            "position_id": "POS-003",
+            "lot_id": "LOT-UST-FREE-002",
+            "security_id": "US912828ZT04",
+            "asset_class": "US_TREASURY",
+            "rating_tier": "AAA",
+            "maturity_bucket": "0_5Y",
+            "quantity": "3000",
+            "market_price": "100.00",
+            "currency": "USD",
+            "encumbrance_status": "FREE"
+          }
+        ],
+        "cash_balances": [
+          {"balance_id": "CB-MARGIN-USD", "currency": "USD", "amount": "200000.00", "balance_type": "MARGIN_CASH"},
+          {"balance_id": "CB-DEBIT-USD", "currency": "USD", "amount": "-600000.00", "balance_type": "DEBIT_FINANCING"},
+          {"balance_id": "CB-SHORT-USD", "currency": "USD", "amount": "300000.00", "balance_type": "SHORT_PROCEEDS"},
+          {"balance_id": "CB-FREE-USD", "currency": "USD", "amount": "50000.00", "balance_type": "FREE_CASH"}
+        ],
+        "margin_requirement": {
+          "initial_margin": "1200000.00",
+          "variation_margin": "200000.00",
+          "house_addon": "100000.00",
+          "currency": "USD"
+        },
+        "reported_collateral_value": "1520000.00",
+        "reported_financing_accrual": "-73.54"
+      },
+      "internal_snapshot": {
+        "schema_version": "1.0.0",
+        "snapshot_id": "SNAP-PB-ALPHA-20260316-V1",
+        "version": 1,
+        "broker_id": "PB-ALPHA",
+        "account_id": "ACC-MAIN-01",
+        "business_date": "2026-03-16",
+        "positions": [
+          {
+            "position_id": "POS-001",
+            "lot_id": "LOT-UST-001",
+            "security_id": "US912828YV68",
+            "asset_class": "US_TREASURY",
+            "rating_tier": "AAA",
+            "maturity_bucket": "0_5Y",
+            "quantity": "10000",
+            "market_price": "100.00",
+            "currency": "USD",
+            "encumbrance_status": "PLEDGED_MARGIN"
+          },
+          {
+            "position_id": "POS-002",
+            "lot_id": "LOT-EQ-001",
+            "security_id": "EQ-MEGACAP-A",
+            "asset_class": "EQUITY_LARGE_CAP",
+            "rating_tier": "UNRATED",
+            "maturity_bucket": "PERPETUAL",
+            "quantity": "5000",
+            "market_price": "80.00",
+            "currency": "USD",
+            "encumbrance_status": "PLEDGED_MARGIN"
+          },
+          {
+            "position_id": "POS-003",
+            "lot_id": "LOT-UST-FREE-002",
+            "security_id": "US912828ZT04",
+            "asset_class": "US_TREASURY",
+            "rating_tier": "AAA",
+            "maturity_bucket": "0_5Y",
+            "quantity": "3000",
+            "market_price": "100.00",
+            "currency": "USD",
+            "encumbrance_status": "UNENCUMBERED"
+          }
+        ],
+        "cash_balances": [
+          {"balance_id": "CB-MARGIN-USD", "currency": "USD", "amount": "200000.00", "balance_type": "MARGIN_CASH"},
+          {"balance_id": "CB-DEBIT-USD", "currency": "USD", "amount": "-600000.00", "balance_type": "DEBIT_FINANCING"},
+          {"balance_id": "CB-SHORT-USD", "currency": "USD", "amount": "300000.00", "balance_type": "SHORT_PROCEEDS"},
+          {"balance_id": "CB-FREE-USD", "currency": "USD", "amount": "50000.00", "balance_type": "FREE_CASH"}
+        ],
+        "transfers": []
+      }
+    }
+  ],
+  "expected_oracle": {
+    "PB-ALPHA": {
+      "total_gross_securities_base": "1700000.00",
+      "eligible_securities_value_base": "1614000.00",
+      "pledged_margin_collateral_base": "1320000.00",
+      "available_unencumbered_collateral_base": "294000.00",
+      "margin_cash_base": "200000.00",
+      "total_posted_collateral_base": "1520000.00",
+      "total_available_buffer_base": "344000.00",
+      "net_accrual_base": "-73.54",
+      "margin_action": "NO_ACTION",
+      "raw_surplus_or_deficit_base": "20000.00",
+      "break_count": 0
+    }
+  }
+}

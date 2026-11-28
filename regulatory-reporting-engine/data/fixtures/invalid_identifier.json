@@ -1,0 +1,58 @@
+{
+  "snapshot_id": "SNAP-INVALID-ID-001",
+  "schema_contract_version": "1.0.0",
+  "captured_at_utc": "2026-04-01T00:05:00Z",
+  "provenance": {
+    "source_system": "synthetic_invalid_fixture",
+    "synthetic_data": true
+  },
+  "fund": {
+    "fund_id": "SYNTH_ALPHA_01",
+    "fund_name": "Synthetic Bad Identifiers Fund",
+    "fund_lei": "000000SYNTHFUND00199",
+    "manager_lei": "000000SYNTHMGR000140",
+    "base_currency": "USD",
+    "domicile_country": "US",
+    "liquidity_bucket_primary": "MONTHLY"
+  },
+  "reporting_period": {
+    "period_id": "2026-Q1",
+    "start_date": "2026-01-01",
+    "end_date": "2026-03-31",
+    "frequency": "QUARTERLY"
+  },
+  "nav": {
+    "nav_record_id": "NAV-BADID-001",
+    "as_of_date": "2026-03-31",
+    "currency": "USD",
+    "gross_asset_value": "1000000.00",
+    "total_liabilities": "0.00",
+    "net_asset_value": "1000000.00",
+    "cash_and_equivalents": "1000000.00"
+  },
+  "positions": [
+    {
+      "position_id": "POS-BAD-001",
+      "instrument_isin": "US0000000019",
+      "asset_class": "EQUITY",
+      "direction": "LONG",
+      "quantity": "1000",
+      "price_local": "1000.00",
+      "local_currency": "USD",
+      "fx_rate_to_base": "1.000000",
+      "market_value_base": "1000000.00"
+    }
+  ],
+  "exposures": [
+    {
+      "exposure_id": "EXP-BAD-001",
+      "asset_class": "EQUITY",
+      "counterparty_lei": "000000SYNTHCP0000190",
+      "currency": "USD",
+      "long_exposure_base": "1000000.00",
+      "short_exposure_base": "0.00",
+      "gross_exposure_base": "1000000.00",
+      "net_exposure_base": "1000000.00"
+    }
+  ]
+}

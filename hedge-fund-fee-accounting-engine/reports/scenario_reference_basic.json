@@ -1,0 +1,308 @@
+{
+  "all_passed": true,
+  "comparisons": [
+    {
+      "checks_evaluated": 9,
+      "comparisons": [
+        {
+          "abs_diff": "0.00",
+          "actual": "5000.00",
+          "expected": "5000.00",
+          "field": "management_fee_amount",
+          "lot_id": "LOT-A1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.000000",
+          "actual": "109.500000",
+          "expected": "109.500000",
+          "field": "post_mgmt_nav_per_unit",
+          "lot_id": "LOT-A1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.000000",
+          "actual": "9.500000",
+          "expected": "9.500000",
+          "field": "eligible_gain_per_unit",
+          "lot_id": "LOT-A1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.00",
+          "actual": "19000.00",
+          "expected": "19000.00",
+          "field": "performance_fee_delta",
+          "lot_id": "LOT-A1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.00",
+          "actual": "19000.00",
+          "expected": "19000.00",
+          "field": "crystallized_performance_fee",
+          "lot_id": "LOT-A1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.00",
+          "actual": "1076000.00",
+          "expected": "1076000.00",
+          "field": "ending_net_nav",
+          "lot_id": "LOT-A1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.000000",
+          "actual": "107.600000",
+          "expected": "107.600000",
+          "field": "ending_net_nav_per_unit",
+          "lot_id": "LOT-A1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.000000",
+          "actual": "107.600000",
+          "expected": "107.600000",
+          "field": "new_hwm",
+          "lot_id": "LOT-A1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0",
+          "actual": "True",
+          "expected": "True",
+          "field": "is_crystallization_event",
+          "lot_id": "LOT-A1",
+          "matched": true
+        }
+      ],
+      "discrepancies": [],
+      "discrepancy_count": 0,
+      "passed": true,
+      "run_id": "RUN-20250331-v1-f8248710cd",
+      "tolerance": "0.00",
+      "valuation_date": "2025-03-31"
+    }
+  ],
+  "corrections": [],
+  "description": "Reference 2% management fee (beginning NAV, quarterly 1/4) and 20% performance fee above HWM with quarterly crystallization.",
+  "fixture_file": "reference_basic_2_and_20.json",
+  "run_count": 1,
+  "runs": [
+    {
+      "agreement_id": "AGR-CLASS-A",
+      "config_version": "1.0.0",
+      "currency": "USD",
+      "diagnostics": {
+        "counters": {
+          "crystallization_events": 1,
+          "lots_evaluated": 1,
+          "redemptions_processed": 0,
+          "reversals_processed": 0,
+          "subscriptions_processed": 0
+        },
+        "journal_entry_count": 3,
+        "journal_line_count": 6,
+        "reconciled": true
+      },
+      "input_hash": "f8248710cd97ff14",
+      "journal_entries": [
+        {
+          "currency": "USD",
+          "description": "Management fee accrual for lot LOT-A1",
+          "entry_id": "JE-RUN-2025-001-4cf704681c",
+          "entry_type": "MANAGEMENT_FEE_ACCRUAL",
+          "lines": [
+            {
+              "account_code": "5100",
+              "account_name": "Management Fee Expense",
+              "credit": "0.00",
+              "currency": "USD",
+              "debit": "5000.00",
+              "lot_id": "LOT-A1",
+              "memo": "Management fee accrual 2024-12-31..2025-03-31",
+              "share_class": "CLASS_A"
+            },
+            {
+              "account_code": "2100",
+              "account_name": "Management Fee Payable",
+              "credit": "5000.00",
+              "currency": "USD",
+              "debit": "0.00",
+              "lot_id": "LOT-A1",
+              "memo": "Management fee payable 2024-12-31..2025-03-31",
+              "share_class": "CLASS_A"
+            }
+          ],
+          "posting_date": "2025-03-31",
+          "run_id": "RUN-20250331-v1-f8248710cd",
+          "supersedes_entry_id": null,
+          "total_credits": "5000.00",
+          "total_debits": "5000.00",
+          "valuation_date": "2025-03-31",
+          "version": 1
+        },
+        {
+          "currency": "USD",
+          "description": "Performance fee accrual for lot LOT-A1",
+          "entry_id": "JE-RUN-2025-002-2f50212ea2",
+          "entry_type": "PERFORMANCE_FEE_ACCRUAL",
+          "lines": [
+            {
+              "account_code": "5200",
+              "account_name": "Performance Fee Expense",
+              "credit": "0.00",
+              "currency": "USD",
+              "debit": "19000.00",
+              "lot_id": "LOT-A1",
+              "memo": "Performance fee accrual 2025-03-31",
+              "share_class": "CLASS_A"
+            },
+            {
+              "account_code": "2200",
+              "account_name": "Performance Fee Accrued Liability",
+              "credit": "19000.00",
+              "currency": "USD",
+              "debit": "0.00",
+              "lot_id": "LOT-A1",
+              "memo": "Performance fee accrued liability 2025-03-31",
+              "share_class": "CLASS_A"
+            }
+          ],
+          "posting_date": "2025-03-31",
+          "run_id": "RUN-20250331-v1-f8248710cd",
+          "supersedes_entry_id": null,
+          "total_credits": "19000.00",
+          "total_debits": "19000.00",
+          "valuation_date": "2025-03-31",
+          "version": 1
+        },
+        {
+          "currency": "USD",
+          "description": "Performance fee crystallization for lot LOT-A1 (SCHEDULED_QUARTERLY)",
+          "entry_id": "JE-RUN-2025-003-0a2d1d9687",
+          "entry_type": "PERFORMANCE_FEE_CRYSTALLIZATION",
+          "lines": [
+            {
+              "account_code": "2200",
+              "account_name": "Performance Fee Accrued Liability",
+              "credit": "0.00",
+              "currency": "USD",
+              "debit": "19000.00",
+              "lot_id": "LOT-A1",
+              "memo": "Crystallize accrued perf fee (SCHEDULED_QUARTERLY)",
+              "share_class": "CLASS_A"
+            },
+            {
+              "account_code": "2210",
+              "account_name": "Performance Fee Payable - Crystallized",
+              "credit": "19000.00",
+              "currency": "USD",
+              "debit": "0.00",
+              "lot_id": "LOT-A1",
+              "memo": "Performance fee crystallized payable (SCHEDULED_QUARTERLY)",
+              "share_class": "CLASS_A"
+            }
+          ],
+          "posting_date": "2025-03-31",
+          "run_id": "RUN-20250331-v1-f8248710cd",
+          "supersedes_entry_id": null,
+          "total_credits": "19000.00",
+          "total_debits": "19000.00",
+          "valuation_date": "2025-03-31",
+          "version": 1
+        }
+      ],
+      "lot_calculations": [
+        {
+          "crystallization_reason": "SCHEDULED_QUARTERLY",
+          "crystallized_performance_fee": "19000.00",
+          "currency": "USD",
+          "effective_benchmark_nav_per_unit": "100.000000",
+          "eligible_gain_per_unit": "9.500000",
+          "ending_accrued_perf_fee": "0.00",
+          "ending_net_nav": "1076000.00",
+          "ending_net_nav_per_unit": "107.600000",
+          "gross_ending_nav": "1100000.00",
+          "gross_nav_per_unit": "110.000000",
+          "hurdle_nav_per_unit": "100.000000",
+          "investor_id": "INV-001",
+          "is_crystallization_event": true,
+          "loss_carryforward_amount": "0.00",
+          "lot_id": "LOT-A1",
+          "management_fee_amount": "5000.00",
+          "management_fee_basis_nav": "1000000.00",
+          "new_hurdle_base_nav": "107.600000",
+          "new_hwm": "107.600000",
+          "notes": [
+            "ABOVE_EFFECTIVE_BENCHMARK",
+            "HWM_RESET_UPWARD"
+          ],
+          "opening_nav_per_unit": "100.000000",
+          "performance_fee_delta": "19000.00",
+          "period_start_date": "2024-12-31",
+          "post_mgmt_nav_per_unit": "109.500000",
+          "prior_accrued_perf_fee": "0.00",
+          "prior_hwm": "100.000000",
+          "share_class": "CLASS_A",
+          "target_cumulative_perf_fee": "19000.00",
+          "units": "10000.000000",
+          "valuation_date": "2025-03-31",
+          "year_fraction": "0.25"
+        }
+      ],
+      "output_hash": "2e6e2683a688b331",
+      "period_start_date": "2024-12-31",
+      "reconciliation": {
+        "checks": {
+          "all_entries_balanced": true,
+          "crystallized_perf_reconciles": true,
+          "management_fee_reconciles": true,
+          "nav_bridge_reconciles": true,
+          "no_duplicate_accruals": true,
+          "no_negative_fee_accrual": true,
+          "no_negative_line_amounts": true,
+          "performance_fee_reconciles": true
+        },
+        "journal_imbalance": "0.00",
+        "nav_bridge_difference": "0.00",
+        "reconciled": true,
+        "total_crystallized_perf_fee": "19000.00",
+        "total_gross_nav": "1100000.00",
+        "total_journal_credits": "43000.00",
+        "total_journal_debits": "43000.00",
+        "total_management_fee_calculated": "5000.00",
+        "total_management_fee_journaled": "5000.00",
+        "total_net_nav": "1076000.00",
+        "total_performance_fee_calculated": "19000.00",
+        "total_performance_fee_journaled": "19000.00"
+      },
+      "run_id": "RUN-20250331-v1-f8248710cd",
+      "share_class": "CLASS_A",
+      "status": "DRAFT",
+      "supersedes_run_id": null,
+      "updated_lots": [
+        {
+          "high_water_mark": "107.600000",
+          "hurdle_base_nav": "107.600000",
+          "investor_id": "INV-001",
+          "last_crystallization_date": "2025-03-31",
+          "loss_carryforward_amount": "0.00",
+          "lot_id": "LOT-A1",
+          "opening_nav_per_unit": "107.600000",
+          "prior_accrued_perf_fee": "0.00",
+          "series_id": "S20241231",
+          "share_class": "CLASS_A",
+          "status": "ACTIVE",
+          "subscription_date": "2024-12-31",
+          "units": "10000.000000",
+          "version": 2
+        }
+      ],
+      "valuation_date": "2025-03-31",
+      "version": 1
+    }
+  ],
+  "scenario_id": "REF-BASIC-2-AND-20"
+}

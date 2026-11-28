@@ -1,0 +1,10 @@
+{
+  "config_version": "1.0.0",
+  "intermediate_precision": 28,
+  "machine": "arm64",
+  "oracle_comparison_tolerance": "0.00",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "python_version": "3.9.6",
+  "rounding_mode": "ROUND_HALF_EVEN",
+  "schema_version": "1.0.0"
+}

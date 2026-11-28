@@ -1,0 +1,130 @@
+{
+  "scenario_id": "SCEN-HURDLE-AND-CRYSTALLIZATION-BOUNDARIES",
+  "description": "Annual crystallization with quarterly valuations and 8% hard non-compounding hurdle: Q1 above HWM but below hurdle, Q2 interim accrual (HWM must NOT reset), Q3 pullback triggers intra-period accrual reversal, Q4 annual crystallization settles payable and resets HWM.",
+  "provenance": "Synthetic educational fixture hand-calculated from first principles.",
+  "agreement": {
+    "agreement_id": "AGR-HURDLE-C",
+    "version": 1,
+    "share_class": "CLASS_C",
+    "currency": "USD",
+    "effective_date": "2024-12-31",
+    "management_fee_rate": "0.00",
+    "management_fee_basis": "BEGINNING_NAV",
+    "day_count": "QUARTERLY_1_4",
+    "performance_fee_rate": "0.20",
+    "hurdle_type": "HARD_NON_COMPOUNDING",
+    "hurdle_rate": "0.08",
+    "crystallization_frequency": "ANNUAL",
+    "hwm_reset_policy": "ON_CRYSTALLIZATION_GAIN",
+    "management_fee_deducted_before_perf": true,
+    "allow_intra_period_perf_reversal": true
+  },
+  "initial_lots": [
+    {
+      "lot_id": "LOT-HURDLE-1",
+      "investor_id": "INV-HURDLE-01",
+      "share_class": "CLASS_C",
+      "series_id": "S20241231",
+      "subscription_date": "2024-12-31",
+      "units": "10000.000000",
+      "opening_nav_per_unit": "100.000000",
+      "high_water_mark": "100.000000",
+      "hurdle_base_nav": "100.000000",
+      "last_crystallization_date": "2024-12-31"
+    }
+  ],
+  "periods": [
+    {
+      "snapshot": {
+        "snapshot_id": "SNAP-HC-Q1",
+        "period_start_date": "2024-12-31",
+        "valuation_date": "2025-03-31",
+        "share_class": "CLASS_C",
+        "currency": "USD",
+        "gross_nav_per_unit": "101.500000",
+        "version": 1
+      },
+      "expected": {
+        "LOT-HURDLE-1": {
+          "hurdle_nav_per_unit": "102.000000",
+          "eligible_gain_per_unit": "0.000000",
+          "performance_fee_delta": "0.00",
+          "crystallized_performance_fee": "0.00",
+          "ending_accrued_perf_fee": "0.00",
+          "is_crystallization_event": false,
+          "new_hwm": "100.000000"
+        }
+      }
+    },
+    {
+      "snapshot": {
+        "snapshot_id": "SNAP-HC-Q2",
+        "period_start_date": "2025-03-31",
+        "valuation_date": "2025-06-30",
+        "share_class": "CLASS_C",
+        "currency": "USD",
+        "gross_nav_per_unit": "109.000000",
+        "version": 1
+      },
+      "expected": {
+        "LOT-HURDLE-1": {
+          "hurdle_nav_per_unit": "104.000000",
+          "eligible_gain_per_unit": "5.000000",
+          "performance_fee_delta": "10000.00",
+          "crystallized_performance_fee": "0.00",
+          "ending_accrued_perf_fee": "10000.00",
+          "ending_net_nav": "1080000.00",
+          "is_crystallization_event": false,
+          "new_hwm": "100.000000"
+        }
+      }
+    },
+    {
+      "snapshot": {
+        "snapshot_id": "SNAP-HC-Q3",
+        "period_start_date": "2025-06-30",
+        "valuation_date": "2025-09-30",
+        "share_class": "CLASS_C",
+        "currency": "USD",
+        "gross_nav_per_unit": "108.000000",
+        "version": 1
+      },
+      "expected": {
+        "LOT-HURDLE-1": {
+          "hurdle_nav_per_unit": "106.000000",
+          "eligible_gain_per_unit": "2.000000",
+          "performance_fee_delta": "-6000.00",
+          "crystallized_performance_fee": "0.00",
+          "ending_accrued_perf_fee": "4000.00",
+          "ending_net_nav": "1076000.00",
+          "is_crystallization_event": false,
+          "new_hwm": "100.000000"
+        }
+      }
+    },
+    {
+      "snapshot": {
+        "snapshot_id": "SNAP-HC-Q4",
+        "period_start_date": "2025-09-30",
+        "valuation_date": "2025-12-31",
+        "share_class": "CLASS_C",
+        "currency": "USD",
+        "gross_nav_per_unit": "113.000000",
+        "version": 1
+      },
+      "expected": {
+        "LOT-HURDLE-1": {
+          "hurdle_nav_per_unit": "108.000000",
+          "eligible_gain_per_unit": "5.000000",
+          "performance_fee_delta": "6000.00",
+          "crystallized_performance_fee": "10000.00",
+          "ending_accrued_perf_fee": "0.00",
+          "ending_net_nav": "1120000.00",
+          "ending_net_nav_per_unit": "112.000000",
+          "is_crystallization_event": true,
+          "new_hwm": "112.000000"
+        }
+      }
+    }
+  ]
+}

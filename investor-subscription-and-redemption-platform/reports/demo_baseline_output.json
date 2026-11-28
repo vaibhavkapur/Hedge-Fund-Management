@@ -1,0 +1,252 @@
+{
+  "adapters": {
+    "fee_accounting_feed_items": 3,
+    "regulatory_report_reconciled": true
+  },
+  "baseline_verification": {
+    "actual_reconciliation": {
+      "discrepancies": [],
+      "inbound_cash_discrepancy": "0.00",
+      "negative_balance_positions": [],
+      "outbound_cash_discrepancy": "0.00",
+      "reconciled": true,
+      "settled_request_count": 3,
+      "share_discrepancy": "0.000000",
+      "total_fees_collected": "1633.33",
+      "total_inbound_cash_confirmed": "150000.00",
+      "total_inbound_cash_journal": "150000.00",
+      "total_journal_shares": "963.259281",
+      "total_outbound_cash_confirmed": "26532.67",
+      "total_outbound_cash_journal": "26532.67",
+      "total_register_shares": "963.259281",
+      "unapproved_settled_count": 0
+    },
+    "baseline_logical_state_hash": "04de11e3deb06dec4387e08e4b7e3237dfc2ade912c75b8794f48a78870bd189",
+    "expected_summary": {
+      "positions": {
+        "INV-SYN-001": {
+          "settled_shares": "592.000000",
+          "total_redeemed_net": "26532.67",
+          "total_subscribed_gross": "100000.00"
+        },
+        "INV-SYN-002": {
+          "settled_shares": "371.259281",
+          "total_redeemed_net": "0.00",
+          "total_subscribed_gross": "50000.00"
+        }
+      },
+      "total_fees_collected": "1633.33",
+      "total_inbound_cash": "150000.00",
+      "total_outbound_cash": "26532.67",
+      "total_register_shares": "963.259281"
+    },
+    "matches_expected_summary": true,
+    "share_register": [
+      {
+        "available_shares": "592.000000",
+        "currency": "USD",
+        "fund_id": "FUND-ALPHA",
+        "investor_id": "INV-SYN-001",
+        "pending_redemption_shares": "0.000000",
+        "settled_shares": "592.000000",
+        "share_class": "CLASS-A",
+        "total_fees_paid": "1133.33",
+        "total_redeemed_net": "26532.67",
+        "total_subscribed_gross": "100000.00"
+      },
+      {
+        "available_shares": "371.259281",
+        "currency": "USD",
+        "fund_id": "FUND-ALPHA",
+        "investor_id": "INV-SYN-002",
+        "pending_redemption_shares": "0.000000",
+        "settled_shares": "371.259281",
+        "share_class": "CLASS-A",
+        "total_fees_paid": "500.00",
+        "total_redeemed_net": "0.00",
+        "total_subscribed_gross": "50000.00"
+      }
+    ]
+  },
+  "diagnostic_counters": {
+    "audit_events_recorded": 27,
+    "cash_matched": 3,
+    "investors_activated": 2,
+    "investors_registered": 2,
+    "nav_restatements": 1,
+    "navs_published": 2,
+    "onboarding_approved": 2,
+    "reconciliation_runs": 3,
+    "requests_approved": 3,
+    "requests_priced": 3,
+    "requests_settled": 3,
+    "requests_submitted": 3
+  },
+  "fixture_id": "valid-e2e-scenario-v1",
+  "nav_restatement_demo": {
+    "audit_chain_valid": true,
+    "audit_event_count": 27,
+    "post_restatement_logical_state_hash": "f7e919f61a950bb5ac1f1fc2f10431ee504c9d867ecbe5078e1427afde0cb24c",
+    "post_restatement_reconciliation": {
+      "discrepancies": [],
+      "inbound_cash_discrepancy": "0.00",
+      "negative_balance_positions": [],
+      "outbound_cash_discrepancy": "0.00",
+      "reconciled": true,
+      "settled_request_count": 3,
+      "share_discrepancy": "0.000000",
+      "total_fees_collected": "1633.33",
+      "total_inbound_cash_confirmed": "150000.00",
+      "total_inbound_cash_journal": "150000.00",
+      "total_journal_shares": "971.259281",
+      "total_outbound_cash_confirmed": "26532.67",
+      "total_outbound_cash_journal": "26532.67",
+      "total_register_shares": "971.259281",
+      "unapproved_settled_count": 0
+    },
+    "post_restatement_register": [
+      {
+        "available_shares": "600.000000",
+        "currency": "USD",
+        "fund_id": "FUND-ALPHA",
+        "investor_id": "INV-SYN-001",
+        "pending_redemption_shares": "0.000000",
+        "settled_shares": "600.000000",
+        "share_class": "CLASS-A",
+        "total_fees_paid": "1133.33",
+        "total_redeemed_net": "26532.67",
+        "total_subscribed_gross": "100000.00"
+      },
+      {
+        "available_shares": "371.259281",
+        "currency": "USD",
+        "fund_id": "FUND-ALPHA",
+        "investor_id": "INV-SYN-002",
+        "pending_redemption_shares": "0.000000",
+        "settled_shares": "371.259281",
+        "share_class": "CLASS-A",
+        "total_fees_paid": "500.00",
+        "total_redeemed_net": "0.00",
+        "total_subscribed_gross": "50000.00"
+      }
+    ],
+    "restatement_result": {
+      "adjustment_entries": [
+        {
+          "currency": "USD",
+          "dealing_date": "2026-03-31",
+          "entry_id": "JRN-000004",
+          "entry_type": "NAV_RESTATEMENT_ADJUSTMENT",
+          "fee_delta": "0.00",
+          "fund_id": "FUND-ALPHA",
+          "gross_cash_delta": "0.00",
+          "investor_id": "INV-SYN-001",
+          "nav_id": "NAV-ALPHA-A-20260331-V2",
+          "nav_version": 2,
+          "net_cash_delta": "0.00",
+          "posted_at": "2026-05-10T12:00:00Z",
+          "posted_by": "nav_director_02",
+          "request_id": "REQ-SUB-001",
+          "share_class": "CLASS-A",
+          "share_delta": "8.000000",
+          "supersedes_entry_id": "JRN-000001",
+          "version": 2
+        }
+      ],
+      "approval": {
+        "approval_id": "APR-000004",
+        "checker_id": "nav_director_02",
+        "decided_at": "2026-05-10T12:00:00Z",
+        "decision": "APPROVED",
+        "entity_id": "NAV-ALPHA-A-20260331-V2",
+        "entity_type": "NAV_RESTATEMENT",
+        "maker_id": "nav_controller_01",
+        "reason": "Demo accrued expense adjustment"
+      },
+      "deltas": [
+        {
+          "fee_delta": "0.00",
+          "net_cash_delta": "0.00",
+          "original_fee": "1000.00",
+          "original_nav_id": "NAV-ALPHA-A-20260331-V1",
+          "original_net_cash": "99000.00",
+          "original_shares": "792.000000",
+          "request_id": "REQ-SUB-001",
+          "request_type": "SUBSCRIPTION",
+          "restated_fee": "1000.00",
+          "restated_nav_id": "NAV-ALPHA-A-20260331-V2",
+          "restated_net_cash": "99000.00",
+          "restated_shares": "800.000000",
+          "share_delta": "8.000000"
+        }
+      ],
+      "exceptions": [
+        {
+          "created_at": "2026-05-10T12:00:00Z",
+          "created_by": "nav_controller_01",
+          "details": {
+            "fee_delta": "0.00",
+            "net_cash_delta": "0.00",
+            "original_fee": "1000.00",
+            "original_nav_id": "NAV-ALPHA-A-20260331-V1",
+            "original_net_cash": "99000.00",
+            "original_shares": "792.000000",
+            "request_id": "REQ-SUB-001",
+            "request_type": "SUBSCRIPTION",
+            "restated_fee": "1000.00",
+            "restated_nav_id": "NAV-ALPHA-A-20260331-V2",
+            "restated_net_cash": "99000.00",
+            "restated_shares": "800.000000",
+            "share_delta": "8.000000"
+          },
+          "exception_id": "EXC-000001",
+          "exception_type": "NAV_RESTATEMENT",
+          "request_id": "REQ-SUB-001",
+          "resolution_note": "Approved restatement: Demo accrued expense adjustment",
+          "resolved_at": "2026-05-10T12:00:00Z",
+          "reviewer_id": "nav_director_02",
+          "status": "RESOLVED",
+          "summary": "NAV restated from 125.000000 to 123.750000; adjustment posted."
+        }
+      ],
+      "impacted_count": 1,
+      "restated_nav": {
+        "approved_at": "2026-05-10T12:00:00Z",
+        "approved_by": "nav_director_02",
+        "currency": "USD",
+        "dealing_date": "2026-03-31",
+        "fund_id": "FUND-ALPHA",
+        "nav_id": "NAV-ALPHA-A-20260331-V2",
+        "nav_per_share": "123.750000",
+        "restatement_reason": "Demo accrued expense adjustment",
+        "share_class": "CLASS-A",
+        "status": "APPROVED",
+        "supersedes_nav_id": "NAV-ALPHA-A-20260331-V1",
+        "version": 2
+      },
+      "superseded_nav": {
+        "approved_at": "2026-04-01T10:00:00Z",
+        "approved_by": "nav_controller_01",
+        "currency": "USD",
+        "dealing_date": "2026-03-31",
+        "fund_id": "FUND-ALPHA",
+        "nav_id": "NAV-ALPHA-A-20260331-V1",
+        "nav_per_share": "125.000000",
+        "restatement_reason": "Demo accrued expense adjustment",
+        "share_class": "CLASS-A",
+        "status": "SUPERSEDED",
+        "supersedes_nav_id": null,
+        "version": 1
+      }
+    }
+  },
+  "report_schema_version": "1.0.0",
+  "runtime": {
+    "config_hash": "7b887373847783aac59a53ff71505a07bf279a3088794799c4e201d647f4dc70",
+    "deterministic_seed": 20260331,
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "python_version": "3.9.6",
+    "sqlite_version": "3.51.0"
+  },
+  "synthetic_data_notice": "All investors, accounts, and cash confirmations are synthetic test records."
+}

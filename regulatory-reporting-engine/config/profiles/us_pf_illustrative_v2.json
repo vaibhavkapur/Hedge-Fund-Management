@@ -1,0 +1,204 @@
+{
+  "profile_id": "US_SEC_PF_ILLUSTRATIVE",
+  "schema_version": "2.0.0",
+  "jurisdiction": "US",
+  "display_name": "Illustrative Private Fund Periodic Report (Form PF-Style v2)",
+  "root_xml_element": "IllustrativePrivateFundReportV2",
+  "xml_namespace": "urn:synthetic:regulatory:us-pf-illustrative:v2",
+  "provenance": {
+    "effective_date": "2026-01-01",
+    "authored_date": "2026-02-01",
+    "source_reference": "Educational synthetic schema v2 demonstrating breaking schema evolution (renamed field + new required cash balance and liquidity tier).",
+    "certified_for_filing": false,
+    "supersedes_version": "1.0.0",
+    "change_summary": "Renamed gross_exposure_usd -> gross_notional_exposure_usd; added required cash_and_equivalents_usd and liquidity_bucket_primary."
+  },
+  "required_currency": "USD",
+  "fields": [
+    {
+      "field_id": "fund_id",
+      "xml_tag": "FundIdentifier",
+      "csv_column": "fund_id",
+      "data_type": "string",
+      "required": true,
+      "unit": "none",
+      "pattern": "^[A-Z0-9_-]{3,32}$",
+      "description": "Internal canonical fund identifier."
+    },
+    {
+      "field_id": "fund_lei",
+      "xml_tag": "FundLEI",
+      "csv_column": "fund_lei",
+      "data_type": "lei",
+      "required": true,
+      "unit": "none",
+      "description": "ISO 17442 20-character Legal Entity Identifier for the fund."
+    },
+    {
+      "field_id": "manager_lei",
+      "xml_tag": "ManagerLEI",
+      "csv_column": "manager_lei",
+      "data_type": "lei",
+      "required": true,
+      "unit": "none",
+      "description": "ISO 17442 20-character Legal Entity Identifier for the investment manager."
+    },
+    {
+      "field_id": "reporting_period_start",
+      "xml_tag": "ReportingPeriodStart",
+      "csv_column": "reporting_period_start",
+      "data_type": "date",
+      "required": true,
+      "unit": "none",
+      "description": "Inclusive start date of the reporting period (YYYY-MM-DD)."
+    },
+    {
+      "field_id": "reporting_period_end",
+      "xml_tag": "ReportingPeriodEnd",
+      "csv_column": "reporting_period_end",
+      "data_type": "date",
+      "required": true,
+      "unit": "none",
+      "description": "Inclusive end date (as-of business date) of the reporting period (YYYY-MM-DD)."
+    },
+    {
+      "field_id": "reporting_currency",
+      "xml_tag": "ReportingCurrency",
+      "csv_column": "reporting_currency",
+      "data_type": "iso_currency",
+      "required": true,
+      "unit": "none",
+      "allowed_values": ["USD"],
+      "description": "ISO 4217 currency code for monetary figures."
+    },
+    {
+      "field_id": "nav_total_usd",
+      "xml_tag": "NetAssetValueUSD",
+      "csv_column": "nav_total_usd",
+      "data_type": "decimal",
+      "required": true,
+      "unit": "USD",
+      "scale": 2,
+      "min_value": "0.00",
+      "description": "Governed Net Asset Value in USD."
+    },
+    {
+      "field_id": "gross_asset_value_usd",
+      "xml_tag": "GrossAssetValueUSD",
+      "csv_column": "gross_asset_value_usd",
+      "data_type": "decimal",
+      "required": true,
+      "unit": "USD",
+      "scale": 2,
+      "min_value": "0.00",
+      "description": "Gross Asset Value in USD."
+    },
+    {
+      "field_id": "total_liabilities_usd",
+      "xml_tag": "TotalLiabilitiesUSD",
+      "csv_column": "total_liabilities_usd",
+      "data_type": "decimal",
+      "required": true,
+      "unit": "USD",
+      "scale": 2,
+      "min_value": "0.00",
+      "description": "Total fund liabilities in USD."
+    },
+    {
+      "field_id": "cash_and_equivalents_usd",
+      "xml_tag": "CashAndEquivalentsUSD",
+      "csv_column": "cash_and_equivalents_usd",
+      "data_type": "decimal",
+      "required": true,
+      "unit": "USD",
+      "scale": 2,
+      "min_value": "0.00",
+      "description": "Unencumbered cash and cash equivalents in USD (added in v2.0.0)."
+    },
+    {
+      "field_id": "long_market_value_usd",
+      "xml_tag": "LongMarketValueUSD",
+      "csv_column": "long_market_value_usd",
+      "data_type": "decimal",
+      "required": true,
+      "unit": "USD",
+      "scale": 2,
+      "min_value": "0.00",
+      "description": "Sum of long position market values in USD."
+    },
+    {
+      "field_id": "short_market_value_usd",
+      "xml_tag": "ShortMarketValueUSD",
+      "csv_column": "short_market_value_usd",
+      "data_type": "decimal",
+      "required": true,
+      "unit": "USD",
+      "scale": 2,
+      "min_value": "0.00",
+      "description": "Absolute sum of short position market values in USD."
+    },
+    {
+      "field_id": "gross_notional_exposure_usd",
+      "xml_tag": "GrossNotionalExposureUSD",
+      "csv_column": "gross_notional_exposure_usd",
+      "data_type": "decimal",
+      "required": true,
+      "unit": "USD",
+      "scale": 2,
+      "min_value": "0.00",
+      "description": "Total gross notional exposure in USD (renamed from gross_exposure_usd in v2.0.0)."
+    },
+    {
+      "field_id": "net_exposure_usd",
+      "xml_tag": "NetExposureUSD",
+      "csv_column": "net_exposure_usd",
+      "data_type": "decimal",
+      "required": true,
+      "unit": "USD",
+      "scale": 2,
+      "description": "Total net exposure in USD."
+    },
+    {
+      "field_id": "gross_leverage_ratio",
+      "xml_tag": "GrossLeverageRatio",
+      "csv_column": "gross_leverage_ratio",
+      "data_type": "decimal",
+      "required": true,
+      "unit": "ratio",
+      "scale": 6,
+      "min_value": "0.000000",
+      "description": "Gross notional exposure divided by Net Asset Value."
+    },
+    {
+      "field_id": "position_count",
+      "xml_tag": "PositionCount",
+      "csv_column": "position_count",
+      "data_type": "integer",
+      "required": true,
+      "unit": "count",
+      "min_value": "0",
+      "description": "Total number of governed positions."
+    },
+    {
+      "field_id": "top_counterparty_exposure_usd",
+      "xml_tag": "TopCounterpartyExposureUSD",
+      "csv_column": "top_counterparty_exposure_usd",
+      "data_type": "decimal",
+      "required": true,
+      "unit": "USD",
+      "scale": 2,
+      "min_value": "0.00",
+      "description": "Maximum gross exposure to any single counterparty."
+    },
+    {
+      "field_id": "liquidity_bucket_primary",
+      "xml_tag": "LiquidityBucketPrimary",
+      "csv_column": "liquidity_bucket_primary",
+      "data_type": "enum",
+      "required": true,
+      "unit": "none",
+      "allowed_values": ["DAILY", "WEEKLY", "MONTHLY", "QUARTERLY", "ILLIQUID"],
+      "description": "Primary portfolio liquidity classification (added in v2.0.0)."
+    }
+  ]
+}

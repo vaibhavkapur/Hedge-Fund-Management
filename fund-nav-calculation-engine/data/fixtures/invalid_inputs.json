@@ -1,0 +1,32 @@
+{
+  "bundle_id": "BUNDLE-INVALID-2026-03-31",
+  "fund_id": "FUND-ALPHA-01",
+  "valuation_date": "2026-03-31",
+  "input_version": "1.0.0",
+  "positions": [
+    {
+      "position_id": "POS-BAD",
+      "instrument_id": "EQ-BAD",
+      "instrument_type": "equity",
+      "quantity": "100",
+      "cost_basis": "1000.00",
+      "currency": "XYZ"
+    }
+  ],
+  "prices": [
+    {
+      "price_id": "PX-BAD",
+      "instrument_id": "EQ-BAD",
+      "price": "-5.00",
+      "currency": "XYZ",
+      "price_date": "2026-03-31",
+      "as_of_timestamp": "2026-03-31T16:00:00Z"
+    }
+  ],
+  "fx_rates": [],
+  "liabilities": [],
+  "accruals": [],
+  "share_classes": [],
+  "capital_flows": [],
+  "ledger_balances": []
+}

@@ -1,0 +1,38 @@
+{
+  "config_version": "1.0.0",
+  "environment": "offline_synthetic",
+  "random_seed": 20260331,
+  "submission_policy": {
+    "automated_submission_enabled": false,
+    "allow_external_transmission": false,
+    "require_human_approval_before_export": false,
+    "watermark": "ILLUSTRATIVE_DRAFT_NOT_FOR_REGULATORY_FILING"
+  },
+  "numeric_policy": {
+    "default_rounding_mode": "ROUND_HALF_UP",
+    "monetary_decimal_places": 2,
+    "ratio_decimal_places": 6,
+    "minor_unit_scale": 100
+  },
+  "reconciliation_policy": {
+    "monetary_tolerance": "0.01",
+    "ratio_tolerance": "0.0001",
+    "fail_on_mismatch": true
+  },
+  "storage": {
+    "backend": "sqlite",
+    "sqlite_path": "reports/regulatory_journal.db",
+    "postgres_ddl_path": "sql/schema_postgres.sql"
+  },
+  "paths": {
+    "profiles_dir": "config/profiles",
+    "mappings_dir": "config/mappings",
+    "fixtures_dir": "data/fixtures",
+    "reports_dir": "reports"
+  },
+  "supported_profiles": [
+    "US_SEC_PF_ILLUSTRATIVE:1.0.0",
+    "US_SEC_PF_ILLUSTRATIVE:2.0.0",
+    "EU_AIFMD_ANNEX4_ILLUSTRATIVE:1.0.0"
+  ]
+}

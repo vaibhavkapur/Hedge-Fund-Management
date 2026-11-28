@@ -1,0 +1,46 @@
+{
+  "config_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "rounding": {
+    "monetary_rounding_mode": "ROUND_HALF_EVEN",
+    "nav_per_unit_decimals": 6,
+    "unit_decimals": 6,
+    "intermediate_precision": 28
+  },
+  "currency_minor_units": {
+    "USD": 2,
+    "EUR": 2,
+    "GBP": 2,
+    "CHF": 2,
+    "JPY": 0
+  },
+  "defaults": {
+    "allow_negative_accrual": false,
+    "allow_intra_period_perf_reversal": true,
+    "default_day_count": "ACT_365",
+    "default_management_fee_basis": "BEGINNING_NAV",
+    "oracle_comparison_tolerance": "0.00"
+  },
+  "chart_of_accounts": {
+    "management_fee_expense": {
+      "code": "5100",
+      "name": "Management Fee Expense"
+    },
+    "management_fee_payable": {
+      "code": "2100",
+      "name": "Management Fee Payable"
+    },
+    "performance_fee_expense": {
+      "code": "5200",
+      "name": "Performance Fee Expense"
+    },
+    "performance_fee_accrued": {
+      "code": "2200",
+      "name": "Performance Fee Accrued Liability"
+    },
+    "performance_fee_payable": {
+      "code": "2210",
+      "name": "Performance Fee Payable - Crystallized"
+    }
+  }
+}

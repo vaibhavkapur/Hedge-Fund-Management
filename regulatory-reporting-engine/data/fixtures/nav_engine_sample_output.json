@@ -1,0 +1,46 @@
+{
+  "snapshot_id": "NAV-ENGINE-SNAP-20260331",
+  "business_date": "2026-03-31",
+  "fund_code": "SYNTH_ALPHA_01",
+  "fund_name": "Synthetic Alpha Macro Fund I (via NAV Adapter)",
+  "base_currency": "USD",
+  "gross_assets": "125000000.00",
+  "total_liabilities": "25000000.00",
+  "net_asset_value": "100000000.00",
+  "cash_balance": "15000000.00",
+  "holdings": [
+    {
+      "holding_id": "POS-001",
+      "isin": "US0000000010",
+      "asset_class": "EQUITY",
+      "quantity": "500000",
+      "unit_price": "120.00",
+      "currency": "USD",
+      "fx_rate": "1.000000",
+      "market_value_base": "60000000.00",
+      "counterparty_lei": "000000SYNTHCP0000190"
+    },
+    {
+      "holding_id": "POS-002",
+      "isin": "DE0000000017",
+      "asset_class": "FIXED_INCOME",
+      "quantity": "400000",
+      "unit_price": "100.00",
+      "currency": "EUR",
+      "fx_rate": "1.125000",
+      "market_value_base": "45000000.00",
+      "counterparty_lei": "000000SYNTHCP0000287"
+    },
+    {
+      "holding_id": "POS-003",
+      "isin": "US0000000028",
+      "asset_class": "EQUITY",
+      "quantity": "-200000",
+      "unit_price": "100.00",
+      "currency": "USD",
+      "fx_rate": "1.000000",
+      "market_value_base": "-20000000.00",
+      "counterparty_lei": "000000SYNTHCP0000190"
+    }
+  ]
+}

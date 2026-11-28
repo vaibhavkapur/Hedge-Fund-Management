@@ -1,0 +1,150 @@
+{
+  "profile_id": "EU_AIFMD_ANNEX4_ILLUSTRATIVE",
+  "schema_version": "1.0.0",
+  "jurisdiction": "EU",
+  "display_name": "Illustrative AIFMD Annex IV-Style Transparency Report (v1)",
+  "root_xml_element": "IllustrativeAifmdReport",
+  "xml_namespace": "urn:synthetic:regulatory:eu-aifmd-illustrative:v1",
+  "provenance": {
+    "effective_date": "2025-01-01",
+    "authored_date": "2026-01-15",
+    "source_reference": "Educational synthetic schema modeled conceptually on public AIFMD transparency reporting metrics; NOT an official ESMA AIFMD XML schema.",
+    "certified_for_filing": false,
+    "change_summary": "Initial illustrative EU AIFMD-style v1.0.0 schema baseline."
+  },
+  "required_currency": "USD",
+  "fields": [
+    {
+      "field_id": "aif_identifier",
+      "xml_tag": "AIFIdentifier",
+      "csv_column": "aif_identifier",
+      "data_type": "string",
+      "required": true,
+      "unit": "none",
+      "pattern": "^[A-Z0-9_-]{3,32}$",
+      "description": "Canonical AIF identifier."
+    },
+    {
+      "field_id": "aif_lei",
+      "xml_tag": "AIFLEI",
+      "csv_column": "aif_lei",
+      "data_type": "lei",
+      "required": true,
+      "unit": "none",
+      "description": "ISO 17442 LEI of the Alternative Investment Fund."
+    },
+    {
+      "field_id": "aifm_lei",
+      "xml_tag": "AIFMLEI",
+      "csv_column": "aifm_lei",
+      "data_type": "lei",
+      "required": true,
+      "unit": "none",
+      "description": "ISO 17442 LEI of the AIF Manager."
+    },
+    {
+      "field_id": "reporting_period_end",
+      "xml_tag": "ReportingPeriodEnd",
+      "csv_column": "reporting_period_end",
+      "data_type": "date",
+      "required": true,
+      "unit": "none",
+      "description": "As-of reporting business date (YYYY-MM-DD)."
+    },
+    {
+      "field_id": "base_currency",
+      "xml_tag": "BaseCurrency",
+      "csv_column": "base_currency",
+      "data_type": "iso_currency",
+      "required": true,
+      "unit": "none",
+      "description": "ISO 4217 base reporting currency."
+    },
+    {
+      "field_id": "aif_nav_base",
+      "xml_tag": "AIFNetAssetValue",
+      "csv_column": "aif_nav_base",
+      "data_type": "decimal",
+      "required": true,
+      "unit": "USD",
+      "scale": 2,
+      "min_value": "0.00",
+      "description": "AIF Net Asset Value in base currency."
+    },
+    {
+      "field_id": "aum_gross_method_base",
+      "xml_tag": "AUMGrossMethod",
+      "csv_column": "aum_gross_method_base",
+      "data_type": "decimal",
+      "required": true,
+      "unit": "USD",
+      "scale": 2,
+      "min_value": "0.00",
+      "description": "Regulatory AUM / gross exposure in base currency."
+    },
+    {
+      "field_id": "aum_commitment_method_base",
+      "xml_tag": "AUMCommitmentMethod",
+      "csv_column": "aum_commitment_method_base",
+      "data_type": "decimal",
+      "required": true,
+      "unit": "USD",
+      "scale": 2,
+      "description": "Illustrative commitment-style net exposure in base currency."
+    },
+    {
+      "field_id": "leverage_gross_pct",
+      "xml_tag": "LeverageGrossPercent",
+      "csv_column": "leverage_gross_pct",
+      "data_type": "decimal",
+      "required": true,
+      "unit": "percent",
+      "scale": 2,
+      "min_value": "0.00",
+      "description": "Gross leverage expressed as percentage of NAV (e.g. 150.00 = 1.50x)."
+    },
+    {
+      "field_id": "equity_exposure_gross_base",
+      "xml_tag": "EquityExposureGross",
+      "csv_column": "equity_exposure_gross_base",
+      "data_type": "decimal",
+      "required": true,
+      "unit": "USD",
+      "scale": 2,
+      "min_value": "0.00",
+      "description": "Gross exposure in EQUITY asset class."
+    },
+    {
+      "field_id": "fixed_income_exposure_gross_base",
+      "xml_tag": "FixedIncomeExposureGross",
+      "csv_column": "fixed_income_exposure_gross_base",
+      "data_type": "decimal",
+      "required": true,
+      "unit": "USD",
+      "scale": 2,
+      "min_value": "0.00",
+      "description": "Gross exposure in FIXED_INCOME asset class."
+    },
+    {
+      "field_id": "derivatives_exposure_gross_base",
+      "xml_tag": "DerivativesExposureGross",
+      "csv_column": "derivatives_exposure_gross_base",
+      "data_type": "decimal",
+      "required": true,
+      "unit": "USD",
+      "scale": 2,
+      "min_value": "0.00",
+      "description": "Gross exposure in DERIVATIVES asset class."
+    },
+    {
+      "field_id": "position_count",
+      "xml_tag": "PositionCount",
+      "csv_column": "position_count",
+      "data_type": "integer",
+      "required": true,
+      "unit": "count",
+      "min_value": "0",
+      "description": "Total number of portfolio positions."
+    }
+  ]
+}

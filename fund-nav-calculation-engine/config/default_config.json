@@ -1,0 +1,25 @@
+{
+  "config_version": "1.0.0",
+  "fund_id": "FUND-ALPHA-01",
+  "base_currency": "USD",
+  "currency_precisions": {
+    "USD": 2,
+    "EUR": 2,
+    "GBP": 2,
+    "CHF": 2,
+    "JPY": 0,
+    "KWD": 3
+  },
+  "nav_per_share_precision": 6,
+  "share_precision": 6,
+  "fx_rate_precision": 8,
+  "rounding_mode": "ROUND_HALF_EVEN",
+  "max_price_age_days": 2,
+  "stale_price_policy": "error",
+  "allow_inverse_fx": true,
+  "flow_cutoff_utc": "16:00:00",
+  "post_cutoff_policy": "defer",
+  "ledger_tolerance": "0.01",
+  "require_reconciliation": true,
+  "seed": 42
+}

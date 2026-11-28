@@ -1,0 +1,4 @@
+# Core runtime has zero third-party dependencies (Python 3.9+ stdlib: decimal, sqlite3, dataclasses, json, hashlib).
+# Optional adapters & dev tooling (pinned for reproducibility):
+# psycopg[binary]==3.2.3   # Optional PostgreSQL journal adapter
+# pytest==8.3.3            # Optional test runner (unittest works out of the box)

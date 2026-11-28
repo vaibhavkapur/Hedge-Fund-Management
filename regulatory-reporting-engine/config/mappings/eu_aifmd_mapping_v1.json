@@ -1,0 +1,94 @@
+{
+  "mapping_id": "EU_AIFMD_ANNEX4_ILLUSTRATIVE_MAP",
+  "mapping_version": "1.0.0",
+  "target_profile_id": "EU_AIFMD_ANNEX4_ILLUSTRATIVE",
+  "target_schema_version": "1.0.0",
+  "effective_date": "2025-01-01",
+  "rounding_mode": "ROUND_HALF_UP",
+  "rules": [
+    {
+      "target_field": "aif_identifier",
+      "source_type": "metadata",
+      "source_path": "fund.fund_id"
+    },
+    {
+      "target_field": "aif_lei",
+      "source_type": "metadata",
+      "source_path": "fund.fund_lei"
+    },
+    {
+      "target_field": "aifm_lei",
+      "source_type": "metadata",
+      "source_path": "fund.manager_lei"
+    },
+    {
+      "target_field": "reporting_period_end",
+      "source_type": "metadata",
+      "source_path": "reporting_period.end_date"
+    },
+    {
+      "target_field": "base_currency",
+      "source_type": "metadata",
+      "source_path": "fund.base_currency"
+    },
+    {
+      "target_field": "aif_nav_base",
+      "source_type": "nav",
+      "source_path": "nav.net_asset_value",
+      "scale": 2
+    },
+    {
+      "target_field": "aum_gross_method_base",
+      "source_type": "exposures_agg",
+      "aggregation": "sum",
+      "source_field": "gross_exposure_base",
+      "scale": 2
+    },
+    {
+      "target_field": "aum_commitment_method_base",
+      "source_type": "exposures_agg",
+      "aggregation": "sum",
+      "source_field": "net_exposure_base",
+      "scale": 2
+    },
+    {
+      "target_field": "leverage_gross_pct",
+      "source_type": "derived",
+      "formula": "percent_ratio",
+      "numerator_field": "aum_gross_method_base",
+      "denominator_field": "aif_nav_base",
+      "zero_denominator_value": "0.00",
+      "scale": 2
+    },
+    {
+      "target_field": "equity_exposure_gross_base",
+      "source_type": "exposures_agg",
+      "aggregation": "sum",
+      "source_field": "gross_exposure_base",
+      "filter": {"asset_class": "EQUITY"},
+      "scale": 2
+    },
+    {
+      "target_field": "fixed_income_exposure_gross_base",
+      "source_type": "exposures_agg",
+      "aggregation": "sum",
+      "source_field": "gross_exposure_base",
+      "filter": {"asset_class": "FIXED_INCOME"},
+      "scale": 2
+    },
+    {
+      "target_field": "derivatives_exposure_gross_base",
+      "source_type": "exposures_agg",
+      "aggregation": "sum",
+      "source_field": "gross_exposure_base",
+      "filter": {"asset_class": "DERIVATIVES"},
+      "scale": 2
+    },
+    {
+      "target_field": "position_count",
+      "source_type": "positions_agg",
+      "aggregation": "count",
+      "source_field": "position_id"
+    }
+  ]
+}

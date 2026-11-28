@@ -1,0 +1,40 @@
+name: Fund NAV Calculation Engine CI
+
+on:
+  push:
+    paths:
+      - "fund-nav-calculation-engine/**"
+      - ".github/workflows/fund-nav-calculation-engine.yml"
+  pull_request:
+    paths:
+      - "fund-nav-calculation-engine/**"
+      - ".github/workflows/fund-nav-calculation-engine.yml"
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.11", "3.12"]
+
+    defaults:
+      run:
+        working-directory: fund-nav-calculation-engine
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Run unit, integration, boundary, and operational tests
+        env:
+          PYTHONPATH: src
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Run reproducible demo and benchmark validation script
+        run: python3 scripts/run_validation.py

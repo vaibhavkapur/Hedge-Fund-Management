@@ -1,0 +1,48 @@
+{
+  "baseline_run_ids": [
+    "RUN-PB-ALPHA-2026-03-16-V1-B18F061C76"
+  ],
+  "demo_run_ids": [
+    "RUN-PB-ALPHA-2026-03-17-V1-21C15BD07F",
+    "RUN-PB-BETA-2026-03-17-V1-970973CB2A"
+  ],
+  "metadata": {
+    "config_hashes": {
+      "default_policy.json": "98e78b5ce56f9aca66c5a64a920faca7fdf0006f90ef28f2736c84ad32ec6ee5",
+      "demo_multi_broker_bundle.json": "bfd431185ab096d66a627c8dab24ddd2b6a70ed72c5ae0e3d12e7f6e18b2e4db",
+      "financing_rates.json": "83ece154c6b213d656354930c10150faaac0ea873c09054c461039457991547b",
+      "reference_oracle.json": "9c9f82f8e7fb5989d405fba7a2e4d70ad7faf6f242944d3cbb89710010490857"
+    },
+    "executable": "python3",
+    "package_version": "0.1.0",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "python_implementation": "CPython",
+    "python_version": "3.9.6",
+    "schema_version": "1.0.0"
+  },
+  "microbenchmark": {
+    "benchmark_kind": "synthetic_in_memory_valuation_microbenchmark",
+    "deterministic_posted_collateral_usd": "18407100.00",
+    "iterations": 50,
+    "mean_latency_ms": 0.948,
+    "p50_latency_ms": 0.945,
+    "p95_latency_ms": 0.992,
+    "positions_per_iteration": 200,
+    "throughput_positions_per_sec": 210934.7
+  },
+  "not_run_dependencies": [
+    {
+      "capability": "Live PostgreSQL persistence via PostgresJournalAdapter",
+      "reason": "PostgreSQL server and optional psycopg driver are not installed in offline local environment; SQLiteJournalStore and DDL schema validation ran instead.",
+      "status": "NOT_RUN"
+    }
+  ],
+  "unittest_summary": {
+    "all_passed": true,
+    "elapsed_ms": 19.0,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests_run": 25
+  }
+}

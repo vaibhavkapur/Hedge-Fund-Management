@@ -1,0 +1,290 @@
+{
+  "report_id": "RPT-SYNTH_ALPHA_01-2026-Q1-US_SEC_PF_ILLUSTRATIVE-V1-E28146B3FA3E",
+  "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+  "profile_id": "US_SEC_PF_ILLUSTRATIVE",
+  "schema_version": "1.0.0",
+  "schema_provenance": {
+    "effective_date": "2025-01-01",
+    "authored_date": "2026-01-15",
+    "source_reference": "Educational synthetic schema modeled conceptually on public private-fund periodic reporting concepts; NOT an official SEC Form PF schema.",
+    "certified_for_filing": false,
+    "change_summary": "Initial illustrative v1.0.0 schema baseline."
+  },
+  "total_fields": 16,
+  "traced_fields": 16,
+  "lineage_coverage_ratio": "1.000000",
+  "fields": [
+    {
+      "target_field": "fund_id",
+      "value": "SYNTH_ALPHA_01",
+      "unit": "none",
+      "source_type": "metadata",
+      "mapping_id": "US_SEC_PF_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "fund:SYNTH_ALPHA_01"
+      ],
+      "derivation_expression": "DIRECT(fund.fund_id)",
+      "upstream_fields": [],
+      "rounding_mode": null,
+      "decimal_places": null
+    },
+    {
+      "target_field": "fund_lei",
+      "value": "000000SYNTHFUND00181",
+      "unit": "none",
+      "source_type": "metadata",
+      "mapping_id": "US_SEC_PF_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "fund:SYNTH_ALPHA_01"
+      ],
+      "derivation_expression": "DIRECT(fund.fund_lei)",
+      "upstream_fields": [],
+      "rounding_mode": null,
+      "decimal_places": null
+    },
+    {
+      "target_field": "manager_lei",
+      "value": "000000SYNTHMGR000140",
+      "unit": "none",
+      "source_type": "metadata",
+      "mapping_id": "US_SEC_PF_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "fund:SYNTH_ALPHA_01"
+      ],
+      "derivation_expression": "DIRECT(fund.manager_lei)",
+      "upstream_fields": [],
+      "rounding_mode": null,
+      "decimal_places": null
+    },
+    {
+      "target_field": "reporting_period_start",
+      "value": "2026-01-01",
+      "unit": "none",
+      "source_type": "metadata",
+      "mapping_id": "US_SEC_PF_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "period:2026-Q1"
+      ],
+      "derivation_expression": "DIRECT(reporting_period.start_date)",
+      "upstream_fields": [],
+      "rounding_mode": null,
+      "decimal_places": null
+    },
+    {
+      "target_field": "reporting_period_end",
+      "value": "2026-03-31",
+      "unit": "none",
+      "source_type": "metadata",
+      "mapping_id": "US_SEC_PF_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "period:2026-Q1"
+      ],
+      "derivation_expression": "DIRECT(reporting_period.end_date)",
+      "upstream_fields": [],
+      "rounding_mode": null,
+      "decimal_places": null
+    },
+    {
+      "target_field": "reporting_currency",
+      "value": "USD",
+      "unit": "none",
+      "source_type": "metadata",
+      "mapping_id": "US_SEC_PF_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "fund:SYNTH_ALPHA_01"
+      ],
+      "derivation_expression": "DIRECT(fund.base_currency)",
+      "upstream_fields": [],
+      "rounding_mode": null,
+      "decimal_places": null
+    },
+    {
+      "target_field": "nav_total_usd",
+      "value": "100000000.00",
+      "unit": "USD",
+      "source_type": "nav",
+      "mapping_id": "US_SEC_PF_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "nav:NAV-SYNTH-2026-03-31-V1"
+      ],
+      "derivation_expression": "DIRECT(nav.net_asset_value)",
+      "upstream_fields": [],
+      "rounding_mode": "ROUND_HALF_UP",
+      "decimal_places": 2
+    },
+    {
+      "target_field": "gross_asset_value_usd",
+      "value": "125000000.00",
+      "unit": "USD",
+      "source_type": "nav",
+      "mapping_id": "US_SEC_PF_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "nav:NAV-SYNTH-2026-03-31-V1"
+      ],
+      "derivation_expression": "DIRECT(nav.gross_asset_value)",
+      "upstream_fields": [],
+      "rounding_mode": "ROUND_HALF_UP",
+      "decimal_places": 2
+    },
+    {
+      "target_field": "total_liabilities_usd",
+      "value": "25000000.00",
+      "unit": "USD",
+      "source_type": "nav",
+      "mapping_id": "US_SEC_PF_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "nav:NAV-SYNTH-2026-03-31-V1"
+      ],
+      "derivation_expression": "DIRECT(nav.total_liabilities)",
+      "upstream_fields": [],
+      "rounding_mode": "ROUND_HALF_UP",
+      "decimal_places": 2
+    },
+    {
+      "target_field": "long_market_value_usd",
+      "value": "110000000.00",
+      "unit": "USD",
+      "source_type": "positions_agg",
+      "mapping_id": "US_SEC_PF_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "POS-001",
+        "POS-002",
+        "POS-004"
+      ],
+      "derivation_expression": "SUM(market_value_base) WHERE {'direction': 'LONG'}",
+      "upstream_fields": [],
+      "rounding_mode": "ROUND_HALF_UP",
+      "decimal_places": 2
+    },
+    {
+      "target_field": "short_market_value_usd",
+      "value": "20000000.00",
+      "unit": "USD",
+      "source_type": "positions_agg",
+      "mapping_id": "US_SEC_PF_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "POS-003"
+      ],
+      "derivation_expression": "SUM(ABS(market_value_base)) WHERE {'direction': 'SHORT'}",
+      "upstream_fields": [],
+      "rounding_mode": "ROUND_HALF_UP",
+      "decimal_places": 2
+    },
+    {
+      "target_field": "gross_exposure_usd",
+      "value": "150000000.00",
+      "unit": "USD",
+      "source_type": "exposures_agg",
+      "mapping_id": "US_SEC_PF_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "EXP-001",
+        "EXP-002",
+        "EXP-003"
+      ],
+      "derivation_expression": "SUM(gross_exposure_base)",
+      "upstream_fields": [],
+      "rounding_mode": "ROUND_HALF_UP",
+      "decimal_places": 2
+    },
+    {
+      "target_field": "net_exposure_usd",
+      "value": "110000000.00",
+      "unit": "USD",
+      "source_type": "exposures_agg",
+      "mapping_id": "US_SEC_PF_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "EXP-001",
+        "EXP-002",
+        "EXP-003"
+      ],
+      "derivation_expression": "SUM(net_exposure_base)",
+      "upstream_fields": [],
+      "rounding_mode": "ROUND_HALF_UP",
+      "decimal_places": 2
+    },
+    {
+      "target_field": "gross_leverage_ratio",
+      "value": "1.500000",
+      "unit": "ratio",
+      "source_type": "derived",
+      "mapping_id": "US_SEC_PF_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "EXP-001",
+        "EXP-002",
+        "EXP-003",
+        "nav:NAV-SYNTH-2026-03-31-V1"
+      ],
+      "derivation_expression": "gross_exposure_usd / nav_total_usd",
+      "upstream_fields": [
+        "gross_exposure_usd",
+        "nav_total_usd"
+      ],
+      "rounding_mode": "ROUND_HALF_UP",
+      "decimal_places": 6
+    },
+    {
+      "target_field": "position_count",
+      "value": 4,
+      "unit": "count",
+      "source_type": "positions_agg",
+      "mapping_id": "US_SEC_PF_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "POS-001",
+        "POS-002",
+        "POS-003",
+        "POS-004"
+      ],
+      "derivation_expression": "COUNT(position_id)",
+      "upstream_fields": [],
+      "rounding_mode": null,
+      "decimal_places": null
+    },
+    {
+      "target_field": "top_counterparty_exposure_usd",
+      "value": "105000000.00",
+      "unit": "USD",
+      "source_type": "exposures_agg",
+      "mapping_id": "US_SEC_PF_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "EXP-001",
+        "EXP-003"
+      ],
+      "derivation_expression": "MAX(SUM(gross_exposure_base) GROUP BY counterparty_lei) [top_group=000000SYNTHCP0000190]",
+      "upstream_fields": [],
+      "rounding_mode": "ROUND_HALF_UP",
+      "decimal_places": 2
+    }
+  ]
+}

@@ -1,0 +1,884 @@
+{
+  "all_passed": true,
+  "comparisons": [
+    {
+      "checks_evaluated": 7,
+      "comparisons": [
+        {
+          "abs_diff": "0.000000",
+          "actual": "102.000000",
+          "expected": "102.000000",
+          "field": "hurdle_nav_per_unit",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.000000",
+          "actual": "0.000000",
+          "expected": "0.000000",
+          "field": "eligible_gain_per_unit",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.00",
+          "actual": "0.00",
+          "expected": "0.00",
+          "field": "performance_fee_delta",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.00",
+          "actual": "0.00",
+          "expected": "0.00",
+          "field": "crystallized_performance_fee",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.00",
+          "actual": "0.00",
+          "expected": "0.00",
+          "field": "ending_accrued_perf_fee",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0",
+          "actual": "False",
+          "expected": "False",
+          "field": "is_crystallization_event",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.000000",
+          "actual": "100.000000",
+          "expected": "100.000000",
+          "field": "new_hwm",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        }
+      ],
+      "discrepancies": [],
+      "discrepancy_count": 0,
+      "passed": true,
+      "run_id": "RUN-20250331-v1-f528b99aa4",
+      "tolerance": "0.00",
+      "valuation_date": "2025-03-31"
+    },
+    {
+      "checks_evaluated": 8,
+      "comparisons": [
+        {
+          "abs_diff": "0.000000",
+          "actual": "104.000000",
+          "expected": "104.000000",
+          "field": "hurdle_nav_per_unit",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.000000",
+          "actual": "5.000000",
+          "expected": "5.000000",
+          "field": "eligible_gain_per_unit",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.00",
+          "actual": "10000.00",
+          "expected": "10000.00",
+          "field": "performance_fee_delta",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.00",
+          "actual": "0.00",
+          "expected": "0.00",
+          "field": "crystallized_performance_fee",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.00",
+          "actual": "10000.00",
+          "expected": "10000.00",
+          "field": "ending_accrued_perf_fee",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.00",
+          "actual": "1080000.00",
+          "expected": "1080000.00",
+          "field": "ending_net_nav",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0",
+          "actual": "False",
+          "expected": "False",
+          "field": "is_crystallization_event",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.000000",
+          "actual": "100.000000",
+          "expected": "100.000000",
+          "field": "new_hwm",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        }
+      ],
+      "discrepancies": [],
+      "discrepancy_count": 0,
+      "passed": true,
+      "run_id": "RUN-20250630-v1-c25e3b641a",
+      "tolerance": "0.00",
+      "valuation_date": "2025-06-30"
+    },
+    {
+      "checks_evaluated": 8,
+      "comparisons": [
+        {
+          "abs_diff": "0.000000",
+          "actual": "106.000000",
+          "expected": "106.000000",
+          "field": "hurdle_nav_per_unit",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.000000",
+          "actual": "2.000000",
+          "expected": "2.000000",
+          "field": "eligible_gain_per_unit",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.00",
+          "actual": "-6000.00",
+          "expected": "-6000.00",
+          "field": "performance_fee_delta",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.00",
+          "actual": "0.00",
+          "expected": "0.00",
+          "field": "crystallized_performance_fee",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.00",
+          "actual": "4000.00",
+          "expected": "4000.00",
+          "field": "ending_accrued_perf_fee",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.00",
+          "actual": "1076000.00",
+          "expected": "1076000.00",
+          "field": "ending_net_nav",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0",
+          "actual": "False",
+          "expected": "False",
+          "field": "is_crystallization_event",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.000000",
+          "actual": "100.000000",
+          "expected": "100.000000",
+          "field": "new_hwm",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        }
+      ],
+      "discrepancies": [],
+      "discrepancy_count": 0,
+      "passed": true,
+      "run_id": "RUN-20250930-v1-e939bf1b87",
+      "tolerance": "0.00",
+      "valuation_date": "2025-09-30"
+    },
+    {
+      "checks_evaluated": 9,
+      "comparisons": [
+        {
+          "abs_diff": "0.000000",
+          "actual": "108.000000",
+          "expected": "108.000000",
+          "field": "hurdle_nav_per_unit",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.000000",
+          "actual": "5.000000",
+          "expected": "5.000000",
+          "field": "eligible_gain_per_unit",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.00",
+          "actual": "6000.00",
+          "expected": "6000.00",
+          "field": "performance_fee_delta",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.00",
+          "actual": "10000.00",
+          "expected": "10000.00",
+          "field": "crystallized_performance_fee",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.00",
+          "actual": "0.00",
+          "expected": "0.00",
+          "field": "ending_accrued_perf_fee",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.00",
+          "actual": "1120000.00",
+          "expected": "1120000.00",
+          "field": "ending_net_nav",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.000000",
+          "actual": "112.000000",
+          "expected": "112.000000",
+          "field": "ending_net_nav_per_unit",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0",
+          "actual": "True",
+          "expected": "True",
+          "field": "is_crystallization_event",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        },
+        {
+          "abs_diff": "0.000000",
+          "actual": "112.000000",
+          "expected": "112.000000",
+          "field": "new_hwm",
+          "lot_id": "LOT-HURDLE-1",
+          "matched": true
+        }
+      ],
+      "discrepancies": [],
+      "discrepancy_count": 0,
+      "passed": true,
+      "run_id": "RUN-20251231-v1-d185c09b1c",
+      "tolerance": "0.00",
+      "valuation_date": "2025-12-31"
+    }
+  ],
+  "corrections": [],
+  "description": "Annual crystallization with quarterly valuations and 8% hard non-compounding hurdle: Q1 above HWM but below hurdle, Q2 interim accrual (HWM must NOT reset), Q3 pullback triggers intra-period accrual reversal, Q4 annual crystallization settles payable and resets HWM.",
+  "fixture_file": "hurdle_and_crystallization_boundaries.json",
+  "run_count": 4,
+  "runs": [
+    {
+      "agreement_id": "AGR-HURDLE-C",
+      "config_version": "1.0.0",
+      "currency": "USD",
+      "diagnostics": {
+        "counters": {
+          "crystallization_events": 0,
+          "lots_evaluated": 1,
+          "redemptions_processed": 0,
+          "reversals_processed": 0,
+          "subscriptions_processed": 0
+        },
+        "journal_entry_count": 0,
+        "journal_line_count": 0,
+        "reconciled": true
+      },
+      "input_hash": "f528b99aa4d673d2",
+      "journal_entries": [],
+      "lot_calculations": [
+        {
+          "crystallization_reason": "INTERIM_NON_CRYSTALLIZATION",
+          "crystallized_performance_fee": "0.00",
+          "currency": "USD",
+          "effective_benchmark_nav_per_unit": "102.000000",
+          "eligible_gain_per_unit": "0.000000",
+          "ending_accrued_perf_fee": "0.00",
+          "ending_net_nav": "1015000.00",
+          "ending_net_nav_per_unit": "101.500000",
+          "gross_ending_nav": "1015000.00",
+          "gross_nav_per_unit": "101.500000",
+          "hurdle_nav_per_unit": "102.000000",
+          "investor_id": "INV-HURDLE-01",
+          "is_crystallization_event": false,
+          "loss_carryforward_amount": "0.00",
+          "lot_id": "LOT-HURDLE-1",
+          "management_fee_amount": "0.00",
+          "management_fee_basis_nav": "1000000.00",
+          "new_hurdle_base_nav": "100.000000",
+          "new_hwm": "100.000000",
+          "notes": [
+            "ABOVE_HWM_BELOW_HURDLE",
+            "HWM_UNCHANGED_INTERIM"
+          ],
+          "opening_nav_per_unit": "100.000000",
+          "performance_fee_delta": "0.00",
+          "period_start_date": "2024-12-31",
+          "post_mgmt_nav_per_unit": "101.500000",
+          "prior_accrued_perf_fee": "0.00",
+          "prior_hwm": "100.000000",
+          "share_class": "CLASS_C",
+          "target_cumulative_perf_fee": "0.00",
+          "units": "10000.000000",
+          "valuation_date": "2025-03-31",
+          "year_fraction": "0.25"
+        }
+      ],
+      "output_hash": "0b72f239009bb831",
+      "period_start_date": "2024-12-31",
+      "reconciliation": {
+        "checks": {
+          "all_entries_balanced": true,
+          "crystallized_perf_reconciles": true,
+          "management_fee_reconciles": true,
+          "nav_bridge_reconciles": true,
+          "no_duplicate_accruals": true,
+          "no_negative_fee_accrual": true,
+          "no_negative_line_amounts": true,
+          "performance_fee_reconciles": true
+        },
+        "journal_imbalance": "0.00",
+        "nav_bridge_difference": "0.00",
+        "reconciled": true,
+        "total_crystallized_perf_fee": "0.00",
+        "total_gross_nav": "1015000.00",
+        "total_journal_credits": "0.00",
+        "total_journal_debits": "0.00",
+        "total_management_fee_calculated": "0.00",
+        "total_management_fee_journaled": "0.00",
+        "total_net_nav": "1015000.00",
+        "total_performance_fee_calculated": "0.00",
+        "total_performance_fee_journaled": "0.00"
+      },
+      "run_id": "RUN-20250331-v1-f528b99aa4",
+      "share_class": "CLASS_C",
+      "status": "DRAFT",
+      "supersedes_run_id": null,
+      "updated_lots": [
+        {
+          "high_water_mark": "100.000000",
+          "hurdle_base_nav": "100.000000",
+          "investor_id": "INV-HURDLE-01",
+          "last_crystallization_date": "2024-12-31",
+          "loss_carryforward_amount": "0.00",
+          "lot_id": "LOT-HURDLE-1",
+          "opening_nav_per_unit": "101.500000",
+          "prior_accrued_perf_fee": "0.00",
+          "series_id": "S20241231",
+          "share_class": "CLASS_C",
+          "status": "ACTIVE",
+          "subscription_date": "2024-12-31",
+          "units": "10000.000000",
+          "version": 2
+        }
+      ],
+      "valuation_date": "2025-03-31",
+      "version": 1
+    },
+    {
+      "agreement_id": "AGR-HURDLE-C",
+      "config_version": "1.0.0",
+      "currency": "USD",
+      "diagnostics": {
+        "counters": {
+          "crystallization_events": 0,
+          "lots_evaluated": 1,
+          "redemptions_processed": 0,
+          "reversals_processed": 0,
+          "subscriptions_processed": 0
+        },
+        "journal_entry_count": 1,
+        "journal_line_count": 2,
+        "reconciled": true
+      },
+      "input_hash": "c25e3b641aeb6d38",
+      "journal_entries": [
+        {
+          "currency": "USD",
+          "description": "Performance fee accrual for lot LOT-HURDLE-1",
+          "entry_id": "JE-RUN-2025-001-2909c63794",
+          "entry_type": "PERFORMANCE_FEE_ACCRUAL",
+          "lines": [
+            {
+              "account_code": "5200",
+              "account_name": "Performance Fee Expense",
+              "credit": "0.00",
+              "currency": "USD",
+              "debit": "10000.00",
+              "lot_id": "LOT-HURDLE-1",
+              "memo": "Performance fee accrual 2025-06-30",
+              "share_class": "CLASS_C"
+            },
+            {
+              "account_code": "2200",
+              "account_name": "Performance Fee Accrued Liability",
+              "credit": "10000.00",
+              "currency": "USD",
+              "debit": "0.00",
+              "lot_id": "LOT-HURDLE-1",
+              "memo": "Performance fee accrued liability 2025-06-30",
+              "share_class": "CLASS_C"
+            }
+          ],
+          "posting_date": "2025-06-30",
+          "run_id": "RUN-20250630-v1-c25e3b641a",
+          "supersedes_entry_id": null,
+          "total_credits": "10000.00",
+          "total_debits": "10000.00",
+          "valuation_date": "2025-06-30",
+          "version": 1
+        }
+      ],
+      "lot_calculations": [
+        {
+          "crystallization_reason": "INTERIM_NON_CRYSTALLIZATION",
+          "crystallized_performance_fee": "0.00",
+          "currency": "USD",
+          "effective_benchmark_nav_per_unit": "104.000000",
+          "eligible_gain_per_unit": "5.000000",
+          "ending_accrued_perf_fee": "10000.00",
+          "ending_net_nav": "1080000.00",
+          "ending_net_nav_per_unit": "108.000000",
+          "gross_ending_nav": "1090000.00",
+          "gross_nav_per_unit": "109.000000",
+          "hurdle_nav_per_unit": "104.000000",
+          "investor_id": "INV-HURDLE-01",
+          "is_crystallization_event": false,
+          "loss_carryforward_amount": "0.00",
+          "lot_id": "LOT-HURDLE-1",
+          "management_fee_amount": "0.00",
+          "management_fee_basis_nav": "1015000.00",
+          "new_hurdle_base_nav": "100.000000",
+          "new_hwm": "100.000000",
+          "notes": [
+            "ABOVE_EFFECTIVE_BENCHMARK",
+            "HWM_UNCHANGED_INTERIM"
+          ],
+          "opening_nav_per_unit": "101.500000",
+          "performance_fee_delta": "10000.00",
+          "period_start_date": "2025-03-31",
+          "post_mgmt_nav_per_unit": "109.000000",
+          "prior_accrued_perf_fee": "0.00",
+          "prior_hwm": "100.000000",
+          "share_class": "CLASS_C",
+          "target_cumulative_perf_fee": "10000.00",
+          "units": "10000.000000",
+          "valuation_date": "2025-06-30",
+          "year_fraction": "0.25"
+        }
+      ],
+      "output_hash": "1525129453646ebc",
+      "period_start_date": "2025-03-31",
+      "reconciliation": {
+        "checks": {
+          "all_entries_balanced": true,
+          "crystallized_perf_reconciles": true,
+          "management_fee_reconciles": true,
+          "nav_bridge_reconciles": true,
+          "no_duplicate_accruals": true,
+          "no_negative_fee_accrual": true,
+          "no_negative_line_amounts": true,
+          "performance_fee_reconciles": true
+        },
+        "journal_imbalance": "0.00",
+        "nav_bridge_difference": "0.00",
+        "reconciled": true,
+        "total_crystallized_perf_fee": "0.00",
+        "total_gross_nav": "1090000.00",
+        "total_journal_credits": "10000.00",
+        "total_journal_debits": "10000.00",
+        "total_management_fee_calculated": "0.00",
+        "total_management_fee_journaled": "0.00",
+        "total_net_nav": "1080000.00",
+        "total_performance_fee_calculated": "10000.00",
+        "total_performance_fee_journaled": "10000.00"
+      },
+      "run_id": "RUN-20250630-v1-c25e3b641a",
+      "share_class": "CLASS_C",
+      "status": "DRAFT",
+      "supersedes_run_id": null,
+      "updated_lots": [
+        {
+          "high_water_mark": "100.000000",
+          "hurdle_base_nav": "100.000000",
+          "investor_id": "INV-HURDLE-01",
+          "last_crystallization_date": "2024-12-31",
+          "loss_carryforward_amount": "0.00",
+          "lot_id": "LOT-HURDLE-1",
+          "opening_nav_per_unit": "109.000000",
+          "prior_accrued_perf_fee": "10000.00",
+          "series_id": "S20241231",
+          "share_class": "CLASS_C",
+          "status": "ACTIVE",
+          "subscription_date": "2024-12-31",
+          "units": "10000.000000",
+          "version": 3
+        }
+      ],
+      "valuation_date": "2025-06-30",
+      "version": 1
+    },
+    {
+      "agreement_id": "AGR-HURDLE-C",
+      "config_version": "1.0.0",
+      "currency": "USD",
+      "diagnostics": {
+        "counters": {
+          "crystallization_events": 0,
+          "lots_evaluated": 1,
+          "redemptions_processed": 0,
+          "reversals_processed": 1,
+          "subscriptions_processed": 0
+        },
+        "journal_entry_count": 1,
+        "journal_line_count": 2,
+        "reconciled": true
+      },
+      "input_hash": "e939bf1b8782eb84",
+      "journal_entries": [
+        {
+          "currency": "USD",
+          "description": "Intra-period performance fee reversal for lot LOT-HURDLE-1",
+          "entry_id": "JE-RUN-2025-001-2e11f1346e",
+          "entry_type": "PERFORMANCE_FEE_REVERSAL",
+          "lines": [
+            {
+              "account_code": "2200",
+              "account_name": "Performance Fee Accrued Liability",
+              "credit": "0.00",
+              "currency": "USD",
+              "debit": "6000.00",
+              "lot_id": "LOT-HURDLE-1",
+              "memo": "Intra-period performance fee reversal 2025-09-30",
+              "share_class": "CLASS_C"
+            },
+            {
+              "account_code": "5200",
+              "account_name": "Performance Fee Expense",
+              "credit": "6000.00",
+              "currency": "USD",
+              "debit": "0.00",
+              "lot_id": "LOT-HURDLE-1",
+              "memo": "Intra-period performance fee expense reversal 2025-09-30",
+              "share_class": "CLASS_C"
+            }
+          ],
+          "posting_date": "2025-09-30",
+          "run_id": "RUN-20250930-v1-e939bf1b87",
+          "supersedes_entry_id": null,
+          "total_credits": "6000.00",
+          "total_debits": "6000.00",
+          "valuation_date": "2025-09-30",
+          "version": 1
+        }
+      ],
+      "lot_calculations": [
+        {
+          "crystallization_reason": "INTERIM_NON_CRYSTALLIZATION",
+          "crystallized_performance_fee": "0.00",
+          "currency": "USD",
+          "effective_benchmark_nav_per_unit": "106.000000",
+          "eligible_gain_per_unit": "2.000000",
+          "ending_accrued_perf_fee": "4000.00",
+          "ending_net_nav": "1076000.00",
+          "ending_net_nav_per_unit": "107.600000",
+          "gross_ending_nav": "1080000.00",
+          "gross_nav_per_unit": "108.000000",
+          "hurdle_nav_per_unit": "106.000000",
+          "investor_id": "INV-HURDLE-01",
+          "is_crystallization_event": false,
+          "loss_carryforward_amount": "0.00",
+          "lot_id": "LOT-HURDLE-1",
+          "management_fee_amount": "0.00",
+          "management_fee_basis_nav": "1090000.00",
+          "new_hurdle_base_nav": "100.000000",
+          "new_hwm": "100.000000",
+          "notes": [
+            "ABOVE_EFFECTIVE_BENCHMARK",
+            "INTRA_PERIOD_PERF_REVERSAL",
+            "HWM_UNCHANGED_INTERIM"
+          ],
+          "opening_nav_per_unit": "109.000000",
+          "performance_fee_delta": "-6000.00",
+          "period_start_date": "2025-06-30",
+          "post_mgmt_nav_per_unit": "108.000000",
+          "prior_accrued_perf_fee": "10000.00",
+          "prior_hwm": "100.000000",
+          "share_class": "CLASS_C",
+          "target_cumulative_perf_fee": "4000.00",
+          "units": "10000.000000",
+          "valuation_date": "2025-09-30",
+          "year_fraction": "0.25"
+        }
+      ],
+      "output_hash": "76af068ae2de357c",
+      "period_start_date": "2025-06-30",
+      "reconciliation": {
+        "checks": {
+          "all_entries_balanced": true,
+          "crystallized_perf_reconciles": true,
+          "management_fee_reconciles": true,
+          "nav_bridge_reconciles": true,
+          "no_duplicate_accruals": true,
+          "no_negative_fee_accrual": true,
+          "no_negative_line_amounts": true,
+          "performance_fee_reconciles": true
+        },
+        "journal_imbalance": "0.00",
+        "nav_bridge_difference": "0.00",
+        "reconciled": true,
+        "total_crystallized_perf_fee": "0.00",
+        "total_gross_nav": "1080000.00",
+        "total_journal_credits": "6000.00",
+        "total_journal_debits": "6000.00",
+        "total_management_fee_calculated": "0.00",
+        "total_management_fee_journaled": "0.00",
+        "total_net_nav": "1076000.00",
+        "total_performance_fee_calculated": "-6000.00",
+        "total_performance_fee_journaled": "-6000.00"
+      },
+      "run_id": "RUN-20250930-v1-e939bf1b87",
+      "share_class": "CLASS_C",
+      "status": "DRAFT",
+      "supersedes_run_id": null,
+      "updated_lots": [
+        {
+          "high_water_mark": "100.000000",
+          "hurdle_base_nav": "100.000000",
+          "investor_id": "INV-HURDLE-01",
+          "last_crystallization_date": "2024-12-31",
+          "loss_carryforward_amount": "0.00",
+          "lot_id": "LOT-HURDLE-1",
+          "opening_nav_per_unit": "108.000000",
+          "prior_accrued_perf_fee": "4000.00",
+          "series_id": "S20241231",
+          "share_class": "CLASS_C",
+          "status": "ACTIVE",
+          "subscription_date": "2024-12-31",
+          "units": "10000.000000",
+          "version": 4
+        }
+      ],
+      "valuation_date": "2025-09-30",
+      "version": 1
+    },
+    {
+      "agreement_id": "AGR-HURDLE-C",
+      "config_version": "1.0.0",
+      "currency": "USD",
+      "diagnostics": {
+        "counters": {
+          "crystallization_events": 1,
+          "lots_evaluated": 1,
+          "redemptions_processed": 0,
+          "reversals_processed": 0,
+          "subscriptions_processed": 0
+        },
+        "journal_entry_count": 2,
+        "journal_line_count": 4,
+        "reconciled": true
+      },
+      "input_hash": "d185c09b1cba5ade",
+      "journal_entries": [
+        {
+          "currency": "USD",
+          "description": "Performance fee accrual for lot LOT-HURDLE-1",
+          "entry_id": "JE-RUN-2025-001-09cddbae53",
+          "entry_type": "PERFORMANCE_FEE_ACCRUAL",
+          "lines": [
+            {
+              "account_code": "5200",
+              "account_name": "Performance Fee Expense",
+              "credit": "0.00",
+              "currency": "USD",
+              "debit": "6000.00",
+              "lot_id": "LOT-HURDLE-1",
+              "memo": "Performance fee accrual 2025-12-31",
+              "share_class": "CLASS_C"
+            },
+            {
+              "account_code": "2200",
+              "account_name": "Performance Fee Accrued Liability",
+              "credit": "6000.00",
+              "currency": "USD",
+              "debit": "0.00",
+              "lot_id": "LOT-HURDLE-1",
+              "memo": "Performance fee accrued liability 2025-12-31",
+              "share_class": "CLASS_C"
+            }
+          ],
+          "posting_date": "2025-12-31",
+          "run_id": "RUN-20251231-v1-d185c09b1c",
+          "supersedes_entry_id": null,
+          "total_credits": "6000.00",
+          "total_debits": "6000.00",
+          "valuation_date": "2025-12-31",
+          "version": 1
+        },
+        {
+          "currency": "USD",
+          "description": "Performance fee crystallization for lot LOT-HURDLE-1 (SCHEDULED_ANNUAL)",
+          "entry_id": "JE-RUN-2025-002-f89dea7d47",
+          "entry_type": "PERFORMANCE_FEE_CRYSTALLIZATION",
+          "lines": [
+            {
+              "account_code": "2200",
+              "account_name": "Performance Fee Accrued Liability",
+              "credit": "0.00",
+              "currency": "USD",
+              "debit": "10000.00",
+              "lot_id": "LOT-HURDLE-1",
+              "memo": "Crystallize accrued perf fee (SCHEDULED_ANNUAL)",
+              "share_class": "CLASS_C"
+            },
+            {
+              "account_code": "2210",
+              "account_name": "Performance Fee Payable - Crystallized",
+              "credit": "10000.00",
+              "currency": "USD",
+              "debit": "0.00",
+              "lot_id": "LOT-HURDLE-1",
+              "memo": "Performance fee crystallized payable (SCHEDULED_ANNUAL)",
+              "share_class": "CLASS_C"
+            }
+          ],
+          "posting_date": "2025-12-31",
+          "run_id": "RUN-20251231-v1-d185c09b1c",
+          "supersedes_entry_id": null,
+          "total_credits": "10000.00",
+          "total_debits": "10000.00",
+          "valuation_date": "2025-12-31",
+          "version": 1
+        }
+      ],
+      "lot_calculations": [
+        {
+          "crystallization_reason": "SCHEDULED_ANNUAL",
+          "crystallized_performance_fee": "10000.00",
+          "currency": "USD",
+          "effective_benchmark_nav_per_unit": "108.000000",
+          "eligible_gain_per_unit": "5.000000",
+          "ending_accrued_perf_fee": "0.00",
+          "ending_net_nav": "1120000.00",
+          "ending_net_nav_per_unit": "112.000000",
+          "gross_ending_nav": "1130000.00",
+          "gross_nav_per_unit": "113.000000",
+          "hurdle_nav_per_unit": "108.000000",
+          "investor_id": "INV-HURDLE-01",
+          "is_crystallization_event": true,
+          "loss_carryforward_amount": "0.00",
+          "lot_id": "LOT-HURDLE-1",
+          "management_fee_amount": "0.00",
+          "management_fee_basis_nav": "1080000.00",
+          "new_hurdle_base_nav": "112.000000",
+          "new_hwm": "112.000000",
+          "notes": [
+            "ABOVE_EFFECTIVE_BENCHMARK",
+            "HWM_RESET_UPWARD"
+          ],
+          "opening_nav_per_unit": "108.000000",
+          "performance_fee_delta": "6000.00",
+          "period_start_date": "2025-09-30",
+          "post_mgmt_nav_per_unit": "113.000000",
+          "prior_accrued_perf_fee": "4000.00",
+          "prior_hwm": "100.000000",
+          "share_class": "CLASS_C",
+          "target_cumulative_perf_fee": "10000.00",
+          "units": "10000.000000",
+          "valuation_date": "2025-12-31",
+          "year_fraction": "0.25"
+        }
+      ],
+      "output_hash": "dc7c4b8f37b8d012",
+      "period_start_date": "2025-09-30",
+      "reconciliation": {
+        "checks": {
+          "all_entries_balanced": true,
+          "crystallized_perf_reconciles": true,
+          "management_fee_reconciles": true,
+          "nav_bridge_reconciles": true,
+          "no_duplicate_accruals": true,
+          "no_negative_fee_accrual": true,
+          "no_negative_line_amounts": true,
+          "performance_fee_reconciles": true
+        },
+        "journal_imbalance": "0.00",
+        "nav_bridge_difference": "0.00",
+        "reconciled": true,
+        "total_crystallized_perf_fee": "10000.00",
+        "total_gross_nav": "1130000.00",
+        "total_journal_credits": "16000.00",
+        "total_journal_debits": "16000.00",
+        "total_management_fee_calculated": "0.00",
+        "total_management_fee_journaled": "0.00",
+        "total_net_nav": "1120000.00",
+        "total_performance_fee_calculated": "6000.00",
+        "total_performance_fee_journaled": "6000.00"
+      },
+      "run_id": "RUN-20251231-v1-d185c09b1c",
+      "share_class": "CLASS_C",
+      "status": "DRAFT",
+      "supersedes_run_id": null,
+      "updated_lots": [
+        {
+          "high_water_mark": "112.000000",
+          "hurdle_base_nav": "112.000000",
+          "investor_id": "INV-HURDLE-01",
+          "last_crystallization_date": "2025-12-31",
+          "loss_carryforward_amount": "0.00",
+          "lot_id": "LOT-HURDLE-1",
+          "opening_nav_per_unit": "112.000000",
+          "prior_accrued_perf_fee": "0.00",
+          "series_id": "S20241231",
+          "share_class": "CLASS_C",
+          "status": "ACTIVE",
+          "subscription_date": "2024-12-31",
+          "units": "10000.000000",
+          "version": 5
+        }
+      ],
+      "valuation_date": "2025-12-31",
+      "version": 1
+    }
+  ],
+  "scenario_id": "SCEN-HURDLE-AND-CRYSTALLIZATION-BOUNDARIES"
+}

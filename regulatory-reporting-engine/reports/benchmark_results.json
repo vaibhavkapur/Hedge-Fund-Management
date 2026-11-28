@@ -1,0 +1,9 @@
+{
+  "workload": "dual_profile_mapping_xml_csv_validation_and_reconciliation",
+  "iterations": 200,
+  "mean_ms": 0.393,
+  "p50_ms": 0.3857,
+  "p95_ms": 0.4244,
+  "p99_ms": 0.5131,
+  "throughput_bundles_per_sec": 2544.71
+}

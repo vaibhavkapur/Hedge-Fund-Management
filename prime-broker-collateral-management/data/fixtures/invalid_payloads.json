@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "cases": {
+    "float_price_rejected": {
+      "schema_version": "1.0.0",
+      "statement_id": "STMT-BAD-FLOAT",
+      "version": 1,
+      "broker_id": "PB-ALPHA",
+      "account_id": "ACC-1",
+      "business_date": "2026-03-16",
+      "received_at": "2026-03-16T20:00:00Z",
+      "base_currency": "USD",
+      "positions": [
+        {
+          "position_id": "P1",
+          "lot_id": "L1",
+          "security_id": "SEC1",
+          "asset_class": "US_TREASURY",
+          "rating_tier": "AAA",
+          "maturity_bucket": "0_5Y",
+          "quantity": "100",
+          "market_price": 99.95,
+          "currency": "USD",
+          "encumbrance_status": "PLEDGED_MARGIN"
+        }
+      ],
+      "cash_balances": [],
+      "margin_requirement": {"initial_margin": "1000.00", "variation_margin": "0.00", "house_addon": "0.00", "currency": "USD"}
+    },
+    "unsupported_currency": {
+      "schema_version": "1.0.0",
+      "statement_id": "STMT-BAD-CCY",
+      "version": 1,
+      "broker_id": "PB-ALPHA",
+      "account_id": "ACC-1",
+      "business_date": "2026-03-16",
+      "received_at": "2026-03-16T20:00:00Z",
+      "base_currency": "BTC",
+      "positions": [],
+      "cash_balances": [],
+      "margin_requirement": {"initial_margin": "1000.00", "variation_margin": "0.00", "house_addon": "0.00", "currency": "BTC"}
+    },
+    "unsupported_asset_class": {
+      "schema_version": "1.0.0",
+      "statement_id": "STMT-BAD-ASSET",
+      "version": 1,
+      "broker_id": "PB-ALPHA",
+      "account_id": "ACC-1",
+      "business_date": "2026-03-16",
+      "received_at": "2026-03-16T20:00:00Z",
+      "base_currency": "USD",
+      "positions": [
+        {
+          "position_id": "P1",
+          "lot_id": "L1",
+          "security_id": "TOKEN-X",
+          "asset_class": "CRYPTO_TOKEN",
+          "rating_tier": "UNRATED",
+          "maturity_bucket": "PERPETUAL",
+          "quantity": "10",
+          "market_price": "1000.00",
+          "currency": "USD",
+          "encumbrance_status": "PLEDGED_MARGIN"
+        }
+      ],
+      "cash_balances": [],
+      "margin_requirement": {"initial_margin": "1000.00", "variation_margin": "0.00", "house_addon": "0.00", "currency": "USD"}
+    },
+    "missing_timezone": {
+      "schema_version": "1.0.0",
+      "statement_id": "STMT-BAD-TS",
+      "version": 1,
+      "broker_id": "PB-ALPHA",
+      "account_id": "ACC-1",
+      "business_date": "2026-03-16",
+      "received_at": "2026-03-16T20:00:00",
+      "base_currency": "USD",
+      "positions": [],
+      "cash_balances": [],
+      "margin_requirement": {"initial_margin": "1000.00", "variation_margin": "0.00", "house_addon": "0.00", "currency": "USD"}
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "us_v1_report_id": "RPT-SYNTH_ALPHA_01-2026-Q1-US_SEC_PF_ILLUSTRATIVE-V1-E28146B3FA3E",
+  "us_v1_sha256": "e28146b3fa3ee6f97b7ff5d01fd355650870be1ade5ada60edbb58a33214af0c",
+  "eu_v1_report_id": "RPT-SYNTH_ALPHA_01-2026-Q1-EU_AIFMD_ANNEX4_ILLUSTRATIVE-V1-8F585131886E",
+  "eu_v1_sha256": "8f585131886e03910214ff4af23ef7af2b4f4a5a401b9fcd26126198de70d14e",
+  "us_v2_correction_report_id": "RPT-SYNTH_ALPHA_01-2026-Q1-US_SEC_PF_ILLUSTRATIVE-V2-DD897BAA9FB2",
+  "us_v3_schema_evolution_report_id": "RPT-SYNTH_ALPHA_01-2026-Q1-US_SEC_PF_ILLUSTRATIVE-V3-E170D55D5011",
+  "reconciliation": {
+    "passed": true,
+    "total_checks": 6,
+    "failed_checks": 0,
+    "checks": [
+      {
+        "check_name": "cross_report_nav_total",
+        "left_label": "US_SEC_PF_ILLUSTRATIVE:1.0.0.nav_total_usd",
+        "right_label": "EU_AIFMD_ANNEX4_ILLUSTRATIVE:1.0.0.aif_nav_base",
+        "left_value": "100000000.00",
+        "right_value": "100000000.00",
+        "difference": "0.00",
+        "tolerance": "0.01",
+        "passed": true
+      },
+      {
+        "check_name": "cross_report_gross_exposure_total",
+        "left_label": "US_SEC_PF_ILLUSTRATIVE:1.0.0.gross_exposure_usd",
+        "right_label": "EU_AIFMD_ANNEX4_ILLUSTRATIVE:1.0.0.aum_gross_method_base",
+        "left_value": "150000000.00",
+        "right_value": "150000000.00",
+        "difference": "0.00",
+        "tolerance": "0.01",
+        "passed": true
+      },
+      {
+        "check_name": "cross_report_net_exposure_total",
+        "left_label": "US_SEC_PF_ILLUSTRATIVE:1.0.0.net_exposure_usd",
+        "right_label": "EU_AIFMD_ANNEX4_ILLUSTRATIVE:1.0.0.aum_commitment_method_base",
+        "left_value": "110000000.00",
+        "right_value": "110000000.00",
+        "difference": "0.00",
+        "tolerance": "0.01",
+        "passed": true
+      },
+      {
+        "check_name": "cross_report_position_count",
+        "left_label": "US_SEC_PF_ILLUSTRATIVE:1.0.0.position_count",
+        "right_label": "EU_AIFMD_ANNEX4_ILLUSTRATIVE:1.0.0.position_count",
+        "left_value": "4",
+        "right_value": "4",
+        "difference": "0",
+        "tolerance": "0",
+        "passed": true
+      },
+      {
+        "check_name": "cross_report_leverage_equivalence",
+        "left_label": "US_SEC_PF_ILLUSTRATIVE:1.0.0.gross_leverage_ratio",
+        "right_label": "EU_AIFMD_ANNEX4_ILLUSTRATIVE:1.0.0.leverage_gross_pct / 100",
+        "left_value": "1.500000",
+        "right_value": "1.50",
+        "difference": "0.000000",
+        "tolerance": "0.0001",
+        "passed": true
+      },
+      {
+        "check_name": "internal_asset_class_sum_EU_AIFMD_ANNEX4_ILLUSTRATIVE",
+        "left_label": "EU_AIFMD_ANNEX4_ILLUSTRATIVE.aum_gross_method_base",
+        "right_label": "EU_AIFMD_ANNEX4_ILLUSTRATIVE.sum(asset_class_buckets)",
+        "left_value": "150000000.00",
+        "right_value": "150000000.00",
+        "difference": "0.00",
+        "tolerance": "0.01",
+        "passed": true
+      }
+    ]
+  },
+  "duplicate_filing_blocked": true,
+  "automated_submission_blocked": true,
+  "replay_v1_exact_match": true,
+  "replay_v3_exact_match": true,
+  "audit_chain_valid_v1": true,
+  "audit_chain_valid_v2": true,
+  "audit_chain_valid_v3": true,
+  "counters": {
+    "snapshots_ingested": 5,
+    "reports_generated": 2,
+    "corrections_created": 2,
+    "reconciliations_passed": 1,
+    "reconciliations_failed": 0,
+    "status_transitions": 2,
+    "replays_verified": 2,
+    "submission_attempts_blocked": 1
+  }
+}

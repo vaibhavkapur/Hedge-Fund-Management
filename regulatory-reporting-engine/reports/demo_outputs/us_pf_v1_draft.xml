@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<IllustrativePrivateFundReport xmlns="urn:synthetic:regulatory:us-pf-illustrative:v1">
+  <Header reportId="RPT-SYNTH_ALPHA_01-2026-Q1-US_SEC_PF_ILLUSTRATIVE-V1-E28146B3FA3E" filingKey="SYNTH_ALPHA_01::2026-Q1::US_SEC_PF_ILLUSTRATIVE" versionNumber="1" snapshotId="SNAP-SYNTH-2026Q1-0001" profileId="US_SEC_PF_ILLUSTRATIVE" schemaVersion="1.0.0" schemaEffectiveDate="2025-01-01" mappingId="US_SEC_PF_ILLUSTRATIVE_MAP" mappingVersion="1.0.0" certifiedForFiling="false" watermark="ILLUSTRATIVE_DRAFT_NOT_FOR_REGULATORY_FILING" />
+  <ReportBody>
+    <FundIdentifier>SYNTH_ALPHA_01</FundIdentifier>
+    <FundLEI>000000SYNTHFUND00181</FundLEI>
+    <ManagerLEI>000000SYNTHMGR000140</ManagerLEI>
+    <ReportingPeriodStart>2026-01-01</ReportingPeriodStart>
+    <ReportingPeriodEnd>2026-03-31</ReportingPeriodEnd>
+    <ReportingCurrency>USD</ReportingCurrency>
+    <NetAssetValueUSD unit="USD">100000000.00</NetAssetValueUSD>
+    <GrossAssetValueUSD unit="USD">125000000.00</GrossAssetValueUSD>
+    <TotalLiabilitiesUSD unit="USD">25000000.00</TotalLiabilitiesUSD>
+    <LongMarketValueUSD unit="USD">110000000.00</LongMarketValueUSD>
+    <ShortMarketValueUSD unit="USD">20000000.00</ShortMarketValueUSD>
+    <GrossExposureUSD unit="USD">150000000.00</GrossExposureUSD>
+    <NetExposureUSD unit="USD">110000000.00</NetExposureUSD>
+    <GrossLeverageRatio unit="ratio">1.500000</GrossLeverageRatio>
+    <PositionCount unit="count">4</PositionCount>
+    <TopCounterpartyExposureUSD unit="USD">105000000.00</TopCounterpartyExposureUSD>
+  </ReportBody>
+</IllustrativePrivateFundReport>

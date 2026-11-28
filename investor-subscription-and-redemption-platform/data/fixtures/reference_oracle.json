@@ -1,0 +1,74 @@
+{
+  "fixture_id": "reference-oracle-v1",
+  "schema_version": "1.0.0",
+  "description": "Hand-calculated independent reference oracle for share issuance, fee deduction, redemption proceeds, and NAV restatement.",
+  "rounding_mode": "ROUND_HALF_UP",
+  "cases": [
+    {
+      "case_id": "ORACLE-SUB-EXACT",
+      "operation": "SUBSCRIPTION",
+      "fund_id": "FUND-ALPHA",
+      "share_class": "CLASS-A",
+      "currency": "USD",
+      "gross_cash": "100000.00",
+      "nav_per_share": "125.000000",
+      "fee_bps": 100,
+      "expected": {
+        "fee_amount": "1000.00",
+        "net_cash": "99000.00",
+        "shares": "792.000000",
+        "valuation_at_nav": "99000.00",
+        "rounding_residual": "0.00000000"
+      }
+    },
+    {
+      "case_id": "ORACLE-SUB-ROUNDED",
+      "operation": "SUBSCRIPTION",
+      "fund_id": "FUND-ALPHA",
+      "share_class": "CLASS-A",
+      "currency": "USD",
+      "gross_cash": "50000.00",
+      "nav_per_share": "133.330000",
+      "fee_bps": 100,
+      "expected": {
+        "fee_amount": "500.00",
+        "net_cash": "49500.00",
+        "shares": "371.259281",
+        "valuation_at_nav": "49500.00",
+        "max_abs_residual": "0.001"
+      }
+    },
+    {
+      "case_id": "ORACLE-RED-EXACT",
+      "operation": "REDEMPTION",
+      "fund_id": "FUND-ALPHA",
+      "share_class": "CLASS-A",
+      "currency": "USD",
+      "requested_shares": "200.000000",
+      "nav_per_share": "133.330000",
+      "fee_bps": 50,
+      "expected": {
+        "gross_cash": "26666.00",
+        "fee_amount": "133.33",
+        "net_cash": "26532.67",
+        "shares": "200.000000"
+      }
+    },
+    {
+      "case_id": "ORACLE-NAV-RESTATEMENT",
+      "operation": "NAV_RESTATEMENT_SUBSCRIPTION",
+      "fund_id": "FUND-ALPHA",
+      "share_class": "CLASS-A",
+      "currency": "USD",
+      "net_cash": "99000.00",
+      "original_nav_per_share": "125.000000",
+      "original_shares": "792.000000",
+      "restated_nav_per_share": "123.750000",
+      "expected": {
+        "restated_shares": "800.000000",
+        "share_delta": "8.000000",
+        "cash_delta": "0.00"
+      }
+    }
+  ]
+}

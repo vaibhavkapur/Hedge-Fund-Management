@@ -1,0 +1,320 @@
+{
+  "schema_version": "1.0.0",
+  "scenario_name": "multi_broker_end_to_end_demo",
+  "description": "Two-broker simulated EOD workflow covering FX mismatch haircuts, ineligible collateral, failed transfer shortfall, margin call generation, and collateral substitution pre-settlement review.",
+  "accrual_start_date": "2026-03-16",
+  "accrual_end_date": "2026-03-17",
+  "fx_rates": [
+    {"base_currency": "EUR", "quote_currency": "USD", "rate": "1.1000", "as_of_date": "2026-03-17"},
+    {"base_currency": "GBP", "quote_currency": "USD", "rate": "1.2600", "as_of_date": "2026-03-17"}
+  ],
+  "broker_runs": [
+    {
+      "statement": {
+        "schema_version": "1.0.0",
+        "statement_id": "STMT-PB-ALPHA-20260317-V1",
+        "version": 1,
+        "broker_id": "PB-ALPHA",
+        "account_id": "ACC-FUND-USD",
+        "business_date": "2026-03-17",
+        "received_at": "2026-03-17T21:00:00Z",
+        "base_currency": "USD",
+        "positions": [
+          {
+            "position_id": "A-POS-01",
+            "lot_id": "LOT-A-UST-01",
+            "security_id": "US912828YV68",
+            "asset_class": "US_TREASURY",
+            "rating_tier": "AAA",
+            "maturity_bucket": "0_5Y",
+            "quantity": "10000",
+            "market_price": "100.00",
+            "currency": "USD",
+            "encumbrance_status": "PLEDGED_MARGIN"
+          },
+          {
+            "position_id": "A-POS-02",
+            "lot_id": "LOT-A-SOV-EUR-01",
+            "security_id": "DE0001102507",
+            "asset_class": "SOVEREIGN_BOND",
+            "rating_tier": "AA",
+            "maturity_bucket": "0_5Y",
+            "quantity": "5000",
+            "market_price": "100.00",
+            "currency": "EUR",
+            "encumbrance_status": "PLEDGED_MARGIN"
+          },
+          {
+            "position_id": "A-POS-03",
+            "lot_id": "LOT-A-HY-INELIG-01",
+            "security_id": "HY-BOND-99",
+            "asset_class": "HY_CORPORATE_BOND",
+            "rating_tier": "BB",
+            "maturity_bucket": "0_5Y",
+            "quantity": "2000",
+            "market_price": "95.00",
+            "currency": "USD",
+            "encumbrance_status": "PLEDGED_MARGIN"
+          },
+          {
+            "position_id": "A-POS-04",
+            "lot_id": "LOT-A-UST-FREE-01",
+            "security_id": "US912828ZT04",
+            "asset_class": "US_TREASURY",
+            "rating_tier": "AAA",
+            "maturity_bucket": "0_5Y",
+            "quantity": "4000",
+            "market_price": "100.00",
+            "currency": "USD",
+            "encumbrance_status": "UNENCUMBERED"
+          }
+        ],
+        "cash_balances": [
+          {"balance_id": "A-CB-MARGIN", "currency": "USD", "amount": "250000.00", "balance_type": "MARGIN_CASH"},
+          {"balance_id": "A-CB-DEBIT", "currency": "USD", "amount": "-800000.00", "balance_type": "DEBIT_FINANCING"},
+          {"balance_id": "A-CB-SHORT", "currency": "USD", "amount": "450000.00", "balance_type": "SHORT_PROCEEDS"}
+        ],
+        "margin_requirement": {
+          "initial_margin": "1300000.00",
+          "variation_margin": "250000.00",
+          "house_addon": "100000.00",
+          "currency": "USD"
+        },
+        "reported_collateral_value": "1790000.00",
+        "reported_financing_accrual": "-36.60"
+      },
+      "internal_snapshot": {
+        "schema_version": "1.0.0",
+        "snapshot_id": "SNAP-PB-ALPHA-20260317-V1",
+        "version": 1,
+        "broker_id": "PB-ALPHA",
+        "account_id": "ACC-FUND-USD",
+        "business_date": "2026-03-17",
+        "positions": [
+          {
+            "position_id": "A-POS-01",
+            "lot_id": "LOT-A-UST-01",
+            "security_id": "US912828YV68",
+            "asset_class": "US_TREASURY",
+            "rating_tier": "AAA",
+            "maturity_bucket": "0_5Y",
+            "quantity": "10000",
+            "market_price": "100.00",
+            "currency": "USD",
+            "encumbrance_status": "PLEDGED_MARGIN"
+          },
+          {
+            "position_id": "A-POS-02",
+            "lot_id": "LOT-A-SOV-EUR-01",
+            "security_id": "DE0001102507",
+            "asset_class": "SOVEREIGN_BOND",
+            "rating_tier": "AA",
+            "maturity_bucket": "0_5Y",
+            "quantity": "5000",
+            "market_price": "100.00",
+            "currency": "EUR",
+            "encumbrance_status": "PLEDGED_MARGIN"
+          },
+          {
+            "position_id": "A-POS-03",
+            "lot_id": "LOT-A-HY-INELIG-01",
+            "security_id": "HY-BOND-99",
+            "asset_class": "HY_CORPORATE_BOND",
+            "rating_tier": "BB",
+            "maturity_bucket": "0_5Y",
+            "quantity": "2000",
+            "market_price": "95.00",
+            "currency": "USD",
+            "encumbrance_status": "PLEDGED_MARGIN"
+          },
+          {
+            "position_id": "A-POS-04",
+            "lot_id": "LOT-A-UST-FREE-01",
+            "security_id": "US912828ZT04",
+            "asset_class": "US_TREASURY",
+            "rating_tier": "AAA",
+            "maturity_bucket": "0_5Y",
+            "quantity": "4000",
+            "market_price": "100.00",
+            "currency": "USD",
+            "encumbrance_status": "UNENCUMBERED"
+          }
+        ],
+        "cash_balances": [
+          {"balance_id": "A-CB-MARGIN", "currency": "USD", "amount": "250000.00", "balance_type": "MARGIN_CASH"},
+          {"balance_id": "A-CB-DEBIT", "currency": "USD", "amount": "-800000.00", "balance_type": "DEBIT_FINANCING"},
+          {"balance_id": "A-CB-SHORT", "currency": "USD", "amount": "450000.00", "balance_type": "SHORT_PROCEEDS"}
+        ],
+        "transfers": []
+      }
+    },
+    {
+      "statement": {
+        "schema_version": "1.0.0",
+        "statement_id": "STMT-PB-BETA-20260317-V1",
+        "version": 1,
+        "broker_id": "PB-BETA",
+        "account_id": "ACC-FUND-EUR",
+        "business_date": "2026-03-17",
+        "received_at": "2026-03-17T21:05:00Z",
+        "base_currency": "EUR",
+        "positions": [
+          {
+            "position_id": "B-POS-01",
+            "lot_id": "LOT-B-SOV-01",
+            "security_id": "FR0013407236",
+            "asset_class": "SOVEREIGN_BOND",
+            "rating_tier": "AA",
+            "maturity_bucket": "0_5Y",
+            "quantity": "6000",
+            "market_price": "100.00",
+            "currency": "EUR",
+            "encumbrance_status": "PLEDGED_MARGIN"
+          },
+          {
+            "position_id": "B-POS-02",
+            "lot_id": "LOT-B-FAIL-IN-01",
+            "security_id": "DE0001102556",
+            "asset_class": "SOVEREIGN_BOND",
+            "rating_tier": "AA",
+            "maturity_bucket": "0_5Y",
+            "quantity": "2000",
+            "market_price": "100.00",
+            "currency": "EUR",
+            "encumbrance_status": "PENDING_TRANSFER_IN"
+          },
+          {
+            "position_id": "B-POS-03",
+            "lot_id": "LOT-B-FREE-01",
+            "security_id": "NL0015000LS8",
+            "asset_class": "SOVEREIGN_BOND",
+            "rating_tier": "AA",
+            "maturity_bucket": "0_5Y",
+            "quantity": "3000",
+            "market_price": "100.00",
+            "currency": "EUR",
+            "encumbrance_status": "UNENCUMBERED"
+          }
+        ],
+        "cash_balances": [
+          {"balance_id": "B-CB-MARGIN", "currency": "EUR", "amount": "100000.00", "balance_type": "MARGIN_CASH"},
+          {"balance_id": "B-CB-DEBIT", "currency": "EUR", "amount": "-300000.00", "balance_type": "DEBIT_FINANCING"}
+        ],
+        "margin_requirement": {
+          "initial_margin": "700000.00",
+          "variation_margin": "80000.00",
+          "house_addon": "20000.00",
+          "currency": "EUR"
+        },
+        "reported_collateral_value": "685000.00",
+        "reported_financing_accrual": "-22.92"
+      },
+      "internal_snapshot": {
+        "schema_version": "1.0.0",
+        "snapshot_id": "SNAP-PB-BETA-20260317-V1",
+        "version": 1,
+        "broker_id": "PB-BETA",
+        "account_id": "ACC-FUND-EUR",
+        "business_date": "2026-03-17",
+        "positions": [
+          {
+            "position_id": "B-POS-01",
+            "lot_id": "LOT-B-SOV-01",
+            "security_id": "FR0013407236",
+            "asset_class": "SOVEREIGN_BOND",
+            "rating_tier": "AA",
+            "maturity_bucket": "0_5Y",
+            "quantity": "6000",
+            "market_price": "100.00",
+            "currency": "EUR",
+            "encumbrance_status": "PLEDGED_MARGIN"
+          },
+          {
+            "position_id": "B-POS-03",
+            "lot_id": "LOT-B-FREE-01",
+            "security_id": "NL0015000LS8",
+            "asset_class": "SOVEREIGN_BOND",
+            "rating_tier": "AA",
+            "maturity_bucket": "0_5Y",
+            "quantity": "3000",
+            "market_price": "100.00",
+            "currency": "EUR",
+            "encumbrance_status": "UNENCUMBERED"
+          }
+        ],
+        "cash_balances": [
+          {"balance_id": "B-CB-MARGIN", "currency": "EUR", "amount": "100000.00", "balance_type": "MARGIN_CASH"},
+          {"balance_id": "B-CB-DEBIT", "currency": "EUR", "amount": "-300000.00", "balance_type": "DEBIT_FINANCING"}
+        ],
+        "transfers": [
+          {
+            "transfer_id": "XFER-FAIL-001",
+            "from_broker_id": "CUSTODIAN-EU",
+            "to_broker_id": "PB-BETA",
+            "lot_id": "LOT-B-FAIL-IN-01",
+            "security_id": "DE0001102556",
+            "quantity": "2000",
+            "currency": "EUR",
+            "market_value": "200000.00",
+            "status": "FAILED",
+            "trade_date": "2026-03-16",
+            "settlement_date": "2026-03-17",
+            "failure_reason": "CSD_INSUFFICIENT_SECURITIES"
+          }
+        ]
+      }
+    }
+  ],
+  "substitutions": [
+    {
+      "request": {
+        "schema_version": "1.0.0",
+        "request_id": "SUB-APPROVE-001",
+        "broker_id": "PB-ALPHA",
+        "account_id": "ACC-FUND-USD",
+        "business_date": "2026-03-17",
+        "requested_by": "treasury_desk",
+        "release_lot_ids": ["LOT-A-SOV-EUR-01"],
+        "pledge_positions": [
+          {
+            "position_id": "A-POS-NEW-01",
+            "lot_id": "LOT-A-UST-NEW-01",
+            "security_id": "US912828YV68",
+            "asset_class": "US_TREASURY",
+            "rating_tier": "AAA",
+            "maturity_bucket": "0_5Y",
+            "quantity": "5500",
+            "market_price": "100.00",
+            "currency": "USD",
+            "encumbrance_status": "UNENCUMBERED"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "schema_version": "1.0.0",
+        "request_id": "SUB-BLOCK-SHORTFALL-002",
+        "broker_id": "PB-ALPHA",
+        "account_id": "ACC-FUND-USD",
+        "business_date": "2026-03-17",
+        "requested_by": "treasury_desk",
+        "release_lot_ids": ["LOT-A-UST-01"],
+        "pledge_positions": [
+          {
+            "position_id": "A-POS-BAD-01",
+            "lot_id": "LOT-A-HY-REPLACE-01",
+            "security_id": "HY-BOND-88",
+            "asset_class": "HY_CORPORATE_BOND",
+            "rating_tier": "BB",
+            "maturity_bucket": "0_5Y",
+            "quantity": "9000",
+            "market_price": "100.00",
+            "currency": "USD",
+            "encumbrance_status": "UNENCUMBERED"
+          }
+        ]
+      }
+    }
+  ]
+}

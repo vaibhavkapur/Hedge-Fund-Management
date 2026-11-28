@@ -1,0 +1,268 @@
+{
+  "bundle_id": "BUNDLE-REF-2026-03-31-V2-CORRECTED",
+  "fund_id": "FUND-ALPHA-01",
+  "valuation_date": "2026-03-31",
+  "input_version": "1.0.1-late-price-correction",
+  "positions": [
+    {
+      "position_id": "POS-01",
+      "instrument_id": "EQ-US-ACME",
+      "instrument_type": "equity",
+      "quantity": "10000",
+      "cost_basis": "950000.00",
+      "currency": "USD"
+    },
+    {
+      "position_id": "POS-02",
+      "instrument_id": "EQ-EU-BETA",
+      "instrument_type": "equity",
+      "quantity": "4000",
+      "cost_basis": "300000.00",
+      "currency": "EUR"
+    },
+    {
+      "position_id": "POS-03",
+      "instrument_id": "BOND-US-UST5Y",
+      "instrument_type": "bond",
+      "quantity": "5000",
+      "cost_basis": "495000.00",
+      "currency": "USD"
+    },
+    {
+      "position_id": "POS-04",
+      "instrument_id": "CASH-USD",
+      "instrument_type": "cash",
+      "quantity": "100000.00",
+      "cost_basis": "100000.00",
+      "currency": "USD"
+    },
+    {
+      "position_id": "POS-05",
+      "instrument_id": "CASH-JPY",
+      "instrument_type": "cash",
+      "quantity": "10000000",
+      "cost_basis": "10000000",
+      "currency": "JPY"
+    }
+  ],
+  "prices": [
+    {
+      "price_id": "PX-01-CORR",
+      "instrument_id": "EQ-US-ACME",
+      "price": "104.50",
+      "currency": "USD",
+      "price_date": "2026-03-31",
+      "as_of_timestamp": "2026-04-01T08:00:00Z",
+      "pricing_source": "synthetic_exchange_corrected_close",
+      "is_override": true,
+      "override_reason": "Vendor restatement notice #2026-0401-A"
+    },
+    {
+      "price_id": "PX-02",
+      "instrument_id": "EQ-EU-BETA",
+      "price": "80.00",
+      "currency": "EUR",
+      "price_date": "2026-03-31",
+      "as_of_timestamp": "2026-03-31T16:30:00Z",
+      "pricing_source": "synthetic_exchange_close"
+    },
+    {
+      "price_id": "PX-03",
+      "instrument_id": "BOND-US-UST5Y",
+      "price": "99.20",
+      "currency": "USD",
+      "price_date": "2026-03-31",
+      "as_of_timestamp": "2026-03-31T20:00:00Z",
+      "pricing_source": "synthetic_bond_eval"
+    }
+  ],
+  "fx_rates": [
+    {
+      "fx_id": "FX-EUR-USD",
+      "base_currency": "EUR",
+      "quote_currency": "USD",
+      "rate": "1.2500",
+      "rate_date": "2026-03-31",
+      "as_of_timestamp": "2026-03-31T16:00:00Z",
+      "source": "synthetic_wm_fix"
+    },
+    {
+      "fx_id": "FX-JPY-USD",
+      "base_currency": "JPY",
+      "quote_currency": "USD",
+      "rate": "0.0065",
+      "rate_date": "2026-03-31",
+      "as_of_timestamp": "2026-03-31T16:00:00Z",
+      "source": "synthetic_wm_fix"
+    }
+  ],
+  "liabilities": [
+    {
+      "liability_id": "LIAB-01",
+      "category": "broker_payable",
+      "amount": "15000.00",
+      "currency": "USD",
+      "description": "Unsettled prime broker margin interest payable"
+    }
+  ],
+  "accruals": [
+    {
+      "accrual_id": "ACC-01",
+      "accrual_type": "interest_receivable",
+      "direction": "asset",
+      "amount": "4000.00",
+      "currency": "USD",
+      "period_start": "2026-03-01",
+      "period_end": "2026-03-31",
+      "description": "Treasury coupon accrual"
+    },
+    {
+      "accrual_id": "ACC-02",
+      "accrual_type": "management_fee",
+      "direction": "liability",
+      "amount": "1500.00",
+      "currency": "USD",
+      "period_start": "2026-03-01",
+      "period_end": "2026-03-31",
+      "share_class_id": "CLS-A-USD",
+      "description": "Class A USD management fee accrual"
+    },
+    {
+      "accrual_id": "ACC-03",
+      "accrual_type": "management_fee",
+      "direction": "liability",
+      "amount": "800.00",
+      "currency": "EUR",
+      "period_start": "2026-03-01",
+      "period_end": "2026-03-31",
+      "share_class_id": "CLS-B-EUR",
+      "description": "Class B EUR management fee accrual"
+    },
+    {
+      "accrual_id": "ACC-04",
+      "accrual_type": "expense_accrual",
+      "direction": "liability",
+      "amount": "5000.00",
+      "currency": "USD",
+      "period_start": "2026-03-01",
+      "period_end": "2026-03-31",
+      "description": "Fund administration and audit accrual"
+    }
+  ],
+  "share_classes": [
+    {
+      "share_class_id": "CLS-A-USD",
+      "name": "Institutional Class A (USD)",
+      "currency": "USD",
+      "opening_shares": "15000",
+      "management_fee_bps": "100",
+      "launch_nav_per_share": "100.00",
+      "prior_nav_per_share": "100.00",
+      "prior_net_assets_base": "1500000.00"
+    },
+    {
+      "share_class_id": "CLS-B-EUR",
+      "name": "Institutional Class B (EUR)",
+      "currency": "EUR",
+      "opening_shares": "4000",
+      "management_fee_bps": "125",
+      "launch_nav_per_share": "100.00",
+      "prior_nav_per_share": "100.00",
+      "prior_net_assets_base": "500000.00"
+    }
+  ],
+  "capital_flows": [
+    {
+      "flow_id": "FLOW-01",
+      "share_class_id": "CLS-A-USD",
+      "flow_type": "subscription",
+      "currency": "USD",
+      "amount": "51700.00",
+      "trade_date": "2026-03-31",
+      "settlement_date": "2026-04-02",
+      "submitted_at": "2026-03-31T14:30:00Z",
+      "status": "confirmed",
+      "timing_rule": "post_nav"
+    },
+    {
+      "flow_id": "FLOW-02",
+      "share_class_id": "CLS-B-EUR",
+      "flow_type": "redemption",
+      "currency": "EUR",
+      "shares": "200",
+      "trade_date": "2026-03-31",
+      "settlement_date": "2026-04-02",
+      "submitted_at": "2026-03-31T15:00:00Z",
+      "status": "confirmed",
+      "timing_rule": "post_nav"
+    },
+    {
+      "flow_id": "FLOW-03",
+      "share_class_id": "CLS-A-USD",
+      "flow_type": "subscription",
+      "currency": "USD",
+      "amount": "10000.00",
+      "trade_date": "2026-03-31",
+      "settlement_date": "2026-04-02",
+      "submitted_at": "2026-03-31T16:15:00Z",
+      "status": "confirmed",
+      "timing_rule": "post_nav"
+    }
+  ],
+  "ledger_balances": [
+    {
+      "ledger_account_id": "GL-CASH-USD",
+      "account_type": "cash",
+      "balance": "100000.00",
+      "currency": "USD"
+    },
+    {
+      "ledger_account_id": "GL-CASH-JPY",
+      "account_type": "cash",
+      "balance": "10000000",
+      "currency": "JPY"
+    },
+    {
+      "ledger_account_id": "GL-SEC-USD",
+      "account_type": "securities_cost",
+      "balance": "1445000.00",
+      "currency": "USD"
+    },
+    {
+      "ledger_account_id": "GL-SEC-EUR",
+      "account_type": "securities_cost",
+      "balance": "300000.00",
+      "currency": "EUR"
+    },
+    {
+      "ledger_account_id": "GL-REC-USD",
+      "account_type": "receivables",
+      "balance": "4000.00",
+      "currency": "USD"
+    },
+    {
+      "ledger_account_id": "GL-PAY-USD",
+      "account_type": "payables",
+      "balance": "15000.00",
+      "currency": "USD"
+    },
+    {
+      "ledger_account_id": "GL-ACC-USD",
+      "account_type": "accrued_expenses",
+      "balance": "6500.00",
+      "currency": "USD"
+    },
+    {
+      "ledger_account_id": "GL-ACC-EUR",
+      "account_type": "accrued_expenses",
+      "balance": "800.00",
+      "currency": "EUR"
+    },
+    {
+      "ledger_account_id": "GL-SUB-USD",
+      "account_type": "capital_subscriptions",
+      "balance": "51700.00",
+      "currency": "USD"
+    }
+  ]
+}

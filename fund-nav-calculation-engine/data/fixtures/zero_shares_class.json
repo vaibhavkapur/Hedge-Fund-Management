@@ -1,0 +1,82 @@
+{
+  "bundle_id": "BUNDLE-ZERO-SHARES-2026-03-31",
+  "fund_id": "FUND-ALPHA-01",
+  "valuation_date": "2026-03-31",
+  "input_version": "1.0.0",
+  "positions": [
+    {
+      "position_id": "POS-CASH",
+      "instrument_id": "CASH-USD",
+      "instrument_type": "cash",
+      "quantity": "500000.00",
+      "cost_basis": "500000.00",
+      "currency": "USD"
+    }
+  ],
+  "prices": [],
+  "fx_rates": [],
+  "liabilities": [],
+  "accruals": [],
+  "share_classes": [
+    {
+      "share_class_id": "CLS-ACTIVE-USD",
+      "name": "Active Class (full redemption to zero)",
+      "currency": "USD",
+      "opening_shares": "5000",
+      "launch_nav_per_share": "100.00",
+      "prior_net_assets_base": "500000.00"
+    },
+    {
+      "share_class_id": "CLS-EMPTY-USD",
+      "name": "Dormant Class (zero opening shares)",
+      "currency": "USD",
+      "opening_shares": "0",
+      "launch_nav_per_share": "100.00"
+    },
+    {
+      "share_class_id": "CLS-SEED-USD",
+      "name": "Seeded Class (zero opening, initial subscription)",
+      "currency": "USD",
+      "opening_shares": "0",
+      "launch_nav_per_share": "100.00"
+    }
+  ],
+  "capital_flows": [
+    {
+      "flow_id": "FLOW-FULL-RED",
+      "share_class_id": "CLS-ACTIVE-USD",
+      "flow_type": "redemption",
+      "currency": "USD",
+      "shares": "5000",
+      "trade_date": "2026-03-31",
+      "settlement_date": "2026-04-02",
+      "submitted_at": "2026-03-31T14:00:00Z",
+      "status": "confirmed"
+    },
+    {
+      "flow_id": "FLOW-SEED-SUB",
+      "share_class_id": "CLS-SEED-USD",
+      "flow_type": "subscription",
+      "currency": "USD",
+      "amount": "250000.00",
+      "trade_date": "2026-03-31",
+      "settlement_date": "2026-04-02",
+      "submitted_at": "2026-03-31T14:05:00Z",
+      "status": "confirmed"
+    }
+  ],
+  "ledger_balances": [
+    {
+      "ledger_account_id": "GL-CASH-USD",
+      "account_type": "cash",
+      "balance": "500000.00",
+      "currency": "USD"
+    },
+    {
+      "ledger_account_id": "GL-SUB-USD",
+      "account_type": "capital_subscriptions",
+      "balance": "250000.00",
+      "currency": "USD"
+    }
+  ]
+}

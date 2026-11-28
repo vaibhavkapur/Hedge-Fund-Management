@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<IllustrativeAifmdReport xmlns="urn:synthetic:regulatory:eu-aifmd-illustrative:v1">
+  <Header reportId="RPT-SYNTH_ALPHA_01-2026-Q1-EU_AIFMD_ANNEX4_ILLUSTRATIVE-V1-8F585131886E" filingKey="SYNTH_ALPHA_01::2026-Q1::EU_AIFMD_ANNEX4_ILLUSTRATIVE" versionNumber="1" snapshotId="SNAP-SYNTH-2026Q1-0001" profileId="EU_AIFMD_ANNEX4_ILLUSTRATIVE" schemaVersion="1.0.0" schemaEffectiveDate="2025-01-01" mappingId="EU_AIFMD_ANNEX4_ILLUSTRATIVE_MAP" mappingVersion="1.0.0" certifiedForFiling="false" watermark="ILLUSTRATIVE_DRAFT_NOT_FOR_REGULATORY_FILING" />
+  <ReportBody>
+    <AIFIdentifier>SYNTH_ALPHA_01</AIFIdentifier>
+    <AIFLEI>000000SYNTHFUND00181</AIFLEI>
+    <AIFMLEI>000000SYNTHMGR000140</AIFMLEI>
+    <ReportingPeriodEnd>2026-03-31</ReportingPeriodEnd>
+    <BaseCurrency>USD</BaseCurrency>
+    <AIFNetAssetValue unit="USD">100000000.00</AIFNetAssetValue>
+    <AUMGrossMethod unit="USD">150000000.00</AUMGrossMethod>
+    <AUMCommitmentMethod unit="USD">110000000.00</AUMCommitmentMethod>
+    <LeverageGrossPercent unit="percent">150.00</LeverageGrossPercent>
+    <EquityExposureGross unit="USD">80000000.00</EquityExposureGross>
+    <FixedIncomeExposureGross unit="USD">45000000.00</FixedIncomeExposureGross>
+    <DerivativesExposureGross unit="USD">25000000.00</DerivativesExposureGross>
+    <PositionCount unit="count">4</PositionCount>
+  </ReportBody>
+</IllustrativeAifmdReport>

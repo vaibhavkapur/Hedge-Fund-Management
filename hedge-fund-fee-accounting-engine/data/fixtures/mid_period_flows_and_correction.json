@@ -1,0 +1,138 @@
+{
+  "scenario_id": "SCEN-MID-PERIOD-FLOWS-AND-CORRECTION",
+  "description": "Mid-period partial redemption (with fee crystallization), mid-period new investor subscription (separate series/lot & pro-rata days), and subsequent NAV restatement recorded as immutable version 2 with reversal and corrected journals.",
+  "provenance": "Synthetic educational fixture hand-calculated from first principles.",
+  "agreement": {
+    "agreement_id": "AGR-FLOW-B",
+    "version": 1,
+    "share_class": "CLASS_B",
+    "currency": "USD",
+    "effective_date": "2024-12-31",
+    "management_fee_rate": "0.02",
+    "management_fee_basis": "BEGINNING_NAV",
+    "day_count": "ACT_360",
+    "performance_fee_rate": "0.20",
+    "hurdle_type": "NONE",
+    "hurdle_rate": "0",
+    "crystallization_frequency": "QUARTERLY",
+    "hwm_reset_policy": "PROPORTIONAL_REDEMPTION_ADJUSTMENT",
+    "management_fee_deducted_before_perf": true
+  },
+  "initial_lots": [
+    {
+      "lot_id": "LOT-B1",
+      "investor_id": "INV-ALPHA",
+      "share_class": "CLASS_B",
+      "series_id": "S20241231",
+      "subscription_date": "2024-12-31",
+      "units": "10000.000000",
+      "opening_nav_per_unit": "100.000000",
+      "high_water_mark": "100.000000",
+      "hurdle_base_nav": "100.000000",
+      "last_crystallization_date": "2024-12-31"
+    }
+  ],
+  "periods": [
+    {
+      "snapshot": {
+        "snapshot_id": "SNAP-Q1-V1",
+        "period_start_date": "2024-12-31",
+        "valuation_date": "2025-03-31",
+        "share_class": "CLASS_B",
+        "currency": "USD",
+        "gross_nav_per_unit": "112.000000",
+        "version": 1
+      },
+      "capital_flows": [
+        {
+          "flow_id": "FLOW-RED-01",
+          "investor_id": "INV-ALPHA",
+          "lot_id": "LOT-B1",
+          "share_class": "CLASS_B",
+          "flow_date": "2025-02-14",
+          "flow_type": "REDEMPTION",
+          "nav_per_unit": "108.000000",
+          "currency": "USD",
+          "units": "4000.000000",
+          "policy_note": "Mid-quarter partial redemption with crystallization"
+        },
+        {
+          "flow_id": "FLOW-SUB-01",
+          "investor_id": "INV-BETA",
+          "lot_id": "LOT-B2",
+          "share_class": "CLASS_B",
+          "flow_date": "2025-02-14",
+          "flow_type": "SUBSCRIPTION",
+          "nav_per_unit": "108.000000",
+          "currency": "USD",
+          "amount": "540000.00",
+          "series_id": "S20250214",
+          "policy_note": "Mid-quarter subscription establishing distinct HWM series"
+        }
+      ],
+      "expected": {
+        "LOT-B1#REDEMPTION:FLOW-RED-01": {
+          "management_fee_amount": "1000.00",
+          "crystallized_performance_fee": "6200.00",
+          "ending_net_nav": "424800.00",
+          "ending_net_nav_per_unit": "106.200000",
+          "is_crystallization_event": true
+        },
+        "LOT-B1": {
+          "units": "6000.000000",
+          "management_fee_amount": "3000.00",
+          "crystallized_performance_fee": "13800.00",
+          "ending_net_nav": "655200.00",
+          "ending_net_nav_per_unit": "109.200000",
+          "new_hwm": "109.200000"
+        },
+        "LOT-B2": {
+          "units": "5000.000000",
+          "management_fee_amount": "1350.00",
+          "crystallized_performance_fee": "3730.00",
+          "ending_net_nav": "554920.00",
+          "ending_net_nav_per_unit": "110.984000",
+          "new_hwm": "110.984000"
+        }
+      }
+    }
+  ],
+  "corrections": [
+    {
+      "correction_id": "CORR-Q1-01",
+      "target_snapshot_id": "SNAP-Q1-V1",
+      "effective_date": "2025-04-05",
+      "version": 2,
+      "reason": "Independent valuation audit restated Q1 gross NAV from 112.00 to 110.00",
+      "corrected_snapshot": {
+        "snapshot_id": "SNAP-Q1-V2",
+        "period_start_date": "2024-12-31",
+        "valuation_date": "2025-03-31",
+        "share_class": "CLASS_B",
+        "currency": "USD",
+        "gross_nav_per_unit": "110.000000",
+        "version": 2,
+        "source": "RESTATED_NAV_AUDIT"
+      },
+      "expected": {
+        "LOT-B1#REDEMPTION:FLOW-RED-01": {
+          "management_fee_amount": "1000.00",
+          "crystallized_performance_fee": "6200.00",
+          "ending_net_nav": "424800.00"
+        },
+        "LOT-B1": {
+          "management_fee_amount": "3000.00",
+          "crystallized_performance_fee": "11400.00",
+          "ending_net_nav": "645600.00",
+          "new_hwm": "107.600000"
+        },
+        "LOT-B2": {
+          "management_fee_amount": "1350.00",
+          "crystallized_performance_fee": "1730.00",
+          "ending_net_nav": "546920.00",
+          "new_hwm": "109.384000"
+        }
+      }
+    }
+  ]
+}

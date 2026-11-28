@@ -1,0 +1,352 @@
+{
+  "all_passed": true,
+  "example_count": 5,
+  "examples": [
+    {
+      "checks_evaluated": 6,
+      "comparisons": [
+        {
+          "checks_evaluated": 6,
+          "comparisons": [
+            {
+              "abs_diff": "0.00",
+              "actual": "2650.00",
+              "expected": "2650.00",
+              "field": "management_fee_amount",
+              "lot_id": "WE-LOT-1",
+              "matched": true
+            },
+            {
+              "abs_diff": "0.000000",
+              "actual": "105.867500",
+              "expected": "105.867500",
+              "field": "post_mgmt_nav_per_unit",
+              "lot_id": "WE-LOT-1",
+              "matched": true
+            },
+            {
+              "abs_diff": "0.00",
+              "actual": "17602.50",
+              "expected": "17602.50",
+              "field": "crystallized_performance_fee",
+              "lot_id": "WE-LOT-1",
+              "matched": true
+            },
+            {
+              "abs_diff": "0.00",
+              "actual": "2099747.50",
+              "expected": "2099747.50",
+              "field": "ending_net_nav",
+              "lot_id": "WE-LOT-1",
+              "matched": true
+            },
+            {
+              "abs_diff": "0.000000",
+              "actual": "104.987375",
+              "expected": "104.987375",
+              "field": "ending_net_nav_per_unit",
+              "lot_id": "WE-LOT-1",
+              "matched": true
+            },
+            {
+              "abs_diff": "0.000000",
+              "actual": "104.987375",
+              "expected": "104.987375",
+              "field": "new_hwm",
+              "lot_id": "WE-LOT-1",
+              "matched": true
+            }
+          ],
+          "discrepancies": [],
+          "discrepancy_count": 0,
+          "passed": true,
+          "run_id": "RUN-20250131-v1-66c08d64fa",
+          "tolerance": "0.00",
+          "valuation_date": "2025-01-31"
+        }
+      ],
+      "description": "1.5% management fee on ending pre-fee NAV (MONTHLY_1_12) and 15% performance fee, monthly crystallization.",
+      "discrepancy_count": 0,
+      "passed": true,
+      "scenario_id": "WE-01-ENDING-NAV-MONTHLY"
+    },
+    {
+      "checks_evaluated": 4,
+      "comparisons": [
+        {
+          "checks_evaluated": 4,
+          "comparisons": [
+            {
+              "abs_diff": "0.000000",
+              "actual": "105.000000",
+              "expected": "105.000000",
+              "field": "hurdle_nav_per_unit",
+              "lot_id": "WE-LOT-2A",
+              "matched": true
+            },
+            {
+              "abs_diff": "0.00",
+              "actual": "1000.00",
+              "expected": "1000.00",
+              "field": "crystallized_performance_fee",
+              "lot_id": "WE-LOT-2A",
+              "matched": true
+            },
+            {
+              "abs_diff": "0.00",
+              "actual": "105000.00",
+              "expected": "105000.00",
+              "field": "ending_net_nav",
+              "lot_id": "WE-LOT-2A",
+              "matched": true
+            },
+            {
+              "abs_diff": "0.000000",
+              "actual": "105.000000",
+              "expected": "105.000000",
+              "field": "new_hwm",
+              "lot_id": "WE-LOT-2A",
+              "matched": true
+            }
+          ],
+          "discrepancies": [],
+          "discrepancy_count": 0,
+          "passed": true,
+          "run_id": "RUN-20251231-v1-f809557194",
+          "tolerance": "0.00",
+          "valuation_date": "2025-12-31"
+        }
+      ],
+      "description": "5% soft hurdle with 100% catch-up inside catch-up zone (gross=106, hurdle=105 -> fee=1.00/u instead of 1.20/u).",
+      "discrepancy_count": 0,
+      "passed": true,
+      "scenario_id": "WE-02A-SOFT-HURDLE-CATCHUP-ZONE"
+    },
+    {
+      "checks_evaluated": 4,
+      "comparisons": [
+        {
+          "checks_evaluated": 4,
+          "comparisons": [
+            {
+              "abs_diff": "0.000000",
+              "actual": "105.000000",
+              "expected": "105.000000",
+              "field": "hurdle_nav_per_unit",
+              "lot_id": "WE-LOT-2B",
+              "matched": true
+            },
+            {
+              "abs_diff": "0.00",
+              "actual": "2000.00",
+              "expected": "2000.00",
+              "field": "crystallized_performance_fee",
+              "lot_id": "WE-LOT-2B",
+              "matched": true
+            },
+            {
+              "abs_diff": "0.00",
+              "actual": "108000.00",
+              "expected": "108000.00",
+              "field": "ending_net_nav",
+              "lot_id": "WE-LOT-2B",
+              "matched": true
+            },
+            {
+              "abs_diff": "0.000000",
+              "actual": "108.000000",
+              "expected": "108.000000",
+              "field": "new_hwm",
+              "lot_id": "WE-LOT-2B",
+              "matched": true
+            }
+          ],
+          "discrepancies": [],
+          "discrepancy_count": 0,
+          "passed": true,
+          "run_id": "RUN-20251231-v1-2b5c729ec0",
+          "tolerance": "0.00",
+          "valuation_date": "2025-12-31"
+        }
+      ],
+      "description": "5% soft hurdle with 100% catch-up above catch-up threshold (gross=110 -> full 20% on 10 gain = 2.00/u).",
+      "discrepancy_count": 0,
+      "passed": true,
+      "scenario_id": "WE-02B-SOFT-HURDLE-FULL-CATCHUP"
+    },
+    {
+      "checks_evaluated": 10,
+      "comparisons": [
+        {
+          "checks_evaluated": 4,
+          "comparisons": [
+            {
+              "abs_diff": "0.000000",
+              "actual": "105.000000",
+              "expected": "105.000000",
+              "field": "hurdle_nav_per_unit",
+              "lot_id": "WE-LOT-3",
+              "matched": true
+            },
+            {
+              "abs_diff": "0.00",
+              "actual": "0.00",
+              "expected": "0.00",
+              "field": "crystallized_performance_fee",
+              "lot_id": "WE-LOT-3",
+              "matched": true
+            },
+            {
+              "abs_diff": "0.000000",
+              "actual": "105.000000",
+              "expected": "105.000000",
+              "field": "new_hurdle_base_nav",
+              "lot_id": "WE-LOT-3",
+              "matched": true
+            },
+            {
+              "abs_diff": "0.000000",
+              "actual": "102.000000",
+              "expected": "102.000000",
+              "field": "new_hwm",
+              "lot_id": "WE-LOT-3",
+              "matched": true
+            }
+          ],
+          "discrepancies": [],
+          "discrepancy_count": 0,
+          "passed": true,
+          "run_id": "RUN-20251231-v1-979bf9e037",
+          "tolerance": "0.00",
+          "valuation_date": "2025-12-31"
+        },
+        {
+          "checks_evaluated": 6,
+          "comparisons": [
+            {
+              "abs_diff": "0.000000",
+              "actual": "110.250000",
+              "expected": "110.250000",
+              "field": "hurdle_nav_per_unit",
+              "lot_id": "WE-LOT-3",
+              "matched": true
+            },
+            {
+              "abs_diff": "0.000000",
+              "actual": "9.750000",
+              "expected": "9.750000",
+              "field": "eligible_gain_per_unit",
+              "lot_id": "WE-LOT-3",
+              "matched": true
+            },
+            {
+              "abs_diff": "0.00",
+              "actual": "1950.00",
+              "expected": "1950.00",
+              "field": "crystallized_performance_fee",
+              "lot_id": "WE-LOT-3",
+              "matched": true
+            },
+            {
+              "abs_diff": "0.00",
+              "actual": "118050.00",
+              "expected": "118050.00",
+              "field": "ending_net_nav",
+              "lot_id": "WE-LOT-3",
+              "matched": true
+            },
+            {
+              "abs_diff": "0.000000",
+              "actual": "118.050000",
+              "expected": "118.050000",
+              "field": "new_hwm",
+              "lot_id": "WE-LOT-3",
+              "matched": true
+            },
+            {
+              "abs_diff": "0.000000",
+              "actual": "118.050000",
+              "expected": "118.050000",
+              "field": "new_hurdle_base_nav",
+              "lot_id": "WE-LOT-3",
+              "matched": true
+            }
+          ],
+          "discrepancies": [],
+          "discrepancy_count": 0,
+          "passed": true,
+          "run_id": "RUN-20261231-v1-df530c3103",
+          "tolerance": "0.00",
+          "valuation_date": "2026-12-31"
+        }
+      ],
+      "description": "Two-year 5% hard compounding hurdle: Year 1 misses hurdle (102 < 105) so hurdle compounds to 110.25 in Year 2.",
+      "discrepancy_count": 0,
+      "passed": true,
+      "scenario_id": "WE-03-HARD-COMPOUNDING-HURDLE"
+    },
+    {
+      "checks_evaluated": 5,
+      "comparisons": [
+        {
+          "checks_evaluated": 5,
+          "comparisons": [
+            {
+              "abs_diff": "0",
+              "actual": "52500",
+              "expected": "52500",
+              "field": "management_fee_amount",
+              "lot_id": "WE-LOT-JPY",
+              "matched": true
+            },
+            {
+              "abs_diff": "0",
+              "actual": "189500",
+              "expected": "189500",
+              "field": "crystallized_performance_fee",
+              "lot_id": "WE-LOT-JPY",
+              "matched": true
+            },
+            {
+              "abs_diff": "0",
+              "actual": "10758000",
+              "expected": "10758000",
+              "field": "ending_net_nav",
+              "lot_id": "WE-LOT-JPY",
+              "matched": true
+            },
+            {
+              "abs_diff": "0.000000",
+              "actual": "10758.000000",
+              "expected": "10758.000000",
+              "field": "ending_net_nav_per_unit",
+              "lot_id": "WE-LOT-JPY",
+              "matched": true
+            },
+            {
+              "abs_diff": "0.000000",
+              "actual": "10758.000000",
+              "expected": "10758.000000",
+              "field": "new_hwm",
+              "lot_id": "WE-LOT-JPY",
+              "matched": true
+            }
+          ],
+          "discrepancies": [],
+          "discrepancy_count": 0,
+          "passed": true,
+          "run_id": "RUN-20250331-v1-231f7df33a",
+          "tolerance": "0.00",
+          "valuation_date": "2025-03-31"
+        }
+      ],
+      "description": "JPY zero-decimal currency with AVERAGE_NAV 2% management fee and 20% performance fee.",
+      "discrepancy_count": 0,
+      "passed": true,
+      "scenario_id": "WE-04-JPY-ZERO-MINOR-UNITS-AVG-NAV"
+    }
+  ],
+  "provenance": "Independently derived textbook-style worked examples verified manually with exact rational arithmetic.",
+  "suite_id": "INDEPENDENT-WORKED-EXAMPLES-V1",
+  "tolerance": "0.00"
+}

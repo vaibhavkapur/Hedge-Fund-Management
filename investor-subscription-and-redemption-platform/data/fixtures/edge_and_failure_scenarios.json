@@ -1,0 +1,77 @@
+{
+  "fixture_id": "edge-and-failure-scenarios-v1",
+  "schema_version": "1.0.0",
+  "synthetic_data_notice": "Synthetic edge, invalid, and failure cases for automated test matrix validation.",
+  "scenarios": {
+    "duplicate_request": {
+      "request_id": "REQ-DUP-001",
+      "idempotency_key": "IDEM-DUP-KEY-001",
+      "duplicate_request_id": "REQ-DUP-002",
+      "gross_amount": "25000.00",
+      "expected_error": "DuplicateRequestError"
+    },
+    "delayed_cash": {
+      "request_id": "REQ-DELAY-001",
+      "idempotency_key": "IDEM-DELAY-001",
+      "dealing_date": "2026-03-31",
+      "cash_due_date": "2026-04-02",
+      "cash_value_date": "2026-04-06",
+      "gross_amount": "40000.00",
+      "expected_cash_status": "DELAYED_CASH",
+      "expected_exception_type": "DELAYED_CASH"
+    },
+    "cutoff_violation": {
+      "request_id": "REQ-LATE-001",
+      "idempotency_key": "IDEM-LATE-001",
+      "dealing_date": "2026-03-31",
+      "cutoff_at": "2026-03-31T16:00:00Z",
+      "submitted_at": "2026-03-31T16:05:00Z",
+      "gross_amount": "30000.00",
+      "expected_error": "CutoffViolationError",
+      "expected_exception_type": "CUTOFF_VIOLATION"
+    },
+    "insufficient_shares": {
+      "request_id": "REQ-OVERRED-001",
+      "idempotency_key": "IDEM-OVERRED-001",
+      "available_shares": "792.000000",
+      "requested_shares": "900.000000",
+      "expected_error": "InsufficientSharesError",
+      "expected_exception_type": "INSUFFICIENT_SHARES"
+    },
+    "nav_restatement": {
+      "dealing_date": "2026-03-31",
+      "original_nav": "125.000000",
+      "restated_nav": "123.750000",
+      "expected_share_delta": "8.000000",
+      "expected_new_shares": "800.000000"
+    },
+    "reviewer_separation": {
+      "maker_id": "ops_maker_01",
+      "checker_id": "ops_maker_01",
+      "expected_error": "ReviewerSeparationError"
+    },
+    "sanctioned_investor": {
+      "investor_id": "INV-SYN-BAD-001",
+      "legal_name": "Blocked Entity Synthetic LLC",
+      "jurisdiction": "SYN-SANCTIONED",
+      "expected_status": "KYC_REJECTED"
+    },
+    "invalid_inputs": [
+      {
+        "case": "negative_subscription_amount",
+        "gross_amount": "-500.00",
+        "expected_error": "ValidationError"
+      },
+      {
+        "case": "unsupported_currency",
+        "currency": "JPY",
+        "expected_error": "ValidationError"
+      },
+      {
+        "case": "below_minimum_subscription",
+        "gross_amount": "500.00",
+        "expected_error": "ValidationError"
+      }
+    ]
+  }
+}

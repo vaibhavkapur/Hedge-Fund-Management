@@ -1,0 +1,51 @@
+{
+  "bundle_id": "BUNDLE-FLOW-TIMING-2026-03-31",
+  "fund_id": "FUND-ALPHA-01",
+  "valuation_date": "2026-03-31",
+  "input_version": "1.0.0",
+  "positions": [
+    {
+      "position_id": "POS-CASH",
+      "instrument_id": "CASH-USD",
+      "instrument_type": "cash",
+      "quantity": "100000.00",
+      "cost_basis": "100000.00",
+      "currency": "USD"
+    }
+  ],
+  "prices": [],
+  "fx_rates": [],
+  "liabilities": [],
+  "accruals": [],
+  "share_classes": [
+    {
+      "share_class_id": "CLS-A-USD",
+      "name": "Class A USD",
+      "currency": "USD",
+      "opening_shares": "1000",
+      "launch_nav_per_share": "100.00"
+    }
+  ],
+  "capital_flows": [
+    {
+      "flow_id": "FLOW-PRE-NAV-LATE",
+      "share_class_id": "CLS-A-USD",
+      "flow_type": "subscription",
+      "currency": "USD",
+      "amount": "10000.00",
+      "trade_date": "2026-03-31",
+      "settlement_date": "2026-04-02",
+      "submitted_at": "2026-03-31T16:00:01Z",
+      "status": "confirmed",
+      "timing_rule": "pre_nav"
+    }
+  ],
+  "ledger_balances": [
+    {
+      "ledger_account_id": "GL-CASH-USD",
+      "account_type": "cash",
+      "balance": "100000.00",
+      "currency": "USD"
+    }
+  ]
+}

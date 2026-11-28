@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "schedules": [
+    {
+      "schedule_id": "FIN-PB-ALPHA-USD-2026",
+      "broker_id": "PB-ALPHA",
+      "currency": "USD",
+      "benchmark_name": "SOFR",
+      "benchmark_rate": "0.0450",
+      "debit_spread_bps": "75",
+      "credit_spread_bps": "35",
+      "short_rebate_spread_bps": "40",
+      "day_count": "ACT_360",
+      "effective_date": "2026-01-01"
+    },
+    {
+      "schedule_id": "FIN-PB-ALPHA-GBP-2026",
+      "broker_id": "PB-ALPHA",
+      "currency": "GBP",
+      "benchmark_name": "SONIA",
+      "benchmark_rate": "0.0425",
+      "debit_spread_bps": "80",
+      "credit_spread_bps": "40",
+      "short_rebate_spread_bps": "45",
+      "day_count": "ACT_365F",
+      "effective_date": "2026-01-01"
+    },
+    {
+      "schedule_id": "FIN-PB-BETA-EUR-2026",
+      "broker_id": "PB-BETA",
+      "currency": "EUR",
+      "benchmark_name": "ESTR",
+      "benchmark_rate": "0.0300",
+      "debit_spread_bps": "65",
+      "credit_spread_bps": "30",
+      "short_rebate_spread_bps": "35",
+      "day_count": "ACT_360",
+      "effective_date": "2026-01-01"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "fixture_id": "valid-e2e-scenario-v1",
+  "schema_version": "1.0.0",
+  "synthetic_data_notice": "All investors, accounts, and cash confirmations are synthetic test records.",
+  "investors": [
+    {
+      "investor_id": "INV-SYN-001",
+      "legal_name": "Meridian Synthetic Endowment Trust",
+      "investor_type": "INSTITUTIONAL",
+      "jurisdiction": "US",
+      "tax_form_status": "VERIFIED",
+      "accredited": true,
+      "bank_account_ref": "SYN-ACCT-1001",
+      "identity_doc_ref": "SYN-DOC-9001"
+    },
+    {
+      "investor_id": "INV-SYN-002",
+      "legal_name": "Northstar Synthetic Family Office LP",
+      "investor_type": "QUALIFIED_PURCHASER",
+      "jurisdiction": "UK",
+      "tax_form_status": "VERIFIED",
+      "accredited": true,
+      "bank_account_ref": "SYN-ACCT-1002",
+      "identity_doc_ref": "SYN-DOC-9002"
+    }
+  ],
+  "dealing_windows": [
+    {
+      "window_id": "DW-2026-03-31",
+      "fund_id": "FUND-ALPHA",
+      "share_class": "CLASS-A",
+      "dealing_date": "2026-03-31",
+      "open_at": "2026-03-01T00:00:00Z",
+      "cutoff_at": "2026-03-31T16:00:00Z",
+      "cash_due_date": "2026-04-02",
+      "settlement_date": "2026-04-02"
+    },
+    {
+      "window_id": "DW-2026-04-30",
+      "fund_id": "FUND-ALPHA",
+      "share_class": "CLASS-A",
+      "dealing_date": "2026-04-30",
+      "open_at": "2026-04-01T00:00:00Z",
+      "cutoff_at": "2026-04-30T16:00:00Z",
+      "cash_due_date": "2026-05-04",
+      "settlement_date": "2026-05-04"
+    }
+  ],
+  "nav_records": [
+    {
+      "nav_id": "NAV-ALPHA-A-20260331-V1",
+      "fund_id": "FUND-ALPHA",
+      "share_class": "CLASS-A",
+      "dealing_date": "2026-03-31",
+      "currency": "USD",
+      "nav_per_share": "125.000000",
+      "version": 1,
+      "approved_by": "nav_controller_01",
+      "approved_at": "2026-04-01T10:00:00Z"
+    },
+    {
+      "nav_id": "NAV-ALPHA-A-20260430-V1",
+      "fund_id": "FUND-ALPHA",
+      "share_class": "CLASS-A",
+      "dealing_date": "2026-04-30",
+      "currency": "USD",
+      "nav_per_share": "133.330000",
+      "version": 1,
+      "approved_by": "nav_controller_01",
+      "approved_at": "2026-05-01T10:00:00Z"
+    }
+  ],
+  "requests": [
+    {
+      "request_id": "REQ-SUB-001",
+      "idempotency_key": "IDEM-SUB-001",
+      "investor_id": "INV-SYN-001",
+      "fund_id": "FUND-ALPHA",
+      "share_class": "CLASS-A",
+      "request_type": "SUBSCRIPTION",
+      "dealing_date": "2026-03-31",
+      "currency": "USD",
+      "gross_amount": "100000.00",
+      "requested_shares": null,
+      "submitted_at": "2026-03-30T14:30:00Z",
+      "maker_id": "ops_maker_01",
+      "checker_id": "ops_checker_01"
+    },
+    {
+      "request_id": "REQ-SUB-002",
+      "idempotency_key": "IDEM-SUB-002",
+      "investor_id": "INV-SYN-002",
+      "fund_id": "FUND-ALPHA",
+      "share_class": "CLASS-A",
+      "request_type": "SUBSCRIPTION",
+      "dealing_date": "2026-04-30",
+      "currency": "USD",
+      "gross_amount": "50000.00",
+      "requested_shares": null,
+      "submitted_at": "2026-04-29T11:00:00Z",
+      "maker_id": "ops_maker_01",
+      "checker_id": "ops_checker_02"
+    },
+    {
+      "request_id": "REQ-RED-001",
+      "idempotency_key": "IDEM-RED-001",
+      "investor_id": "INV-SYN-001",
+      "fund_id": "FUND-ALPHA",
+      "share_class": "CLASS-A",
+      "request_type": "REDEMPTION",
+      "dealing_date": "2026-04-30",
+      "currency": "USD",
+      "gross_amount": null,
+      "requested_shares": "200.000000",
+      "submitted_at": "2026-04-28T09:15:00Z",
+      "maker_id": "ops_maker_02",
+      "checker_id": "ops_checker_01"
+    }
+  ],
+  "cash_confirmations": [
+    {
+      "confirmation_id": "CASH-IN-001",
+      "request_id": "REQ-SUB-001",
+      "direction": "INBOUND",
+      "currency": "USD",
+      "amount": "100000.00",
+      "value_date": "2026-04-01",
+      "bank_reference": "WIRE-SYN-001",
+      "received_at": "2026-04-01T15:00:00Z"
+    },
+    {
+      "confirmation_id": "CASH-IN-002",
+      "request_id": "REQ-SUB-002",
+      "direction": "INBOUND",
+      "currency": "USD",
+      "amount": "50000.00",
+      "value_date": "2026-05-01",
+      "bank_reference": "WIRE-SYN-002",
+      "received_at": "2026-05-01T15:00:00Z"
+    },
+    {
+      "confirmation_id": "CASH-OUT-001",
+      "request_id": "REQ-RED-001",
+      "direction": "OUTBOUND",
+      "currency": "USD",
+      "amount": "26532.67",
+      "value_date": "2026-05-04",
+      "bank_reference": "WIRE-SYN-OUT-001",
+      "received_at": "2026-05-04T12:00:00Z"
+    }
+  ],
+  "expected_summary": {
+    "positions": {
+      "INV-SYN-001": {
+        "settled_shares": "592.000000",
+        "total_subscribed_gross": "100000.00",
+        "total_redeemed_net": "26532.67"
+      },
+      "INV-SYN-002": {
+        "settled_shares": "371.259281",
+        "total_subscribed_gross": "50000.00",
+        "total_redeemed_net": "0.00"
+      }
+    },
+    "total_register_shares": "963.259281",
+    "total_inbound_cash": "150000.00",
+    "total_outbound_cash": "26532.67",
+    "total_fees_collected": "1633.33"
+  }
+}

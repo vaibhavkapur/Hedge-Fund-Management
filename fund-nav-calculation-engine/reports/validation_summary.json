@@ -1,0 +1,24 @@
+{
+  "all_tests_passed": true,
+  "benchmark_hashes_identical": true,
+  "benchmark_mean_ms": 12.718,
+  "benchmark_positions_per_second": 39314.4,
+  "demo_oracle_checks": {
+    "v1_gross_assets_matches_oracle": true,
+    "v1_nav_identity_exact": true,
+    "v1_net_assets_matches_oracle": true,
+    "v1_total_liabilities_matches_oracle": true,
+    "v2_gross_assets_matches_oracle": true,
+    "v2_links_to_v1": true,
+    "v2_nav_identity_exact": true,
+    "v2_net_assets_matches_oracle": true,
+    "v2_total_liabilities_matches_oracle": true
+  },
+  "demo_v1_snapshot_id": "SNAP-FUND-ALPHA-01-2026-03-31-v1-8bcf72eb1caa",
+  "demo_v2_snapshot_id": "SNAP-FUND-ALPHA-01-2026-03-31-v2-bb0a0dd13ec0",
+  "errors": 0,
+  "failures": 0,
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "python_version": "3.9.6",
+  "tests_run": 23
+}

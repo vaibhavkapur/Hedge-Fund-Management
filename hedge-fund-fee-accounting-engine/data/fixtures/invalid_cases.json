@@ -1,0 +1,45 @@
+{
+  "suite_id": "INVALID-AND-BOUNDARY-CASES-V1",
+  "cases": [
+    {
+      "case_id": "INV-01-NEGATIVE-MGMT-RATE",
+      "expected_error_code": "INVALID_MGMT_FEE_RATE",
+      "agreement_override": {"management_fee_rate": "-0.01"}
+    },
+    {
+      "case_id": "INV-02-UNSUPPORTED-CURRENCY",
+      "expected_error_code": "UNSUPPORTED_CURRENCY",
+      "agreement_override": {"currency": "ZZZ"}
+    },
+    {
+      "case_id": "INV-03-HURDLE-RATE-WITH-NONE",
+      "expected_error_code": "HURDLE_RATE_WITH_NONE_TYPE",
+      "agreement_override": {"hurdle_type": "NONE", "hurdle_rate": "0.05"}
+    },
+    {
+      "case_id": "INV-04-EMPTY-CUSTOM-DATES",
+      "expected_error_code": "EMPTY_CUSTOM_CRYSTALLIZATION_DATES",
+      "agreement_override": {"crystallization_frequency": "CUSTOM_DATES", "crystallization_dates": []}
+    },
+    {
+      "case_id": "INV-05-NEGATIVE-NAV",
+      "expected_error_code": "NEGATIVE_NAV",
+      "snapshot_override": {"gross_nav_per_unit": "-10.00"}
+    },
+    {
+      "case_id": "INV-06-CURRENCY-MISMATCH",
+      "expected_error_code": "CURRENCY_MISMATCH",
+      "snapshot_override": {"currency": "EUR"}
+    },
+    {
+      "case_id": "INV-07-VALUATION-BEFORE-PERIOD-START",
+      "expected_error_code": "VALUATION_BEFORE_PERIOD_START",
+      "snapshot_override": {"period_start_date": "2025-03-31", "valuation_date": "2025-01-31"}
+    },
+    {
+      "case_id": "INV-08-SKIPPED-CRYSTALLIZATION-BOUNDARY",
+      "expected_error_code": "SKIPPED_CRYSTALLIZATION_BOUNDARY",
+      "snapshot_override": {"period_start_date": "2024-12-31", "valuation_date": "2025-06-30"}
+    }
+  ]
+}

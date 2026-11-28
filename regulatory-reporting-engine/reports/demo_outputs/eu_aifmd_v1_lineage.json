@@ -1,0 +1,239 @@
+{
+  "report_id": "RPT-SYNTH_ALPHA_01-2026-Q1-EU_AIFMD_ANNEX4_ILLUSTRATIVE-V1-8F585131886E",
+  "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+  "profile_id": "EU_AIFMD_ANNEX4_ILLUSTRATIVE",
+  "schema_version": "1.0.0",
+  "schema_provenance": {
+    "effective_date": "2025-01-01",
+    "authored_date": "2026-01-15",
+    "source_reference": "Educational synthetic schema modeled conceptually on public AIFMD transparency reporting metrics; NOT an official ESMA AIFMD XML schema.",
+    "certified_for_filing": false,
+    "change_summary": "Initial illustrative EU AIFMD-style v1.0.0 schema baseline."
+  },
+  "total_fields": 13,
+  "traced_fields": 13,
+  "lineage_coverage_ratio": "1.000000",
+  "fields": [
+    {
+      "target_field": "aif_identifier",
+      "value": "SYNTH_ALPHA_01",
+      "unit": "none",
+      "source_type": "metadata",
+      "mapping_id": "EU_AIFMD_ANNEX4_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "fund:SYNTH_ALPHA_01"
+      ],
+      "derivation_expression": "DIRECT(fund.fund_id)",
+      "upstream_fields": [],
+      "rounding_mode": null,
+      "decimal_places": null
+    },
+    {
+      "target_field": "aif_lei",
+      "value": "000000SYNTHFUND00181",
+      "unit": "none",
+      "source_type": "metadata",
+      "mapping_id": "EU_AIFMD_ANNEX4_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "fund:SYNTH_ALPHA_01"
+      ],
+      "derivation_expression": "DIRECT(fund.fund_lei)",
+      "upstream_fields": [],
+      "rounding_mode": null,
+      "decimal_places": null
+    },
+    {
+      "target_field": "aifm_lei",
+      "value": "000000SYNTHMGR000140",
+      "unit": "none",
+      "source_type": "metadata",
+      "mapping_id": "EU_AIFMD_ANNEX4_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "fund:SYNTH_ALPHA_01"
+      ],
+      "derivation_expression": "DIRECT(fund.manager_lei)",
+      "upstream_fields": [],
+      "rounding_mode": null,
+      "decimal_places": null
+    },
+    {
+      "target_field": "reporting_period_end",
+      "value": "2026-03-31",
+      "unit": "none",
+      "source_type": "metadata",
+      "mapping_id": "EU_AIFMD_ANNEX4_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "period:2026-Q1"
+      ],
+      "derivation_expression": "DIRECT(reporting_period.end_date)",
+      "upstream_fields": [],
+      "rounding_mode": null,
+      "decimal_places": null
+    },
+    {
+      "target_field": "base_currency",
+      "value": "USD",
+      "unit": "none",
+      "source_type": "metadata",
+      "mapping_id": "EU_AIFMD_ANNEX4_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "fund:SYNTH_ALPHA_01"
+      ],
+      "derivation_expression": "DIRECT(fund.base_currency)",
+      "upstream_fields": [],
+      "rounding_mode": null,
+      "decimal_places": null
+    },
+    {
+      "target_field": "aif_nav_base",
+      "value": "100000000.00",
+      "unit": "USD",
+      "source_type": "nav",
+      "mapping_id": "EU_AIFMD_ANNEX4_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "nav:NAV-SYNTH-2026-03-31-V1"
+      ],
+      "derivation_expression": "DIRECT(nav.net_asset_value)",
+      "upstream_fields": [],
+      "rounding_mode": "ROUND_HALF_UP",
+      "decimal_places": 2
+    },
+    {
+      "target_field": "aum_gross_method_base",
+      "value": "150000000.00",
+      "unit": "USD",
+      "source_type": "exposures_agg",
+      "mapping_id": "EU_AIFMD_ANNEX4_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "EXP-001",
+        "EXP-002",
+        "EXP-003"
+      ],
+      "derivation_expression": "SUM(gross_exposure_base)",
+      "upstream_fields": [],
+      "rounding_mode": "ROUND_HALF_UP",
+      "decimal_places": 2
+    },
+    {
+      "target_field": "aum_commitment_method_base",
+      "value": "110000000.00",
+      "unit": "USD",
+      "source_type": "exposures_agg",
+      "mapping_id": "EU_AIFMD_ANNEX4_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "EXP-001",
+        "EXP-002",
+        "EXP-003"
+      ],
+      "derivation_expression": "SUM(net_exposure_base)",
+      "upstream_fields": [],
+      "rounding_mode": "ROUND_HALF_UP",
+      "decimal_places": 2
+    },
+    {
+      "target_field": "leverage_gross_pct",
+      "value": "150.00",
+      "unit": "percent",
+      "source_type": "derived",
+      "mapping_id": "EU_AIFMD_ANNEX4_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "EXP-001",
+        "EXP-002",
+        "EXP-003",
+        "nav:NAV-SYNTH-2026-03-31-V1"
+      ],
+      "derivation_expression": "(aum_gross_method_base / aif_nav_base) * 100",
+      "upstream_fields": [
+        "aum_gross_method_base",
+        "aif_nav_base"
+      ],
+      "rounding_mode": "ROUND_HALF_UP",
+      "decimal_places": 2
+    },
+    {
+      "target_field": "equity_exposure_gross_base",
+      "value": "80000000.00",
+      "unit": "USD",
+      "source_type": "exposures_agg",
+      "mapping_id": "EU_AIFMD_ANNEX4_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "EXP-001"
+      ],
+      "derivation_expression": "SUM(gross_exposure_base) WHERE {'asset_class': 'EQUITY'}",
+      "upstream_fields": [],
+      "rounding_mode": "ROUND_HALF_UP",
+      "decimal_places": 2
+    },
+    {
+      "target_field": "fixed_income_exposure_gross_base",
+      "value": "45000000.00",
+      "unit": "USD",
+      "source_type": "exposures_agg",
+      "mapping_id": "EU_AIFMD_ANNEX4_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "EXP-002"
+      ],
+      "derivation_expression": "SUM(gross_exposure_base) WHERE {'asset_class': 'FIXED_INCOME'}",
+      "upstream_fields": [],
+      "rounding_mode": "ROUND_HALF_UP",
+      "decimal_places": 2
+    },
+    {
+      "target_field": "derivatives_exposure_gross_base",
+      "value": "25000000.00",
+      "unit": "USD",
+      "source_type": "exposures_agg",
+      "mapping_id": "EU_AIFMD_ANNEX4_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "EXP-003"
+      ],
+      "derivation_expression": "SUM(gross_exposure_base) WHERE {'asset_class': 'DERIVATIVES'}",
+      "upstream_fields": [],
+      "rounding_mode": "ROUND_HALF_UP",
+      "decimal_places": 2
+    },
+    {
+      "target_field": "position_count",
+      "value": 4,
+      "unit": "count",
+      "source_type": "positions_agg",
+      "mapping_id": "EU_AIFMD_ANNEX4_ILLUSTRATIVE_MAP",
+      "mapping_version": "1.0.0",
+      "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+      "source_record_ids": [
+        "POS-001",
+        "POS-002",
+        "POS-003",
+        "POS-004"
+      ],
+      "derivation_expression": "COUNT(position_id)",
+      "upstream_fields": [],
+      "rounding_mode": null,
+      "decimal_places": null
+    }
+  ]
+}

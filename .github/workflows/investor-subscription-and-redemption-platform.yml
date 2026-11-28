@@ -1,0 +1,33 @@
+name: Investor Subscription and Redemption Platform CI
+
+on:
+  push:
+    paths:
+      - "investor-subscription-and-redemption-platform/**"
+      - ".github/workflows/investor-subscription-and-redemption-platform.yml"
+  pull_request:
+    paths:
+      - "investor-subscription-and-redemption-platform/**"
+      - ".github/workflows/investor-subscription-and-redemption-platform.yml"
+  workflow_dispatch:
+
+jobs:
+  validate-offline-core:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: investor-subscription-and-redemption-platform
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run unit, integration, and boundary test suite + reproducibility check
+        run: python3 scripts/run_validation.py
+
+      - name: Run reproducible baseline demo and NAV restatement walkthrough
+        run: python3 scripts/run_demo.py

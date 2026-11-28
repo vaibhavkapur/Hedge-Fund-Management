@@ -1,0 +1,163 @@
+{
+  "all_passed": true,
+  "all_replays_matched": true,
+  "persisted_run_count": 17,
+  "replay_verification": [
+    {
+      "matches": true,
+      "replayed_output_hash": "52db5b76466ac11e",
+      "run_id": "RUN-20250131-v1-66c08d64fa",
+      "stored_output_hash": "52db5b76466ac11e"
+    },
+    {
+      "matches": true,
+      "replayed_output_hash": "2e6e2683a688b331",
+      "run_id": "RUN-20250331-v1-f8248710cd",
+      "stored_output_hash": "2e6e2683a688b331"
+    },
+    {
+      "matches": true,
+      "replayed_output_hash": "a77a79a7394f2034",
+      "run_id": "RUN-20250331-v1-5439230815",
+      "stored_output_hash": "a77a79a7394f2034"
+    },
+    {
+      "matches": true,
+      "replayed_output_hash": "706d919737d7607a",
+      "run_id": "RUN-20250331-v1-a52e1dbb5d",
+      "stored_output_hash": "706d919737d7607a"
+    },
+    {
+      "matches": true,
+      "replayed_output_hash": "0b72f239009bb831",
+      "run_id": "RUN-20250331-v1-f528b99aa4",
+      "stored_output_hash": "0b72f239009bb831"
+    },
+    {
+      "matches": true,
+      "replayed_output_hash": "5237d49b49b16a4a",
+      "run_id": "RUN-20250331-v1-231f7df33a",
+      "stored_output_hash": "5237d49b49b16a4a"
+    },
+    {
+      "matches": true,
+      "replayed_output_hash": "71fce76bf661672a",
+      "run_id": "RUN-20250331-v2-d0d32f5dcb",
+      "stored_output_hash": "71fce76bf661672a"
+    },
+    {
+      "matches": true,
+      "replayed_output_hash": "8bdf8af4bade2a78",
+      "run_id": "RUN-20250630-v1-b6d8ec2090",
+      "stored_output_hash": "8bdf8af4bade2a78"
+    },
+    {
+      "matches": true,
+      "replayed_output_hash": "1525129453646ebc",
+      "run_id": "RUN-20250630-v1-c25e3b641a",
+      "stored_output_hash": "1525129453646ebc"
+    },
+    {
+      "matches": true,
+      "replayed_output_hash": "3bcc79a1aaaa6936",
+      "run_id": "RUN-20250930-v1-0ba48bd4d8",
+      "stored_output_hash": "3bcc79a1aaaa6936"
+    },
+    {
+      "matches": true,
+      "replayed_output_hash": "76af068ae2de357c",
+      "run_id": "RUN-20250930-v1-e939bf1b87",
+      "stored_output_hash": "76af068ae2de357c"
+    },
+    {
+      "matches": true,
+      "replayed_output_hash": "07596471aa44b11c",
+      "run_id": "RUN-20251231-v1-85dff9fa08",
+      "stored_output_hash": "07596471aa44b11c"
+    },
+    {
+      "matches": true,
+      "replayed_output_hash": "dc7c4b8f37b8d012",
+      "run_id": "RUN-20251231-v1-d185c09b1c",
+      "stored_output_hash": "dc7c4b8f37b8d012"
+    },
+    {
+      "matches": true,
+      "replayed_output_hash": "8c3e106e1a670cdd",
+      "run_id": "RUN-20251231-v1-f809557194",
+      "stored_output_hash": "8c3e106e1a670cdd"
+    },
+    {
+      "matches": true,
+      "replayed_output_hash": "b40afa1ec62f7adb",
+      "run_id": "RUN-20251231-v1-2b5c729ec0",
+      "stored_output_hash": "b40afa1ec62f7adb"
+    },
+    {
+      "matches": true,
+      "replayed_output_hash": "7d16b69c7de7465a",
+      "run_id": "RUN-20251231-v1-979bf9e037",
+      "stored_output_hash": "7d16b69c7de7465a"
+    },
+    {
+      "matches": true,
+      "replayed_output_hash": "2cabd925a6a4f94f",
+      "run_id": "RUN-20261231-v1-df530c3103",
+      "stored_output_hash": "2cabd925a6a4f94f"
+    }
+  ],
+  "runtime_metadata": {
+    "config_version": "1.0.0",
+    "intermediate_precision": 28,
+    "machine": "arm64",
+    "oracle_comparison_tolerance": "0.00",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "python_version": "3.9.6",
+    "rounding_mode": "ROUND_HALF_EVEN",
+    "schema_version": "1.0.0"
+  },
+  "scenarios": [
+    {
+      "all_passed": true,
+      "checks_evaluated": 9,
+      "discrepancy_count": 0,
+      "fixture_file": "reference_basic_2_and_20.json",
+      "report_file": "scenario_reference_basic.json",
+      "run_count": 1,
+      "scenario_id": "REF-BASIC-2-AND-20"
+    },
+    {
+      "all_passed": true,
+      "checks_evaluated": 31,
+      "discrepancy_count": 0,
+      "fixture_file": "loss_and_recovery_hwm.json",
+      "report_file": "scenario_loss_recovery.json",
+      "run_count": 4,
+      "scenario_id": "SCEN-LOSS-RECOVERY-HWM"
+    },
+    {
+      "all_passed": true,
+      "checks_evaluated": 28,
+      "discrepancy_count": 0,
+      "fixture_file": "mid_period_flows_and_correction.json",
+      "report_file": "scenario_flows_corrections.json",
+      "run_count": 2,
+      "scenario_id": "SCEN-MID-PERIOD-FLOWS-AND-CORRECTION"
+    },
+    {
+      "all_passed": true,
+      "checks_evaluated": 32,
+      "discrepancy_count": 0,
+      "fixture_file": "hurdle_and_crystallization_boundaries.json",
+      "report_file": "scenario_hurdle_boundaries.json",
+      "run_count": 4,
+      "scenario_id": "SCEN-HURDLE-AND-CRYSTALLIZATION-BOUNDARIES"
+    }
+  ],
+  "worked_examples": {
+    "all_passed": true,
+    "example_count": 5,
+    "total_checks": 29,
+    "total_discrepancies": 0
+  }
+}

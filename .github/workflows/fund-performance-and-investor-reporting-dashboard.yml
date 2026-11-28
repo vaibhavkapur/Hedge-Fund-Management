@@ -1,0 +1,32 @@
+name: Fund Performance and Investor Reporting Dashboard CI
+
+on:
+  push:
+    paths:
+      - "fund-performance-and-investor-reporting-dashboard/**"
+      - ".github/workflows/fund-performance-and-investor-reporting-dashboard.yml"
+  pull_request:
+    paths:
+      - "fund-performance-and-investor-reporting-dashboard/**"
+      - ".github/workflows/fund-performance-and-investor-reporting-dashboard.yml"
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: fund-performance-and-investor-reporting-dashboard
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run setup and validation suite
+        run: |
+          ./scripts/setup.sh
+          ./scripts/validate.sh

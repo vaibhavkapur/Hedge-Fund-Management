@@ -1,0 +1,64 @@
+{
+  "oracle_description": "Independent hand-calculated expected report outputs for reference_snapshot_q1_2026.json",
+  "snapshot_id": "SNAP-SYNTH-2026Q1-0001",
+  "tolerances": {
+    "monetary": "0.00",
+    "ratio": "0.000000",
+    "percent": "0.00"
+  },
+  "profiles": {
+    "US_SEC_PF_ILLUSTRATIVE:1.0.0": {
+      "fund_id": "SYNTH_ALPHA_01",
+      "fund_lei": "000000SYNTHFUND00181",
+      "manager_lei": "000000SYNTHMGR000140",
+      "reporting_period_start": "2026-01-01",
+      "reporting_period_end": "2026-03-31",
+      "reporting_currency": "USD",
+      "nav_total_usd": "100000000.00",
+      "gross_asset_value_usd": "125000000.00",
+      "total_liabilities_usd": "25000000.00",
+      "long_market_value_usd": "110000000.00",
+      "short_market_value_usd": "20000000.00",
+      "gross_exposure_usd": "150000000.00",
+      "net_exposure_usd": "110000000.00",
+      "gross_leverage_ratio": "1.500000",
+      "position_count": 4,
+      "top_counterparty_exposure_usd": "105000000.00"
+    },
+    "US_SEC_PF_ILLUSTRATIVE:2.0.0": {
+      "fund_id": "SYNTH_ALPHA_01",
+      "fund_lei": "000000SYNTHFUND00181",
+      "manager_lei": "000000SYNTHMGR000140",
+      "reporting_period_start": "2026-01-01",
+      "reporting_period_end": "2026-03-31",
+      "reporting_currency": "USD",
+      "nav_total_usd": "100000000.00",
+      "gross_asset_value_usd": "125000000.00",
+      "total_liabilities_usd": "25000000.00",
+      "cash_and_equivalents_usd": "15000000.00",
+      "long_market_value_usd": "110000000.00",
+      "short_market_value_usd": "20000000.00",
+      "gross_notional_exposure_usd": "150000000.00",
+      "net_exposure_usd": "110000000.00",
+      "gross_leverage_ratio": "1.500000",
+      "position_count": 4,
+      "top_counterparty_exposure_usd": "105000000.00",
+      "liquidity_bucket_primary": "MONTHLY"
+    },
+    "EU_AIFMD_ANNEX4_ILLUSTRATIVE:1.0.0": {
+      "aif_identifier": "SYNTH_ALPHA_01",
+      "aif_lei": "000000SYNTHFUND00181",
+      "aifm_lei": "000000SYNTHMGR000140",
+      "reporting_period_end": "2026-03-31",
+      "base_currency": "USD",
+      "aif_nav_base": "100000000.00",
+      "aum_gross_method_base": "150000000.00",
+      "aum_commitment_method_base": "110000000.00",
+      "leverage_gross_pct": "150.00",
+      "equity_exposure_gross_base": "80000000.00",
+      "fixed_income_exposure_gross_base": "45000000.00",
+      "derivatives_exposure_gross_base": "25000000.00",
+      "position_count": 4
+    }
+  }
+}

@@ -1,0 +1,680 @@
+{
+  "audit_journal": [
+    {
+      "actor": "fund_accountant",
+      "details": {
+        "input_hash": "8bcf72eb1caaf73dbcf24e945d48ff6b06996c68602d5e4c497e85ea0245812e",
+        "output_hash": "f97809849a3f7eb86508e1bb4bf884621234386dbb73a64e7c75edc8dc895681",
+        "prior_snapshot_id": null,
+        "restatement_reason": null,
+        "version": 1
+      },
+      "entry_id": "AUD-SNAP-FUND-ALPHA-01-2026-03-31-v1-8bcf72eb1caa-0001-SNAPSHOT_CALCULATED",
+      "event_type": "SNAPSHOT_CALCULATED",
+      "payload_hash": "a8dd1aa104507830ce601327ce82bcac0d4e9b2b361ea7bcfb312f7603c45b46",
+      "snapshot_id": "SNAP-FUND-ALPHA-01-2026-03-31-v1-8bcf72eb1caa",
+      "timestamp": "2026-03-31T17:00:00Z"
+    },
+    {
+      "actor": "nav_controller",
+      "details": {
+        "output_hash": "f97809849a3f7eb86508e1bb4bf884621234386dbb73a64e7c75edc8dc895681"
+      },
+      "entry_id": "AUD-SNAP-FUND-ALPHA-01-2026-03-31-v1-8bcf72eb1caa-0002-SNAPSHOT_APPROVED",
+      "event_type": "SNAPSHOT_APPROVED",
+      "payload_hash": "abebbb313586c021a342420534b9af04585106d6a26b802b02b2fdaaa624712f",
+      "snapshot_id": "SNAP-FUND-ALPHA-01-2026-03-31-v1-8bcf72eb1caa",
+      "timestamp": "2026-03-31T17:00:00Z"
+    },
+    {
+      "actor": "nav_controller",
+      "details": {
+        "output_hash": "f97809849a3f7eb86508e1bb4bf884621234386dbb73a64e7c75edc8dc895681"
+      },
+      "entry_id": "AUD-SNAP-FUND-ALPHA-01-2026-03-31-v1-8bcf72eb1caa-0003-SNAPSHOT_FROZEN",
+      "event_type": "SNAPSHOT_FROZEN",
+      "payload_hash": "5bda569de7d5806256542574796fa2b71e0875f38b1bcb26f763d02bb2eb3f58",
+      "snapshot_id": "SNAP-FUND-ALPHA-01-2026-03-31-v1-8bcf72eb1caa",
+      "timestamp": "2026-03-31T17:00:00Z"
+    },
+    {
+      "actor": "nav_controller",
+      "details": {
+        "input_hash": "bb0a0dd13ec0a17da655f19775403ab0fc68b4be6e1d23697c8b419c6cfd37d5",
+        "output_hash": "be757fb23389d979c289b900e4aa4876bb7219caf939597f7f85ba8ddcf0701e",
+        "prior_snapshot_id": "SNAP-FUND-ALPHA-01-2026-03-31-v1-8bcf72eb1caa",
+        "restatement_reason": "Late pricing vendor correction for EQ-US-ACME (102.50 -> 104.50 USD)",
+        "version": 2
+      },
+      "entry_id": "AUD-SNAP-FUND-ALPHA-01-2026-03-31-v2-bb0a0dd13ec0-0001-SNAPSHOT_CALCULATED",
+      "event_type": "SNAPSHOT_CALCULATED",
+      "payload_hash": "ed7c19e138fb2a155444703815cafe4b35250084568fef92c16447e3d1d54fce",
+      "snapshot_id": "SNAP-FUND-ALPHA-01-2026-03-31-v2-bb0a0dd13ec0",
+      "timestamp": "2026-04-01T09:30:00Z"
+    },
+    {
+      "actor": "nav_controller",
+      "details": {
+        "gross_assets_delta": "20000.00",
+        "net_assets_delta": "19750.00",
+        "prior_snapshot_id": "SNAP-FUND-ALPHA-01-2026-03-31-v1-8bcf72eb1caa",
+        "prior_version": 1,
+        "restated_snapshot_id": "SNAP-FUND-ALPHA-01-2026-03-31-v2-bb0a0dd13ec0",
+        "restated_version": 2,
+        "restatement_reason": "Late pricing vendor correction for EQ-US-ACME (102.50 -> 104.50 USD)",
+        "share_class_diffs": {
+          "CLS-A-USD": {
+            "nav_per_share_delta": "1.000000",
+            "net_assets_delta_base": "15000.00",
+            "prior_nav_per_share": "103.400000",
+            "prior_net_assets_base": "1602700.00",
+            "restated_nav_per_share": "104.400000",
+            "restated_net_assets_base": "1617700.00"
+          },
+          "CLS-B-EUR": {
+            "nav_per_share_delta": "1.000000",
+            "net_assets_delta_base": "4750.00",
+            "prior_nav_per_share": "103.300000",
+            "prior_net_assets_base": "490675.00",
+            "restated_nav_per_share": "104.300000",
+            "restated_net_assets_base": "495425.00"
+          }
+        },
+        "total_liabilities_delta": "250.00"
+      },
+      "entry_id": "AUD-SNAP-FUND-ALPHA-01-2026-03-31-v2-bb0a0dd13ec0-0002-RESTATEMENT_DIFF_RECORDED",
+      "event_type": "RESTATEMENT_DIFF_RECORDED",
+      "payload_hash": "5b662c8f5e0ddaf83cb5b4ed5c2de21776aa575e5d2818c8574b1a23857af8b4",
+      "snapshot_id": "SNAP-FUND-ALPHA-01-2026-03-31-v2-bb0a0dd13ec0",
+      "timestamp": "2026-04-01T09:30:00Z"
+    },
+    {
+      "actor": "head_of_valuation",
+      "details": {
+        "output_hash": "be757fb23389d979c289b900e4aa4876bb7219caf939597f7f85ba8ddcf0701e"
+      },
+      "entry_id": "AUD-SNAP-FUND-ALPHA-01-2026-03-31-v2-bb0a0dd13ec0-0003-SNAPSHOT_APPROVED",
+      "event_type": "SNAPSHOT_APPROVED",
+      "payload_hash": "c5126cc61a9ba080f7d20058b0daf0e078cd4a93378d57b99b992ed31feccecc",
+      "snapshot_id": "SNAP-FUND-ALPHA-01-2026-03-31-v2-bb0a0dd13ec0",
+      "timestamp": "2026-04-01T09:30:00Z"
+    },
+    {
+      "actor": "nav_controller",
+      "details": {
+        "output_hash": "be757fb23389d979c289b900e4aa4876bb7219caf939597f7f85ba8ddcf0701e"
+      },
+      "entry_id": "AUD-SNAP-FUND-ALPHA-01-2026-03-31-v2-bb0a0dd13ec0-0004-SNAPSHOT_FROZEN",
+      "event_type": "SNAPSHOT_FROZEN",
+      "payload_hash": "790f7ec53c8f4da632f1bcf1c399e2ca348acc22f8fae9e5666675f1d204430a",
+      "snapshot_id": "SNAP-FUND-ALPHA-01-2026-03-31-v2-bb0a0dd13ec0",
+      "timestamp": "2026-04-01T09:30:00Z"
+    }
+  ],
+  "audit_journal_count": 7,
+  "oracle_comparison": {
+    "v1_gross_assets_matches_oracle": true,
+    "v1_nav_identity_exact": true,
+    "v1_net_assets_matches_oracle": true,
+    "v1_total_liabilities_matches_oracle": true,
+    "v2_gross_assets_matches_oracle": true,
+    "v2_links_to_v1": true,
+    "v2_nav_identity_exact": true,
+    "v2_net_assets_matches_oracle": true,
+    "v2_total_liabilities_matches_oracle": true
+  },
+  "report_type": "reproducible_demo_run",
+  "restatement_diff": {
+    "gross_assets_delta": "20000.00",
+    "net_assets_delta": "19750.00",
+    "prior_snapshot_id": "SNAP-FUND-ALPHA-01-2026-03-31-v1-8bcf72eb1caa",
+    "prior_version": 1,
+    "restated_snapshot_id": "SNAP-FUND-ALPHA-01-2026-03-31-v2-bb0a0dd13ec0",
+    "restated_version": 2,
+    "restatement_reason": "Late pricing vendor correction for EQ-US-ACME (102.50 -> 104.50 USD)",
+    "share_class_diffs": {
+      "CLS-A-USD": {
+        "nav_per_share_delta": "1.000000",
+        "net_assets_delta_base": "15000.00",
+        "prior_nav_per_share": "103.400000",
+        "prior_net_assets_base": "1602700.00",
+        "restated_nav_per_share": "104.400000",
+        "restated_net_assets_base": "1617700.00"
+      },
+      "CLS-B-EUR": {
+        "nav_per_share_delta": "1.000000",
+        "net_assets_delta_base": "4750.00",
+        "prior_nav_per_share": "103.300000",
+        "prior_net_assets_base": "490675.00",
+        "restated_nav_per_share": "104.300000",
+        "restated_net_assets_base": "495425.00"
+      }
+    },
+    "total_liabilities_delta": "250.00"
+  },
+  "runtime_metadata": {
+    "config_version": "1.0.0",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "python_version": "3.9.6",
+    "seed": 42
+  },
+  "v1_snapshot": {
+    "base_currency": "USD",
+    "calculated_at": "2026-03-31T17:00:00Z",
+    "config_version": "1.0.0",
+    "diagnostics": {
+      "flows_cancelled": 0,
+      "flows_deferred_post_cutoff": 1,
+      "flows_pending": 0,
+      "flows_processed": 2,
+      "positions_valued": 5,
+      "stale_price_overrides_used": 0,
+      "stale_prices_detected": 0,
+      "zero_share_classes": 0
+    },
+    "fund_id": "FUND-ALPHA-01",
+    "gross_assets": "2141700.00",
+    "input_hash": "8bcf72eb1caaf73dbcf24e945d48ff6b06996c68602d5e4c497e85ea0245812e",
+    "net_assets": "2093375.00",
+    "net_capital_flows": "25875.00",
+    "output_hash": "f97809849a3f7eb86508e1bb4bf884621234386dbb73a64e7c75edc8dc895681",
+    "position_valuations": [
+      {
+        "base_market_value": "1025000.00",
+        "fx_rate": "1",
+        "instrument_id": "EQ-US-ACME",
+        "instrument_type": "equity",
+        "is_stale": false,
+        "local_market_value": "1025000.00",
+        "position_id": "POS-01",
+        "price_age_days": 0,
+        "price_currency": "USD",
+        "price_date": "2026-03-31",
+        "quantity": "10000",
+        "stale_override_used": false,
+        "unit_price": "102.50"
+      },
+      {
+        "base_market_value": "400000.00",
+        "fx_rate": "1.2500",
+        "instrument_id": "EQ-EU-BETA",
+        "instrument_type": "equity",
+        "is_stale": false,
+        "local_market_value": "320000.00",
+        "position_id": "POS-02",
+        "price_age_days": 0,
+        "price_currency": "EUR",
+        "price_date": "2026-03-31",
+        "quantity": "4000",
+        "stale_override_used": false,
+        "unit_price": "80.00"
+      },
+      {
+        "base_market_value": "496000.00",
+        "fx_rate": "1",
+        "instrument_id": "BOND-US-UST5Y",
+        "instrument_type": "bond",
+        "is_stale": false,
+        "local_market_value": "496000.00",
+        "position_id": "POS-03",
+        "price_age_days": 0,
+        "price_currency": "USD",
+        "price_date": "2026-03-31",
+        "quantity": "5000",
+        "stale_override_used": false,
+        "unit_price": "99.20"
+      },
+      {
+        "base_market_value": "100000.00",
+        "fx_rate": "1",
+        "instrument_id": "CASH-USD",
+        "instrument_type": "cash",
+        "is_stale": false,
+        "local_market_value": "100000.00",
+        "position_id": "POS-04",
+        "price_age_days": 0,
+        "price_currency": "USD",
+        "price_date": "2026-03-31",
+        "quantity": "100000.00",
+        "stale_override_used": false,
+        "unit_price": "1"
+      },
+      {
+        "base_market_value": "65000.00",
+        "fx_rate": "0.0065",
+        "instrument_id": "CASH-JPY",
+        "instrument_type": "cash",
+        "is_stale": false,
+        "local_market_value": "10000000",
+        "position_id": "POS-05",
+        "price_age_days": 0,
+        "price_currency": "JPY",
+        "price_date": "2026-03-31",
+        "quantity": "10000000",
+        "stale_override_used": false,
+        "unit_price": "1"
+      }
+    ],
+    "pre_flow_gross_assets": "2090000.00",
+    "pre_flow_liabilities": "22500.00",
+    "pre_flow_net_assets": "2067500.00",
+    "prior_snapshot_id": null,
+    "reconciliation": {
+      "breaks": [
+        {
+          "account_type": "accrued_expenses",
+          "currency": "EUR",
+          "difference": "0.00",
+          "expected_amount": "800.00",
+          "ledger_amount": "800.00",
+          "passed": true,
+          "tolerance": "0.01"
+        },
+        {
+          "account_type": "accrued_expenses",
+          "currency": "USD",
+          "difference": "0.00",
+          "expected_amount": "6500.00",
+          "ledger_amount": "6500.00",
+          "passed": true,
+          "tolerance": "0.01"
+        },
+        {
+          "account_type": "capital_subscriptions",
+          "currency": "USD",
+          "difference": "0.00",
+          "expected_amount": "51700.00",
+          "ledger_amount": "51700.00",
+          "passed": true,
+          "tolerance": "0.01"
+        },
+        {
+          "account_type": "cash",
+          "currency": "JPY",
+          "difference": "0",
+          "expected_amount": "10000000",
+          "ledger_amount": "10000000",
+          "passed": true,
+          "tolerance": "0.01"
+        },
+        {
+          "account_type": "cash",
+          "currency": "USD",
+          "difference": "0.00",
+          "expected_amount": "100000.00",
+          "ledger_amount": "100000.00",
+          "passed": true,
+          "tolerance": "0.01"
+        },
+        {
+          "account_type": "payables",
+          "currency": "USD",
+          "difference": "0.00",
+          "expected_amount": "15000.00",
+          "ledger_amount": "15000.00",
+          "passed": true,
+          "tolerance": "0.01"
+        },
+        {
+          "account_type": "receivables",
+          "currency": "USD",
+          "difference": "0.00",
+          "expected_amount": "4000.00",
+          "ledger_amount": "4000.00",
+          "passed": true,
+          "tolerance": "0.01"
+        },
+        {
+          "account_type": "securities_cost",
+          "currency": "EUR",
+          "difference": "0.00",
+          "expected_amount": "300000.00",
+          "ledger_amount": "300000.00",
+          "passed": true,
+          "tolerance": "0.01"
+        },
+        {
+          "account_type": "securities_cost",
+          "currency": "USD",
+          "difference": "0.00",
+          "expected_amount": "1445000.00",
+          "ledger_amount": "1445000.00",
+          "passed": true,
+          "tolerance": "0.01"
+        }
+      ],
+      "passed_checks": 9,
+      "reconciled": true,
+      "total_checks": 9
+    },
+    "restatement_reason": null,
+    "share_class_navs": [
+      {
+        "allocated_gross_assets_base": "1567500.00",
+        "allocated_liabilities_base": "15000.00",
+        "allocation_weight": "0.75000000",
+        "class_specific_asset_accruals_base": "0.00",
+        "class_specific_liabilities_base": "1500.00",
+        "closing_net_assets_base": "1602700.00",
+        "closing_net_assets_class_ccy": "1602700.00",
+        "closing_shares": "15500.000000",
+        "currency": "USD",
+        "dealing_nav_per_share": "103.400000",
+        "fx_rate_to_class_ccy": "1",
+        "nav_per_share": "103.400000",
+        "opening_shares": "15000.000000",
+        "pre_flow_net_assets_base": "1551000.00",
+        "redemption_shares": "0.000000",
+        "redemptions_amount_base": "0.00",
+        "share_class_id": "CLS-A-USD",
+        "subscription_shares": "500.000000",
+        "subscriptions_amount_base": "51700.00",
+        "zero_shares_flag": false
+      },
+      {
+        "allocated_gross_assets_base": "522500.00",
+        "allocated_liabilities_base": "5000.00",
+        "allocation_weight": "0.25000000",
+        "class_specific_asset_accruals_base": "0.00",
+        "class_specific_liabilities_base": "1000.00",
+        "closing_net_assets_base": "490675.00",
+        "closing_net_assets_class_ccy": "392540.00",
+        "closing_shares": "3800.000000",
+        "currency": "EUR",
+        "dealing_nav_per_share": "103.300000",
+        "fx_rate_to_class_ccy": "0.80000000",
+        "nav_per_share": "103.300000",
+        "opening_shares": "4000.000000",
+        "pre_flow_net_assets_base": "516500.00",
+        "redemption_shares": "200.000000",
+        "redemptions_amount_base": "25825.00",
+        "share_class_id": "CLS-B-EUR",
+        "subscription_shares": "0.000000",
+        "subscriptions_amount_base": "0.00",
+        "zero_shares_flag": false
+      }
+    ],
+    "snapshot_id": "SNAP-FUND-ALPHA-01-2026-03-31-v1-8bcf72eb1caa",
+    "status": "frozen",
+    "total_liabilities": "48325.00",
+    "total_redemptions": "25825.00",
+    "total_subscriptions": "51700.00",
+    "valuation_date": "2026-03-31",
+    "version": 1,
+    "warnings": [
+      "Capital flow 'FLOW-03' submitted after cutoff (2026-03-31T16:15:00+00:00 > 2026-03-31T16:00:00+00:00) deferred to next dealing date."
+    ]
+  },
+  "v2_restated_snapshot": {
+    "base_currency": "USD",
+    "calculated_at": "2026-04-01T09:30:00Z",
+    "config_version": "1.0.0",
+    "diagnostics": {
+      "flows_cancelled": 0,
+      "flows_deferred_post_cutoff": 1,
+      "flows_pending": 0,
+      "flows_processed": 2,
+      "positions_valued": 5,
+      "stale_price_overrides_used": 0,
+      "stale_prices_detected": 0,
+      "zero_share_classes": 0
+    },
+    "fund_id": "FUND-ALPHA-01",
+    "gross_assets": "2161700.00",
+    "input_hash": "bb0a0dd13ec0a17da655f19775403ab0fc68b4be6e1d23697c8b419c6cfd37d5",
+    "net_assets": "2113125.00",
+    "net_capital_flows": "25625.00",
+    "output_hash": "be757fb23389d979c289b900e4aa4876bb7219caf939597f7f85ba8ddcf0701e",
+    "position_valuations": [
+      {
+        "base_market_value": "1045000.00",
+        "fx_rate": "1",
+        "instrument_id": "EQ-US-ACME",
+        "instrument_type": "equity",
+        "is_stale": false,
+        "local_market_value": "1045000.00",
+        "position_id": "POS-01",
+        "price_age_days": 0,
+        "price_currency": "USD",
+        "price_date": "2026-03-31",
+        "quantity": "10000",
+        "stale_override_used": false,
+        "unit_price": "104.50"
+      },
+      {
+        "base_market_value": "400000.00",
+        "fx_rate": "1.2500",
+        "instrument_id": "EQ-EU-BETA",
+        "instrument_type": "equity",
+        "is_stale": false,
+        "local_market_value": "320000.00",
+        "position_id": "POS-02",
+        "price_age_days": 0,
+        "price_currency": "EUR",
+        "price_date": "2026-03-31",
+        "quantity": "4000",
+        "stale_override_used": false,
+        "unit_price": "80.00"
+      },
+      {
+        "base_market_value": "496000.00",
+        "fx_rate": "1",
+        "instrument_id": "BOND-US-UST5Y",
+        "instrument_type": "bond",
+        "is_stale": false,
+        "local_market_value": "496000.00",
+        "position_id": "POS-03",
+        "price_age_days": 0,
+        "price_currency": "USD",
+        "price_date": "2026-03-31",
+        "quantity": "5000",
+        "stale_override_used": false,
+        "unit_price": "99.20"
+      },
+      {
+        "base_market_value": "100000.00",
+        "fx_rate": "1",
+        "instrument_id": "CASH-USD",
+        "instrument_type": "cash",
+        "is_stale": false,
+        "local_market_value": "100000.00",
+        "position_id": "POS-04",
+        "price_age_days": 0,
+        "price_currency": "USD",
+        "price_date": "2026-03-31",
+        "quantity": "100000.00",
+        "stale_override_used": false,
+        "unit_price": "1"
+      },
+      {
+        "base_market_value": "65000.00",
+        "fx_rate": "0.0065",
+        "instrument_id": "CASH-JPY",
+        "instrument_type": "cash",
+        "is_stale": false,
+        "local_market_value": "10000000",
+        "position_id": "POS-05",
+        "price_age_days": 0,
+        "price_currency": "JPY",
+        "price_date": "2026-03-31",
+        "quantity": "10000000",
+        "stale_override_used": false,
+        "unit_price": "1"
+      }
+    ],
+    "pre_flow_gross_assets": "2110000.00",
+    "pre_flow_liabilities": "22500.00",
+    "pre_flow_net_assets": "2087500.00",
+    "prior_snapshot_id": "SNAP-FUND-ALPHA-01-2026-03-31-v1-8bcf72eb1caa",
+    "reconciliation": {
+      "breaks": [
+        {
+          "account_type": "accrued_expenses",
+          "currency": "EUR",
+          "difference": "0.00",
+          "expected_amount": "800.00",
+          "ledger_amount": "800.00",
+          "passed": true,
+          "tolerance": "0.01"
+        },
+        {
+          "account_type": "accrued_expenses",
+          "currency": "USD",
+          "difference": "0.00",
+          "expected_amount": "6500.00",
+          "ledger_amount": "6500.00",
+          "passed": true,
+          "tolerance": "0.01"
+        },
+        {
+          "account_type": "capital_subscriptions",
+          "currency": "USD",
+          "difference": "0.00",
+          "expected_amount": "51700.00",
+          "ledger_amount": "51700.00",
+          "passed": true,
+          "tolerance": "0.01"
+        },
+        {
+          "account_type": "cash",
+          "currency": "JPY",
+          "difference": "0",
+          "expected_amount": "10000000",
+          "ledger_amount": "10000000",
+          "passed": true,
+          "tolerance": "0.01"
+        },
+        {
+          "account_type": "cash",
+          "currency": "USD",
+          "difference": "0.00",
+          "expected_amount": "100000.00",
+          "ledger_amount": "100000.00",
+          "passed": true,
+          "tolerance": "0.01"
+        },
+        {
+          "account_type": "payables",
+          "currency": "USD",
+          "difference": "0.00",
+          "expected_amount": "15000.00",
+          "ledger_amount": "15000.00",
+          "passed": true,
+          "tolerance": "0.01"
+        },
+        {
+          "account_type": "receivables",
+          "currency": "USD",
+          "difference": "0.00",
+          "expected_amount": "4000.00",
+          "ledger_amount": "4000.00",
+          "passed": true,
+          "tolerance": "0.01"
+        },
+        {
+          "account_type": "securities_cost",
+          "currency": "EUR",
+          "difference": "0.00",
+          "expected_amount": "300000.00",
+          "ledger_amount": "300000.00",
+          "passed": true,
+          "tolerance": "0.01"
+        },
+        {
+          "account_type": "securities_cost",
+          "currency": "USD",
+          "difference": "0.00",
+          "expected_amount": "1445000.00",
+          "ledger_amount": "1445000.00",
+          "passed": true,
+          "tolerance": "0.01"
+        }
+      ],
+      "passed_checks": 9,
+      "reconciled": true,
+      "total_checks": 9
+    },
+    "restatement_reason": "Late pricing vendor correction for EQ-US-ACME (102.50 -> 104.50 USD)",
+    "share_class_navs": [
+      {
+        "allocated_gross_assets_base": "1582500.00",
+        "allocated_liabilities_base": "15000.00",
+        "allocation_weight": "0.75000000",
+        "class_specific_asset_accruals_base": "0.00",
+        "class_specific_liabilities_base": "1500.00",
+        "closing_net_assets_base": "1617700.00",
+        "closing_net_assets_class_ccy": "1617700.00",
+        "closing_shares": "15495.210728",
+        "currency": "USD",
+        "dealing_nav_per_share": "104.400000",
+        "fx_rate_to_class_ccy": "1",
+        "nav_per_share": "104.400000",
+        "opening_shares": "15000.000000",
+        "pre_flow_net_assets_base": "1566000.00",
+        "redemption_shares": "0.000000",
+        "redemptions_amount_base": "0.00",
+        "share_class_id": "CLS-A-USD",
+        "subscription_shares": "495.210728",
+        "subscriptions_amount_base": "51700.00",
+        "zero_shares_flag": false
+      },
+      {
+        "allocated_gross_assets_base": "527500.00",
+        "allocated_liabilities_base": "5000.00",
+        "allocation_weight": "0.25000000",
+        "class_specific_asset_accruals_base": "0.00",
+        "class_specific_liabilities_base": "1000.00",
+        "closing_net_assets_base": "495425.00",
+        "closing_net_assets_class_ccy": "396340.00",
+        "closing_shares": "3800.000000",
+        "currency": "EUR",
+        "dealing_nav_per_share": "104.300000",
+        "fx_rate_to_class_ccy": "0.80000000",
+        "nav_per_share": "104.300000",
+        "opening_shares": "4000.000000",
+        "pre_flow_net_assets_base": "521500.00",
+        "redemption_shares": "200.000000",
+        "redemptions_amount_base": "26075.00",
+        "share_class_id": "CLS-B-EUR",
+        "subscription_shares": "0.000000",
+        "subscriptions_amount_base": "0.00",
+        "zero_shares_flag": false
+      }
+    ],
+    "snapshot_id": "SNAP-FUND-ALPHA-01-2026-03-31-v2-bb0a0dd13ec0",
+    "status": "frozen",
+    "total_liabilities": "48575.00",
+    "total_redemptions": "26075.00",
+    "total_subscriptions": "51700.00",
+    "valuation_date": "2026-03-31",
+    "version": 2,
+    "warnings": [
+      "Capital flow 'FLOW-03' submitted after cutoff (2026-03-31T16:15:00+00:00 > 2026-03-31T16:00:00+00:00) deferred to next dealing date."
+    ]
+  },
+  "verification": {
+    "v1": {
+      "input_hash": "8bcf72eb1caaf73dbcf24e945d48ff6b06996c68602d5e4c497e85ea0245812e",
+      "lineage_depth": 1,
+      "lineage_ids": [
+        "SNAP-FUND-ALPHA-01-2026-03-31-v1-8bcf72eb1caa"
+      ],
+      "output_hash": "f97809849a3f7eb86508e1bb4bf884621234386dbb73a64e7c75edc8dc895681",
+      "snapshot_id": "SNAP-FUND-ALPHA-01-2026-03-31-v1-8bcf72eb1caa",
+      "status": "frozen",
+      "verified": true
+    },
+    "v2": {
+      "input_hash": "bb0a0dd13ec0a17da655f19775403ab0fc68b4be6e1d23697c8b419c6cfd37d5",
+      "lineage_depth": 2,
+      "lineage_ids": [
+        "SNAP-FUND-ALPHA-01-2026-03-31-v1-8bcf72eb1caa",
+        "SNAP-FUND-ALPHA-01-2026-03-31-v2-bb0a0dd13ec0"
+      ],
+      "output_hash": "be757fb23389d979c289b900e4aa4876bb7219caf939597f7f85ba8ddcf0701e",
+      "snapshot_id": "SNAP-FUND-ALPHA-01-2026-03-31-v2-bb0a0dd13ec0",
+      "status": "frozen",
+      "verified": true
+    }
+  }
+}

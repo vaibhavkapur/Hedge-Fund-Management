@@ -1,0 +1,121 @@
+{
+  "report_schema_version": "1.0.0",
+  "reproducibility": {
+    "deterministic_replay_match": true,
+    "run1_baseline_hash": "04de11e3deb06dec4387e08e4b7e3237dfc2ade912c75b8794f48a78870bd189",
+    "run1_post_restatement_hash": "f7e919f61a950bb5ac1f1fc2f10431ee504c9d867ecbe5078e1427afde0cb24c",
+    "run2_baseline_hash": "04de11e3deb06dec4387e08e4b7e3237dfc2ade912c75b8794f48a78870bd189",
+    "run2_post_restatement_hash": "f7e919f61a950bb5ac1f1fc2f10431ee504c9d867ecbe5078e1427afde0cb24c"
+  },
+  "runtime": {
+    "config_hash": "7b887373847783aac59a53ff71505a07bf279a3088794799c4e201d647f4dc70",
+    "deterministic_seed": 20260331,
+    "optional_dependencies": {
+      "fastapi_installed": false,
+      "psycopg_installed": false,
+      "pydantic_installed": false,
+      "pytest_installed": false
+    },
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "python_version": "3.9.6",
+    "sqlite_version": "3.51.0"
+  },
+  "test_summary": {
+    "all_passed": true,
+    "elapsed_ms": 95.85,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests_run": 19
+  },
+  "tests": [
+    {
+      "outcome": "PASS",
+      "test": "test_boundary_and_failure.TestBoundaryAndFailureBehavior.test_audit_chain_tamper_detection_and_deterministic_replay"
+    },
+    {
+      "outcome": "PASS",
+      "test": "test_boundary_and_failure.TestBoundaryAndFailureBehavior.test_nav_restatement_posts_immutable_adjustment_and_enforces_separation"
+    },
+    {
+      "outcome": "PASS",
+      "test": "test_boundary_and_failure.TestBoundaryAndFailureBehavior.test_pre_settlement_cancellation_works"
+    },
+    {
+      "outcome": "PASS",
+      "test": "test_boundary_and_failure.TestBoundaryAndFailureBehavior.test_reviewer_separation_and_unapproved_request_cannot_settle"
+    },
+    {
+      "outcome": "PASS",
+      "test": "test_contracts_and_config.TestContractsAndConfig.test_float_amount_and_naive_timestamp_rejected"
+    },
+    {
+      "outcome": "PASS",
+      "test": "test_contracts_and_config.TestContractsAndConfig.test_invalid_config_rejects_missing_keys_and_float_decimals"
+    },
+    {
+      "outcome": "PASS",
+      "test": "test_contracts_and_config.TestContractsAndConfig.test_invalid_inputs_from_fixture_fail_explicitly"
+    },
+    {
+      "outcome": "PASS",
+      "test": "test_contracts_and_config.TestContractsAndConfig.test_missing_config_raises_configuration_error"
+    },
+    {
+      "outcome": "PASS",
+      "test": "test_contracts_and_config.TestContractsAndConfig.test_postgres_ddl_exists_and_bad_dsn_rejected"
+    },
+    {
+      "outcome": "PASS",
+      "test": "test_domain_scenarios.TestDomainScenarios.test_cash_amount_mismatch_and_duplicate_confirmation"
+    },
+    {
+      "outcome": "PASS",
+      "test": "test_domain_scenarios.TestDomainScenarios.test_delayed_cash_opens_exception_blocks_settlement_until_reviewed"
+    },
+    {
+      "outcome": "PASS",
+      "test": "test_domain_scenarios.TestDomainScenarios.test_duplicate_request_is_blocked_and_audited"
+    },
+    {
+      "outcome": "PASS",
+      "test": "test_integration_scenarios.TestIntegrationScenarios.test_cutoff_violation_and_insufficient_shares"
+    },
+    {
+      "outcome": "PASS",
+      "test": "test_integration_scenarios.TestIntegrationScenarios.test_end_to_end_reconciliation_and_sqlite_restart_recovery"
+    },
+    {
+      "outcome": "PASS",
+      "test": "test_integration_scenarios.TestIntegrationScenarios.test_http_api_router_end_to_end"
+    },
+    {
+      "outcome": "PASS",
+      "test": "test_onboarding.TestOnboardingStateMachine.test_sanctioned_investor_is_kyc_rejected_and_blocked_from_subscribing"
+    },
+    {
+      "outcome": "PASS",
+      "test": "test_onboarding.TestOnboardingStateMachine.test_valid_investor_lifecycle_and_checks"
+    },
+    {
+      "outcome": "PASS",
+      "test": "test_pricing_and_oracle.TestPricingAgainstReferenceOracle.test_all_reference_oracle_cases_match_exact_decimal"
+    },
+    {
+      "outcome": "PASS",
+      "test": "test_pricing_and_oracle.TestPricingAgainstReferenceOracle.test_pricing_rejects_superseded_nav_and_ambiguous_redemption"
+    }
+  ],
+  "untested_capabilities": [
+    {
+      "capability": "Live PostgreSQL persistence via PostgresRepository",
+      "reason": "psycopg and a running PostgreSQL server are not installed in this offline environment; SQLiteRepository executed end-to-end and PostgreSQL DDL verified structurally.",
+      "status": "NOT_RUN"
+    },
+    {
+      "capability": "Live FastAPI/Uvicorn ASGI runtime",
+      "reason": "fastapi/uvicorn packages are not installed in this offline environment; identical route semantics were executed and verified via isrp.api.http_server.dispatch_http_request.",
+      "status": "NOT_RUN"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0.0",
+  "policies": [
+    {
+      "policy_id": "POL-PB-ALPHA-2026",
+      "version": 1,
+      "broker_id": "PB-ALPHA",
+      "base_currency": "USD",
+      "effective_date": "2026-01-01",
+      "default_day_count": "ACT_360",
+      "minimum_transfer_amount": "50000.00",
+      "rounding_increment": "1000.00",
+      "reconciliation_tolerance": "0.01",
+      "rules": [
+        {
+          "asset_class": "CASH",
+          "rating_tier": "ANY",
+          "maturity_bucket": "ANY",
+          "eligible": true,
+          "haircut_pct": "0.00",
+          "concentration_limit_pct": null,
+          "currency_mismatch_addon_pct": "0.08"
+        },
+        {
+          "asset_class": "US_TREASURY",
+          "rating_tier": "AAA",
+          "maturity_bucket": "0_5Y",
+          "eligible": true,
+          "haircut_pct": "0.02",
+          "concentration_limit_pct": "1.00",
+          "currency_mismatch_addon_pct": "0.08"
+        },
+        {
+          "asset_class": "US_TREASURY",
+          "rating_tier": "AAA",
+          "maturity_bucket": "5_10Y",
+          "eligible": true,
+          "haircut_pct": "0.04",
+          "concentration_limit_pct": "1.00",
+          "currency_mismatch_addon_pct": "0.08"
+        },
+        {
+          "asset_class": "SOVEREIGN_BOND",
+          "rating_tier": "AA",
+          "maturity_bucket": "0_5Y",
+          "eligible": true,
+          "haircut_pct": "0.03",
+          "concentration_limit_pct": "0.60",
+          "currency_mismatch_addon_pct": "0.08"
+        },
+        {
+          "asset_class": "IG_CORPORATE_BOND",
+          "rating_tier": "A",
+          "maturity_bucket": "0_5Y",
+          "eligible": true,
+          "haircut_pct": "0.08",
+          "concentration_limit_pct": "0.40",
+          "currency_mismatch_addon_pct": "0.08"
+        },
+        {
+          "asset_class": "EQUITY_LARGE_CAP",
+          "rating_tier": "UNRATED",
+          "maturity_bucket": "PERPETUAL",
+          "eligible": true,
+          "haircut_pct": "0.15",
+          "concentration_limit_pct": "0.50",
+          "currency_mismatch_addon_pct": "0.08"
+        },
+        {
+          "asset_class": "HY_CORPORATE_BOND",
+          "rating_tier": "BB",
+          "maturity_bucket": "ANY",
+          "eligible": false,
+          "haircut_pct": "1.00",
+          "concentration_limit_pct": "0.00",
+          "currency_mismatch_addon_pct": "0.00"
+        },
+        {
+          "asset_class": "EQUITY_SMALL_CAP",
+          "rating_tier": "UNRATED",
+          "maturity_bucket": "PERPETUAL",
+          "eligible": false,
+          "haircut_pct": "1.00",
+          "concentration_limit_pct": "0.00",
+          "currency_mismatch_addon_pct": "0.00"
+        }
+      ]
+    },
+    {
+      "policy_id": "POL-PB-BETA-2026",
+      "version": 1,
+      "broker_id": "PB-BETA",
+      "base_currency": "EUR",
+      "effective_date": "2026-01-01",
+      "default_day_count": "ACT_360",
+      "minimum_transfer_amount": "25000.00",
+      "rounding_increment": "1000.00",
+      "reconciliation_tolerance": "0.01",
+      "rules": [
+        {
+          "asset_class": "CASH",
+          "rating_tier": "ANY",
+          "maturity_bucket": "ANY",
+          "eligible": true,
+          "haircut_pct": "0.00",
+          "concentration_limit_pct": null,
+          "currency_mismatch_addon_pct": "0.08"
+        },
+        {
+          "asset_class": "SOVEREIGN_BOND",
+          "rating_tier": "AA",
+          "maturity_bucket": "0_5Y",
+          "eligible": true,
+          "haircut_pct": "0.025",
+          "concentration_limit_pct": "1.00",
+          "currency_mismatch_addon_pct": "0.08"
+        },
+        {
+          "asset_class": "US_TREASURY",
+          "rating_tier": "AAA",
+          "maturity_bucket": "0_5Y",
+          "eligible": true,
+          "haircut_pct": "0.02",
+          "concentration_limit_pct": "1.00",
+          "currency_mismatch_addon_pct": "0.08"
+        },
+        {
+          "asset_class": "EQUITY_LARGE_CAP",
+          "rating_tier": "UNRATED",
+          "maturity_bucket": "PERPETUAL",
+          "eligible": true,
+          "haircut_pct": "0.18",
+          "concentration_limit_pct": "0.45",
+          "currency_mismatch_addon_pct": "0.08"
+        },
+        {
+          "asset_class": "HY_CORPORATE_BOND",
+          "rating_tier": "BB",
+          "maturity_bucket": "ANY",
+          "eligible": false,
+          "haircut_pct": "1.00",
+          "concentration_limit_pct": "0.00",
+          "currency_mismatch_addon_pct": "0.00"
+        }
+      ]
+    }
+  ],
+  "currency_minor_units": {
+    "USD": 2,
+    "EUR": 2,
+    "GBP": 2,
+    "CHF": 2,
+    "JPY": 0
+  },
+  "rounding_mode": "ROUND_HALF_EVEN"
+}

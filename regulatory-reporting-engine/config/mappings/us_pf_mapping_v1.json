@@ -1,0 +1,111 @@
+{
+  "mapping_id": "US_SEC_PF_ILLUSTRATIVE_MAP",
+  "mapping_version": "1.0.0",
+  "target_profile_id": "US_SEC_PF_ILLUSTRATIVE",
+  "target_schema_version": "1.0.0",
+  "effective_date": "2025-01-01",
+  "rounding_mode": "ROUND_HALF_UP",
+  "rules": [
+    {
+      "target_field": "fund_id",
+      "source_type": "metadata",
+      "source_path": "fund.fund_id"
+    },
+    {
+      "target_field": "fund_lei",
+      "source_type": "metadata",
+      "source_path": "fund.fund_lei"
+    },
+    {
+      "target_field": "manager_lei",
+      "source_type": "metadata",
+      "source_path": "fund.manager_lei"
+    },
+    {
+      "target_field": "reporting_period_start",
+      "source_type": "metadata",
+      "source_path": "reporting_period.start_date"
+    },
+    {
+      "target_field": "reporting_period_end",
+      "source_type": "metadata",
+      "source_path": "reporting_period.end_date"
+    },
+    {
+      "target_field": "reporting_currency",
+      "source_type": "metadata",
+      "source_path": "fund.base_currency"
+    },
+    {
+      "target_field": "nav_total_usd",
+      "source_type": "nav",
+      "source_path": "nav.net_asset_value",
+      "scale": 2
+    },
+    {
+      "target_field": "gross_asset_value_usd",
+      "source_type": "nav",
+      "source_path": "nav.gross_asset_value",
+      "scale": 2
+    },
+    {
+      "target_field": "total_liabilities_usd",
+      "source_type": "nav",
+      "source_path": "nav.total_liabilities",
+      "scale": 2
+    },
+    {
+      "target_field": "long_market_value_usd",
+      "source_type": "positions_agg",
+      "aggregation": "sum",
+      "source_field": "market_value_base",
+      "filter": {"direction": "LONG"},
+      "scale": 2
+    },
+    {
+      "target_field": "short_market_value_usd",
+      "source_type": "positions_agg",
+      "aggregation": "abs_sum",
+      "source_field": "market_value_base",
+      "filter": {"direction": "SHORT"},
+      "scale": 2
+    },
+    {
+      "target_field": "gross_exposure_usd",
+      "source_type": "exposures_agg",
+      "aggregation": "sum",
+      "source_field": "gross_exposure_base",
+      "scale": 2
+    },
+    {
+      "target_field": "net_exposure_usd",
+      "source_type": "exposures_agg",
+      "aggregation": "sum",
+      "source_field": "net_exposure_base",
+      "scale": 2
+    },
+    {
+      "target_field": "gross_leverage_ratio",
+      "source_type": "derived",
+      "formula": "ratio",
+      "numerator_field": "gross_exposure_usd",
+      "denominator_field": "nav_total_usd",
+      "zero_denominator_value": "0.000000",
+      "scale": 6
+    },
+    {
+      "target_field": "position_count",
+      "source_type": "positions_agg",
+      "aggregation": "count",
+      "source_field": "position_id"
+    },
+    {
+      "target_field": "top_counterparty_exposure_usd",
+      "source_type": "exposures_agg",
+      "aggregation": "max_by_group",
+      "group_by": "counterparty_lei",
+      "source_field": "gross_exposure_base",
+      "scale": 2
+    }
+  ]
+}

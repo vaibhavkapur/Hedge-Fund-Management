@@ -1,0 +1,35 @@
+name: Integrated Hedge Fund Management Platform CI
+
+on:
+  push:
+    paths:
+      - "integrated-hedge-fund-management-platform/**"
+      - ".github/workflows/integrated-hedge-fund-management-platform.yml"
+  pull_request:
+    paths:
+      - "integrated-hedge-fund-management-platform/**"
+      - ".github/workflows/integrated-hedge-fund-management-platform.yml"
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: integrated-hedge-fund-management-platform
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install uv
+        run: python3 -m pip install --upgrade pip uv
+
+      - name: Run setup and validation suite
+        run: |
+          ./scripts/setup.sh
+          ./scripts/validate.sh

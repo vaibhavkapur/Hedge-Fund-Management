@@ -1,0 +1,303 @@
+{
+  "suite_id": "INDEPENDENT-WORKED-EXAMPLES-V1",
+  "provenance": "Independently derived textbook-style worked examples verified manually with exact rational arithmetic.",
+  "examples": [
+    {
+      "scenario_id": "WE-01-ENDING-NAV-MONTHLY",
+      "description": "1.5% management fee on ending pre-fee NAV (MONTHLY_1_12) and 15% performance fee, monthly crystallization.",
+      "agreement": {
+        "agreement_id": "AGR-WE-01",
+        "version": 1,
+        "share_class": "WE_CLASS_1",
+        "currency": "USD",
+        "effective_date": "2024-12-31",
+        "management_fee_rate": "0.015",
+        "management_fee_basis": "ENDING_PRE_FEE_NAV",
+        "day_count": "MONTHLY_1_12",
+        "performance_fee_rate": "0.15",
+        "hurdle_type": "NONE",
+        "hurdle_rate": "0",
+        "crystallization_frequency": "MONTHLY",
+        "hwm_reset_policy": "ON_CRYSTALLIZATION_GAIN",
+        "management_fee_deducted_before_perf": true
+      },
+      "initial_lots": [
+        {
+          "lot_id": "WE-LOT-1",
+          "investor_id": "WE-INV-1",
+          "share_class": "WE_CLASS_1",
+          "series_id": "S1",
+          "subscription_date": "2024-12-31",
+          "units": "20000.000000",
+          "opening_nav_per_unit": "100.000000",
+          "high_water_mark": "100.000000",
+          "hurdle_base_nav": "100.000000",
+          "last_crystallization_date": "2024-12-31"
+        }
+      ],
+      "periods": [
+        {
+          "snapshot": {
+            "snapshot_id": "WE-SNAP-01",
+            "period_start_date": "2024-12-31",
+            "valuation_date": "2025-01-31",
+            "share_class": "WE_CLASS_1",
+            "currency": "USD",
+            "gross_nav_per_unit": "106.000000",
+            "version": 1
+          },
+          "expected": {
+            "WE-LOT-1": {
+              "management_fee_amount": "2650.00",
+              "post_mgmt_nav_per_unit": "105.867500",
+              "crystallized_performance_fee": "17602.50",
+              "ending_net_nav": "2099747.50",
+              "ending_net_nav_per_unit": "104.987375",
+              "new_hwm": "104.987375"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenario_id": "WE-02A-SOFT-HURDLE-CATCHUP-ZONE",
+      "description": "5% soft hurdle with 100% catch-up inside catch-up zone (gross=106, hurdle=105 -> fee=1.00/u instead of 1.20/u).",
+      "agreement": {
+        "agreement_id": "AGR-WE-02A",
+        "version": 1,
+        "share_class": "WE_CLASS_2A",
+        "currency": "USD",
+        "effective_date": "2024-12-31",
+        "management_fee_rate": "0.00",
+        "management_fee_basis": "BEGINNING_NAV",
+        "day_count": "ACT_365",
+        "performance_fee_rate": "0.20",
+        "hurdle_type": "SOFT_CATCH_UP",
+        "hurdle_rate": "0.05",
+        "catch_up_rate": "1.00",
+        "crystallization_frequency": "ANNUAL",
+        "hwm_reset_policy": "ON_CRYSTALLIZATION_GAIN"
+      },
+      "initial_lots": [
+        {
+          "lot_id": "WE-LOT-2A",
+          "investor_id": "WE-INV-2",
+          "share_class": "WE_CLASS_2A",
+          "series_id": "S1",
+          "subscription_date": "2024-12-31",
+          "units": "1000.000000",
+          "opening_nav_per_unit": "100.000000",
+          "high_water_mark": "100.000000",
+          "hurdle_base_nav": "100.000000",
+          "last_crystallization_date": "2024-12-31"
+        }
+      ],
+      "periods": [
+        {
+          "snapshot": {
+            "snapshot_id": "WE-SNAP-02A",
+            "period_start_date": "2024-12-31",
+            "valuation_date": "2025-12-31",
+            "share_class": "WE_CLASS_2A",
+            "currency": "USD",
+            "gross_nav_per_unit": "106.000000",
+            "version": 1
+          },
+          "expected": {
+            "WE-LOT-2A": {
+              "hurdle_nav_per_unit": "105.000000",
+              "crystallized_performance_fee": "1000.00",
+              "ending_net_nav": "105000.00",
+              "new_hwm": "105.000000"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenario_id": "WE-02B-SOFT-HURDLE-FULL-CATCHUP",
+      "description": "5% soft hurdle with 100% catch-up above catch-up threshold (gross=110 -> full 20% on 10 gain = 2.00/u).",
+      "agreement": {
+        "agreement_id": "AGR-WE-02B",
+        "version": 1,
+        "share_class": "WE_CLASS_2B",
+        "currency": "USD",
+        "effective_date": "2024-12-31",
+        "management_fee_rate": "0.00",
+        "management_fee_basis": "BEGINNING_NAV",
+        "day_count": "ACT_365",
+        "performance_fee_rate": "0.20",
+        "hurdle_type": "SOFT_CATCH_UP",
+        "hurdle_rate": "0.05",
+        "catch_up_rate": "1.00",
+        "crystallization_frequency": "ANNUAL",
+        "hwm_reset_policy": "ON_CRYSTALLIZATION_GAIN"
+      },
+      "initial_lots": [
+        {
+          "lot_id": "WE-LOT-2B",
+          "investor_id": "WE-INV-2",
+          "share_class": "WE_CLASS_2B",
+          "series_id": "S1",
+          "subscription_date": "2024-12-31",
+          "units": "1000.000000",
+          "opening_nav_per_unit": "100.000000",
+          "high_water_mark": "100.000000",
+          "hurdle_base_nav": "100.000000",
+          "last_crystallization_date": "2024-12-31"
+        }
+      ],
+      "periods": [
+        {
+          "snapshot": {
+            "snapshot_id": "WE-SNAP-02B",
+            "period_start_date": "2024-12-31",
+            "valuation_date": "2025-12-31",
+            "share_class": "WE_CLASS_2B",
+            "currency": "USD",
+            "gross_nav_per_unit": "110.000000",
+            "version": 1
+          },
+          "expected": {
+            "WE-LOT-2B": {
+              "hurdle_nav_per_unit": "105.000000",
+              "crystallized_performance_fee": "2000.00",
+              "ending_net_nav": "108000.00",
+              "new_hwm": "108.000000"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenario_id": "WE-03-HARD-COMPOUNDING-HURDLE",
+      "description": "Two-year 5% hard compounding hurdle: Year 1 misses hurdle (102 < 105) so hurdle compounds to 110.25 in Year 2.",
+      "agreement": {
+        "agreement_id": "AGR-WE-03",
+        "version": 1,
+        "share_class": "WE_CLASS_3",
+        "currency": "USD",
+        "effective_date": "2024-12-31",
+        "management_fee_rate": "0.00",
+        "management_fee_basis": "BEGINNING_NAV",
+        "day_count": "THIRTY_360",
+        "performance_fee_rate": "0.20",
+        "hurdle_type": "HARD_COMPOUNDING",
+        "hurdle_rate": "0.05",
+        "crystallization_frequency": "ANNUAL",
+        "hwm_reset_policy": "ON_CRYSTALLIZATION_GAIN"
+      },
+      "initial_lots": [
+        {
+          "lot_id": "WE-LOT-3",
+          "investor_id": "WE-INV-3",
+          "share_class": "WE_CLASS_3",
+          "series_id": "S1",
+          "subscription_date": "2024-12-31",
+          "units": "1000.000000",
+          "opening_nav_per_unit": "100.000000",
+          "high_water_mark": "100.000000",
+          "hurdle_base_nav": "100.000000",
+          "last_crystallization_date": "2024-12-31"
+        }
+      ],
+      "periods": [
+        {
+          "snapshot": {
+            "snapshot_id": "WE-SNAP-03-Y1",
+            "period_start_date": "2024-12-31",
+            "valuation_date": "2025-12-31",
+            "share_class": "WE_CLASS_3",
+            "currency": "USD",
+            "gross_nav_per_unit": "102.000000",
+            "version": 1
+          },
+          "expected": {
+            "WE-LOT-3": {
+              "hurdle_nav_per_unit": "105.000000",
+              "crystallized_performance_fee": "0.00",
+              "new_hurdle_base_nav": "105.000000",
+              "new_hwm": "102.000000"
+            }
+          }
+        },
+        {
+          "snapshot": {
+            "snapshot_id": "WE-SNAP-03-Y2",
+            "period_start_date": "2025-12-31",
+            "valuation_date": "2026-12-31",
+            "share_class": "WE_CLASS_3",
+            "currency": "USD",
+            "gross_nav_per_unit": "120.000000",
+            "version": 1
+          },
+          "expected": {
+            "WE-LOT-3": {
+              "hurdle_nav_per_unit": "110.250000",
+              "eligible_gain_per_unit": "9.750000",
+              "crystallized_performance_fee": "1950.00",
+              "ending_net_nav": "118050.00",
+              "new_hwm": "118.050000",
+              "new_hurdle_base_nav": "118.050000"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scenario_id": "WE-04-JPY-ZERO-MINOR-UNITS-AVG-NAV",
+      "description": "JPY zero-decimal currency with AVERAGE_NAV 2% management fee and 20% performance fee.",
+      "agreement": {
+        "agreement_id": "AGR-WE-04",
+        "version": 1,
+        "share_class": "WE_CLASS_JPY",
+        "currency": "JPY",
+        "effective_date": "2024-12-31",
+        "management_fee_rate": "0.02",
+        "management_fee_basis": "AVERAGE_NAV",
+        "day_count": "QUARTERLY_1_4",
+        "performance_fee_rate": "0.20",
+        "hurdle_type": "NONE",
+        "hurdle_rate": "0",
+        "crystallization_frequency": "QUARTERLY",
+        "hwm_reset_policy": "ON_CRYSTALLIZATION_GAIN"
+      },
+      "initial_lots": [
+        {
+          "lot_id": "WE-LOT-JPY",
+          "investor_id": "WE-INV-JPY",
+          "share_class": "WE_CLASS_JPY",
+          "series_id": "S1",
+          "subscription_date": "2024-12-31",
+          "units": "1000.000000",
+          "opening_nav_per_unit": "10000.000000",
+          "high_water_mark": "10000.000000",
+          "hurdle_base_nav": "10000.000000",
+          "last_crystallization_date": "2024-12-31"
+        }
+      ],
+      "periods": [
+        {
+          "snapshot": {
+            "snapshot_id": "WE-SNAP-04",
+            "period_start_date": "2024-12-31",
+            "valuation_date": "2025-03-31",
+            "share_class": "WE_CLASS_JPY",
+            "currency": "JPY",
+            "gross_nav_per_unit": "11000.000000",
+            "version": 1
+          },
+          "expected": {
+            "WE-LOT-JPY": {
+              "management_fee_amount": "52500",
+              "crystallized_performance_fee": "189500",
+              "ending_net_nav": "10758000",
+              "ending_net_nav_per_unit": "10758.000000",
+              "new_hwm": "10758.000000"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

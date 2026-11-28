@@ -1,0 +1,47 @@
+{
+  "bundle_id": "BUNDLE-FX-MISMATCH-2026-03-31",
+  "fund_id": "FUND-ALPHA-01",
+  "valuation_date": "2026-03-31",
+  "input_version": "1.0.0",
+  "positions": [
+    {
+      "position_id": "POS-EUR-NO-FX",
+      "instrument_id": "EQ-EU-GAMMA",
+      "instrument_type": "equity",
+      "quantity": "1000",
+      "cost_basis": "80000.00",
+      "currency": "EUR"
+    }
+  ],
+  "prices": [
+    {
+      "price_id": "PX-GAMMA",
+      "instrument_id": "EQ-EU-GAMMA",
+      "price": "85.00",
+      "currency": "EUR",
+      "price_date": "2026-03-31",
+      "as_of_timestamp": "2026-03-31T16:30:00Z"
+    }
+  ],
+  "fx_rates": [],
+  "liabilities": [],
+  "accruals": [],
+  "share_classes": [
+    {
+      "share_class_id": "CLS-A-USD",
+      "name": "Class A USD",
+      "currency": "USD",
+      "opening_shares": "1000",
+      "launch_nav_per_share": "100.00"
+    }
+  ],
+  "capital_flows": [],
+  "ledger_balances": [
+    {
+      "ledger_account_id": "GL-SEC-EUR",
+      "account_type": "securities_cost",
+      "balance": "80000.00",
+      "currency": "EUR"
+    }
+  ]
+}

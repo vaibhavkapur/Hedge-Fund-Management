@@ -1,0 +1,128 @@
+{
+  "scenario_id": "SCEN-LOSS-RECOVERY-HWM",
+  "description": "Four-quarter loss and recovery below high-water mark: Q1 gain sets HWM=107.60, Q2 drawdown, Q3 partial recovery still below HWM (zero perf fee), Q4 recovery above HWM (perf fee only on excess above 107.60).",
+  "provenance": "Synthetic educational fixture hand-calculated from first principles.",
+  "agreement": {
+    "agreement_id": "AGR-HWM-A",
+    "version": 1,
+    "share_class": "CLASS_A",
+    "currency": "USD",
+    "effective_date": "2024-12-31",
+    "management_fee_rate": "0.02",
+    "management_fee_basis": "BEGINNING_NAV",
+    "day_count": "QUARTERLY_1_4",
+    "performance_fee_rate": "0.20",
+    "hurdle_type": "NONE",
+    "hurdle_rate": "0",
+    "crystallization_frequency": "QUARTERLY",
+    "hwm_reset_policy": "ON_CRYSTALLIZATION_GAIN",
+    "management_fee_deducted_before_perf": true
+  },
+  "initial_lots": [
+    {
+      "lot_id": "LOT-HWM-1",
+      "investor_id": "INV-HWM-01",
+      "share_class": "CLASS_A",
+      "series_id": "S20241231",
+      "subscription_date": "2024-12-31",
+      "units": "10000.000000",
+      "opening_nav_per_unit": "100.000000",
+      "high_water_mark": "100.000000",
+      "hurdle_base_nav": "100.000000",
+      "last_crystallization_date": "2024-12-31"
+    }
+  ],
+  "periods": [
+    {
+      "snapshot": {
+        "snapshot_id": "SNAP-HWM-Q1",
+        "period_start_date": "2024-12-31",
+        "valuation_date": "2025-03-31",
+        "share_class": "CLASS_A",
+        "currency": "USD",
+        "gross_nav_per_unit": "110.000000",
+        "version": 1
+      },
+      "expected": {
+        "LOT-HWM-1": {
+          "management_fee_amount": "5000.00",
+          "crystallized_performance_fee": "19000.00",
+          "ending_net_nav": "1076000.00",
+          "ending_net_nav_per_unit": "107.600000",
+          "new_hwm": "107.600000",
+          "loss_carryforward_amount": "0.00"
+        }
+      }
+    },
+    {
+      "snapshot": {
+        "snapshot_id": "SNAP-HWM-Q2",
+        "period_start_date": "2025-03-31",
+        "valuation_date": "2025-06-30",
+        "share_class": "CLASS_A",
+        "currency": "USD",
+        "gross_nav_per_unit": "95.000000",
+        "version": 1
+      },
+      "expected": {
+        "LOT-HWM-1": {
+          "management_fee_amount": "5380.00",
+          "eligible_gain_per_unit": "0.000000",
+          "performance_fee_delta": "0.00",
+          "crystallized_performance_fee": "0.00",
+          "ending_net_nav": "944620.00",
+          "ending_net_nav_per_unit": "94.462000",
+          "new_hwm": "107.600000",
+          "loss_carryforward_amount": "131380.00"
+        }
+      }
+    },
+    {
+      "snapshot": {
+        "snapshot_id": "SNAP-HWM-Q3",
+        "period_start_date": "2025-06-30",
+        "valuation_date": "2025-09-30",
+        "share_class": "CLASS_A",
+        "currency": "USD",
+        "gross_nav_per_unit": "105.000000",
+        "version": 1
+      },
+      "expected": {
+        "LOT-HWM-1": {
+          "management_fee_amount": "4723.10",
+          "eligible_gain_per_unit": "0.000000",
+          "performance_fee_delta": "0.00",
+          "crystallized_performance_fee": "0.00",
+          "ending_net_nav": "1045276.90",
+          "ending_net_nav_per_unit": "104.527690",
+          "new_hwm": "107.600000",
+          "loss_carryforward_amount": "30723.10"
+        }
+      }
+    },
+    {
+      "snapshot": {
+        "snapshot_id": "SNAP-HWM-Q4",
+        "period_start_date": "2025-09-30",
+        "valuation_date": "2025-12-31",
+        "share_class": "CLASS_A",
+        "currency": "USD",
+        "gross_nav_per_unit": "115.000000",
+        "version": 1
+      },
+      "expected": {
+        "LOT-HWM-1": {
+          "management_fee_amount": "5226.38",
+          "post_mgmt_nav_per_unit": "114.477362",
+          "eligible_gain_per_unit": "6.877362",
+          "performance_fee_delta": "13754.72",
+          "crystallized_performance_fee": "13754.72",
+          "ending_net_nav": "1131018.90",
+          "ending_net_nav_per_unit": "113.101890",
+          "new_hwm": "113.101890",
+          "loss_carryforward_amount": "0.00"
+        }
+      }
+    }
+  ]
+}

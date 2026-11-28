@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=58.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "regulatory-reporting-engine"
+version = "0.1.0"
+description = "Configurable illustrative regulatory-style reporting engine with field-level evidence lineage, XML/CSV schema validation, cross-report reconciliation, immutable snapshotting, and auditable corrections."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+pydantic = [
+    "pydantic>=2.6,<3.0",
+]
+postgres = [
+    "psycopg[binary]>=3.1,<4.0",
+]
+xml = [
+    "xmlschema>=3.3,<4.0",
+    "lxml>=5.1,<6.0",
+]
+dev = [
+    "pytest>=7.4",
+    "mypy>=1.8",
+    "ruff>=0.4",
+]
+
+[project.scripts]
+regulatory-reporting-engine = "regulatory_reporting_engine.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

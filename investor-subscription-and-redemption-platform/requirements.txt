@@ -1,0 +1,8 @@
+# Core domain, SQLite persistence, stdlib HTTP service, and unittest runner require Python >= 3.9 stdlib only.
+# Optional FastAPI + PostgreSQL + pytest dependencies (pinned for reproducibility):
+fastapi==0.115.6
+uvicorn==0.32.1
+pydantic==2.10.3
+psycopg[binary]==3.2.3
+pytest==8.3.4
+httpx==0.28.1

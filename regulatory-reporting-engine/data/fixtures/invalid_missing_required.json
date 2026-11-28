@@ -1,0 +1,31 @@
+{
+  "snapshot_id": "SNAP-INVALID-MISSING-001",
+  "schema_contract_version": "1.0.0",
+  "captured_at_utc": "2026-04-01T00:05:00Z",
+  "provenance": {
+    "source_system": "synthetic_invalid_fixture",
+    "synthetic_data": true
+  },
+  "fund": {
+    "fund_id": "SYNTH_ALPHA_01",
+    "fund_name": "Synthetic Missing Fields Fund",
+    "fund_lei": "000000SYNTHFUND00181",
+    "base_currency": "USD",
+    "domicile_country": "US"
+  },
+  "reporting_period": {
+    "period_id": "2026-Q1",
+    "start_date": "2026-01-01",
+    "end_date": "2026-03-31",
+    "frequency": "QUARTERLY"
+  },
+  "nav": {
+    "nav_record_id": "NAV-MISSING-001",
+    "as_of_date": "2026-03-31",
+    "currency": "USD",
+    "gross_asset_value": "125000000.00",
+    "total_liabilities": "25000000.00"
+  },
+  "positions": [],
+  "exposures": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "environment": "prototype-offline",
+  "deterministic_seed": 20260331,
+  "supported_currencies": ["USD", "EUR", "GBP"],
+  "rounding": {
+    "cash_decimal_places": 2,
+    "share_decimal_places": 6,
+    "nav_decimal_places": 6,
+    "mode": "ROUND_HALF_UP",
+    "max_valuation_residual": "0.01"
+  },
+  "funds": {
+    "FUND-ALPHA": {
+      "name": "Alpha Multi-Strategy Prototype Fund",
+      "base_currency": "USD",
+      "share_classes": {
+        "CLASS-A": {
+          "currency": "USD",
+          "subscription_fee_bps": 100,
+          "redemption_fee_bps": 50,
+          "min_subscription_amount": "10000.00",
+          "min_redemption_shares": "10.000000"
+        },
+        "CLASS-I": {
+          "currency": "USD",
+          "subscription_fee_bps": 0,
+          "redemption_fee_bps": 25,
+          "min_subscription_amount": "100000.00",
+          "min_redemption_shares": "50.000000"
+        }
+      }
+    }
+  },
+  "workflow": {
+    "require_maker_checker": true,
+    "allow_late_cash_auto_settle": false,
+    "allow_cutoff_override_without_exception": false,
+    "sanctioned_jurisdictions": ["SYN-SANCTIONED", "XX-BLOCKED"],
+    "sanctioned_names": ["Blocked Entity Synthetic LLC", "Sanctioned Individual Synthetic"]
+  }
+}

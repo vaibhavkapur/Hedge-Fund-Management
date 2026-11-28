@@ -1,0 +1,68 @@
+{
+  "description": "Independent hand-calculated expected oracle values for reference_scenario.json (v1) and late_correction_bundle.json (v2). Tolerance is 0.00 (exact Decimal agreement).",
+  "tolerance": "0.00",
+  "v1": {
+    "pre_flow_gross_assets": "2090000.00",
+    "pre_flow_liabilities": "22500.00",
+    "pre_flow_net_assets": "2067500.00",
+    "total_subscriptions": "51700.00",
+    "total_redemptions": "25825.00",
+    "net_capital_flows": "25875.00",
+    "gross_assets": "2141700.00",
+    "total_liabilities": "48325.00",
+    "net_assets": "2093375.00",
+    "share_classes": {
+      "CLS-A-USD": {
+        "allocation_weight": "0.75000000",
+        "pre_flow_net_assets_base": "1551000.00",
+        "dealing_nav_per_share": "103.400000",
+        "subscription_shares": "500.000000",
+        "closing_shares": "15500.000000",
+        "closing_net_assets_base": "1602700.00",
+        "closing_net_assets_class_ccy": "1602700.00",
+        "nav_per_share": "103.400000"
+      },
+      "CLS-B-EUR": {
+        "allocation_weight": "0.25000000",
+        "pre_flow_net_assets_base": "516500.00",
+        "dealing_nav_per_share": "103.300000",
+        "redemption_shares": "200.000000",
+        "closing_shares": "3800.000000",
+        "closing_net_assets_base": "490675.00",
+        "closing_net_assets_class_ccy": "392540.00",
+        "nav_per_share": "103.300000"
+      }
+    },
+    "flows_deferred_post_cutoff": 1,
+    "reconciled": true
+  },
+  "v2": {
+    "pre_flow_gross_assets": "2110000.00",
+    "pre_flow_liabilities": "22500.00",
+    "pre_flow_net_assets": "2087500.00",
+    "total_subscriptions": "51700.00",
+    "total_redemptions": "26075.00",
+    "net_capital_flows": "25625.00",
+    "gross_assets": "2161700.00",
+    "total_liabilities": "48575.00",
+    "net_assets": "2113125.00",
+    "net_assets_delta_vs_v1": "19750.00",
+    "share_classes": {
+      "CLS-A-USD": {
+        "dealing_nav_per_share": "104.400000",
+        "subscription_shares": "495.210728",
+        "closing_shares": "15495.210728",
+        "closing_net_assets_base": "1617700.00",
+        "nav_per_share": "104.400000"
+      },
+      "CLS-B-EUR": {
+        "dealing_nav_per_share": "104.300000",
+        "redemption_shares": "200.000000",
+        "closing_shares": "3800.000000",
+        "closing_net_assets_base": "495425.00",
+        "closing_net_assets_class_ccy": "396340.00",
+        "nav_per_share": "104.300000"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "US_SEC_PF_ILLUSTRATIVE:1.0.0": {
+    "report_id": "RPT-SYNTH_ALPHA_01-2026-Q1-US_SEC_PF_ILLUSTRATIVE-V1-E28146B3FA3E",
+    "content_sha256": "e28146b3fa3ee6f97b7ff5d01fd355650870be1ade5ada60edbb58a33214af0c",
+    "field_count": 16,
+    "lineage_traced_count": 16,
+    "exact_oracle_match": true,
+    "mismatches": {}
+  },
+  "US_SEC_PF_ILLUSTRATIVE:2.0.0": {
+    "report_id": "RPT-SYNTH_ALPHA_01-2026-Q1-US_SEC_PF_ILLUSTRATIVE-V1-3F2E174486F7",
+    "content_sha256": "3f2e174486f73be43666a34b376eb3ba65b53a89016a526dfb84d8eeae0445ae",
+    "field_count": 18,
+    "lineage_traced_count": 18,
+    "exact_oracle_match": true,
+    "mismatches": {}
+  },
+  "EU_AIFMD_ANNEX4_ILLUSTRATIVE:1.0.0": {
+    "report_id": "RPT-SYNTH_ALPHA_01-2026-Q1-EU_AIFMD_ANNEX4_ILLUSTRATIVE-V1-8F585131886E",
+    "content_sha256": "8f585131886e03910214ff4af23ef7af2b4f4a5a401b9fcd26126198de70d14e",
+    "field_count": 13,
+    "lineage_traced_count": 13,
+    "exact_oracle_match": true,
+    "mismatches": {}
+  }
+}
